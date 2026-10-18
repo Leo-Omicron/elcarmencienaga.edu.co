@@ -24,8 +24,8 @@ Ver [PUBLICACION.md](PUBLICACION.md). El despliegue en Hostinger, la delegación
 
 ## Recursos y decisiones
 
-- Escudo recuperado del membrete institucional disponible en Drive; se muestra su región gráfica con CSS, sin mostrar los datos antiguos del encabezado.
-- Azul oscuro `#152844`, verde `#27623f`, amarillo `#e7c952` y blanco; interpretación de colores del escudo, no manual oficial de marca.
+- Escudo completo contrastado visualmente con la referencia aportada por el propietario y recuperado de `Leo-Omicron/convivencia-escolar-el-carmen`, archivo `src/assets/escudo.jpg`. Se conserva la imagen original sin redibujar, recolorear ni deformar. Se incorpora en el HTML para evitar dependencias de otro sitio.
+- Paleta web derivada del escudo aportado: azul profundo `#191253`, verde de acento `#43a447`, amarillo `#ffe500` y blanco. Verde oscuro `#27623f` para textos legibles. Los valores son una adaptación para pantalla, no especificaciones de un manual oficial de marca.
 - Identidad y contacto contrastados entre PEI y membrete: carácter oficial/mixto, fundación 1973, DANE 147189001160, NIT 819002071-3, Resolución 2293 de 2022, dirección y correo `ieelcarmen@semcienaga.gov.co`.
 - PEI consultado: documento con actualización indicada 2024, disponible en Drive en enero de 2025. Datos estables utilizados; no se copió su visión fechada a 2025, directivos, estadísticas ni promesas de programas vigentes.
 - Teléfonos omitidos porque las fuentes presentan valores diferentes. La vigencia y recepción del correo requieren comprobación institucional.
