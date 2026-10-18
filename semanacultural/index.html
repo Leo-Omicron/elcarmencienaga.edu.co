@@ -761,20 +761,39 @@
       max-width: 650px;
     }
 
-    /* Video Responsivo Incrustado (Google Drive / YouTube) */
-    .video-responsive-wrap {
+    /* Reproductor Vertical Estilo TikTok / Reels (9:16) */
+    .vertical-video-card-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+    .phone-mockup-frame {
       position: relative;
       width: 100%;
-      padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-      height: 0;
-      overflow: hidden;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
+      max-width: 340px;
+      margin-inline: auto;
+      aspect-ratio: 9 / 16;
       background: #0f172a;
-      margin-top: 1rem;
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 36px;
+      border: 8px solid #191253;
+      box-shadow: 0 25px 50px -12px rgba(25, 18, 83, 0.4), inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+      overflow: hidden;
     }
-    .video-responsive-wrap iframe {
+    .phone-mockup-frame::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 14px;
+      background: #191253;
+      border-radius: 10px;
+      z-index: 10;
+    }
+    .phone-mockup-frame iframe {
       position: absolute;
       top: 0;
       left: 0;
@@ -782,6 +801,18 @@
       height: 100%;
       border: 0;
     }
+    .video-info-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    @media (max-width: 768px) {
+      .vertical-video-card-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+    }
+
 
 
 
@@ -1326,19 +1357,18 @@
           </div>
         </div>
 
-        <!-- Día 2: Video Oficial de Invitación -->
-        <div class="teaser-card" id="video-emprendimiento" style="grid-column: 1 / -1; background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%); border: 2px solid var(--accent-gold);">
-          <div>
-            <div class="teaser-header">
-              <span class="teaser-badge-live">
-                <span class="pulse-dot"></span> 🎬 Video Oficial en Línea
-              </span>
-              <span style="font-size: 0.82rem; font-weight: 800; color: #b45309; background: var(--accent-gold-light); padding: 0.25rem 0.65rem; border-radius: var(--radius-full);">Martes 20 Octubre · 8:00 AM</span>
-            </div>
-            <h4>Video Invitación: Feria de Emprendimiento «Jóvenes con Propósito»</h4>
-            <p>Los estudiantes y docentes de la Institución Educativa El Carmen extienden una cordial invitación a toda la comunidad carmelita, padres de familia y egresados a la gran muestra empresarial y tienda escolar IECAR.</p>
-            
-            <div class="video-responsive-wrap">
+        <!-- Día 2: Video Oficial de Invitación Formato Vertical (TikTok / Reels) -->
+        <div class="teaser-card" id="video-emprendimiento" style="grid-column: 1 / -1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); border: 2px solid var(--accent-gold); padding: clamp(1.5rem, 3vw, 2.5rem);">
+          <div class="teaser-header">
+            <span class="teaser-badge-live">
+              <span class="pulse-dot"></span> 🎬 Video Oficial en Línea (Formato TikTok)
+            </span>
+            <span style="font-size: 0.82rem; font-weight: 800; color: #b45309; background: var(--accent-gold-light); padding: 0.3rem 0.8rem; border-radius: var(--radius-full);">Martes 20 Octubre · 8:00 AM</span>
+          </div>
+
+          <div class="vertical-video-card-grid">
+            <!-- Reproductor Vertical Estilo Smartphone -->
+            <div class="phone-mockup-frame">
               <iframe 
                 src="https://drive.google.com/file/d/1QhyIJYAAq7WDzlVbIz62qsPkK9baUZiK/preview" 
                 allow="autoplay; encrypted-media" 
@@ -1347,12 +1377,43 @@
                 title="Video Invitación Oficial Feria de Emprendimiento IE El Carmen">
               </iframe>
             </div>
+
+            <!-- Panel de Información y Detalles del Evento -->
+            <div class="video-info-panel">
+              <div>
+                <span style="font-size: 0.85rem; font-weight: 800; color: var(--accent-green-dark); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.35rem;">Invitación Especial de Nuestros Estudiantes</span>
+                <h3 style="font-size: clamp(1.4rem, 2.5vw, 1.9rem); color: var(--primary); margin-bottom: 0.8rem; line-height: 1.3;">
+                  Feria «Jóvenes con Propósito» &amp; Tienda Escolar IECAR
+                </h3>
+                <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 1.2rem;">
+                  Nuestros estudiantes de bachillerato han preparado una variada muestra de ideas de negocio, productos artesanales y gastronomía típica. Además, contaremos con la gran venta benéfica del pulguero institucional <em>«Ven y ponte la tuya»</em> para apoyar iniciativas estudiantiles.
+                </p>
+              </div>
+
+              <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+                <h5 style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
+                  📌 Puntos Clave de la Jornada:
+                </h5>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; color: var(--text-main);">
+                  <li>📍 <strong>Lugar:</strong> Patio central techado y pasillos principales</li>
+                  <li>⏰ <strong>Horario:</strong> De 8:00 AM a 12:00 del mediodía</li>
+                  <li>🛍️ <strong>Participación:</strong> Abierta a toda la comunidad carmelita, padres de familia y egresados</li>
+                </ul>
+              </div>
+
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-top: 0.5rem;">
+                <a href="#cronograma" class="btn-primary" style="padding: 0.75rem 1.4rem; font-size: 0.92rem;">
+                  Ver Cronograma Completo ↓
+                </a>
+                <a href="https://drive.google.com/file/d/1QhyIJYAAq7WDzlVbIz62qsPkK9baUZiK/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline; font-weight: 700; font-size: 0.9rem;">
+                  Abrir en Google Drive ↗
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="teaser-footer" style="margin-top: 1.2rem; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+
+          <div class="teaser-footer" style="margin-top: 1.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
             <span>✨ Transmisión optimizada en la nube desde Google Drive institucional (cero consumo de hosting)</span>
-            <a href="https://drive.google.com/file/d/1QhyIJYAAq7WDzlVbIz62qsPkK9baUZiK/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline; font-weight: 700;">
-              Abrir video en Google Drive ↗
-            </a>
           </div>
         </div>
 
