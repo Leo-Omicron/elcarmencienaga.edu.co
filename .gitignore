@@ -3,4 +3,12 @@
 !.env.example
 node_modules/
 __pycache__/
+.engram/*
+!.engram/config.json
+# Estado privado de Engram: nunca versionar respaldos, temporales ni logs.
+backups/
+runtime-tmp/
+*.partial
+*.log
+engram.db*
 .DS_Store

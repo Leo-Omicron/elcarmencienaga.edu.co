@@ -1,6 +1,6 @@
 # Continuidad y respaldo de Engram
 
-Los agentes comparten el almacén existente, no una base nueva por sesión. El arranque persistente y el guardado/lectura posterior al reinicio están comprobados; la recuperación aislada por MCP sigue pendiente por un fallo del comprobador. Estado completo en `odd/tasks/engram-continuity.md`. No garantiza pérdida cero ni habilita nube.
+Los agentes comparten el almacén existente, no una base nueva por sesión. El arranque persistente y el guardado/lectura posterior al reinicio están comprobados. El verificador independiente informó PASS de recuperación aislada y lecturas con las configuraciones de ambos MCP, pero falló al entregar el informe final y su carpeta de evidencia ya no está disponible. No se afirma un cierre completo con ese informe faltante. Estado completo en `odd/tasks/engram-continuity.md`. No garantiza pérdida cero ni habilita nube.
 
 ## Estado aplicado en esta máquina
 
@@ -40,6 +40,6 @@ Un puerto ajeno, respuesta inválida o identidad no verificable provoca rechazo 
 1. Guardar la ruta y los conteos del JSON de `backup`; ejecutar `verify-backup` sobre ese archivo. Revisar espacio disponible y proteger el acceso al directorio privado.
 2. Probar la recuperación en un directorio temporal aislado, nunca sobre el almacén activo. El responsable copia allí **el respaldo ya consistente**, usa la CLI pública de Engram con `ENGRAM_DATA_DIR` aislado y verifica lecturas/conteos. No apuntar Pi/MCP a esa prueba.
 3. Antes de cualquier restauración real, detenerse y obtener autorización: esta herramienta no ofrece restauración destructiva. Conservar el original y el respaldo; no reemplazar una base abierta.
-4. Antes de dar el trabajo por terminado, completar la recuperación aislada mediante el contrato real de respuestas MCP, comprobar los clientes stdio recargados y realizar la verificación independiente final. No repetir el comprobador fallido sin revisar su contrato; una respuesta inesperada no demuestra corrupción del respaldo.
+4. Antes de dar el trabajo por terminado, resolver la falta del informe final independiente. Su consulta intermedia informó recuperación y lecturas MCP exitosas, pero no entregó el contrato detallado ni el veredicto completo. No repetir automáticamente la verificación ni afirmar que las aplicaciones ya abiertas fueron recargadas. Una respuesta inesperada del comprobador no demuestra corrupción del respaldo.
 
 Los respaldos reducen el riesgo, pero no sustituyen una política de copias protegidas y probadas. La nube no se enrola ni activa aquí. Mantener fuera de Git bases, WAL/SHM, respaldos, logs, memorias crudas, secretos y configuraciones privadas; de `.engram/` solo se permite `config.json`. Los archivos privados del runtime viven fuera del repositorio, bajo el almacén compartido.
