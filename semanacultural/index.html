@@ -761,6 +761,29 @@
       max-width: 650px;
     }
 
+    /* Video Responsivo Incrustado (Google Drive / YouTube) */
+    .video-responsive-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      background: #0f172a;
+      margin-top: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .video-responsive-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+
 
     /* Bloque Institucional y Contacto */
     .institutional-box {
@@ -1050,6 +1073,9 @@
             <li><span>✓</span> <strong>Descubre:</strong> Productos hechos con dedicación</li>
             <li><span>✓</span> <strong>Sé parte:</strong> De una comunidad que cree en su juventud</li>
           </ul>
+          <a href="#video-emprendimiento" class="btn-primary" style="margin-top: 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-red); color: #fff; font-weight: 700;">
+            🎬 Ver Video Invitación Oficial
+          </a>
         </div>
         <div style="padding: 1.5rem; background: var(--bg-surface);">
           <div class="posters-dual-grid">
@@ -1300,18 +1326,33 @@
           </div>
         </div>
 
-        <!-- Día 2 -->
-        <div class="teaser-card">
+        <!-- Día 2: Video Oficial de Invitación -->
+        <div class="teaser-card" id="video-emprendimiento" style="grid-column: 1 / -1; background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%); border: 2px solid var(--accent-gold);">
           <div>
             <div class="teaser-header">
-              <span class="teaser-badge-soon">⏳ En Preparación</span>
-              <span style="font-size: 0.8rem; font-weight: 700; color: #64748b;">20 Octubre</span>
+              <span class="teaser-badge-live">
+                <span class="pulse-dot"></span> 🎬 Video Oficial en Línea
+              </span>
+              <span style="font-size: 0.82rem; font-weight: 800; color: #b45309; background: var(--accent-gold-light); padding: 0.25rem 0.65rem; border-radius: var(--radius-full);">Martes 20 Octubre · 8:00 AM</span>
             </div>
-            <h4>Emprendimiento &amp; Pulguero IECAR</h4>
-            <p>Galería de stands de jóvenes emprendedores, muestras artesanales y feria gastronómica carmelita.</p>
+            <h4>Video Invitación: Feria de Emprendimiento «Jóvenes con Propósito»</h4>
+            <p>Los estudiantes y docentes de la Institución Educativa El Carmen extienden una cordial invitación a toda la comunidad carmelita, padres de familia y egresados a la gran muestra empresarial y tienda escolar IECAR.</p>
+            
+            <div class="video-responsive-wrap">
+              <iframe 
+                src="https://drive.google.com/file/d/1QhyIJYAAq7WDzlVbIz62qsPkK9baUZiK/preview" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen 
+                loading="lazy"
+                title="Video Invitación Oficial Feria de Emprendimiento IE El Carmen">
+              </iframe>
+            </div>
           </div>
-          <div class="teaser-footer">
-            <span>🛍️ Álbum de Emprendimientos</span>
+          <div class="teaser-footer" style="margin-top: 1.2rem; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+            <span>✨ Transmisión optimizada en la nube desde Google Drive institucional (cero consumo de hosting)</span>
+            <a href="https://drive.google.com/file/d/1QhyIJYAAq7WDzlVbIz62qsPkK9baUZiK/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: #0284c7; text-decoration: underline; font-weight: 700;">
+              Abrir video en Google Drive ↗
+            </a>
           </div>
         </div>
 
