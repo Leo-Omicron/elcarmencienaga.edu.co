@@ -833,6 +833,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 0.6rem;
       margin-bottom: 1rem;
     }
     .teaser-badge-live {
@@ -967,6 +969,57 @@
       .vertical-video-card-grid {
         grid-template-columns: 1fr;
         gap: 1.8rem;
+      }
+    }
+
+    /* Showcase Destacado de Jornada (Día 1) */
+    .showcase-featured-grid {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 2.25rem;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+    .showcase-preview-frame {
+      position: relative;
+      width: 100%;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 3px solid var(--accent-green);
+      box-shadow: var(--shadow-md);
+      background: #0f172a;
+    }
+    .showcase-preview-frame img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+    }
+    .showcase-actions-wrap {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 0.5rem;
+    }
+    @media (max-width: 900px) {
+      .showcase-featured-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+      .showcase-preview-frame {
+        max-width: 440px;
+        margin-inline: auto;
+      }
+      .showcase-actions-wrap {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .showcase-actions-wrap a {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
       }
     }
 
@@ -2123,11 +2176,11 @@
             <span style="font-size: 0.82rem; font-weight: 800; color: #166534; background: rgba(34, 197, 94, 0.15); padding: 0.3rem 0.8rem; border-radius: var(--radius-full);">Lunes 19 Octubre · Registro Oficial</span>
           </div>
 
-          <div class="vertical-video-card-grid" style="grid-template-columns: 360px 1fr; align-items: center;">
+          <div class="showcase-featured-grid">
             <!-- Columna Izquierda: Vista Previa Visual Atractiva de la Jornada -->
-            <div class="showcase-preview-frame" style="position: relative; border-radius: var(--radius-md); overflow: hidden; border: 3px solid var(--accent-green); box-shadow: var(--shadow-md); background: #0f172a;">
+            <div class="showcase-preview-frame">
               <a href="dia1.html" title="Clic para entrar a la galería completa del Día 1" style="display: block; position: relative;">
-                <img src="afiche_historia.jpg" alt="Feria de Historia y Memoria de Ciénaga" style="width: 100%; height: auto; display: block; aspect-ratio: 4/3; object-fit: cover;">
+                <img src="afiche_historia.jpg" alt="Feria de Historia y Memoria de Ciénaga" loading="lazy">
                 <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(15,23,42,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem; color: #ffffff;">
                   <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: var(--accent-green-dark); color: #ffffff; font-size: 0.74rem; font-weight: 800; padding: 0.25rem 0.6rem; border-radius: var(--radius-full); width: fit-content; text-transform: uppercase; margin-bottom: 0.4rem;">
                     ▶ Videos &amp; +120 Fotos
@@ -2166,7 +2219,7 @@
                 </ul>
               </div>
 
-              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; margin-top: 0.5rem;">
+              <div class="showcase-actions-wrap">
                 <a href="dia1.html" class="btn-primary" style="padding: 0.85rem 1.6rem; font-size: 0.95rem; background: var(--accent-green-dark); box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);">
                   📸 Entrar a la Galería y Videos del Día 1 ↗
                 </a>
