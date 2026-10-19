@@ -12,3 +12,10 @@ runtime-tmp/
 *.log
 engram.db*
 .DS_Store
+# Archivos multimedia y fotos pesadas (mantener fuera del repo)
+media/
+# Respaldos locales y directorios de trabajo locales
+wordpress/
+cultura/
+elcarmencienaga/
+lab/
