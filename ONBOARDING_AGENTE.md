@@ -56,12 +56,18 @@ Revisar si la otra máquina hizo cambios recientes antes de empezar a escribir c
 - Mantener las carpetas locales bien organizadas (`laboratorio/`, `semanacultural/`, etc.).
 - Las credenciales y bases de datos privadas permanecen fuera del repositorio (ver `.gitignore`).
 
+### REGLA INQUEBRANTABLE: Staging Obligatorio (`lab`) antes de Producción
+Todo cambio o nueva funcionalidad sigue rigurosamente el ciclo de staging a producción:
+1. **Fase Laboratorio:** Cualquier ajuste de código, copy, diseño o multimedia se implementa primero en `laboratorio/` y se despliega en `lab.elcarmencienaga.edu.co`.
+2. **Revisión y Aprobación de Leo:** El agente NO promueve cambios a entornos activos sin que Leo los revise visualmente y otorgue su aprobación explícita.
+3. **Promoción a Portal Activo:** Únicamente tras la aprobación se sincroniza hacia `semanacultural/` o producción y se despliega.
+4. **Cero cambios en caliente:** Nunca editar directamente el sitio público sin validación previa en laboratorio.
+
 ### Paso 3: Despliegue en Hostinger
-Para subir archivos a Hostinger se utiliza el protocolo TUS:
-1. Generar URL de subida con `hosting_files_generate-upload-url` (para dominio `elcarmencienaga.edu.co` y usuario `u985679183`).
-2. Subir a la carpeta del subdominio (`subdomains/<subdominio>/<archivo>`).
-3. Purgar caché con `hosting_cache_clear-website`.
-4. Verificar con `curl.exe -sI <URL>` que la respuesta sea HTTP 200 (o 301 si es redirección).
+Para subir y actualizar sitios en Hostinger:
+1. Utilizar la herramienta MCP `hosting_deploy` con el dominio correspondiente y ruta local (o subida TUS según aplique).
+2. Purgar caché con `hosting_cache_clear-website`.
+3. Verificar con `curl.exe -sI <URL>` que la respuesta sea HTTP 200 (o 301 si es redirección).
 
 ### Paso 4: Cierre y Sincronización hacia la otra máquina
 1. Documentar los cambios en Git con commits convencionales (`feat:`, `fix:`, `chore:`).
