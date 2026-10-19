@@ -968,12 +968,528 @@
         grid-template-columns: 1fr;
         gap: 1.8rem;
       }
+    /* ============================================================
+       LABORATORIO MULTIMEDIA & A/B VIDEO COMPARISON (DÍA 1 Y GALERÍA)
+       ============================================================ */
+    .media-lab-container {
+      grid-column: 1 / -1;
+      background: #ffffff;
+      border: 2px solid var(--accent-gold);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.5rem, 3vw, 2.5rem);
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+    .media-lab-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, #191253 0%, #2c2282 100%);
+      color: #ffffff;
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.85rem;
+      box-shadow: 0 4px 12px rgba(25, 18, 83, 0.2);
+    }
+    .media-filter-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 2rem;
+    }
+    .media-filter-group {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .media-filter-btn {
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      padding: 0.5rem 1.1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .media-filter-btn:hover {
+      background: #e2e8f0;
+      border-color: #cbd5e1;
+    }
+    .media-filter-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    /* A/B Switcher Control */
+    .ab-switcher-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.35rem;
+      margin-bottom: 2rem;
+    }
+    .ab-switcher-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+    }
+    .ab-switcher-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ab-toggle-group {
+      display: inline-flex;
+      background: #e2e8f0;
+      border-radius: var(--radius-full);
+      padding: 4px;
+      gap: 2px;
+    }
+    .ab-toggle-btn {
+      border: none;
+      background: transparent;
+      padding: 0.55rem 1.15rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .ab-toggle-btn.active {
+      background: #ffffff;
+      color: var(--primary);
+      font-weight: 800;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     }
 
+    /* Video Comparison Grid: Panel A (In-Page) */
+    .video-inpage-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 2rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .video-inpage-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .video-player-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+    }
+    .video-h-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0f172a;
+      overflow: hidden;
+    }
+    .video-h-frame iframe,
+    .video-h-frame video {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      object-fit: cover;
+    }
+    .video-v-frame-wrap {
+      width: 100%;
+      max-width: 320px;
+      margin-inline: auto;
+      aspect-ratio: 9 / 16;
+      background: #0f172a;
+      border-radius: 32px;
+      border: 7px solid var(--primary);
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+    .video-v-frame-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-player-body {
+      padding: 1.25rem;
+    }
+    .video-player-body h4 {
+      font-size: 1.1rem;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+    .video-player-body p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 0.75rem;
+    }
 
+    /* Video Comparison Grid: Panel B (Launcher Cards a Google Fotos) */
+    .video-launcher-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.5rem;
+    }
+    .launcher-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      cursor: pointer;
+    }
+    .launcher-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-gold);
+    }
+    .launcher-thumb-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: #0f172a;
+    }
+    .launcher-thumb-wrap.ratio-h {
+      aspect-ratio: 16 / 9;
+    }
+    .launcher-thumb-wrap.ratio-v {
+      aspect-ratio: 9 / 14;
+    }
+    .launcher-thumb-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .launcher-card:hover .launcher-thumb-wrap img {
+      transform: scale(1.05);
+    }
+    .launcher-play-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.25s ease;
+    }
+    .launcher-card:hover .launcher-play-overlay {
+      background: rgba(15, 23, 42, 0.2);
+    }
+    .play-circle-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+    .launcher-card:hover .play-circle-btn {
+      transform: scale(1.14);
+      background: var(--accent-gold);
+      color: #000000;
+    }
+    .badge-duration {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-sm);
+    }
+    .badge-format {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(25, 18, 83, 0.88);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .launcher-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .launcher-body h4 {
+      font-size: 1.08rem;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+    .launcher-body p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 1rem;
+    }
+    .btn-launch-google {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      background: #f1f5f9;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.86rem;
+      padding: 0.65rem 1rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-subtle);
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .launcher-card:hover .btn-launch-google {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
 
+    /* Galería Fotográfica de la Jornada */
+    .photo-showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .photo-showcase-item {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .photo-showcase-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-green);
+    }
+    .photo-thumb-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: #f1f5f9;
+    }
+    .photo-thumb-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .photo-showcase-item:hover .photo-thumb-container img {
+      transform: scale(1.06);
+    }
+    .photo-overlay-zoom {
+      position: absolute;
+      inset: 0;
+      background: rgba(25, 18, 83, 0.35);
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 1.7rem;
+      transition: opacity 0.25s ease;
+    }
+    .photo-showcase-item:hover .photo-overlay-zoom {
+      opacity: 1;
+    }
+    .photo-caption {
+      padding: 0.9rem 1.1rem;
+    }
+    .photo-caption h5 {
+      font-size: 0.95rem;
+      color: var(--primary);
+      margin-bottom: 0.2rem;
+    }
+    .photo-caption span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
 
-    /* Bloque Institucional y Contacto */
+    /* Gran Banner Conector a Google Fotos */
+    .gphotos-hub-banner {
+      margin-top: 2.5rem;
+      background: linear-gradient(135deg, #0d0933 0%, #191253 50%, #064e3b 100%);
+      border: 2px solid var(--accent-gold);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.8rem, 4vw, 2.5rem);
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      box-shadow: var(--shadow-lg);
+    }
+    .gphotos-hub-info {
+      max-width: 650px;
+    }
+    .gphotos-hub-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(245, 158, 11, 0.2);
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.7rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 0.75rem;
+    }
+    .gphotos-hub-info h3 {
+      color: #ffffff;
+      font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+      margin-bottom: 0.5rem;
+    }
+    .gphotos-hub-info p {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .gphotos-hub-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      min-width: 260px;
+    }
+    .btn-gphotos-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4);
+      transition: all 0.25s ease;
+      text-decoration: none;
+      text-align: center;
+    }
+    .btn-gphotos-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(245, 158, 11, 0.55);
+      color: #000000;
+    }
+
+    /* Lightbox Modal Nativo */
+    .lightbox-modal {
+      border: none;
+      border-radius: var(--radius-lg);
+      padding: 0;
+      background: transparent;
+      max-width: min(920px, 94vw);
+      max-height: 90vh;
+      margin: auto;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65);
+      overflow: hidden;
+    }
+    .lightbox-modal::backdrop {
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(8px);
+    }
+    .lightbox-inner {
+      background: #0f172a;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      overflow: hidden;
+      position: relative;
+    }
+    .lightbox-inner img {
+      width: 100%;
+      max-height: 72vh;
+      object-fit: contain;
+      display: block;
+      background: #000000;
+    }
+    .lightbox-caption-box {
+      padding: 1.25rem 1.75rem;
+      background: #0f172a;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .lightbox-close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.65);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      z-index: 10;
+    }
+    .lightbox-close-btn:hover {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+    }
     .institutional-box {
       background: linear-gradient(135deg, #191253 0%, #104838 100%);
       color: #ffffff;
@@ -1596,20 +2112,256 @@
       </div>
 
       <div class="teaser-grid">
-        <!-- Día 1 -->
-        <div class="teaser-card">
-          <div>
-            <div class="teaser-header">
-              <span class="teaser-badge-live">
-                <span class="pulse-dot"></span> Inicia Mañana Lunes
-              </span>
-              <span style="font-size: 0.8rem; font-weight: 700; color: #64748b;">19 Octubre</span>
+        <!-- Día 1: Cobertura Activa & Laboratorio Multimedia A/B -->
+        <div class="media-lab-container" id="laboratorio-multimedia-dia1">
+          <span class="media-lab-badge">🧪 LABORATORIO MULTIMEDIA EN VIVO · DÍA 1 (LUNES 19)</span>
+          <h3 style="font-size: clamp(1.4rem, 2.5vw, 1.95rem); color: var(--primary); margin-bottom: 0.5rem;">
+            Memoria Histórica y Cátedra Carmelita
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.98rem; margin-bottom: 1.5rem; max-width: 850px; line-height: 1.6;">
+            Cobertura activa de las actividades de hoy. Prueba y compara en tiempo real las dos arquitecturas de video (reproductor web integrado vs. tarjetas lanzadoras al álbum de Google Fotos) y explora la muestra fotográfica con visor interactivo.
+          </p>
+
+          <!-- Barra de Filtros de Medios -->
+          <div class="media-filter-bar">
+            <div class="media-filter-group">
+              <button type="button" class="media-filter-btn active" onclick="filterMedia('all', this)">
+                <span>✨ Todos (7)</span>
+              </button>
+              <button type="button" class="media-filter-btn" onclick="filterMedia('videos', this)">
+                <span>🎬 Videos (4)</span>
+              </button>
+              <button type="button" class="media-filter-btn" onclick="filterMedia('photos', this)">
+                <span>📸 Fotos Destacadas (3)</span>
+              </button>
             </div>
-            <h4>Memoria Histórica y Cátedra Carmelita</h4>
-            <p>Fotos oficiales de la apertura, exposición de paneles del legado carmelita y concurso de oratoria estudiantil.</p>
+            <div style="font-size: 0.82rem; color: var(--text-muted); font-weight: 600;">
+              ⚡ Entorno de prueba interactivo
+            </div>
           </div>
-          <div class="teaser-footer">
-            <span>📷 Cobertura Fotográfica Lista</span>
+
+          <!-- Módulo A/B de Reproducción de Video -->
+          <div class="ab-switcher-box" id="media-ab-box" data-media-type="video">
+            <div class="ab-switcher-header">
+              <div class="ab-switcher-title">
+                <span>⚖️ Banco de Prueba: ¿Cómo reproducir los videos?</span>
+              </div>
+              <div class="ab-toggle-group">
+                <button type="button" class="ab-toggle-btn active" id="btn-mode-a" onclick="switchVideoMode('a')">
+                  Opción A: Reproductor Web (In-Page)
+                </button>
+                <button type="button" class="ab-toggle-btn" id="btn-mode-b" onclick="switchVideoMode('b')">
+                  Opción B: Tarjetas Lanzador (Google Fotos)
+                </button>
+              </div>
+            </div>
+
+            <!-- Avisos Explicativos del Modo Activo -->
+            <div id="note-mode-a" style="font-size: 0.86rem; color: #1e3a8a; background: #eff6ff; border-left: 4px solid #3b82f6; padding: 0.75rem 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
+              <strong>💡 En qué consiste la Opción A:</strong> El video se reproduce directamente aquí en la página sin salir del sitio web. Requiere alojar los clips en YouTube / Shorts para contar con streaming adaptativo que no sobrecargue el servidor de Hostinger.
+            </div>
+            <div id="note-mode-b" style="display: none; font-size: 0.86rem; color: #065f46; background: #ecfdf5; border-left: 4px solid #10b981; padding: 0.75rem 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
+              <strong>💡 En qué consiste la Opción B:</strong> La web muestra pósters con botón de reproducción táctil que, al hacer clic, abren el video original en la aplicación de Google Fotos en calidad 4K/Full HD sin consumir ancho de banda de nuestro hosting.
+            </div>
+
+            <!-- Panel A: Reproductor Directo en la Web (Horizontal y Vertical) -->
+            <div id="panel-video-inpage">
+              <div class="video-inpage-grid">
+                <!-- Video 1: Formato Horizontal 16:9 -->
+                <div class="video-player-card">
+                  <div class="video-h-frame">
+                    <iframe 
+                      src="https://www.youtube-nocookie.com/embed/xzmnFdJ2Fi0?rel=0&playsinline=1&modestbranding=1" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      allowfullscreen 
+                      loading="lazy"
+                      title="Video Demostración Horizontal - Acto de Apertura">
+                    </iframe>
+                  </div>
+                  <div class="video-player-body">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                      <span style="font-size: 0.74rem; font-weight: 800; color: #2563eb; background: #dbeafe; padding: 0.2rem 0.55rem; border-radius: var(--radius-full); text-transform: uppercase;">
+                        Horizontal 16:9
+                      </span>
+                      <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 700;">Duración: 1:30 min</span>
+                    </div>
+                    <h4>Palabras de Apertura e Historia Cienaguera</h4>
+                    <p>Muestra audiovisual en formato panorámico tradicional para actos protocolares, discursos e himnos.</p>
+                  </div>
+                </div>
+
+                <!-- Video 2: Formato Vertical 9:16 (Mockup Celular) -->
+                <div class="video-player-card" style="align-items: center; padding-top: 1rem;">
+                  <div class="video-v-frame-wrap">
+                    <iframe 
+                      src="https://www.youtube-nocookie.com/embed/xzmnFdJ2Fi0?rel=0&playsinline=1&modestbranding=1" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      allowfullscreen 
+                      loading="lazy"
+                      title="Video Demostración Vertical - Short / Reel">
+                    </iframe>
+                  </div>
+                  <div class="video-player-body" style="width: 100%;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                      <span style="font-size: 0.74rem; font-weight: 800; color: #b45309; background: var(--accent-gold-light); padding: 0.2rem 0.55rem; border-radius: var(--radius-full); text-transform: uppercase;">
+                        Vertical 9:16 Short
+                      </span>
+                      <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 700;">Duración: 0:45 min</span>
+                    </div>
+                    <h4>Recorrido Rápido por los Stands</h4>
+                    <p>Formato vertical optimizado para visualización en smartphones y redes sociales.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel B: Tarjetas con Lanzador al Álbum Compartido de Google Fotos -->
+            <div id="panel-video-launcher" style="display: none;">
+              <div class="video-launcher-grid">
+                <!-- Tarjeta Lanzador 1 (Horizontal) -->
+                <div class="launcher-card" onclick="window.open('https://photos.google.com/', '_blank')">
+                  <div class="launcher-thumb-wrap ratio-h">
+                    <img src="banner.jpg" alt="Muestra de Proyectos Históricos" loading="lazy">
+                    <div class="launcher-play-overlay">
+                      <div class="play-circle-btn">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      </div>
+                    </div>
+                    <span class="badge-format">16:9 Horizontal</span>
+                    <span class="badge-duration">2:15 min</span>
+                  </div>
+                  <div class="launcher-body">
+                    <div>
+                      <h4>Exposiciones sobre la Identidad Cienaguera</h4>
+                      <p>Recorrido por los stands con exposiciones sobre la historia bananera, arquitectura y ecosistemas locales.</p>
+                    </div>
+                    <a href="https://photos.google.com/" target="_blank" rel="noopener noreferrer" class="btn-launch-google" onclick="event.stopPropagation();">
+                      <span>▶ Ver Video en Google Fotos ↗</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Tarjeta Lanzador 2 (Vertical) -->
+                <div class="launcher-card" onclick="window.open('https://photos.google.com/', '_blank')">
+                  <div class="launcher-thumb-wrap ratio-v">
+                    <img src="afiche_historia.jpg" alt="Entrevistas Estudiantiles" loading="lazy">
+                    <div class="launcher-play-overlay">
+                      <div class="play-circle-btn">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      </div>
+                    </div>
+                    <span class="badge-format">9:16 Vertical Reel</span>
+                    <span class="badge-duration">0:48 min</span>
+                  </div>
+                  <div class="launcher-body">
+                    <div>
+                      <h4>Cátedra Carmelita: Voces de los Estudiantes</h4>
+                      <p>Testimonios de los alumnos explicando el valor de preservar nuestras tradiciones y patrimonio vivo.</p>
+                    </div>
+                    <a href="https://photos.google.com/" target="_blank" rel="noopener noreferrer" class="btn-launch-google" onclick="event.stopPropagation();">
+                      <span>▶ Ver Reel en Google Fotos ↗</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Tarjeta Lanzador 3 (Horizontal) -->
+                <div class="launcher-card" onclick="window.open('https://photos.google.com/', '_blank')">
+                  <div class="launcher-thumb-wrap ratio-h">
+                    <img src="afiche_general.jpg" alt="Apertura Solemne" loading="lazy">
+                    <div class="launcher-play-overlay">
+                      <div class="play-circle-btn">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      </div>
+                    </div>
+                    <span class="badge-format">16:9 Horizontal</span>
+                    <span class="badge-duration">1:12 min</span>
+                  </div>
+                  <div class="launcher-body">
+                    <div>
+                      <h4>Acto Inaugural y Bienvenida Rectora</h4>
+                      <p>Momento solemne de apertura con toda la comunidad educativa reunida en el patio central techado.</p>
+                    </div>
+                    <a href="https://photos.google.com/" target="_blank" rel="noopener noreferrer" class="btn-launch-google" onclick="event.stopPropagation();">
+                      <span>▶ Ver Video en Google Fotos ↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Muestra de Galería Fotográfica de la Jornada -->
+          <div class="media-photo-section" id="media-photo-group" data-media-type="photo">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; margin-bottom: 0.5rem;">
+              <div>
+                <h4 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 0.2rem;">
+                  📸 Muestra Fotográfica Seleccionada (Día 1)
+                </h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
+                  Toca cualquier fotografía para verla ampliada en alta resolución:
+                </p>
+              </div>
+              <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-green-dark); background: #ecfdf5; padding: 0.25rem 0.65rem; border-radius: var(--radius-full);">
+                3 Fotos Destacadas
+              </span>
+            </div>
+
+            <div class="photo-showcase-grid">
+              <!-- Foto 1 -->
+              <div class="photo-showcase-item" onclick="openLightbox('afiche_historia.jpg', 'Pancarta Central: Memoria Histórica', 'Feria de Historia y Cátedra Carmelita · Lunes 19 de Octubre')">
+                <div class="photo-thumb-container">
+                  <img src="afiche_historia.jpg" alt="Pancarta Memoria Histórica de Ciénaga" loading="lazy">
+                  <div class="photo-overlay-zoom">🔍</div>
+                </div>
+                <div class="photo-caption">
+                  <h5>Pancarta Central del Evento</h5>
+                  <span>Exposición temáticas sobre patrimonio y raíces cienagueras</span>
+                </div>
+              </div>
+
+              <!-- Foto 2 -->
+              <div class="photo-showcase-item" onclick="openLightbox('banner.jpg', 'Murales y Stands en el Patio Techado', 'Exhibición de maquetas y muestras tradicionales carmelitas')">
+                <div class="photo-thumb-container">
+                  <img src="banner.jpg" alt="Murales y stands escolares" loading="lazy">
+                  <div class="photo-overlay-zoom">🔍</div>
+                </div>
+                <div class="photo-caption">
+                  <h5>Exposiciones en Patio Central</h5>
+                  <span>Muestras artísticas y maquetas elaboradas por estudiantes</span>
+                </div>
+              </div>
+
+              <!-- Foto 3 -->
+              <div class="photo-showcase-item" onclick="openLightbox('afiche_general.jpg', 'Comunidad Educativa Carmelita', 'Apertura oficial de la Semana Cultural 2026')">
+                <div class="photo-thumb-container">
+                  <img src="afiche_general.jpg" alt="Afiche Oficial de la Semana Cultural 2026" loading="lazy">
+                  <div class="photo-overlay-zoom">🔍</div>
+                </div>
+                <div class="photo-caption">
+                  <h5>Comunidad en Celebración</h5>
+                  <span>Integración de docentes, directivos, padres y alumnos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gran Banner Conector Híbrido a Google Fotos -->
+          <div class="gphotos-hub-banner" data-media-type="gphotos">
+            <div class="gphotos-hub-info">
+              <span class="gphotos-hub-tag">☁️ Repositorio Oficial en la Nube</span>
+              <h3>Álbum Completo del Día 1 en Google Fotos</h3>
+              <p>
+                Accede al álbum compartido con más de 120 fotografías y clips de video tomados por docentes, estudiantes y el comité de medios. Puedes verlos en calidad original, descargarlos gratis o compartirlos en tus redes familiares.
+              </p>
+            </div>
+            <div class="gphotos-hub-actions">
+              <a href="https://photos.google.com/" target="_blank" rel="noopener noreferrer" class="btn-gphotos-primary">
+                <span>📸 Ver Álbum en Google Fotos ↗</span>
+              </a>
+              <span style="font-size: 0.78rem; color: #cbd5e1; text-align: center;">
+                Compatible con Android, iPhone y PC
+              </span>
+            </div>
           </div>
         </div>
 
@@ -1945,6 +2697,103 @@
       setInterval(update, 1000);
       update();
     })();
+
+    // Conmutador A/B de Reproducción de Video
+    function switchVideoMode(mode) {
+      const btnA = document.getElementById('btn-mode-a');
+      const btnB = document.getElementById('btn-mode-b');
+      const panelA = document.getElementById('panel-video-inpage');
+      const panelB = document.getElementById('panel-video-launcher');
+      const noteA = document.getElementById('note-mode-a');
+      const noteB = document.getElementById('note-mode-b');
+
+      if (mode === 'a') {
+        if (btnA) btnA.classList.add('active');
+        if (btnB) btnB.classList.remove('active');
+        if (panelA) panelA.style.display = 'block';
+        if (panelB) panelB.style.display = 'none';
+        if (noteA) noteA.style.display = 'block';
+        if (noteB) noteB.style.display = 'none';
+      } else {
+        if (btnB) btnB.classList.add('active');
+        if (btnA) btnA.classList.remove('active');
+        if (panelB) panelB.style.display = 'block';
+        if (panelA) panelA.style.display = 'none';
+        if (noteB) noteB.style.display = 'block';
+        if (noteA) noteA.style.display = 'none';
+      }
+    }
+
+    // Filtro de Medios (Todos, Videos, Fotos)
+    function filterMedia(type, btn) {
+      document.querySelectorAll('.media-filter-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const videoBox = document.getElementById('media-ab-box');
+      const photoBox = document.getElementById('media-photo-group');
+
+      if (type === 'all') {
+        if (videoBox) videoBox.style.display = 'block';
+        if (photoBox) photoBox.style.display = 'block';
+      } else if (type === 'videos') {
+        if (videoBox) videoBox.style.display = 'block';
+        if (photoBox) photoBox.style.display = 'none';
+      } else if (type === 'photos') {
+        if (videoBox) videoBox.style.display = 'none';
+        if (photoBox) photoBox.style.display = 'block';
+      }
+    }
+
+    // Lightbox Nativo con <dialog>
+    function openLightbox(src, title, caption) {
+      const dialog = document.getElementById('photo-lightbox');
+      const img = document.getElementById('lightbox-img');
+      const titleEl = document.getElementById('lightbox-title');
+      const captionEl = document.getElementById('lightbox-caption');
+
+      if (dialog && img) {
+        img.src = src;
+        img.alt = title || 'Fotografía ampliada';
+        if (titleEl) titleEl.textContent = title || '';
+        if (captionEl) captionEl.textContent = caption || '';
+        dialog.showModal();
+      }
+    }
+
+    function closeLightbox() {
+      const dialog = document.getElementById('photo-lightbox');
+      if (dialog) dialog.close();
+    }
+
+    // Cerrar lightbox haciendo clic en el backdrop
+    const lbDialog = document.getElementById('photo-lightbox');
+    if (lbDialog) {
+      lbDialog.addEventListener('click', (e) => {
+        const rect = lbDialog.getBoundingClientRect();
+        const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+          rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+        if (!isInDialog) {
+          lbDialog.close();
+        }
+      });
+    }
   </script>
+
+  <!-- Lightbox Modal Nativo Accesible -->
+  <dialog id="photo-lightbox" class="lightbox-modal">
+    <div class="lightbox-inner">
+      <button type="button" class="lightbox-close-btn" onclick="closeLightbox()" aria-label="Cerrar visor">✕</button>
+      <img id="lightbox-img" src="" alt="Fotografía ampliada">
+      <div class="lightbox-caption-box">
+        <div>
+          <h4 id="lightbox-title" style="color: #ffffff; font-size: 1.05rem; margin-bottom: 0.2rem;"></h4>
+          <p id="lightbox-caption" style="color: #94a3b8; font-size: 0.85rem; margin: 0;"></p>
+        </div>
+        <span style="font-size: 0.75rem; color: #64748b; background: rgba(255,255,255,0.08); padding: 0.3rem 0.6rem; border-radius: 4px;">
+          ESC para salir
+        </span>
+      </div>
+    </div>
+  </dialog>
 </body>
 </html>
