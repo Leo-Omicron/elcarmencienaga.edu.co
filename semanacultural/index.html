@@ -172,6 +172,28 @@
       background: var(--accent-green-dark);
       transform: translateY(-2px);
     }
+    .btn-instagram-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-full);
+      color: #ffffff;
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(220, 39, 67, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn-instagram-nav:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(220, 39, 67, 0.45);
+      color: #ffffff;
+    }
+    .mobile-actions {
+      display: none;
+    }
 
     /* Hero Section */
     .hero {
@@ -926,9 +948,46 @@
       .nav-links {
         display: none;
       }
+      .mobile-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .btn-instagram-mobile {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.45rem 0.85rem;
+        border-radius: var(--radius-full);
+        color: #ffffff;
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        font-weight: 700;
+        font-size: 0.82rem;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(220, 39, 67, 0.35);
+        transition: transform 0.2s ease;
+      }
+      .btn-instagram-mobile:hover {
+        color: #ffffff;
+        transform: translateY(-1px);
+      }
       .timeline-card {
         grid-template-columns: 1fr;
         gap: 0.6rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .btn-instagram-mobile span {
+        display: none;
+      }
+      .btn-instagram-mobile {
+        padding: 0.5rem;
+      }
+      .brand-text p {
+        font-size: 0.68rem;
+      }
+      .brand-text h2 {
+        font-size: 1.05rem;
       }
     }
   </style>
@@ -958,6 +1017,15 @@
           <p>Ciénaga · Magdalena · Colombia</p>
         </div>
       </a>
+
+      <!-- Acceso Móvil Rápido a Instagram Oficial -->
+      <div class="mobile-actions">
+        <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" class="btn-instagram-mobile" title="Seguir a @ieelcarmen en Instagram" aria-label="Seguir a @ieelcarmen en Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#dias">Los 5 Días</a></li>
@@ -967,7 +1035,7 @@
         <li><a href="#institucion">Institución</a></li>
         <li><a class="btn-nav" href="#contacto">Contacto</a></li>
         <li>
-          <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" title="Seguir a @ieelcarmen en Instagram" style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.5rem 1rem; border-radius: var(--radius-full); color: #ffffff; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); font-weight: 700; font-size: 0.82rem; text-decoration: none; box-shadow: 0 2px 8px rgba(220, 39, 67, 0.3);">
+          <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" class="btn-instagram-nav" title="Seguir a @ieelcarmen en Instagram">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             @ieelcarmen
           </a>
