@@ -172,6 +172,28 @@
       background: var(--accent-green-dark);
       transform: translateY(-2px);
     }
+    .btn-instagram-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-full);
+      color: #ffffff;
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(220, 39, 67, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn-instagram-nav:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(220, 39, 67, 0.45);
+      color: #ffffff;
+    }
+    .mobile-actions {
+      display: none;
+    }
 
     /* Hero Section */
     .hero {
@@ -777,6 +799,179 @@
       color: #b45309;
     }
 
+    /* Galería Multimedia Teaser */
+    .multimedia-section {
+      background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+      border-top: 1px solid var(--border-subtle);
+    }
+    .teaser-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .teaser-card {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      padding: 1.75rem;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .teaser-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #cbd5e1;
+    }
+    .teaser-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .teaser-badge-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #ecfdf5;
+      color: #065f46;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #a7f3d0;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .teaser-badge-soon {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #fffbeb;
+      color: #92400e;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #fde68a;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10b981;
+      display: inline-block;
+      animation: pulseAnim 2s infinite;
+    }
+    @keyframes pulseAnim {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+    .teaser-card h4 {
+      font-size: 1.15rem;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+    .teaser-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+    .teaser-footer {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #0284c7;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .teaser-callout {
+      margin-top: 3rem;
+      background: linear-gradient(135deg, #1e1b4b 0%, #191253 100%);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .teaser-callout-text h4 {
+      color: #ffffff;
+      font-size: 1.35rem;
+      margin-bottom: 0.35rem;
+    }
+    .teaser-callout-text p {
+      color: #cbd5e1;
+      font-size: 0.92rem;
+      max-width: 650px;
+    }
+
+    /* Reproductor Vertical Estilo TikTok / Reels (9:16) */
+    .vertical-video-card-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+    .phone-mockup-frame {
+      position: relative;
+      width: 100%;
+      max-width: 340px;
+      margin-inline: auto;
+      aspect-ratio: 9 / 16;
+      background: #0f172a;
+      border-radius: 36px;
+      border: 8px solid #191253;
+      box-shadow: 0 25px 50px -12px rgba(25, 18, 83, 0.4), inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+    }
+    .phone-mockup-frame::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 14px;
+      background: #191253;
+      border-radius: 10px;
+      z-index: 10;
+    }
+    .phone-mockup-frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-info-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    @media (max-width: 768px) {
+      .vertical-video-card-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+    }
+
+
+
+
     /* Bloque Institucional y Contacto */
     .institutional-box {
       background: linear-gradient(135deg, #191253 0%, #104838 100%);
@@ -887,24 +1082,61 @@
       .nav-links {
         display: none;
       }
+      .mobile-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .btn-instagram-mobile {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.45rem 0.85rem;
+        border-radius: var(--radius-full);
+        color: #ffffff;
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        font-weight: 700;
+        font-size: 0.82rem;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(220, 39, 67, 0.35);
+        transition: transform 0.2s ease;
+      }
+      .btn-instagram-mobile:hover {
+        color: #ffffff;
+        transform: translateY(-1px);
+      }
       .timeline-card {
         grid-template-columns: 1fr;
         gap: 0.6rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .btn-instagram-mobile span {
+        display: none;
+      }
+      .btn-instagram-mobile {
+        padding: 0.5rem;
+      }
+      .brand-text p {
+        font-size: 0.68rem;
+      }
+      .brand-text h2 {
+        font-size: 1.05rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Ribbon: Entorno de Laboratorio -->
+  <!-- Top Ribbon: Subdominio Oficial del Evento -->
   <div class="env-banner">
     <div class="container">
       <div class="env-tag">
-        <span>⚡</span> Entorno de Pruebas &amp; Laboratorio Web
+        <span>🎉</span> Portal Oficial · Semana Cultural 2026
       </div>
       <div>
-        Subdominio activo: <strong>lab.elcarmencienaga.edu.co</strong> · 
-        <a class="env-link" href="https://elcarmencienaga.edu.co/">Ir al Sitio Oficial de Producción ↗</a>
+        Enlace directo: <strong>semanacultural.elcarmencienaga.edu.co</strong> (o <strong>cultura.elcarmencienaga.edu.co</strong>) · 
+        <a class="env-link" href="https://elcarmencienaga.edu.co/">Portal Principal ↗</a>
       </div>
     </div>
   </div>
@@ -919,13 +1151,29 @@
           <p>Ciénaga · Magdalena · Colombia</p>
         </div>
       </a>
+
+      <!-- Acceso Móvil Rápido a Instagram Oficial -->
+      <div class="mobile-actions">
+        <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" class="btn-instagram-mobile" title="Seguir a @ieelcarmen en Instagram" aria-label="Seguir a @ieelcarmen en Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#dias">Los 5 Días</a></li>
         <li><a href="#galeria-eventos">Eventos en Vivo</a></li>
         <li><a href="#cronograma">Cronograma</a></li>
+        <li><a href="#galeria-multimedia">Galería 2026</a></li>
         <li><a href="#institucion">Institución</a></li>
         <li><a class="btn-nav" href="#contacto">Contacto</a></li>
+        <li>
+          <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" class="btn-instagram-nav" title="Seguir a @ieelcarmen en Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            @ieelcarmen
+          </a>
+        </li>
       </ul>
     </div>
   </header>
@@ -1064,6 +1312,9 @@
             <li><span>✓</span> <strong>Descubre:</strong> Productos hechos con dedicación</li>
             <li><span>✓</span> <strong>Sé parte:</strong> De una comunidad que cree en su juventud</li>
           </ul>
+          <a href="#video-emprendimiento" class="btn-primary" style="margin-top: 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-red); color: #fff; font-weight: 700;">
+            🎬 Ver Video Invitación Oficial
+          </a>
         </div>
         <div style="padding: 1.5rem; background: var(--bg-surface);">
           <div class="posters-dual-grid">
@@ -1332,6 +1583,254 @@
     </div>
   </section>
 
+  <!-- Sección: Galería Multimedia Teaser 2026 -->
+  <section class="section-padding multimedia-section" id="galeria-multimedia">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Cobertura en Tiempo Real</span>
+        <h2 class="section-title">Galería Multimedia 2026</h2>
+        <p class="section-lead">
+          Este espacio se actualizará día a día durante la Semana Cultural con fotografías de alta calidad, videos de las comparsas, finales deportivas y transmisiones en vivo.
+        </p>
+      </div>
+
+      <div class="teaser-grid">
+        <!-- Día 1 -->
+        <div class="teaser-card">
+          <div>
+            <div class="teaser-header">
+              <span class="teaser-badge-live">
+                <span class="pulse-dot"></span> Inicia Mañana Lunes
+              </span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #64748b;">19 Octubre</span>
+            </div>
+            <h4>Memoria Histórica y Cátedra Carmelita</h4>
+            <p>Fotos oficiales de la apertura, exposición de paneles del legado carmelita y concurso de oratoria estudiantil.</p>
+          </div>
+          <div class="teaser-footer">
+            <span>📷 Cobertura Fotográfica Lista</span>
+          </div>
+        </div>
+
+        <!-- Día 2: Video Oficial de Invitación Formato Vertical (YouTube Shorts) -->
+        <div class="teaser-card" id="video-emprendimiento" style="grid-column: 1 / -1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); border: 2px solid var(--accent-gold); padding: clamp(1.5rem, 3vw, 2.5rem);">
+          <div class="teaser-header">
+            <span class="teaser-badge-live">
+              <span class="pulse-dot"></span> 🎬 Video Oficial en Línea (YouTube Shorts)
+            </span>
+            <span style="font-size: 0.82rem; font-weight: 800; color: #b45309; background: var(--accent-gold-light); padding: 0.3rem 0.8rem; border-radius: var(--radius-full);">Martes 20 Octubre · 8:00 AM</span>
+          </div>
+
+          <div class="vertical-video-card-grid">
+            <!-- Reproductor Vertical Estilo Smartphone -->
+            <div class="phone-mockup-frame">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/xzmnFdJ2Fi0?rel=0&playsinline=1&modestbranding=1" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy"
+                title="Video Invitación Oficial Feria de Emprendimiento IE El Carmen (YouTube Shorts)">
+              </iframe>
+            </div>
+
+            <!-- Panel de Información y Detalles del Evento -->
+            <div class="video-info-panel">
+              <div>
+                <span style="font-size: 0.85rem; font-weight: 800; color: var(--accent-green-dark); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.35rem;">Invitación Especial de Nuestros Estudiantes</span>
+                <h3 style="font-size: clamp(1.4rem, 2.5vw, 1.9rem); color: var(--primary); margin-bottom: 0.8rem; line-height: 1.3;">
+                  Feria «Jóvenes con Propósito» &amp; Tienda Escolar IECAR
+                </h3>
+                <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 1.2rem;">
+                  Nuestros estudiantes de bachillerato han preparado una variada muestra de ideas de negocio, productos artesanales y gastronomía típica. Además, contaremos con la gran venta benéfica del pulguero institucional <em>«Ven y ponte la tuya»</em> para apoyar iniciativas estudiantiles.
+                </p>
+              </div>
+
+              <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+                <h5 style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
+                  📌 Puntos Clave de la Jornada:
+                </h5>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; color: var(--text-main);">
+                  <li>📍 <strong>Lugar:</strong> Patio central techado y pasillos principales</li>
+                  <li>⏰ <strong>Horarios:</strong> Expositores desde 6:30 AM · Llegada general 7:30 AM · Feria de 8:00 AM a 12:00 M</li>
+                  <li>👔 <strong>Asistencia:</strong> Con uniforme institucional y sin libros</li>
+                  <li>🛍️ <strong>Participación:</strong> Abierta a toda la comunidad carmelita, padres de familia y egresados</li>
+                </ul>
+              </div>
+
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; margin-top: 0.5rem;">
+                <a href="#cronograma" class="btn-primary" style="padding: 0.75rem 1.4rem; font-size: 0.92rem;">
+                  Ver Cronograma Completo ↓
+                </a>
+                <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.7rem 1.25rem; border-radius: var(--radius-full); font-weight: 700; font-size: 0.9rem; color: #ffffff; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); box-shadow: 0 4px 12px rgba(220, 39, 67, 0.35); text-decoration: none;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  Seguir @ieelcarmen en Instagram ↗
+                </a>
+                <a href="https://www.instagram.com/reel/Dep9bwDx1yA/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem; color: #e1306c; font-weight: 700; font-size: 0.86rem; padding: 0.5rem 0.85rem; border-radius: var(--radius-full); background: rgba(225, 48, 108, 0.1); text-decoration: none;">
+                  📸 Ver Reel ↗
+                </a>
+                <a href="https://youtube.com/shorts/xzmnFdJ2Fi0" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem; color: #dc2626; font-weight: 700; font-size: 0.86rem; padding: 0.5rem 0.85rem; border-radius: var(--radius-full); background: rgba(220, 38, 38, 0.08); text-decoration: none;">
+                  ▶ YouTube Shorts ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="teaser-footer" style="margin-top: 1.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            <span>✨ Transmisión optimizada en streaming desde YouTube Shorts (cero consumo de hosting)</span>
+          </div>
+        </div>
+
+        <!-- Aviso Oficial y Pautas para la Comunidad: Feria de Emprendimiento (Debajo del Video) -->
+        <div class="notice-banner-card" id="aviso-emprendimiento-dia2" style="grid-column: 1 / -1; margin-top: 1.5rem;">
+          <span class="notice-header-badge">
+            <span class="pulse-dot"></span> 📢 COMUNICADO OFICIAL · MARTES 20 DE OCTUBRE
+          </span>
+          <h3 class="notice-title">Pautas de Asistencia: Feria de Emprendimiento «Jóvenes con Propósito»</h3>
+          <p class="notice-lead">
+            Información esencial dirigida a <strong>estudiantes, padres de familia, docentes y comunidad educativa en general</strong> para el óptimo desarrollo de nuestra jornada de emprendimiento y tienda escolar.
+          </p>
+
+          <div class="notice-grid">
+            <!-- Columna Izquierda: Afiche Oficial con Acciones de Compartir -->
+            <div class="notice-flyer-col">
+              <div class="notice-flyer-frame">
+                <a href="aviso_emprendimiento.jpg" target="_blank" title="Clic para ver afiche en tamaño completo">
+                  <img src="aviso_emprendimiento.jpg" alt="Aviso Oficial: Pautas para la Feria de Emprendimiento IE El Carmen" loading="lazy">
+                </a>
+              </div>
+              <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+                <a href="aviso_emprendimiento.jpg" target="_blank" class="btn-primary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
+                  🔍 Ver Afiche Grande
+                </a>
+                <a href="aviso_emprendimiento.jpg" download="Aviso_Feria_Emprendimiento_IEEC.jpg" class="btn-secondary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
+                  📥 Descargar Afiche
+                </a>
+              </div>
+              <p style="font-size: 0.78rem; color: var(--text-muted); text-align: center; margin: 0;">
+                💡 Haz clic en «Descargar» para compartir esta imagen en grupos de WhatsApp de acudientes y estudiantes.
+              </p>
+            </div>
+
+            <!-- Columna Derecha: Las 6 Directrices Oficiales Desglosadas -->
+            <div class="notice-rules-grid">
+              <div class="notice-rule-item">
+                <div class="notice-rule-icon-wrap">
+                  <span class="notice-rule-icon">👔</span>
+                  <span class="notice-rule-badge green">Obligatorio</span>
+                </div>
+                <h5>Uniforme Institucional</h5>
+                <p>Todos los estudiantes deben asistir portando correctamente su <strong>uniforme institucional</strong> completo.</p>
+              </div>
+
+              <div class="notice-rule-item">
+                <div class="notice-rule-icon-wrap">
+                  <span class="notice-rule-icon">🚫</span>
+                  <span class="notice-rule-badge red">Indicación</span>
+                </div>
+                <h5>Asistencia Sin Libros</h5>
+                <p>Los estudiantes deben asistir <strong>sin libros ni útiles académicos pesados</strong>.</p>
+              </div>
+
+              <div class="notice-rule-item">
+                <div class="notice-rule-icon-wrap">
+                  <span class="notice-rule-icon">🎪</span>
+                  <span class="notice-rule-badge gold">Expositores · 6:30 AM</span>
+                </div>
+                <h5>Montaje de Stands</h5>
+                <p>Quienes van a presentar proyectos de emprendimiento pueden iniciar el montaje de su stand desde las <strong>6:30 A.M.</strong></p>
+              </div>
+
+              <div class="notice-rule-item">
+                <div class="notice-rule-icon-wrap">
+                  <span class="notice-rule-icon">⏰</span>
+                  <span class="notice-rule-badge blue">Ingreso · 7:30 AM</span>
+                </div>
+                <h5>Hora de Llegada</h5>
+                <p>La hora oficial de llegada de todos los estudiantes a la institución es a las <strong>7:30 A.M.</strong></p>
+              </div>
+
+              <div class="notice-rule-item">
+                <div class="notice-rule-icon-wrap">
+                  <span class="notice-rule-icon">🧹</span>
+                  <span class="notice-rule-badge green">Compromiso</span>
+                </div>
+                <h5>Limpieza y Orden</h5>
+                <p>El lugar asignado para cada proyecto de emprendimiento debe quedar <strong>limpio y ordenado</strong> al finalizar la feria.</p>
+              </div>
+
+              <div class="notice-rule-item">
+                <div class="notice-rule-icon-wrap">
+                  <span class="notice-rule-icon">📣</span>
+                  <span class="notice-rule-badge purple">Comunidad</span>
+                </div>
+                <h5>¡Invita a Familiares y Amigos!</h5>
+                <p>¡No olviden invitar a familiares y amigos para que apoyen y conozcan el talento y los emprendimientos!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Día 3 -->
+        <div class="teaser-card">
+          <div>
+            <div class="teaser-header">
+              <span class="teaser-badge-soon">⏳ En Preparación</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #64748b;">21 Octubre</span>
+            </div>
+            <h4>Desfile Inaugural del Mundialito Carmelita 2026</h4>
+            <p>Registro audiovisual del desfile de delegaciones con trajes deportivos, bandas de paz y torneos intercursos.</p>
+          </div>
+          <div class="teaser-footer">
+            <span>⚽ Videos del Desfile y Mundialito</span>
+          </div>
+        </div>
+
+        <!-- Día 4 -->
+        <div class="teaser-card">
+          <div>
+            <div class="teaser-header">
+              <span class="teaser-badge-soon">⏳ En Preparación</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #64748b;">22 Octubre</span>
+            </div>
+            <h4>Foro Educativo Institucional</h4>
+            <p>Memorias del foro pedagógico, ponencias destacadas de estudiantes y mesas de debate comunitario.</p>
+          </div>
+          <div class="teaser-footer">
+            <span>🎙️ Ponencias y Registro Fotográfico</span>
+          </div>
+        </div>
+
+        <!-- Día 5 -->
+        <div class="teaser-card">
+          <div>
+            <div class="teaser-header">
+              <span class="teaser-badge-soon">⏳ En Preparación</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #64748b;">23 Octubre</span>
+            </div>
+            <h4>Gala 53 Aniversario Institucional</h4>
+            <p>Serenata, entrega de galardones a la excelencia carmelita, reencuentro de egresados y clausura oficial.</p>
+          </div>
+          <div class="teaser-footer">
+            <span>🎂 Álbum Conmemorativo de los 53 Años</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Callout para Docentes y Comunidad -->
+      <div class="teaser-callout">
+        <div class="teaser-callout-text">
+          <h4>¿Tienes fotos o videos del evento?</h4>
+          <p>
+            El comité de comunicaciones de la IE El Carmen estará compilando el material de docentes y estudiantes en el Drive institucional para publicarlo directamente en este portal.
+          </p>
+        </div>
+        <a href="#contacto" class="btn-primary" style="background: var(--accent-gold); color: #000; font-weight: 800; white-space: nowrap;">
+          Contactar Comité ✉
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Banner Institucional y de Contacto -->
   <section class="container" id="institucion">
     <div class="institutional-box">
@@ -1374,8 +1873,16 @@
       <div class="footer-links">
         <a href="#inicio">Inicio</a>
         <a href="#cronograma">Cronograma</a>
+        <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem; color: #ffffff; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); padding: 0.4rem 0.9rem; border-radius: var(--radius-full); font-weight: 700; text-decoration: none; font-size: 0.85rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          Instagram: @ieelcarmen ↗
+        </a>
         <a href="https://elcarmencienaga.edu.co/">Portal Principal</a>
       </div>
+    </div>
+
+    <div class="container" style="text-align: center; margin-top: 1.5rem; font-size: 0.78rem; color: #64748b;">
+      <span>Canales institucionales oficiales · Próximamente: Facebook, TikTok, WhatsApp y X</span>
     </div>
 
     <div class="container footer-bottom">
