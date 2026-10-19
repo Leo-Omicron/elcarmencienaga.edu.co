@@ -544,6 +544,140 @@
       color: var(--text-muted);
     }
 
+    /* Banner de Aviso Oficial a la Comunidad (Día 2) */
+    .notice-banner-card {
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 55%, #eff6ff 100%);
+      border: 2px solid var(--accent-green);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.5rem, 3.5vw, 2.5rem);
+      margin: 2rem 0 3rem 0;
+      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+    .notice-banner-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 7px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--accent-gold), var(--accent-green));
+    }
+    .notice-header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--accent-green-dark);
+      font-weight: 800;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 0.75rem;
+    }
+    .notice-title {
+      font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+      color: var(--primary);
+      margin-bottom: 0.45rem;
+      line-height: 1.25;
+    }
+    .notice-lead {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      line-height: 1.55;
+      margin-bottom: 1.8rem;
+      max-width: 850px;
+    }
+    .notice-grid {
+      display: grid;
+      grid-template-columns: minmax(280px, 380px) 1fr;
+      gap: 2.25rem;
+      align-items: start;
+    }
+    .notice-flyer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .notice-flyer-frame {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-subtle);
+      background: #0f172a;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .notice-flyer-frame:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .notice-flyer-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .notice-rules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.9rem;
+    }
+    .notice-rule-item {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.1rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .notice-rule-item:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent-green);
+      box-shadow: var(--shadow-md);
+    }
+    .notice-rule-icon-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.3rem;
+    }
+    .notice-rule-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    .notice-rule-badge {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+      letter-spacing: 0.05em;
+    }
+    .notice-rule-badge.green { background: #dcfce7; color: #15803d; }
+    .notice-rule-badge.red { background: #fee2e2; color: #b91c1c; }
+    .notice-rule-badge.gold { background: #fef3c7; color: #b45309; }
+    .notice-rule-badge.blue { background: #dbeafe; color: #1d4ed8; }
+    .notice-rule-badge.purple { background: #f3e8ff; color: #7e22ce; }
+    .notice-rule-item h5 {
+      font-size: 0.95rem;
+      color: var(--primary);
+      margin: 0;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .notice-rule-item p {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.45;
+    }
+
     /* Cronograma Interactivo */
     .schedule-section {
       background: #ffffff;
@@ -1178,9 +1312,14 @@
             <li><span>✓</span> <strong>Descubre:</strong> Productos hechos con dedicación</li>
             <li><span>✓</span> <strong>Sé parte:</strong> De una comunidad que cree en su juventud</li>
           </ul>
-          <a href="#video-emprendimiento" class="btn-primary" style="margin-top: 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-red); color: #fff; font-weight: 700;">
-            🎬 Ver Video Invitación Oficial
-          </a>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem;">
+            <a href="#video-emprendimiento" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-red); color: #fff; font-weight: 700;">
+              🎬 Ver Video Invitación
+            </a>
+            <a href="#aviso-emprendimiento-dia2" class="btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 700;">
+              📢 Ver Pautas Oficiales de Asistencia
+            </a>
+          </div>
         </div>
         <div style="padding: 1.5rem; background: var(--bg-surface);">
           <div class="posters-dual-grid">
@@ -1197,6 +1336,96 @@
                 <h4>IECAR Pulguero</h4>
                 <p>Ven y ponte la tuya</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aviso Oficial y Pautas para la Comunidad: Feria de Emprendimiento (Martes 20) -->
+      <div class="notice-banner-card" id="aviso-emprendimiento-dia2">
+        <span class="notice-header-badge">
+          <span class="pulse-dot"></span> 📢 COMUNICADO OFICIAL · MARTES 20 DE OCTUBRE
+        </span>
+        <h3 class="notice-title">Pautas de Asistencia: Feria de Emprendimiento «Jóvenes con Propósito»</h3>
+        <p class="notice-lead">
+          Información esencial dirigida a <strong>estudiantes, padres de familia, docentes y comunidad educativa en general</strong> para el óptimo desarrollo de nuestra jornada de emprendimiento y tienda escolar.
+        </p>
+
+        <div class="notice-grid">
+          <!-- Columna Izquierda: Afiche Oficial con Acciones de Compartir -->
+          <div class="notice-flyer-col">
+            <div class="notice-flyer-frame">
+              <a href="aviso_emprendimiento.jpg" target="_blank" title="Clic para ver afiche en tamaño completo">
+                <img src="aviso_emprendimiento.jpg" alt="Aviso Oficial: Pautas para la Feria de Emprendimiento IE El Carmen" loading="lazy">
+              </a>
+            </div>
+            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <a href="aviso_emprendimiento.jpg" target="_blank" class="btn-primary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
+                🔍 Ver Afiche Grande
+              </a>
+              <a href="aviso_emprendimiento.jpg" download="Aviso_Feria_Emprendimiento_IEEC.jpg" class="btn-secondary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
+                📥 Descargar Afiche
+              </a>
+            </div>
+            <p style="font-size: 0.78rem; color: var(--text-muted); text-align: center; margin: 0;">
+              💡 Haz clic en «Descargar» para compartir esta imagen en grupos de WhatsApp de acudientes y estudiantes.
+            </p>
+          </div>
+
+          <!-- Columna Derecha: Las 6 Directrices Oficiales Desglosadas -->
+          <div class="notice-rules-grid">
+            <div class="notice-rule-item">
+              <div class="notice-rule-icon-wrap">
+                <span class="notice-rule-icon">👔</span>
+                <span class="notice-rule-badge green">Obligatorio</span>
+              </div>
+              <h5>Uniforme Institucional</h5>
+              <p>Todos los estudiantes deben asistir portando correctamente su <strong>uniforme institucional</strong> completo.</p>
+            </div>
+
+            <div class="notice-rule-item">
+              <div class="notice-rule-icon-wrap">
+                <span class="notice-rule-icon">🚫</span>
+                <span class="notice-rule-badge red">Indicación</span>
+              </div>
+              <h5>Asistencia Sin Libros</h5>
+              <p>Los estudiantes deben asistir <strong>sin libros ni útiles académicos pesados</strong>.</p>
+            </div>
+
+            <div class="notice-rule-item">
+              <div class="notice-rule-icon-wrap">
+                <span class="notice-rule-icon">🎪</span>
+                <span class="notice-rule-badge gold">Expositores · 6:30 AM</span>
+              </div>
+              <h5>Montaje de Stands</h5>
+              <p>Quienes van a presentar proyectos de emprendimiento pueden iniciar el montaje de su stand desde las <strong>6:30 A.M.</strong></p>
+            </div>
+
+            <div class="notice-rule-item">
+              <div class="notice-rule-icon-wrap">
+                <span class="notice-rule-icon">⏰</span>
+                <span class="notice-rule-badge blue">Ingreso · 7:30 AM</span>
+              </div>
+              <h5>Hora de Llegada</h5>
+              <p>La hora oficial de llegada de todos los estudiantes a la institución es a las <strong>7:30 A.M.</strong></p>
+            </div>
+
+            <div class="notice-rule-item">
+              <div class="notice-rule-icon-wrap">
+                <span class="notice-rule-icon">🧹</span>
+                <span class="notice-rule-badge green">Compromiso</span>
+              </div>
+              <h5>Limpieza y Orden</h5>
+              <p>El lugar asignado para cada proyecto de emprendimiento debe quedar <strong>limpio y ordenado</strong> al finalizar la feria.</p>
+            </div>
+
+            <div class="notice-rule-item">
+              <div class="notice-rule-icon-wrap">
+                <span class="notice-rule-icon">📣</span>
+                <span class="notice-rule-badge purple">Comunidad</span>
+              </div>
+              <h5>¡Invita a Familiares y Amigos!</h5>
+              <p>¡No olviden invitar a familiares y amigos para que apoyen y conozcan el talento y los emprendimientos!</p>
             </div>
           </div>
         </div>
@@ -1293,6 +1522,37 @@
       <!-- Día 2 -->
       <div id="dia2" class="tab-content">
         <div class="timeline">
+          <div class="timeline-card special-gold">
+            <div class="timeline-time">
+              06:30 AM
+              <small>Montaje</small>
+            </div>
+            <div class="timeline-details">
+              <h4>Montaje de Stands de Emprendimiento (Expositores)</h4>
+              <p>Ingreso y preparación de puestos de exhibición para los estudiantes y equipos con proyectos de emprendimiento inscritos.</p>
+              <div class="timeline-badges">
+                <span class="badge-tag green">📍 Patio Central y Pasillos</span>
+                <span class="badge-tag gold">⏰ Desde las 6:30 AM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-card special-blue">
+            <div class="timeline-time">
+              07:30 AM
+              <small>Ingreso</small>
+            </div>
+            <div class="timeline-details">
+              <h4>Llegada General de Estudiantes (Uniforme y Sin Libros)</h4>
+              <p>Hora oficial de llegada para toda la comunidad estudiantil. <strong>Requisito institucional:</strong> asistir con uniforme y sin libros.</p>
+              <div class="timeline-badges">
+                <span class="badge-tag green">📍 Portería Principal</span>
+                <span class="badge-tag">👔 Uniforme Institucional</span>
+                <span class="badge-tag red">🚫 Sin Libros</span>
+              </div>
+            </div>
+          </div>
+
           <div class="timeline-card special-green">
             <div class="timeline-time">
               08:00 AM
@@ -1300,10 +1560,11 @@
             </div>
             <div class="timeline-details">
               <h4>Feria de Emprendimiento «Jóvenes con Propósito»</h4>
-              <p>«Ideas que inspiran, proyectos que transforman». Muestra de iniciativas productivas, tecnológicas y creativas de los estudiantes carmelitas.</p>
+              <p>«Ideas que inspiran, proyectos que transforman». Apertura oficial de la muestra comercial y creativa de los estudiantes carmelitas.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Patio de Emprendimiento</span>
                 <span class="badge-tag gold">⏰ 8:00 a. m. a 12:00 m.</span>
+                <span class="badge-tag purple">📣 Entrada abierta a familias</span>
               </div>
             </div>
           </div>
@@ -1319,6 +1580,20 @@
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Sede Principal</span>
                 <span class="badge-tag gold">Ropa niños, jóvenes y adultos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-time">
+              12:00 M
+              <small>Cierre</small>
+            </div>
+            <div class="timeline-details">
+              <h4>Finalización de la Feria, Limpieza y Entrega de Stands</h4>
+              <p>Cierre de la jornada. Compromiso ambiental y cívico: cada stand asignado debe entregarse completamente aseado y ordenado.</p>
+              <div class="timeline-badges">
+                <span class="badge-tag green">🧹 Patio Limpio y Ordenado</span>
               </div>
             </div>
           </div>
@@ -1470,7 +1745,8 @@
                 </h5>
                 <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; color: var(--text-main);">
                   <li>📍 <strong>Lugar:</strong> Patio central techado y pasillos principales</li>
-                  <li>⏰ <strong>Horario:</strong> De 8:00 AM a 12:00 del mediodía</li>
+                  <li>⏰ <strong>Horarios:</strong> Expositores desde 6:30 AM · Llegada general 7:30 AM · Feria de 8:00 AM a 12:00 M</li>
+                  <li>👔 <strong>Asistencia:</strong> Con uniforme institucional y sin libros</li>
                   <li>🛍️ <strong>Participación:</strong> Abierta a toda la comunidad carmelita, padres de familia y egresados</li>
                 </ul>
               </div>
