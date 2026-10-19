@@ -2114,256 +2114,27 @@
       </div>
 
       <div class="teaser-grid">
-        <!-- Día 1: Cobertura Activa & Laboratorio Multimedia A/B -->
-        <div class="media-lab-container" id="laboratorio-multimedia-dia1">
-          <span class="media-lab-badge">🧪 LABORATORIO MULTIMEDIA EN VIVO · DÍA 1 (LUNES 19)</span>
-          <h3 style="font-size: clamp(1.4rem, 2.5vw, 1.95rem); color: var(--primary); margin-bottom: 0.5rem;">
-            Memoria Histórica y Cátedra Carmelita
-          </h3>
-          <p style="color: var(--text-muted); font-size: 0.98rem; margin-bottom: 1.5rem; max-width: 850px; line-height: 1.6;">
-            Cobertura activa de las actividades de hoy. Prueba y compara en tiempo real las dos arquitecturas de video (reproductor web integrado vs. tarjetas lanzadoras al álbum de Google Fotos) y explora la muestra fotográfica con visor interactivo.
-          </p>
-
-          <!-- Barra de Filtros de Medios -->
-          <div class="media-filter-bar">
-            <div class="media-filter-group">
-              <button type="button" class="media-filter-btn active" onclick="filterMedia('all', this)">
-                <span>✨ Todos (7)</span>
-              </button>
-              <button type="button" class="media-filter-btn" onclick="filterMedia('videos', this)">
-                <span>🎬 Videos (4)</span>
-              </button>
-              <button type="button" class="media-filter-btn" onclick="filterMedia('photos', this)">
-                <span>📸 Fotos Destacadas (3)</span>
-              </button>
-            </div>
-            <div style="font-size: 0.82rem; color: var(--text-muted); font-weight: 600;">
-              ⚡ Entorno de prueba interactivo
-            </div>
-          </div>
-
-          <!-- Módulo A/B de Reproducción de Video -->
-          <div class="ab-switcher-box" id="media-ab-box" data-media-type="video">
-            <div class="ab-switcher-header">
-              <div class="ab-switcher-title">
-                <span>⚖️ Banco de Prueba: ¿Cómo reproducir los videos?</span>
-              </div>
-              <div class="ab-toggle-group">
-                <button type="button" class="ab-toggle-btn active" id="btn-mode-a" onclick="switchVideoMode('a')">
-                  Opción A: Reproductor Web (In-Page)
-                </button>
-                <button type="button" class="ab-toggle-btn" id="btn-mode-b" onclick="switchVideoMode('b')">
-                  Opción B: Tarjetas Lanzador (Google Fotos)
-                </button>
-              </div>
-            </div>
-
-            <!-- Avisos Explicativos del Modo Activo -->
-            <div id="note-mode-a" style="font-size: 0.86rem; color: #1e3a8a; background: #eff6ff; border-left: 4px solid #3b82f6; padding: 0.75rem 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
-              <strong>💡 En qué consiste la Opción A:</strong> El video se reproduce directamente aquí en la página sin salir del sitio web. Requiere alojar los clips en YouTube / Shorts para contar con streaming adaptativo que no sobrecargue el servidor de Hostinger.
-            </div>
-            <div id="note-mode-b" style="display: none; font-size: 0.86rem; color: #065f46; background: #ecfdf5; border-left: 4px solid #10b981; padding: 0.75rem 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
-              <strong>💡 En qué consiste la Opción B:</strong> La web muestra pósters con botón de reproducción táctil que, al hacer clic, abren el video original en la aplicación de Google Fotos en calidad 4K/Full HD sin consumir ancho de banda de nuestro hosting.
-            </div>
-
-            <!-- Panel A: Reproductor Directo en la Web (Horizontal y Vertical) -->
-            <div id="panel-video-inpage">
-              <div class="video-inpage-grid">
-                <!-- Video 1: Formato Horizontal 16:9 -->
-                <div class="video-player-card">
-                  <div class="video-h-frame">
-                    <iframe 
-                      src="https://www.youtube-nocookie.com/embed/xzmnFdJ2Fi0?rel=0&playsinline=1&modestbranding=1" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                      allowfullscreen 
-                      loading="lazy"
-                      title="Video Demostración Horizontal - Acto de Apertura">
-                    </iframe>
-                  </div>
-                  <div class="video-player-body">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
-                      <span style="font-size: 0.74rem; font-weight: 800; color: #2563eb; background: #dbeafe; padding: 0.2rem 0.55rem; border-radius: var(--radius-full); text-transform: uppercase;">
-                        Horizontal 16:9
-                      </span>
-                      <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 700;">Duración: 1:30 min</span>
-                    </div>
-                    <h4>Palabras de Apertura e Historia Cienaguera</h4>
-                    <p>Muestra audiovisual en formato panorámico tradicional para actos protocolares, discursos e himnos.</p>
-                  </div>
-                </div>
-
-                <!-- Video 2: Formato Vertical 9:16 (Mockup Celular) -->
-                <div class="video-player-card" style="align-items: center; padding-top: 1rem;">
-                  <div class="video-v-frame-wrap">
-                    <iframe 
-                      src="https://www.youtube-nocookie.com/embed/xzmnFdJ2Fi0?rel=0&playsinline=1&modestbranding=1" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                      allowfullscreen 
-                      loading="lazy"
-                      title="Video Demostración Vertical - Short / Reel">
-                    </iframe>
-                  </div>
-                  <div class="video-player-body" style="width: 100%;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
-                      <span style="font-size: 0.74rem; font-weight: 800; color: #b45309; background: var(--accent-gold-light); padding: 0.2rem 0.55rem; border-radius: var(--radius-full); text-transform: uppercase;">
-                        Vertical 9:16 Short
-                      </span>
-                      <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 700;">Duración: 0:45 min</span>
-                    </div>
-                    <h4>Recorrido Rápido por los Stands</h4>
-                    <p>Formato vertical optimizado para visualización en smartphones y redes sociales.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Panel B: Tarjetas con Lanzador al Álbum Compartido de Google Fotos -->
-            <div id="panel-video-launcher" style="display: none;">
-              <div class="video-launcher-grid">
-                <!-- Tarjeta Lanzador 1 (Horizontal) -->
-                <div class="launcher-card" onclick="window.open('https://photos.google.com/', '_blank')">
-                  <div class="launcher-thumb-wrap ratio-h">
-                    <img src="banner.jpg" alt="Muestra de Proyectos Históricos" loading="lazy">
-                    <div class="launcher-play-overlay">
-                      <div class="play-circle-btn">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                      </div>
-                    </div>
-                    <span class="badge-format">16:9 Horizontal</span>
-                    <span class="badge-duration">2:15 min</span>
-                  </div>
-                  <div class="launcher-body">
-                    <div>
-                      <h4>Exposiciones sobre la Identidad Cienaguera</h4>
-                      <p>Recorrido por los stands con exposiciones sobre la historia bananera, arquitectura y ecosistemas locales.</p>
-                    </div>
-                    <a href="https://photos.google.com/" target="_blank" rel="noopener noreferrer" class="btn-launch-google" onclick="event.stopPropagation();">
-                      <span>▶ Ver Video en Google Fotos ↗</span>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Tarjeta Lanzador 2 (Vertical) -->
-                <div class="launcher-card" onclick="window.open('https://photos.google.com/', '_blank')">
-                  <div class="launcher-thumb-wrap ratio-v">
-                    <img src="afiche_historia.jpg" alt="Entrevistas Estudiantiles" loading="lazy">
-                    <div class="launcher-play-overlay">
-                      <div class="play-circle-btn">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                      </div>
-                    </div>
-                    <span class="badge-format">9:16 Vertical Reel</span>
-                    <span class="badge-duration">0:48 min</span>
-                  </div>
-                  <div class="launcher-body">
-                    <div>
-                      <h4>Cátedra Carmelita: Voces de los Estudiantes</h4>
-                      <p>Testimonios de los alumnos explicando el valor de preservar nuestras tradiciones y patrimonio vivo.</p>
-                    </div>
-                    <a href="https://photos.google.com/" target="_blank" rel="noopener noreferrer" class="btn-launch-google" onclick="event.stopPropagation();">
-                      <span>▶ Ver Reel en Google Fotos ↗</span>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Tarjeta Lanzador 3 (Horizontal) -->
-                <div class="launcher-card" onclick="window.open('https://photos.google.com/', '_blank')">
-                  <div class="launcher-thumb-wrap ratio-h">
-                    <img src="afiche_general.jpg" alt="Apertura Solemne" loading="lazy">
-                    <div class="launcher-play-overlay">
-                      <div class="play-circle-btn">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                      </div>
-                    </div>
-                    <span class="badge-format">16:9 Horizontal</span>
-                    <span class="badge-duration">1:12 min</span>
-                  </div>
-                  <div class="launcher-body">
-                    <div>
-                      <h4>Acto Inaugural y Bienvenida Rectora</h4>
-                      <p>Momento solemne de apertura con toda la comunidad educativa reunida en el patio central techado.</p>
-                    </div>
-                    <a href="https://photos.google.com/" target="_blank" rel="noopener noreferrer" class="btn-launch-google" onclick="event.stopPropagation();">
-                      <span>▶ Ver Video en Google Fotos ↗</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Muestra de Galería Fotográfica de la Jornada -->
-          <div class="media-photo-section" id="media-photo-group" data-media-type="photo">
-            <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; margin-bottom: 0.5rem;">
-              <div>
-                <h4 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 0.2rem;">
-                  📸 Muestra Fotográfica Seleccionada (Día 1)
-                </h4>
-                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
-                  Toca cualquier fotografía para verla ampliada en alta resolución:
-                </p>
-              </div>
-              <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-green-dark); background: #ecfdf5; padding: 0.25rem 0.65rem; border-radius: var(--radius-full);">
-                3 Fotos Destacadas
+        <!-- Día 1: Memoria Histórica - Con Enlace a Galería Dedicada -->
+        <div class="teaser-card highlight-day-card" id="card-dia1-multimedia" style="background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%); border: 2px solid var(--accent-green); position: relative;">
+          <div>
+            <div class="teaser-header">
+              <span class="teaser-badge-live" style="background: #dcfce7; color: #166534; border-color: #86efac;">
+                <span class="pulse-dot" style="background: #16a34a;"></span> 📸 ¡Galería y Videos Disponibles!
               </span>
+              <span style="font-size: 0.8rem; font-weight: 800; color: #15803d; background: rgba(34,197,94,0.12); padding: 0.2rem 0.6rem; border-radius: var(--radius-full);">Lunes 19 Octubre</span>
             </div>
-
-            <div class="photo-showcase-grid">
-              <!-- Foto 1 -->
-              <div class="photo-showcase-item" onclick="openLightbox('afiche_historia.jpg', 'Pancarta Central: Memoria Histórica', 'Feria de Historia y Cátedra Carmelita · Lunes 19 de Octubre')">
-                <div class="photo-thumb-container">
-                  <img src="afiche_historia.jpg" alt="Pancarta Memoria Histórica de Ciénaga" loading="lazy">
-                  <div class="photo-overlay-zoom">🔍</div>
-                </div>
-                <div class="photo-caption">
-                  <h5>Pancarta Central del Evento</h5>
-                  <span>Exposición temáticas sobre patrimonio y raíces cienagueras</span>
-                </div>
-              </div>
-
-              <!-- Foto 2 -->
-              <div class="photo-showcase-item" onclick="openLightbox('banner.jpg', 'Murales y Stands en el Patio Techado', 'Exhibición de maquetas y muestras tradicionales carmelitas')">
-                <div class="photo-thumb-container">
-                  <img src="banner.jpg" alt="Murales y stands escolares" loading="lazy">
-                  <div class="photo-overlay-zoom">🔍</div>
-                </div>
-                <div class="photo-caption">
-                  <h5>Exposiciones en Patio Central</h5>
-                  <span>Muestras artísticas y maquetas elaboradas por estudiantes</span>
-                </div>
-              </div>
-
-              <!-- Foto 3 -->
-              <div class="photo-showcase-item" onclick="openLightbox('afiche_general.jpg', 'Comunidad Educativa Carmelita', 'Apertura oficial de la Semana Cultural 2026')">
-                <div class="photo-thumb-container">
-                  <img src="afiche_general.jpg" alt="Afiche Oficial de la Semana Cultural 2026" loading="lazy">
-                  <div class="photo-overlay-zoom">🔍</div>
-                </div>
-                <div class="photo-caption">
-                  <h5>Comunidad en Celebración</h5>
-                  <span>Integración de docentes, directivos, padres y alumnos</span>
-                </div>
-              </div>
+            <h4>Memoria Histórica y Cátedra Carmelita</h4>
+            <p>Revive las exposiciones de maquetas, concurso de oratoria y muestras culturales sobre el patrimonio de Ciénaga con registro audiovisual completo.</p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+              <span style="font-size: 0.76rem; font-weight: 700; color: #1e3a8a; background: #dbeafe; padding: 0.2rem 0.55rem; border-radius: var(--radius-full);">🎬 Videos en YouTube</span>
+              <span style="font-size: 0.76rem; font-weight: 700; color: #065f46; background: #ccfbf1; padding: 0.2rem 0.55rem; border-radius: var(--radius-full);">📸 Fotos de la Jornada</span>
+              <span style="font-size: 0.76rem; font-weight: 700; color: #854d0e; background: #fef9c3; padding: 0.2rem 0.55rem; border-radius: var(--radius-full);">☁️ Álbum Google Fotos</span>
             </div>
           </div>
-
-          <!-- Gran Banner Conector Híbrido a Google Fotos -->
-          <div class="gphotos-hub-banner" data-media-type="gphotos">
-            <div class="gphotos-hub-info">
-              <span class="gphotos-hub-tag">☁️ Repositorio Oficial en la Nube</span>
-              <h3>Álbum Completo del Día 1 en Google Fotos</h3>
-              <p>
-                Accede al álbum compartido con más de 120 fotografías y clips de video tomados por docentes, estudiantes y el comité de medios. Puedes verlos en calidad original, descargarlos gratis o compartirlos en tus redes familiares.
-              </p>
-            </div>
-            <div class="gphotos-hub-actions">
-              <a href="https://photos.google.com/" target="_blank" rel="noopener noreferrer" class="btn-gphotos-primary">
-                <span>📸 Ver Álbum en Google Fotos ↗</span>
-              </a>
-              <span style="font-size: 0.78rem; color: #cbd5e1; text-align: center;">
-                Compatible con Android, iPhone y PC
-              </span>
-            </div>
+          <div class="teaser-footer" style="padding-top: 1rem; border-top: 1px solid rgba(16, 185, 129, 0.2);">
+            <a href="dia1.html" class="btn-primary" style="width: 100%; justify-content: center; text-align: center; font-size: 0.92rem; padding: 0.75rem 1.2rem; background: var(--accent-green-dark); box-shadow: 0 4px 14px rgba(5, 150, 105, 0.3);">
+              <span>Ver Galería y Videos del Día 1 ↗</span>
+            </a>
           </div>
         </div>
 
