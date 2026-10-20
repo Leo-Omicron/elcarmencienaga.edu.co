@@ -1,0 +1,1408 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Galería y registro audiovisual del Día 1: Feria de Historia, Memoria de Ciénaga y Cátedra Carmelita. Semana Cultural 2026 de la Institución Educativa El Carmen.">
+  <meta name="theme-color" content="#191253">
+  <title>Día 1: Memoria Histórica · Galería &amp; Videos | IE El Carmen</title>
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #191253;
+      --primary-dark: #0d0933;
+      --primary-light: #2c2282;
+      --accent-green: #10b981;
+      --accent-green-dark: #059669;
+      --accent-gold: #f59e0b;
+      --accent-gold-light: #fef3c7;
+      --accent-red: #e11d48;
+      --accent-blue: #0284c7;
+      --bg-surface: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-subtle: #e2e8f0;
+      --shadow-sm: 0 2px 4px rgba(25, 18, 83, 0.04);
+      --shadow-md: 0 8px 24px rgba(25, 18, 83, 0.08);
+      --shadow-lg: 0 20px 35px -8px rgba(25, 18, 83, 0.16);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, .font-heading {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .container {
+      width: min(1200px, 100% - 2.5rem);
+      margin-inline: auto;
+    }
+
+    /* Top Ribbon */
+    .top-ribbon {
+      background: linear-gradient(90deg, #191253 0%, #1e1b4b 50%, #064e3b 100%);
+      color: #e2e8f0;
+      font-size: 0.82rem;
+      padding: 0.5rem 0;
+      border-bottom: 2px solid var(--accent-gold);
+    }
+    .top-ribbon .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* Header Navegación */
+    header {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block: 0.85rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent-gold);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .brand-text h2 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--primary);
+    }
+    .brand-text p {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .btn-back-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #eff6ff;
+      color: var(--primary);
+      border: 1px solid #bfdbfe;
+      padding: 0.55rem 1.15rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+    .btn-back-nav:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+    .btn-instagram {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1.15rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: #ffffff;
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+
+    /* Hero de la Galería Dedicada */
+    .day-hero {
+      background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);
+      padding-block: 3.5rem 3rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .breadcrumb-nav a {
+      color: var(--accent-green-dark);
+      text-decoration: underline;
+    }
+    .day-date-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 0.3rem 0.85rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #86efac;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+    }
+    .day-hero-title {
+      font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+      font-weight: 900;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+      line-height: 1.12;
+      margin-bottom: 1rem;
+    }
+    .day-hero-title span {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .day-hero-lead {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      max-width: 840px;
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+    .hero-quick-ctas {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .btn-cta-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent-green-dark);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+    }
+    .btn-cta-primary:hover {
+      background: #047857;
+      transform: translateY(-2px);
+    }
+    .btn-cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #ffffff;
+      color: var(--primary);
+      border: 1.5px solid var(--border-subtle);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: var(--radius-full);
+    }
+    .btn-cta-secondary:hover {
+      border-color: var(--primary);
+      background: #f8fafc;
+    }
+
+    /* Secciones */
+    .section-padding {
+      padding-block: 4.5rem;
+    }
+    .section-title-wrap {
+      text-align: center;
+      max-width: 780px;
+      margin-inline: auto;
+      margin-bottom: 2.75rem;
+    }
+    .section-eyebrow {
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 800;
+      color: var(--accent-green-dark);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .section-title {
+      font-size: clamp(2rem, 3.5vw, 2.7rem);
+      margin-bottom: 0.8rem;
+    }
+    .section-lead {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Sub-encabezado de categoría de video */
+    .video-group-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border-subtle);
+    }
+    .video-group-header h3 {
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .video-group-header .badge-count {
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    /* Grilla de Videos Horizontales 16:9 */
+    .videos-h-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      align-items: stretch;
+      max-width: 1100px;
+      margin-inline: auto;
+      margin-bottom: 3.5rem;
+    }
+    @media (max-width: 860px) {
+      .videos-h-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+    }
+    .video-h-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .video-h-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-green);
+      transform: translateY(-4px);
+    }
+    .video-h-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0f172a;
+    }
+    .video-h-frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Grilla de Videos Shorts (4 Shorts en Formato Vertical) */
+    .videos-shorts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      align-items: stretch;
+      max-width: 1200px;
+      margin-inline: auto;
+    }
+    @media (max-width: 1100px) {
+      .videos-shorts-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .videos-shorts-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .video-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .video-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-green);
+      transform: translateY(-4px);
+    }
+    .video-card-mockup-wrap {
+      padding: 1.25rem 1rem 0.5rem;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    }
+    .video-v-mockup {
+      width: 100%;
+      max-width: 260px;
+      aspect-ratio: 9 / 16;
+      background: #0f172a;
+      border-radius: 26px;
+      border: 5px solid #0f172a;
+      box-shadow: 0 14px 28px -8px rgba(25, 18, 83, 0.3);
+      overflow: hidden;
+      position: relative;
+    }
+    .video-v-mockup iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-card-body {
+      padding: 1.25rem 1.25rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .video-badge-pill {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 0.5rem;
+    }
+    .video-badge-pill.gold {
+      background: var(--accent-gold-light);
+      color: #b45309;
+    }
+    .video-badge-pill.blue {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .video-card-body h3 {
+      font-size: 1.12rem;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+    .video-card-body p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    .btn-yt-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-weight: 700;
+      font-size: 0.84rem;
+      padding: 0.6rem 0.9rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #fecaca;
+      margin-top: 1rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-yt-link:hover {
+      background: #ef4444;
+      color: #ffffff;
+      border-color: #ef4444;
+    }
+    .btn-yt-link-blue {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.65rem 1.15rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #bfdbfe;
+      margin-top: 1rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      width: fit-content;
+    }
+    .btn-yt-link-blue:hover {
+      background: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+    }
+
+    /* Grilla de Fotos (15 Fotos del Día 1) */
+    .photos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.75rem;
+    }
+    @media (max-width: 640px) {
+      .photos-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .photo-card {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+    .photo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-green);
+    }
+    .photo-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #f1f5f9;
+    }
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      display: block;
+    }
+    .photo-card:hover .photo-frame img {
+      transform: scale(1.05);
+    }
+    .photo-badge-idx {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(15, 23, 42, 0.78);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      z-index: 2;
+    }
+    .photo-zoom-hint {
+      position: absolute;
+      inset: 0;
+      background: rgba(25, 18, 83, 0.45);
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      gap: 0.4rem;
+      transition: opacity 0.25s ease;
+      z-index: 3;
+    }
+    .photo-card:hover .photo-zoom-hint {
+      opacity: 1;
+    }
+    .photo-body {
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .photo-body h4 {
+      font-size: 1.05rem;
+      color: var(--primary);
+      margin-bottom: 0.35rem;
+    }
+    .photo-body p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    /* Gran Banner Conector a Google Fotos */
+    .gphotos-banner {
+      background: linear-gradient(135deg, #0d0933 0%, #191253 50%, #064e3b 100%);
+      border: 2px solid var(--accent-gold);
+      border-radius: var(--radius-lg);
+      padding: clamp(2rem, 5vw, 3.5rem);
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      box-shadow: var(--shadow-lg);
+      margin-top: 4.5rem;
+    }
+    .gphotos-info {
+      max-width: 680px;
+    }
+    .gphotos-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(245, 158, 11, 0.2);
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 1rem;
+    }
+    .gphotos-info h3 {
+      color: #ffffff;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin-bottom: 0.75rem;
+    }
+    .gphotos-info p {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .gphotos-action {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      min-width: 280px;
+    }
+    .btn-gphotos-big {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #0f172a;
+      font-weight: 900;
+      font-size: 1.05rem;
+      padding: 1rem 1.8rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+    .btn-gphotos-big:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.6);
+      color: #000000;
+    }
+
+    /* Barra Inferior de Navegación entre Días */
+    .day-nav-bar {
+      background: #ffffff;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding-block: 1.5rem;
+      margin-top: 4.5rem;
+    }
+    .day-nav-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* Lightbox Modal Nativo con Navegación */
+    .lightbox-modal {
+      border: none;
+      border-radius: var(--radius-lg);
+      padding: 0;
+      background: transparent;
+      max-width: min(960px, 94vw);
+      max-height: 92vh;
+      margin: auto;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
+      overflow: hidden;
+    }
+    .lightbox-modal::backdrop {
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(10px);
+    }
+    .lightbox-inner {
+      background: #0f172a;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .lightbox-img-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000000;
+      min-height: 240px;
+    }
+    .lightbox-inner img {
+      max-width: 100%;
+      max-height: 72vh;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    .lightbox-caption-box {
+      padding: 1.25rem 1.75rem;
+      background: #0f172a;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .lightbox-close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      font-size: 1.4rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      z-index: 10;
+    }
+    .lightbox-close-btn:hover {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+      transform: scale(1.08);
+    }
+    .lightbox-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(15, 23, 42, 0.75);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      font-size: 2.2rem;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      z-index: 9;
+      user-select: none;
+    }
+    .lightbox-nav-btn:hover {
+      background: var(--primary-light);
+      border-color: #ffffff;
+      transform: translateY(-50%) scale(1.1);
+    }
+    .lb-prev { left: 16px; }
+    .lb-next { right: 16px; }
+    @media (max-width: 600px) {
+      .lightbox-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.8rem;
+      }
+      .lb-prev { left: 8px; }
+      .lb-next { right: 8px; }
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding-block: 3.5rem 2rem;
+      font-size: 0.88rem;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #1e293b;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 1.75rem;
+      font-size: 0.82rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Ribbon -->
+  <div class="top-ribbon">
+    <div class="container">
+      <div>
+        <strong>IE El Carmen · Ciénaga, Magdalena</strong> | DANE 147189001160
+      </div>
+      <div>
+        <span>Semana Cultural 2026 · Del 19 al 23 de Octubre</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <img class="brand-logo" src="escudo.jpg" alt="Escudo IE El Carmen">
+        <div class="brand-text">
+          <h2>IE El Carmen</h2>
+          <p>Ciénaga · Magdalena · Colombia</p>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <a href="index.html#galeria-multimedia" class="btn-back-nav">
+          <span>← Volver al Portal</span>
+        </a>
+        <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" class="btn-instagram" title="Seguir a @ieelcarmen en Instagram">
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section del Día 1 -->
+  <section class="day-hero">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a>
+        <span>›</span>
+        <a href="index.html#galeria-multimedia">Semana Cultural 2026</a>
+        <span>›</span>
+        <span>Lunes 19 de Octubre (Día 1)</span>
+      </nav>
+
+      <span class="day-date-tag">
+        📅 Lunes 19 de Octubre · Registro Oficial
+      </span>
+
+      <h1 class="day-hero-title">
+        Feria de Historia: <span>Memoria de Ciénaga</span> &amp; Cátedra Carmelita
+      </h1>
+
+      <p class="day-hero-lead">
+        «Conoce nuestro patrimonio, nuestras raíces y nuestra identidad cultural». Revive los momentos más emotivos del acto inaugural, exposiciones temáticas de maquetas, muestras folclóricas y testimonios orales de nuestros estudiantes en el patio central techado.
+      </p>
+
+      <div class="hero-quick-ctas">
+        <a href="#videos" class="btn-cta-primary">
+          <span>🎬 Ver Videos Oficiales (6) ↓</span>
+        </a>
+        <a href="#fotos" class="btn-cta-secondary">
+          <span>📸 Ver Galería de Fotos (15)</span>
+        </a>
+        <a href="https://photos.app.goo.gl/124snuRiv8Rm1pJ28" target="_blank" rel="noopener noreferrer" class="btn-cta-secondary" style="border-color: var(--accent-gold); color: #b45309;">
+          <span>☁️ Abrir Álbum en Google Fotos (+120 Fotos) ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Videos en Streaming (Panorámicos 16:9 y Shorts 9:16) -->
+  <section class="section-padding" id="videos" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Cobertura Audiovisual Completa</span>
+        <h2 class="section-title">Videos Oficiales de la Jornada</h2>
+        <p class="section-lead">
+          Registro audiovisual integrado con videos en formato panorámico (16:9) y clips verticales optimizados para celular (YouTube Shorts).
+        </p>
+      </div>
+
+      <!-- Grupo 1: Videos Horizontales 16:9 -->
+      <div class="video-group-header">
+        <h3>📺 Cobertura Especial en Formato Panorámico (16:9)</h3>
+        <span class="badge-count">2 Videos</span>
+      </div>
+
+      <div class="videos-h-grid">
+        <!-- Video Horizontal 05 -->
+        <div class="video-h-card">
+          <div class="video-h-frame">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/PAF_Bof4xwI?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="Semana Cultural IEEC 2026 · Cobertura Especial 05">
+            </iframe>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill blue">Formato Panorámico 16:9 · Video 05</span>
+              <h3>Semana Cultural IEEC 2026 · Cobertura Especial 05</h3>
+              <p>Registro en video de alta calidad con las ponencias, exposiciones y recorrido detallado por los stands temáticos.</p>
+            </div>
+            <a href="https://youtu.be/PAF_Bof4xwI" target="_blank" rel="noopener noreferrer" class="btn-yt-link-blue">
+              <span>▶ Ver en YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+        <!-- Video Horizontal 06 -->
+        <div class="video-h-card">
+          <div class="video-h-frame">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/wzAngwrhShk?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="Semana Cultural IEEC 2026 · Cobertura Especial 06">
+            </iframe>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill blue">Formato Panorámico 16:9 · Video 06</span>
+              <h3>Semana Cultural IEEC 2026 · Cobertura Especial 06</h3>
+              <p>Momentos destacados del acto inaugural, muestras folclóricas y participación de la comunidad educativa carmelita.</p>
+            </div>
+            <a href="https://youtu.be/wzAngwrhShk" target="_blank" rel="noopener noreferrer" class="btn-yt-link-blue">
+              <span>▶ Ver en YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grupo 2: YouTube Shorts 9:16 -->
+      <div class="video-group-header" style="margin-top: 1rem;">
+        <h3>📱 YouTube Shorts Oficiales en Formato Vertical (9:16)</h3>
+        <span class="badge-count">4 Shorts</span>
+      </div>
+
+      <div class="videos-shorts-grid">
+        <!-- Short 01 -->
+        <div class="video-card">
+          <div class="video-card-mockup-wrap">
+            <div class="video-v-mockup">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/W_Rh2yKCQho?rel=0&playsinline=1&modestbranding=1" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy"
+                title="Inicio de la Semana Cultural · Parte 1 · YouTube Short 01">
+              </iframe>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill gold">Short Vertical 9:16 · Video 01</span>
+              <h3>Inicio de la Semana Cultural · Parte 1</h3>
+              <p>Vibrante apertura protocolaria y primeras muestras artísticas en el patio central.</p>
+            </div>
+            <a href="https://youtube.com/shorts/W_Rh2yKCQho?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en app de YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+        <!-- Short 02 -->
+        <div class="video-card">
+          <div class="video-card-mockup-wrap">
+            <div class="video-v-mockup">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/SuUSKAF3XHc?rel=0&playsinline=1&modestbranding=1" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy"
+                title="Memoria Histórica & Regiones · Parte 2 · YouTube Short 02">
+              </iframe>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill gold">Short Vertical 9:16 · Video 02</span>
+              <h3>Memoria Histórica & Regiones · Parte 2</h3>
+              <p>Exhibición temática del patrimonio cienaguero y la memoria de nuestras tradiciones.</p>
+            </div>
+            <a href="https://youtube.com/shorts/SuUSKAF3XHc?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en app de YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+        <!-- Short 03 -->
+        <div class="video-card">
+          <div class="video-card-mockup-wrap">
+            <div class="video-v-mockup">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/7RFBmouQPkw?rel=0&playsinline=1&modestbranding=1" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy"
+                title="Memoria Histórica & Regiones · Parte 3 · YouTube Short 03">
+              </iframe>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill gold">Short Vertical 9:16 · Video 03</span>
+              <h3>Memoria Histórica & Regiones · Parte 3</h3>
+              <p>Estudiantes comparten su investigación y orgullo por las raíces culturales de nuestra tierra.</p>
+            </div>
+            <a href="https://youtube.com/shorts/7RFBmouQPkw?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en app de YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+        <!-- Short 04 -->
+        <div class="video-card">
+          <div class="video-card-mockup-wrap">
+            <div class="video-v-mockup">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/oX-D2fWJB4Y?rel=0&playsinline=1&modestbranding=1" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy"
+                title="Invitación Semana Cultural IEEC 2026 · YouTube Short 04">
+              </iframe>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill gold">Short Vertical 9:16 · Video 04</span>
+              <h3>Invitación Semana Cultural IEEC 2026</h3>
+              <p>Mensaje conmemorativo y convocatoria a toda la comunidad educativa carmelita.</p>
+            </div>
+            <a href="https://youtube.com/shorts/oX-D2fWJB4Y?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en app de YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Muestra Fotográfica (15 Fotos del Día 1) -->
+  <section class="section-padding" id="fotos" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Galería Fotográfica Oficial</span>
+        <h2 class="section-title">Muestra de Fotos Destacadas (15)</h2>
+        <p class="section-lead">
+          Haz clic o toca cualquier imagen para verla en pantalla completa en el visor interactivo con navegación entre fotos.
+        </p>
+      </div>
+
+      <div class="photos-grid">
+        <!-- Foto 1 -->
+        <div class="photo-card" onclick="openLightbox(0)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(0)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (1).jpg" alt="Apertura y Recorrido de Memoria Histórica" loading="lazy">
+            <span class="photo-badge-idx">Foto 1 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Apertura y Recorrido de Memoria Histórica</h4>
+            <p>Exhibición inaugural de proyectos de memoria y patrimonio cienaguero en el patio central.</p>
+          </div>
+        </div>
+        <!-- Foto 2 -->
+        <div class="photo-card" onclick="openLightbox(1)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(1)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (2).jpg" alt="Murales y Muestras del Legado Cultural" loading="lazy">
+            <span class="photo-badge-idx">Foto 2 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Murales y Muestras del Legado Cultural</h4>
+            <p>Representación gráfica e histórica elaborada por estudiantes de secundaria.</p>
+          </div>
+        </div>
+        <!-- Foto 3 -->
+        <div class="photo-card" onclick="openLightbox(2)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(2)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (3).jpg" alt="Pabellón Temático de Tradición e Identidad" loading="lazy">
+            <span class="photo-badge-idx">Foto 3 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Pabellón Temático de Tradición e Identidad</h4>
+            <p>Recorrido guiado con paneles informativos sobre los hitos de nuestra región.</p>
+          </div>
+        </div>
+        <!-- Foto 4 -->
+        <div class="photo-card" onclick="openLightbox(3)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(3)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (4).jpg" alt="Exposición de Maquetas y Espacios Patrimoniales" loading="lazy">
+            <span class="photo-badge-idx">Foto 4 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Exposición de Maquetas y Espacios Patrimoniales</h4>
+            <p>Recreación a escala de la arquitectura emblemática de Ciénaga y el Magdalena.</p>
+          </div>
+        </div>
+        <!-- Foto 5 -->
+        <div class="photo-card" onclick="openLightbox(4)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(4)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (5).jpg" alt="Stands Interactivos de Cátedra Carmelita" loading="lazy">
+            <span class="photo-badge-idx">Foto 5 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Stands Interactivos de Cátedra Carmelita</h4>
+            <p>Espacios de diálogo e intercambio de saberes entre docentes y alumnos.</p>
+          </div>
+        </div>
+        <!-- Foto 6 -->
+        <div class="photo-card" onclick="openLightbox(5)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(5)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (6).jpg" alt="Ponencias Estudiantiles y Presentaciones Orales" loading="lazy">
+            <span class="photo-badge-idx">Foto 6 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Ponencias Estudiantiles y Presentaciones Orales</h4>
+            <p>Socialización de investigaciones sobre costumbres, mitos y memorias comunitarias.</p>
+          </div>
+        </div>
+        <!-- Foto 7 -->
+        <div class="photo-card" onclick="openLightbox(6)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(6)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (7).jpg" alt="Comunidad Carmelita en la Jornada Inaugural" loading="lazy">
+            <span class="photo-badge-idx">Foto 7 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Comunidad Carmelita en la Jornada Inaugural</h4>
+            <p>Participación activa de la comunidad educativa durante la apertura de la semana.</p>
+          </div>
+        </div>
+        <!-- Foto 8 -->
+        <div class="photo-card" onclick="openLightbox(7)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(7)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (8).jpg" alt="Muestra de Trajes Típicos y Expresiones del Folclor" loading="lazy">
+            <span class="photo-badge-idx">Foto 8 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Muestra de Trajes Típicos y Expresiones del Folclor</h4>
+            <p>Colorido y danza tradicional representando las raíces caribeñas de Ciénaga.</p>
+          </div>
+        </div>
+        <!-- Foto 9 -->
+        <div class="photo-card" onclick="openLightbox(8)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(8)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (9).jpg" alt="Representación y Liderazgo Carmelita" loading="lazy">
+            <span class="photo-badge-idx">Foto 9 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Representación y Liderazgo Carmelita</h4>
+            <p>Estudiantes destacados portando el mensaje de pertenencia e identidad institucional.</p>
+          </div>
+        </div>
+        <!-- Foto 10 -->
+        <div class="photo-card" onclick="openLightbox(9)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(9)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (10).jpg" alt="Mesa de Exposición y Material Pedagógico" loading="lazy">
+            <span class="photo-badge-idx">Foto 10 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Mesa de Exposición y Material Pedagógico</h4>
+            <p>Detalle de carteleras, objetos históricos y guías didácticas del evento.</p>
+          </div>
+        </div>
+        <!-- Foto 11 -->
+        <div class="photo-card" onclick="openLightbox(10)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(10)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (11).jpg" alt="Encuentro Interactivo en los Stands" loading="lazy">
+            <span class="photo-badge-idx">Foto 11 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Encuentro Interactivo en los Stands</h4>
+            <p>Docentes orientadores acompañando la sustentación de proyectos de grado.</p>
+          </div>
+        </div>
+        <!-- Foto 12 -->
+        <div class="photo-card" onclick="openLightbox(11)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(11)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (12).jpg" alt="Creatividad e Investigación Escolar" loading="lazy">
+            <span class="photo-badge-idx">Foto 12 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Creatividad e Investigación Escolar</h4>
+            <p>Despliegue de maquetas del ferrocarril, la plaza y el centro histórico.</p>
+          </div>
+        </div>
+        <!-- Foto 13 -->
+        <div class="photo-card" onclick="openLightbox(12)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(12)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (13).jpg" alt="Integración y Trabajo en Equipo" loading="lazy">
+            <span class="photo-badge-idx">Foto 13 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Integración y Trabajo en Equipo</h4>
+            <p>Grupos de trabajo compartiendo su experiencia investigativa con los asistentes.</p>
+          </div>
+        </div>
+        <!-- Foto 14 -->
+        <div class="photo-card" onclick="openLightbox(13)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(13)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (14).jpg" alt="Reconocimiento y Cierre de la Jornada" loading="lazy">
+            <span class="photo-badge-idx">Foto 14 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Reconocimiento y Cierre de la Jornada</h4>
+            <p>Reflexión comunitaria sobre la importancia de preservar nuestra historia viva.</p>
+          </div>
+        </div>
+        <!-- Foto 15 -->
+        <div class="photo-card" onclick="openLightbox(14)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(14)">
+          <div class="photo-frame">
+            <img src="dia1/Dia1 (15).jpg" alt="Recuerdo Colectivo · Día 1 Semana Cultural" loading="lazy">
+            <span class="photo-badge-idx">Foto 15 de 15</span>
+            <div class="photo-zoom-hint">🔍 Toca para ampliar</div>
+          </div>
+          <div class="photo-body">
+            <h4>Recuerdo Colectivo · Día 1 Semana Cultural</h4>
+            <p>Postal conmemorativa del Día de la Memoria y la Cátedra Carmelita 2026.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gran Conector al Álbum Completo de Google Fotos -->
+      <div class="gphotos-banner">
+        <div class="gphotos-info">
+          <span class="gphotos-tag">☁️ Repositorio Oficial en la Nube</span>
+          <h3>¿Quieres ver todas las fotos y videos originales?</h3>
+          <p>
+            Nuestro comité de medios y los docentes compilaron más de <strong>120 fotografías y clips en alta definición</strong> de este Día 1. Puedes explorarlas, descargarlas en calidad original y compartirlas en familia sin límites de almacenamiento.
+          </p>
+        </div>
+        <div class="gphotos-action">
+          <a href="https://photos.app.goo.gl/124snuRiv8Rm1pJ28" target="_blank" rel="noopener noreferrer" class="btn-gphotos-big">
+            <span>📸 Ver Álbum en Google Fotos (+120 Fotos) ↗</span>
+          </a>
+          <span style="font-size: 0.8rem; color: #cbd5e1; text-align: center;">
+            Abre en la app de fotos de tu celular o navegador
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Barra de Navegación entre Días -->
+  <div class="day-nav-bar">
+    <div class="container">
+      <a href="index.html#galeria-multimedia" class="btn-back-nav">
+        <span>← Volver al Cronograma General</span>
+      </a>
+
+      <div style="font-size: 0.92rem; font-weight: 700; color: var(--primary);">
+        <span>Siguiente Jornada: </span>
+        <a href="index.html#video-emprendimiento" style="color: var(--accent-gold); text-decoration: underline;">
+          Martes 20 · Feria de Emprendimiento «Jóvenes con Propósito» →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="brand">
+          <img class="brand-logo" src="escudo.jpg" alt="Escudo IE El Carmen">
+          <div>
+            <h3 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 0.2rem;">Institución Educativa El Carmen</h3>
+            <p style="font-size: 0.82rem; color: #94a3b8;">Ciénaga, Magdalena · Barrio Micael Cotes · Calle 18B # 38-34</p>
+          </div>
+        </div>
+        <div>
+          <a href="index.html" style="color: var(--accent-gold); font-weight: 700;">Semana Cultural 2026</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Institución Educativa El Carmen. Portal Oficial de la Semana Cultural (semanacultural.elcarmencienaga.edu.co). Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Nativo con Navegación -->
+  <dialog id="photo-lightbox" class="lightbox-modal">
+    <div class="lightbox-inner">
+      <button type="button" class="lightbox-close-btn" onclick="closeLightbox()" aria-label="Cerrar visor">✕</button>
+      <button type="button" class="lightbox-nav-btn lb-prev" onclick="changeLightbox(-1)" aria-label="Foto anterior">‹</button>
+      <button type="button" class="lightbox-nav-btn lb-next" onclick="changeLightbox(1)" aria-label="Siguiente foto">›</button>
+
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="Fotografía ampliada">
+      </div>
+
+      <div class="lightbox-caption-box">
+        <div>
+          <h4 id="lightbox-title" style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0.2rem;"></h4>
+          <p id="lightbox-caption" style="color: #94a3b8; font-size: 0.88rem; margin: 0;"></p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <span id="lightbox-counter" style="font-size: 0.78rem; font-weight: 700; color: #cbd5e1; background: rgba(255,255,255,0.12); padding: 0.3rem 0.65rem; border-radius: 4px;">
+            Foto 1 de 15
+          </span>
+          <span style="font-size: 0.75rem; color: #64748b; background: rgba(255,255,255,0.06); padding: 0.3rem 0.5rem; border-radius: 4px;">
+            Teclas ← / → / ESC
+          </span>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const galleryItems = [{"file": "dia1/Dia1 (1).jpg", "title": "Apertura y Recorrido de Memoria Histórica", "desc": "Exhibición inaugural de proyectos de memoria y patrimonio cienaguero en el patio central."}, {"file": "dia1/Dia1 (2).jpg", "title": "Murales y Muestras del Legado Cultural", "desc": "Representación gráfica e histórica elaborada por estudiantes de secundaria."}, {"file": "dia1/Dia1 (3).jpg", "title": "Pabellón Temático de Tradición e Identidad", "desc": "Recorrido guiado con paneles informativos sobre los hitos de nuestra región."}, {"file": "dia1/Dia1 (4).jpg", "title": "Exposición de Maquetas y Espacios Patrimoniales", "desc": "Recreación a escala de la arquitectura emblemática de Ciénaga y el Magdalena."}, {"file": "dia1/Dia1 (5).jpg", "title": "Stands Interactivos de Cátedra Carmelita", "desc": "Espacios de diálogo e intercambio de saberes entre docentes y alumnos."}, {"file": "dia1/Dia1 (6).jpg", "title": "Ponencias Estudiantiles y Presentaciones Orales", "desc": "Socialización de investigaciones sobre costumbres, mitos y memorias comunitarias."}, {"file": "dia1/Dia1 (7).jpg", "title": "Comunidad Carmelita en la Jornada Inaugural", "desc": "Participación activa de la comunidad educativa durante la apertura de la semana."}, {"file": "dia1/Dia1 (8).jpg", "title": "Muestra de Trajes Típicos y Expresiones del Folclor", "desc": "Colorido y danza tradicional representando las raíces caribeñas de Ciénaga."}, {"file": "dia1/Dia1 (9).jpg", "title": "Representación y Liderazgo Carmelita", "desc": "Estudiantes destacados portando el mensaje de pertenencia e identidad institucional."}, {"file": "dia1/Dia1 (10).jpg", "title": "Mesa de Exposición y Material Pedagógico", "desc": "Detalle de carteleras, objetos históricos y guías didácticas del evento."}, {"file": "dia1/Dia1 (11).jpg", "title": "Encuentro Interactivo en los Stands", "desc": "Docentes orientadores acompañando la sustentación de proyectos de grado."}, {"file": "dia1/Dia1 (12).jpg", "title": "Creatividad e Investigación Escolar", "desc": "Despliegue de maquetas del ferrocarril, la plaza y el centro histórico."}, {"file": "dia1/Dia1 (13).jpg", "title": "Integración y Trabajo en Equipo", "desc": "Grupos de trabajo compartiendo su experiencia investigativa con los asistentes."}, {"file": "dia1/Dia1 (14).jpg", "title": "Reconocimiento y Cierre de la Jornada", "desc": "Reflexión comunitaria sobre la importancia de preservar nuestra historia viva."}, {"file": "dia1/Dia1 (15).jpg", "title": "Recuerdo Colectivo · Día 1 Semana Cultural", "desc": "Postal conmemorativa del Día de la Memoria y la Cátedra Carmelita 2026."}];
+    let currentPhotoIdx = 0;
+
+    function openLightbox(idx) {
+      if (idx < 0 || idx >= galleryItems.length) return;
+      currentPhotoIdx = idx;
+      updateLightboxContent();
+
+      const dialog = document.getElementById('photo-lightbox');
+      if (dialog && !dialog.open) {
+        dialog.showModal();
+      }
+    }
+
+    function updateLightboxContent() {
+      const item = galleryItems[currentPhotoIdx];
+      const img = document.getElementById('lightbox-img');
+      const titleEl = document.getElementById('lightbox-title');
+      const captionEl = document.getElementById('lightbox-caption');
+      const counterEl = document.getElementById('lightbox-counter');
+
+      if (img && item) {
+        img.src = item.file;
+        img.alt = item.title || 'Fotografía ampliada';
+        if (titleEl) titleEl.textContent = item.title || '';
+        if (captionEl) captionEl.textContent = item.desc || '';
+        if (counterEl) counterEl.textContent = `Foto ${currentPhotoIdx + 1} de ${galleryItems.length}`;
+      }
+    }
+
+    function changeLightbox(step) {
+      currentPhotoIdx = (currentPhotoIdx + step + galleryItems.length) % galleryItems.length;
+      updateLightboxContent();
+    }
+
+    function closeLightbox() {
+      const dialog = document.getElementById('photo-lightbox');
+      if (dialog && dialog.open) {
+        dialog.close();
+      }
+    }
+
+    // Cerrar al hacer clic fuera del modal
+    const lbDialog = document.getElementById('photo-lightbox');
+    if (lbDialog) {
+      lbDialog.addEventListener('click', (e) => {
+        const rect = lbDialog.getBoundingClientRect();
+        const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+          rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+        if (!isInDialog) {
+          closeLightbox();
+        }
+      });
+    }
+
+    // Navegación con flechas del teclado
+    document.addEventListener('keydown', (e) => {
+      const dialog = document.getElementById('photo-lightbox');
+      if (dialog && dialog.open) {
+        if (e.key === 'ArrowLeft') {
+          changeLightbox(-1);
+        } else if (e.key === 'ArrowRight') {
+          changeLightbox(1);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
