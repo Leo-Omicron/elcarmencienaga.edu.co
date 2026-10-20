@@ -1,0 +1,1400 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Galería y registro en video del Día 2: Feria de Emprendimiento «Jóvenes con Propósito» y Tienda IECAR. Semana Cultural 2026 de la IE El Carmen.">
+  <meta name="theme-color" content="#191253">
+  <title>Día 2: Feria de Emprendimiento · Galería &amp; Transmisión | IE El Carmen</title>
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #191253;
+      --primary-dark: #0d0933;
+      --primary-light: #2c2282;
+      --accent-green: #10b981;
+      --accent-green-dark: #059669;
+      --accent-gold: #f59e0b;
+      --accent-gold-light: #fef3c7;
+      --accent-red: #e11d48;
+      --accent-blue: #0284c7;
+      --bg-surface: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-subtle: #e2e8f0;
+      --shadow-sm: 0 2px 4px rgba(25, 18, 83, 0.04);
+      --shadow-md: 0 8px 24px rgba(25, 18, 83, 0.08);
+      --shadow-lg: 0 20px 35px -8px rgba(25, 18, 83, 0.16);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, .font-heading {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .container {
+      width: min(1200px, 100% - 2.5rem);
+      margin-inline: auto;
+    }
+
+    /* Top Ribbon */
+    .top-ribbon {
+      background: linear-gradient(90deg, #191253 0%, #1e1b4b 50%, #064e3b 100%);
+      color: #e2e8f0;
+      font-size: 0.82rem;
+      padding: 0.5rem 0;
+      border-bottom: 2px solid var(--accent-gold);
+    }
+    .top-ribbon .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* Header Navegación */
+    header {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block: 0.85rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent-gold);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .brand-text h2 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--primary);
+    }
+    .brand-text p {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .btn-back-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #eff6ff;
+      color: var(--primary);
+      border: 1px solid #bfdbfe;
+      padding: 0.55rem 1.15rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+    .btn-back-nav:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+    .btn-instagram {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1.15rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: #ffffff;
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+
+    /* Hero de la Galería Dedicada */
+    .day-hero {
+      background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);
+      padding-block: 3.5rem 3rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .breadcrumb-nav a {
+      color: var(--accent-green-dark);
+      text-decoration: underline;
+    }
+    .day-date-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 0.3rem 0.85rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #86efac;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+    }
+    .day-hero-title {
+      font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+      font-weight: 900;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+      line-height: 1.12;
+      margin-bottom: 1rem;
+    }
+    .day-hero-title span {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .day-hero-lead {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      max-width: 840px;
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+    .hero-quick-ctas {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .btn-cta-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent-green-dark);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+    }
+    .btn-cta-primary:hover {
+      background: #047857;
+      transform: translateY(-2px);
+    }
+    .btn-cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #ffffff;
+      color: var(--primary);
+      border: 1.5px solid var(--border-subtle);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: var(--radius-full);
+    }
+    .btn-cta-secondary:hover {
+      border-color: var(--primary);
+      background: #f8fafc;
+    }
+
+    /* Secciones */
+    .section-padding {
+      padding-block: 4.5rem;
+    }
+    .section-title-wrap {
+      text-align: center;
+      max-width: 780px;
+      margin-inline: auto;
+      margin-bottom: 2.75rem;
+    }
+    .section-eyebrow {
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 800;
+      color: var(--accent-green-dark);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .section-title {
+      font-size: clamp(2rem, 3.5vw, 2.7rem);
+      margin-bottom: 0.8rem;
+    }
+    .section-lead {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Sub-encabezado de categoría de video */
+    .video-group-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border-subtle);
+    }
+    .video-group-header h3 {
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .video-group-header .badge-count {
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    /* Grilla de Videos Horizontales 16:9 */
+    .videos-h-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      align-items: stretch;
+      max-width: 1100px;
+      margin-inline: auto;
+      margin-bottom: 3.5rem;
+    }
+    @media (max-width: 860px) {
+      .videos-h-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+    }
+    .video-h-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .video-h-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-green);
+      transform: translateY(-4px);
+    }
+    .video-h-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0f172a;
+    }
+    .video-h-frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Grilla de Videos Shorts (4 Shorts en Formato Vertical) */
+    .videos-shorts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      align-items: stretch;
+      max-width: 1200px;
+      margin-inline: auto;
+    }
+    @media (max-width: 1100px) {
+      .videos-shorts-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .videos-shorts-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .video-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .video-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-green);
+      transform: translateY(-4px);
+    }
+    .video-card-mockup-wrap {
+      padding: 1.25rem 1rem 0.5rem;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    }
+    .video-v-mockup {
+      width: 100%;
+      max-width: 260px;
+      aspect-ratio: 9 / 16;
+      background: #0f172a;
+      border-radius: 26px;
+      border: 5px solid #0f172a;
+      box-shadow: 0 14px 28px -8px rgba(25, 18, 83, 0.3);
+      overflow: hidden;
+      position: relative;
+    }
+    .video-v-mockup iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-card-body {
+      padding: 1.25rem 1.25rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .video-badge-pill {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 0.5rem;
+    }
+    .video-badge-pill.gold {
+      background: var(--accent-gold-light);
+      color: #b45309;
+    }
+    .video-badge-pill.blue {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .video-card-body h3 {
+      font-size: 1.12rem;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+    .video-card-body p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    .btn-yt-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-weight: 700;
+      font-size: 0.84rem;
+      padding: 0.6rem 0.9rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #fecaca;
+      margin-top: 1rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-yt-link:hover {
+      background: #ef4444;
+      color: #ffffff;
+      border-color: #ef4444;
+    }
+    .btn-yt-link-blue {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.65rem 1.15rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #bfdbfe;
+      margin-top: 1rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      width: fit-content;
+    }
+    .btn-yt-link-blue:hover {
+      background: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+    }
+
+    /* Grilla de Fotos (15 Fotos del Día 1) */
+    .photos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.75rem;
+    }
+    @media (max-width: 640px) {
+      .photos-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .photo-card {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+    .photo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-green);
+    }
+    .photo-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #f1f5f9;
+    }
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      display: block;
+    }
+    .photo-card:hover .photo-frame img {
+      transform: scale(1.05);
+    }
+    .photo-badge-idx {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(15, 23, 42, 0.78);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      z-index: 2;
+    }
+    .photo-zoom-hint {
+      position: absolute;
+      inset: 0;
+      background: rgba(25, 18, 83, 0.45);
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      gap: 0.4rem;
+      transition: opacity 0.25s ease;
+      z-index: 3;
+    }
+    .photo-card:hover .photo-zoom-hint {
+      opacity: 1;
+    }
+    .photo-body {
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .photo-body h4 {
+      font-size: 1.05rem;
+      color: var(--primary);
+      margin-bottom: 0.35rem;
+    }
+    .photo-body p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    /* Gran Banner Conector a Google Fotos */
+    .gphotos-banner {
+      background: linear-gradient(135deg, #0d0933 0%, #191253 50%, #064e3b 100%);
+      border: 2px solid var(--accent-gold);
+      border-radius: var(--radius-lg);
+      padding: clamp(2rem, 5vw, 3.5rem);
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      box-shadow: var(--shadow-lg);
+      margin-top: 4.5rem;
+    }
+    .gphotos-info {
+      max-width: 680px;
+    }
+    .gphotos-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(245, 158, 11, 0.2);
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 1rem;
+    }
+    .gphotos-info h3 {
+      color: #ffffff;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin-bottom: 0.75rem;
+    }
+    .gphotos-info p {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .gphotos-action {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      min-width: 280px;
+    }
+    .btn-gphotos-big {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #0f172a;
+      font-weight: 900;
+      font-size: 1.05rem;
+      padding: 1rem 1.8rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+    .btn-gphotos-big:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.6);
+      color: #000000;
+    }
+
+    /* Barra Inferior de Navegación entre Días */
+    .day-nav-bar {
+      background: #ffffff;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding-block: 1.5rem;
+      margin-top: 4.5rem;
+    }
+    .day-nav-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* Lightbox Modal Nativo con Navegación */
+    .lightbox-modal {
+      border: none;
+      border-radius: var(--radius-lg);
+      padding: 0;
+      background: transparent;
+      max-width: min(960px, 94vw);
+      max-height: 92vh;
+      margin: auto;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
+      overflow: hidden;
+    }
+    .lightbox-modal::backdrop {
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(10px);
+    }
+    .lightbox-inner {
+      background: #0f172a;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .lightbox-img-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000000;
+      min-height: 240px;
+    }
+    .lightbox-inner img {
+      max-width: 100%;
+      max-height: 72vh;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    .lightbox-caption-box {
+      padding: 1.25rem 1.75rem;
+      background: #0f172a;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .lightbox-close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      font-size: 1.4rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      z-index: 10;
+    }
+    .lightbox-close-btn:hover {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+      transform: scale(1.08);
+    }
+    .lightbox-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(15, 23, 42, 0.75);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      font-size: 2.2rem;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      z-index: 9;
+      user-select: none;
+    }
+    .lightbox-nav-btn:hover {
+      background: var(--primary-light);
+      border-color: #ffffff;
+      transform: translateY(-50%) scale(1.1);
+    }
+    .lb-prev { left: 16px; }
+    .lb-next { right: 16px; }
+    @media (max-width: 600px) {
+      .lightbox-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.8rem;
+      }
+      .lb-prev { left: 8px; }
+      .lb-next { right: 8px; }
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding-block: 3.5rem 2rem;
+      font-size: 0.88rem;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #1e293b;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 1.75rem;
+      font-size: 0.82rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Ribbon Oficial -->
+  <div class="top-ribbon">
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 0.6rem;">
+        <span style="background: var(--accent-gold); color: #000; font-weight: 800; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.72rem; text-transform: uppercase;">Semana Cultural 2026</span>
+        <span>Institución Educativa El Carmen · Ciénaga, Magdalena</span>
+      </div>
+      <div>
+        <span>Registro Audiovisual Oficial · Día 2</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navegación -->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand" title="Volver al portal principal de la Semana Cultural">
+          <img src="logo.png" alt="Escudo IE El Carmen" class="brand-logo" width="44" height="44">
+          <div class="brand-text">
+            <h2>IE El Carmen</h2>
+            <p>Ciénaga · Magdalena · Colombia</p>
+          </div>
+        </a>
+
+        <div class="nav-actions">
+          <a href="dia1.html" class="btn-back-nav" style="border-color: #cbd5e1;" title="Ver Galería del Día 1">
+            <span>← Día 1</span>
+          </a>
+          <a href="index.html" class="btn-back-nav" title="Volver al inicio de la Semana Cultural">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            <span>Volver al Portal</span>
+          </a>
+          <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" class="btn-instagram" title="Instagram Oficial">
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero de la Galería Dedicada Día 2 -->
+  <section class="day-hero">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Navegación secundaria">
+        <a href="index.html">Inicio</a>
+        <span>›</span>
+        <a href="index.html#cronograma">Semana Cultural 2026</a>
+        <span>›</span>
+        <span>Martes 20 de Octubre (Día 2)</span>
+      </nav>
+
+      <span class="day-date-tag" style="background: #fef3c7; color: #b45309; border-color: #fde68a;">
+        📅 Martes 20 de Octubre · Registro Oficial
+      </span>
+
+      <h1 class="day-hero-title">
+        Feria de Emprendimiento: <span>«Jóvenes con Propósito»</span> &amp; Tienda IECAR
+      </h1>
+
+      <p class="day-hero-lead">
+        «Ideas que inspiran, proyectos que transforman». Revive la creatividad, el liderazgo y el talento comercial de los estudiantes carmelitas en la muestra de ideas de negocio, stands gastronómicos, productos artesanales y la gran jornada benéfica de la Tienda Escolar IECAR.
+      </p>
+
+      <div class="hero-quick-ctas">
+        <a href="#videos" class="btn-cta-primary" style="background: #0284c7; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);">
+          <span>🎬 Ver Transmisión en Vivo ↓</span>
+        </a>
+        <a href="#fotos" class="btn-cta-secondary">
+          <span>📸 Ver Galería de Fotos (16)</span>
+        </a>
+        <a href="https://photos.app.goo.gl/Q6bQMeVm7yUZ4NSKA" target="_blank" rel="noopener noreferrer" class="btn-cta-secondary" style="border-color: var(--accent-gold); color: #b45309;">
+          <span>☁️ Abrir Álbum en Google Fotos (+100 Fotos) ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Transmisión y Video Oficial -->
+  <section class="section-padding" id="videos" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow" style="color: #0284c7;">Cobertura Audiovisual en Vivo</span>
+        <h2 class="section-title">Registro Audiovisual de la Jornada</h2>
+        <p class="section-lead">
+          Revive la transmisión oficial en vivo con el recorrido por los stands y el clip conmemorativo de invitación institucional.
+        </p>
+      </div>
+
+      <!-- Video Principal: Transmisión en Vivo Panorámica 16:9 -->
+      <div class="video-group-header">
+        <h3>📺 Feria de Emprendimiento · Cobertura Especial en Vivo</h3>
+        <span class="badge-count" style="background: #e0f2fe; color: #0369a1;">En Vivo</span>
+      </div>
+
+      <div class="videos-h-grid" style="grid-template-columns: 1fr;">
+        <!-- Video Horizontal En Vivo -->
+        <div class="video-h-card" style="max-width: 960px; margin-inline: auto;">
+          <div class="video-h-frame">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/FHwwIFF-vHg?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="Feria de Emprendimiento IE El Carmen 2026 · En Vivo">
+            </iframe>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill blue">Transmisión Oficial Completa · Formato Panorámico 16:9</span>
+              <h3>Feria de Emprendimiento «Jóvenes con Propósito» · Transmisión en Directo</h3>
+              <p>Recorrido general por los stands comerciales, presentaciones de proyectos estudiantiles, degustaciones y entrevistas a los jóvenes emprendedores.</p>
+            </div>
+            <a href="https://youtu.be/FHwwIFF-vHg" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver transmisión completa en YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Short: Invitación Oficial -->
+      <div class="video-group-header" style="margin-top: 3rem;">
+        <h3>📱 Video Oficial de Invitación en Formato Vertical (9:16)</h3>
+        <span class="badge-count">1 Short</span>
+      </div>
+
+      <div class="videos-shorts-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 320px)); justify-content: center;">
+        <div class="video-card">
+          <div class="video-card-mockup-wrap">
+            <div class="video-v-mockup">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/xzmnFdJ2Fi0?rel=0&playsinline=1&modestbranding=1" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy"
+                title="Invitación Oficial Feria de Emprendimiento · YouTube Short">
+              </iframe>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill gold">Short Vertical 9:16 · Invitación Oficial</span>
+              <h3>Invitación a la Feria «Jóvenes con Propósito»</h3>
+              <p>Nuestros estudiantes convocando a toda la comunidad educativa a participar en la muestra comercial y la Tienda IECAR.</p>
+            </div>
+            <a href="https://youtube.com/shorts/xzmnFdJ2Fi0" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en app de YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección: Muestra Fotográfica (16 Fotos del Día 2) -->
+  <section class="section-padding" id="fotos" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Galería Fotográfica Oficial</span>
+        <h2 class="section-title">Muestra de Fotos Destacadas (16)</h2>
+        <p class="section-lead">
+          Haz clic o toca cualquier imagen para verla en pantalla completa en el visor interactivo con navegación entre fotos.
+        </p>
+      </div>
+
+      <div class="photos-grid">
+        <!-- Foto 1 -->
+        <div class="photo-card" onclick="openLightbox(0)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(0)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (1).jpg" alt="Apertura de Stands y Muestra Comercial" loading="lazy">
+            <span class="photo-badge-idx">Foto 1 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Apertura de Stands y Muestra Comercial</h4>
+            <p>Estudiantes carmelitas alistando sus productos y dando la bienvenida a los primeros compradores en el patio central.</p>
+          </div>
+        </div>
+        <!-- Foto 2 -->
+        <div class="photo-card" onclick="openLightbox(1)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(1)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (2).jpg" alt="Creatividad e Imagen de Marca Juvenil" loading="lazy">
+            <span class="photo-badge-idx">Foto 2 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Creatividad e Imagen de Marca Juvenil</h4>
+            <p>Propuestas comerciales diseñadas con empaques llamativos, carteleras ilustradas y nombres de marca únicos.</p>
+          </div>
+        </div>
+        <!-- Foto 3 -->
+        <div class="photo-card" onclick="openLightbox(2)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(2)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (3).jpg" alt="Emprendimientos Gastronómicos y Repostería" loading="lazy">
+            <span class="photo-badge-idx">Foto 3 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Emprendimientos Gastronómicos y Repostería</h4>
+            <p>Deliciosas recetas tradicionales, postres y pasabocas elaborados con dedicación por los equipos estudiantiles.</p>
+          </div>
+        </div>
+        <!-- Foto 4 -->
+        <div class="photo-card" onclick="openLightbox(3)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(3)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (4).jpg" alt="Atención al Cliente y Pitch de Ventas" loading="lazy">
+            <span class="photo-badge-idx">Foto 4 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Atención al Cliente y Pitch de Ventas</h4>
+            <p>Los jóvenes poniendo en práctica habilidades de comunicación, negociación y atención al público con gran entusiasmo.</p>
+          </div>
+        </div>
+        <!-- Foto 5 -->
+        <div class="photo-card" onclick="openLightbox(4)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(4)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (5).jpg" alt="Innovación y Sostenibilidad Carmelita" loading="lazy">
+            <span class="photo-badge-idx">Foto 5 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Innovación y Sostenibilidad Carmelita</h4>
+            <p>Proyectos enfocados en la reutilización de materiales y alternativas ecológicas para la comunidad cienguera.</p>
+          </div>
+        </div>
+        <!-- Foto 6 -->
+        <div class="photo-card" onclick="openLightbox(5)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(5)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (6).jpg" alt="Muestra de Bebidas Artesanales y Refrescantes" loading="lazy">
+            <span class="photo-badge-idx">Foto 6 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Muestra de Bebidas Artesanales y Refrescantes</h4>
+            <p>Stands con jugos naturales, batidos y refrescos ideales para acompañar la jornada en el clima caribeño.</p>
+          </div>
+        </div>
+        <!-- Foto 7 -->
+        <div class="photo-card" onclick="openLightbox(6)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(6)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (7).jpg" alt="Trabajo Colaborativo en Cada Emprendimiento" loading="lazy">
+            <span class="photo-badge-idx">Foto 7 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Trabajo Colaborativo en Cada Emprendimiento</h4>
+            <p>Equipos de estudiantes organizados por roles: producción, administración, finanzas y relaciones públicas.</p>
+          </div>
+        </div>
+        <!-- Foto 8 -->
+        <div class="photo-card" onclick="openLightbox(7)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(7)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (8).jpg" alt="Tienda Escolar «IECAR: Ven y ponte la tuya»" loading="lazy">
+            <span class="photo-badge-idx">Foto 8 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Tienda Escolar «IECAR: Ven y ponte la tuya»</h4>
+            <p>Gran venta benéfica del pulguero institucional con prendas y accesorios de excelente calidad para las familias.</p>
+          </div>
+        </div>
+        <!-- Foto 9 -->
+        <div class="photo-card" onclick="openLightbox(8)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(8)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (9).jpg" alt="Apoyo de la Comunidad Educativa y Familias" loading="lazy">
+            <span class="photo-badge-idx">Foto 9 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Apoyo de la Comunidad Educativa y Familias</h4>
+            <p>Padres de familia, acudientes y docentes recorriendo la feria y respaldando las iniciativas comerciales de los alumnos.</p>
+          </div>
+        </div>
+        <!-- Foto 10 -->
+        <div class="photo-card" onclick="openLightbox(9)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(9)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (10).jpg" alt="Detalles Artesanales y Manualidades" loading="lazy">
+            <span class="photo-badge-idx">Foto 10 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Detalles Artesanales y Manualidades</h4>
+            <p>Creaciones hechas a mano: bisutería, accesorios decorativos y recuerdos conmemorativos de la Semana Cultural.</p>
+          </div>
+        </div>
+        <!-- Foto 11 -->
+        <div class="photo-card" onclick="openLightbox(10)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(10)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (11).jpg" alt="Exposición ante el Jurado Calificador" loading="lazy">
+            <span class="photo-badge-idx">Foto 11 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Exposición ante el Jurado Calificador</h4>
+            <p>Presentación formal del plan de negocio, costos unitarios, margen de ganancia e impacto comunitario del proyecto.</p>
+          </div>
+        </div>
+        <!-- Foto 12 -->
+        <div class="photo-card" onclick="openLightbox(11)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(11)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (12).jpg" alt="Espíritu Emprendedor y Liderazgo Juvenil" loading="lazy">
+            <span class="photo-badge-idx">Foto 12 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Espíritu Emprendedor y Liderazgo Juvenil</h4>
+            <p>La satisfacción y orgullo de nuestros estudiantes al ver sus ideas de negocio convertidas en realidad palpable.</p>
+          </div>
+        </div>
+        <!-- Foto 13 -->
+        <div class="photo-card" onclick="openLightbox(12)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(12)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (13).jpg" alt="Alegría y Camaradería en el Patio Central" loading="lazy">
+            <span class="photo-badge-idx">Foto 13 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Alegría y Camaradería en el Patio Central</h4>
+            <p>Sonrisas y compañerismo en una jornada llena de entusiasmo, aprendizaje práctico y dinamismo escolar.</p>
+          </div>
+        </div>
+        <!-- Foto 14 -->
+        <div class="photo-card" onclick="openLightbox(13)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(13)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (14).jpg" alt="Panorámica de la Concurrencia a la Feria" loading="lazy">
+            <span class="photo-badge-idx">Foto 14 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Panorámica de la Concurrencia a la Feria</h4>
+            <p>El patio techado de la IE El Carmen colmado de asistentes disfrutando de la oferta de productos y proyectos.</p>
+          </div>
+        </div>
+        <!-- Foto 15 -->
+        <div class="photo-card" onclick="openLightbox(14)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(14)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (15).jpg" alt="Acompañamiento Docente y Asesoría Técnica" loading="lazy">
+            <span class="photo-badge-idx">Foto 15 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Acompañamiento Docente y Asesoría Técnica</h4>
+            <p>Profesores orientadores compartiendo con sus grupos y verificando la óptima gestión de cada módulo asignado.</p>
+          </div>
+        </div>
+        <!-- Foto 16 -->
+        <div class="photo-card" onclick="openLightbox(15)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(15)">
+          <div class="photo-frame">
+            <img src="dia2/Dia2 (16).jpg" alt="Balance Positivo y Éxito de la Jornada" loading="lazy">
+            <span class="photo-badge-idx">Foto 16 de 16</span>
+          </div>
+          <div class="photo-card-info">
+            <h4>Balance Positivo y Éxito de la Jornada</h4>
+            <p>Cierre con ventas destacadas, aprendizajes significativos y el compromiso de seguir formando jóvenes con propósito.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner de invitación a Álbum Completo de Google Fotos -->
+      <div class="gphotos-banner" style="margin-top: 3.5rem;">
+        <div class="gphotos-banner-content">
+          <div class="gphotos-badge">☁️ Almacenamiento en la Nube</div>
+          <h3>¿Buscas la colección completa en alta resolución?</h3>
+          <p>
+            Accede al álbum oficial compartido en Google Fotos con más de 100 fotografías tomadas por nuestro equipo audiovisual durante toda la jornada de emprendimiento.
+          </p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem;">
+            <a href="https://photos.app.goo.gl/Q6bQMeVm7yUZ4NSKA" target="_blank" rel="noopener noreferrer" class="btn-cta-primary" style="background: #ffffff; color: #1e3a8a; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+              <span>Abrir Álbum en Google Fotos (+100 Fotos) ↗</span>
+            </a>
+            <a href="index.html#cronograma" class="btn-cta-secondary" style="border-color: rgba(255,255,255,0.4); color: #ffffff; background: rgba(255,255,255,0.1);">
+              <span>Ver Próximos Días de la Semana Cultural ↓</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Institucional -->
+  <footer style="background: var(--primary-dark); color: #94a3b8; padding-block: 3.5rem 2rem; border-top: 1px solid rgba(255,255,255,0.08);">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.08);">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <img src="logo.png" alt="Escudo IE El Carmen" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--accent-gold);">
+          <div>
+            <h4 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0.2rem;">Institución Educativa El Carmen</h4>
+            <p style="font-size: 0.85rem; color: #94a3b8;">53 Años formando generaciones de ciengueros con excelencia y valores</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <a href="dia1.html" class="btn-back-nav" style="background: rgba(255,255,255,0.05); color: #e2e8f0; border-color: rgba(255,255,255,0.15);">
+            <span>← Día 1: Historia</span>
+          </a>
+          <a href="index.html" class="btn-back-nav" style="background: rgba(255,255,255,0.05); color: #e2e8f0; border-color: rgba(255,255,255,0.15);">
+            <span>Volver al Portal</span>
+          </a>
+        </div>
+      </div>
+      <div style="text-align: center; font-size: 0.82rem; color: #64748b;">
+        <p>© 2026 Institución Educativa El Carmen · Ciénaga, Magdalena, Colombia. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Lightbox Interactivo -->
+  <div id="lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visor de fotografía ampliada">
+    <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+    
+    <div class="lightbox-container">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar visor">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <button class="lightbox-nav-btn prev" onclick="prevPhoto()" aria-label="Foto anterior">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+
+      <button class="lightbox-nav-btn next" onclick="nextPhoto()" aria-label="Foto siguiente">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+
+      <div class="lightbox-content">
+        <div class="lightbox-img-wrap">
+          <img id="lightbox-img" src="" alt="Fotografía ampliada">
+        </div>
+        <div class="lightbox-caption">
+          <span id="lightbox-counter" class="lightbox-counter">Foto 1 de 16</span>
+          <h3 id="lightbox-title">Título de la Fotografía</h3>
+          <p id="lightbox-desc">Descripción detallada del registro fotográfico.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const galleryItems = [
+  {
+    "idx": 1,
+    "file": "dia2/Dia2 (1).jpg",
+    "title": "Apertura de Stands y Muestra Comercial",
+    "desc": "Estudiantes carmelitas alistando sus productos y dando la bienvenida a los primeros compradores en el patio central."
+  },
+  {
+    "idx": 2,
+    "file": "dia2/Dia2 (2).jpg",
+    "title": "Creatividad e Imagen de Marca Juvenil",
+    "desc": "Propuestas comerciales diseñadas con empaques llamativos, carteleras ilustradas y nombres de marca únicos."
+  },
+  {
+    "idx": 3,
+    "file": "dia2/Dia2 (3).jpg",
+    "title": "Emprendimientos Gastronómicos y Repostería",
+    "desc": "Deliciosas recetas tradicionales, postres y pasabocas elaborados con dedicación por los equipos estudiantiles."
+  },
+  {
+    "idx": 4,
+    "file": "dia2/Dia2 (4).jpg",
+    "title": "Atención al Cliente y Pitch de Ventas",
+    "desc": "Los jóvenes poniendo en práctica habilidades de comunicación, negociación y atención al público con gran entusiasmo."
+  },
+  {
+    "idx": 5,
+    "file": "dia2/Dia2 (5).jpg",
+    "title": "Innovación y Sostenibilidad Carmelita",
+    "desc": "Proyectos enfocados en la reutilización de materiales y alternativas ecológicas para la comunidad cienguera."
+  },
+  {
+    "idx": 6,
+    "file": "dia2/Dia2 (6).jpg",
+    "title": "Muestra de Bebidas Artesanales y Refrescantes",
+    "desc": "Stands con jugos naturales, batidos y refrescos ideales para acompañar la jornada en el clima caribeño."
+  },
+  {
+    "idx": 7,
+    "file": "dia2/Dia2 (7).jpg",
+    "title": "Trabajo Colaborativo en Cada Emprendimiento",
+    "desc": "Equipos de estudiantes organizados por roles: producción, administración, finanzas y relaciones públicas."
+  },
+  {
+    "idx": 8,
+    "file": "dia2/Dia2 (8).jpg",
+    "title": "Tienda Escolar «IECAR: Ven y ponte la tuya»",
+    "desc": "Gran venta benéfica del pulguero institucional con prendas y accesorios de excelente calidad para las familias."
+  },
+  {
+    "idx": 9,
+    "file": "dia2/Dia2 (9).jpg",
+    "title": "Apoyo de la Comunidad Educativa y Familias",
+    "desc": "Padres de familia, acudientes y docentes recorriendo la feria y respaldando las iniciativas comerciales de los alumnos."
+  },
+  {
+    "idx": 10,
+    "file": "dia2/Dia2 (10).jpg",
+    "title": "Detalles Artesanales y Manualidades",
+    "desc": "Creaciones hechas a mano: bisutería, accesorios decorativos y recuerdos conmemorativos de la Semana Cultural."
+  },
+  {
+    "idx": 11,
+    "file": "dia2/Dia2 (11).jpg",
+    "title": "Exposición ante el Jurado Calificador",
+    "desc": "Presentación formal del plan de negocio, costos unitarios, margen de ganancia e impacto comunitario del proyecto."
+  },
+  {
+    "idx": 12,
+    "file": "dia2/Dia2 (12).jpg",
+    "title": "Espíritu Emprendedor y Liderazgo Juvenil",
+    "desc": "La satisfacción y orgullo de nuestros estudiantes al ver sus ideas de negocio convertidas en realidad palpable."
+  },
+  {
+    "idx": 13,
+    "file": "dia2/Dia2 (13).jpg",
+    "title": "Alegría y Camaradería en el Patio Central",
+    "desc": "Sonrisas y compañerismo en una jornada llena de entusiasmo, aprendizaje práctico y dinamismo escolar."
+  },
+  {
+    "idx": 14,
+    "file": "dia2/Dia2 (14).jpg",
+    "title": "Panorámica de la Concurrencia a la Feria",
+    "desc": "El patio techado de la IE El Carmen colmado de asistentes disfrutando de la oferta de productos y proyectos."
+  },
+  {
+    "idx": 15,
+    "file": "dia2/Dia2 (15).jpg",
+    "title": "Acompañamiento Docente y Asesoría Técnica",
+    "desc": "Profesores orientadores compartiendo con sus grupos y verificando la óptima gestión de cada módulo asignado."
+  },
+  {
+    "idx": 16,
+    "file": "dia2/Dia2 (16).jpg",
+    "title": "Balance Positivo y Éxito de la Jornada",
+    "desc": "Cierre con ventas destacadas, aprendizajes significativos y el compromiso de seguir formando jóvenes con propósito."
+  }
+];
+
+    let currentIndex = 0;
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDesc = document.getElementById('lightbox-desc');
+    const lightboxCounter = document.getElementById('lightbox-counter');
+
+    function openLightbox(index) {
+      currentIndex = index;
+      updateLightboxContent();
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function updateLightboxContent() {
+      const item = galleryItems[currentIndex];
+      if (!item) return;
+      lightboxImg.src = item.file;
+      lightboxImg.alt = item.title;
+      lightboxTitle.textContent = item.title;
+      lightboxDesc.textContent = item.desc;
+      lightboxCounter.textContent = `Foto ${currentIndex + 1} de ${galleryItems.length}`;
+    }
+
+    function nextPhoto() {
+      currentIndex = (currentIndex + 1) % galleryItems.length;
+      updateLightboxContent();
+    }
+
+    function prevPhoto() {
+      currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+      updateLightboxContent();
+    }
+
+    // Teclado
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') nextPhoto();
+      if (e.key === 'ArrowLeft') prevPhoto();
+    });
+
+    // Soporte táctil (Swipe)
+    let touchStartX = 0;
+    let touchEndX = 0;
+    lightbox.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    lightbox.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchEndX < touchStartX - 50) nextPhoto();
+      if (touchEndX > touchStartX + 50) prevPhoto();
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
