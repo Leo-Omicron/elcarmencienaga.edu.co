@@ -1774,7 +1774,7 @@
 
         <!-- Contador Regresivo -->
         <div>
-          <p style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.5rem;">
+          <p id="countdown-title" style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.5rem;">
             Tiempo para la inauguración oficial:
           </p>
           <div class="countdown-box">
@@ -2529,34 +2529,58 @@
       }
     }
 
-    // Cuenta regresiva dinámica: Lunes 19 de Octubre a las 7:30 AM
+    // Cuenta regresiva dinámica secuencial por jornadas de la Semana Cultural
     (function initCountdown() {
-      const targetDate = new Date('2026-10-19T07:30:00-05:00').getTime();
+      const culturalEvents = [
+        {
+          name: 'Inauguración Oficial & Feria de Historia (Día 1)',
+          date: new Date('2026-10-19T07:30:00-05:00').getTime()
+        },
+        {
+          name: 'Feria de Emprendimiento & Pulguero (Día 2)',
+          date: new Date('2026-10-20T08:00:00-05:00').getTime()
+        },
+        {
+          name: 'Desfile Inaugural Mundialito & Deportes (Día 3)',
+          date: new Date('2026-10-21T06:30:00-05:00').getTime()
+        },
+        {
+          name: 'Foro Educativo Institucional (Día 4)',
+          date: new Date('2026-10-22T07:00:00-05:00').getTime()
+        },
+        {
+          name: 'Gran Gala Aniversario 53 (Día 5)',
+          date: new Date('2026-10-23T07:00:00-05:00').getTime()
+        }
+      ];
 
       function update() {
-        const now = new Date().getTime();
-        const diff = targetDate - now;
+        const now = Date.now();
+        const nextEvent = culturalEvents.find(e => e.date > now);
+        const titleEl = document.getElementById('countdown-title');
+        const elD = document.getElementById('cd-days');
+        const elH = document.getElementById('cd-hours');
+        const elM = document.getElementById('cd-mins');
+        const elS = document.getElementById('cd-secs');
 
-        if (diff > 0) {
+        if (nextEvent) {
+          const diff = nextEvent.date - now;
           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
           const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const secs = Math.floor((diff % (1000 * 60)) / 1000);
 
-          const elD = document.getElementById('cd-days');
-          const elH = document.getElementById('cd-hours');
-          const elM = document.getElementById('cd-mins');
-          const elS = document.getElementById('cd-secs');
-
+          if (titleEl) {
+            titleEl.innerHTML = `⏱️ Próximo Evento: <span style="color: var(--primary); font-weight: 900;">${nextEvent.name}</span>`;
+          }
           if (elD) elD.textContent = String(days).padStart(2, '0');
           if (elH) elH.textContent = String(hours).padStart(2, '0');
           if (elM) elM.textContent = String(mins).padStart(2, '0');
           if (elS) elS.textContent = String(secs).padStart(2, '0');
         } else {
-          const elD = document.getElementById('cd-days');
-          const elH = document.getElementById('cd-hours');
-          const elM = document.getElementById('cd-mins');
-          const elS = document.getElementById('cd-secs');
+          if (titleEl) {
+            titleEl.textContent = '🎉 ¡Semana Cultural 2026 Culminada con Éxito!';
+          }
           if (elD) elD.textContent = '00';
           if (elH) elH.textContent = '00';
           if (elM) elM.textContent = '00';
