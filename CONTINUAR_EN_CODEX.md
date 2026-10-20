@@ -1,7 +1,10 @@
 # Continuar el proyecto IE El Carmen
 
-**Primero leer ESTADO_PROYECTO.md, sección «Estado vigente». Web y Gmail funcionan; falta confirmar la aprobación definitiva de Education Fundamentals gratuito.**
-Actualizado el 18 de octubre de 2026, 09:41 (Colombia). No repetir registro, comprar planes ni revertir DNS por recuerdos antiguos.
+**Actualizado el 19 de octubre de 2026, 21:40 (Colombia).**
+- **Semana Cultural 2026:** El Día 1 («Memoria Histórica & Cátedra Carmelita») está 100% implementado y desplegado tanto en staging (`laboratorio/`, `https://lab.elcarmencienaga.edu.co/`) como en producción (`semanacultural/`, `https://semanacultural.elcarmencienaga.edu.co/`).
+- **Novedades en producción:** Galería dedicada `dia1.html` con 6 videos oficiales de YouTube (2 panorámicos 16:9, 4 shorts verticales 9:16), 15 fotos optimizadas con visor interactivo lightbox, enlace real al álbum de Google Fotos (`https://photos.app.goo.gl/124snuRiv8Rm1pJ28`) y cronómetro inteligente secuencial en `index.html` que apunta automáticamente al Día 2 (Feria de Emprendimiento, Martes 20 a las 8:00 AM).
+- **Regla de oro de flujo:** Mantener el flujo staging-first: toda novedad se construye y valida en `laboratorio/` antes de promover a `semanacultural/`.
+- **Google Workspace:** Pendiente confirmar la aprobación definitiva de Education Fundamentals gratuito (13 días de trial restantes).
 
 ## Inicio seguro
 
