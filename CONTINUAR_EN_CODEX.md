@@ -1,8 +1,9 @@
 # Continuar el proyecto IE El Carmen
 
-**Actualizado el 21 de octubre de 2026, 12:20 (Colombia).**
-- **Semana Cultural 2026 - Día 1:** Actualizada la galería `dia1.html` a 20 fotos destacadas y 8 videos oficiales (2 panorámicos 16:9 + 6 shorts verticales 9:16 incluyendo las 2 partes de Región Amazónica).
-- **Semana Cultural 2026 - Día 2:** Promovido y verificado al 100% en producción (`semanacultural/`, `https://semanacultural.elcarmencienaga.edu.co/dia2.html`). Galería ampliada a **34 fotos** (con las 5 fotos destacadas compartidas por la profesora Miladys: Tienda IECAR «Ven y ponte la tuya», equipo docente y stand «Gelaparty»), lightbox interactivo nativo comprobado, 3 videos oficiales y tarjeta destacada en `index.html`.
+**Actualizado el 21 de octubre de 2026, 15:45 (Colombia).**
+- **Semana Cultural 2026 - Día 4 (Foro Ambiental):** Diseñada y desplegada en **laboratorio** (`https://lab.elcarmencienaga.edu.co/`) la cobertura preparatoria para el **Foro «Salvemos la Ciénaga»** (Jueves 22 de octubre, 8:00 AM, instalaciones del plantel). Incluye: actualización en cronograma con horario oficial de 8:00 AM, tarjeta en galería de eventos y banner oficial interactivo (`#foro-salvemos-la-cienaga`) con cartel vertical (`afiche_foro.jpg`), versión cuadrada para redes (`afiche_foro_cuadrado.jpg`), opciones de descarga y los 3 ejes temáticos (Conciencia ambiental, Participación ciudadana y Compromiso con el territorio). HTTP 200 verificado en vivo.
+- **Semana Cultural 2026 - Día 3 (Mundialito):** A la espera de los enlaces oficiales que aportará Leo para fotos destacadas, videos y álbum de Google Fotos.
+- **Semana Cultural 2026 - Día 2:** 100% promovido y verificado en producción con 34 fotos.
 - **Regla de oro de flujo:** Mantener el flujo staging-first: toda novedad se construye, despliega con `hosting_deploy` y valida en `lab.elcarmencienaga.edu.co` antes de promover a `semanacultural.elcarmencienaga.edu.co`.
 - **Google Workspace:** Pendiente confirmar la aprobación definitiva de Education Fundamentals gratuito (12 días de trial restantes).
 
