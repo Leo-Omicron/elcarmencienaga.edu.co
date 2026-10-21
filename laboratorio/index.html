@@ -1,17 +1,21 @@
 <!doctype html>
 <html lang="es-CO">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="Semana Cultural 2026 de la Institución Educativa El Carmen de Ciénaga, Magdalena. Del 19 al 23 de octubre. Memoria histórica, feria de emprendimiento, desfile folclórico y deportivo, foro educativo y 53 aniversario institucional.">
+  <meta name="description"
+    content="Semana Cultural 2026 de la Institución Educativa El Carmen de Ciénaga, Magdalena. Del 19 al 23 de octubre. Memoria histórica, feria de emprendimiento, desfile folclórico y deportivo, foro educativo y 53 aniversario institucional.">
   <meta name="theme-color" content="#191253">
   <title>Semana Cultural 2026 | IE El Carmen · Ciénaga, Magdalena</title>
 
   <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <style>
     :root {
@@ -38,7 +42,9 @@
       --radius-full: 9999px;
     }
 
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -57,7 +63,11 @@
       overflow-x: hidden;
     }
 
-    h1, h2, h3, h4, .font-heading {
+    h1,
+    h2,
+    h3,
+    h4,
+    .font-heading {
       font-family: 'Outfit', sans-serif;
       font-weight: 700;
       line-height: 1.2;
@@ -83,6 +93,7 @@
       padding: 0.5rem 0;
       border-bottom: 2px solid var(--accent-gold);
     }
+
     .env-banner .container {
       display: flex;
       justify-content: space-between;
@@ -90,6 +101,7 @@
       flex-wrap: wrap;
       gap: 0.5rem;
     }
+
     .env-tag {
       display: inline-flex;
       align-items: center;
@@ -99,11 +111,13 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
+
     .env-link {
       color: #cbd5e1;
       text-decoration: underline;
       font-weight: 600;
     }
+
     .env-link:hover {
       color: #ffffff;
     }
@@ -118,17 +132,20 @@
       border-bottom: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-sm);
     }
+
     .nav-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-block: 0.85rem;
     }
+
     .brand-group {
       display: flex;
       align-items: center;
       gap: 0.9rem;
     }
+
     .brand-logo {
       width: 52px;
       height: 52px;
@@ -136,11 +153,13 @@
       object-fit: cover;
       box-shadow: 0 0 0 2px var(--accent-green);
     }
+
     .brand-text h2 {
       font-size: 1.15rem;
       color: var(--primary);
       letter-spacing: -0.01em;
     }
+
     .brand-text p {
       font-size: 0.74rem;
       color: var(--text-muted);
@@ -148,6 +167,7 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
+
     .nav-links {
       display: flex;
       gap: 1.75rem;
@@ -156,9 +176,11 @@
       list-style: none;
       align-items: center;
     }
+
     .nav-links a:hover {
       color: var(--accent-green-dark);
     }
+
     .btn-nav {
       background: var(--accent-green);
       color: #ffffff;
@@ -168,10 +190,12 @@
       font-size: 0.88rem;
       box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
     }
+
     .btn-nav:hover {
       background: var(--accent-green-dark);
       transform: translateY(-2px);
     }
+
     .btn-instagram-nav {
       display: inline-flex;
       align-items: center;
@@ -186,11 +210,13 @@
       box-shadow: 0 2px 8px rgba(220, 39, 67, 0.3);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
     .btn-instagram-nav:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 14px rgba(220, 39, 67, 0.45);
       color: #ffffff;
     }
+
     .mobile-actions {
       display: none;
     }
@@ -200,16 +226,18 @@
       position: relative;
       padding-block: 3.5rem 4.5rem;
       background: radial-gradient(circle at 85% 15%, rgba(245, 158, 11, 0.12) 0%, transparent 40%),
-                  radial-gradient(circle at 15% 85%, rgba(16, 185, 129, 0.1) 0%, transparent 40%),
-                  var(--bg-surface);
+        radial-gradient(circle at 15% 85%, rgba(16, 185, 129, 0.1) 0%, transparent 40%),
+        var(--bg-surface);
       overflow: hidden;
     }
+
     .hero-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.95fr;
       gap: 3.5rem;
       align-items: center;
     }
+
     .hero-date-badge {
       display: inline-flex;
       align-items: center;
@@ -225,6 +253,7 @@
       text-transform: uppercase;
       letter-spacing: 0.06em;
     }
+
     .hero-title {
       font-size: clamp(2.6rem, 5.2vw, 4.2rem);
       font-weight: 900;
@@ -233,12 +262,14 @@
       line-height: 1.08;
       margin-bottom: 1.1rem;
     }
+
     .hero-title span {
       background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     .hero-motto {
       display: inline-block;
       font-size: 1.3rem;
@@ -247,12 +278,14 @@
       margin-bottom: 0.75rem;
       font-family: 'Outfit', sans-serif;
     }
+
     .hero-lead {
       font-size: 1.08rem;
       color: var(--text-muted);
       margin-bottom: 2rem;
       max-width: 540px;
     }
+
     .hero-cta {
       display: flex;
       flex-wrap: wrap;
@@ -260,6 +293,7 @@
       align-items: center;
       margin-bottom: 2.2rem;
     }
+
     .btn-primary {
       display: inline-flex;
       align-items: center;
@@ -272,10 +306,12 @@
       font-size: 1rem;
       box-shadow: 0 6px 20px rgba(25, 18, 83, 0.25);
     }
+
     .btn-primary:hover {
       background: var(--primary-light);
       transform: translateY(-3px);
     }
+
     .btn-secondary {
       display: inline-flex;
       align-items: center;
@@ -289,6 +325,7 @@
       border: 1.5px solid var(--border-subtle);
       box-shadow: var(--shadow-sm);
     }
+
     .btn-secondary:hover {
       background: #f1f5f9;
       transform: translateY(-2px);
@@ -304,9 +341,11 @@
       background: #ffffff;
       transition: transform 0.4s ease;
     }
+
     .hero-poster-card:hover {
       transform: scale(1.02);
     }
+
     .hero-poster-img {
       width: 100%;
       height: 480px;
@@ -314,6 +353,7 @@
       background: #191253;
       display: block;
     }
+
     .hero-badge-float {
       position: absolute;
       top: 1rem;
@@ -324,7 +364,7 @@
       font-size: 0.78rem;
       padding: 0.35rem 0.85rem;
       border-radius: var(--radius-full);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -335,6 +375,7 @@
       gap: 0.8rem;
       margin-top: 1rem;
     }
+
     .countdown-unit {
       background: #ffffff;
       border: 1px solid var(--border-subtle);
@@ -344,6 +385,7 @@
       text-align: center;
       box-shadow: var(--shadow-sm);
     }
+
     .countdown-number {
       font-size: 1.6rem;
       font-weight: 800;
@@ -351,6 +393,7 @@
       display: block;
       font-family: 'Outfit', sans-serif;
     }
+
     .countdown-label {
       font-size: 0.68rem;
       text-transform: uppercase;
@@ -365,11 +408,13 @@
       padding-block: 2.8rem;
       color: #ffffff;
     }
+
     .days-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.2rem;
     }
+
     .day-pill-card {
       background: rgba(255, 255, 255, 0.07);
       backdrop-filter: blur(8px);
@@ -380,11 +425,13 @@
       transition: all 0.3s ease;
       cursor: pointer;
     }
+
     .day-pill-card:hover {
       background: rgba(255, 255, 255, 0.16);
       transform: translateY(-5px);
       border-color: var(--accent-gold);
     }
+
     .day-pill-date {
       display: block;
       font-size: 0.82rem;
@@ -394,11 +441,13 @@
       color: var(--accent-gold);
       margin-bottom: 0.35rem;
     }
+
     .day-pill-card h4 {
       font-size: 1.15rem;
       color: #ffffff;
       margin-bottom: 0.35rem;
     }
+
     .day-pill-card p {
       font-size: 0.82rem;
       color: #cbd5e1;
@@ -408,12 +457,14 @@
     .section-padding {
       padding-block: 5.5rem;
     }
+
     .section-title-wrap {
       text-align: center;
       max-width: 720px;
       margin-inline: auto;
       margin-bottom: 3.5rem;
     }
+
     .section-eyebrow {
       font-size: 0.84rem;
       text-transform: uppercase;
@@ -423,10 +474,12 @@
       margin-bottom: 0.5rem;
       display: block;
     }
+
     .section-title {
       font-size: clamp(2.1rem, 3.8vw, 2.85rem);
       margin-bottom: 0.9rem;
     }
+
     .section-lead {
       color: var(--text-muted);
       font-size: 1.05rem;
@@ -444,9 +497,11 @@
       grid-template-columns: 1fr 1.1fr;
       align-items: center;
     }
+
     .day-showcase-card.reverse {
       grid-template-columns: 1.1fr 1fr;
     }
+
     .day-showcase-img {
       width: 100%;
       height: 100%;
@@ -454,14 +509,17 @@
       object-fit: cover;
       display: block;
     }
+
     .day-showcase-img.contain-fit {
       object-fit: contain;
       background: #191253;
       max-height: 520px;
     }
+
     .day-showcase-body {
       padding: clamp(2rem, 4vw, 3.2rem);
     }
+
     .day-badge-inline {
       display: inline-block;
       background: var(--accent-gold-light);
@@ -474,17 +532,20 @@
       letter-spacing: 0.05em;
       margin-bottom: 0.9rem;
     }
+
     .day-showcase-body h3 {
       font-size: 2rem;
       color: var(--primary);
       margin-bottom: 0.75rem;
     }
+
     .day-showcase-body p {
       color: var(--text-muted);
       font-size: 1rem;
       margin-bottom: 1.5rem;
       line-height: 1.7;
     }
+
     .event-features-list {
       list-style: none;
       display: flex;
@@ -492,6 +553,7 @@
       gap: 0.75rem;
       margin-bottom: 1.8rem;
     }
+
     .event-features-list li {
       display: flex;
       align-items: center;
@@ -500,6 +562,7 @@
       font-size: 0.95rem;
       color: var(--text-main);
     }
+
     .event-features-list li span {
       color: var(--accent-green-dark);
       font-size: 1.1rem;
@@ -512,6 +575,7 @@
       gap: 2rem;
       margin-top: 2rem;
     }
+
     .poster-dual-item {
       background: #ffffff;
       border-radius: var(--radius-md);
@@ -520,10 +584,12 @@
       box-shadow: var(--shadow-sm);
       transition: transform 0.3s ease;
     }
+
     .poster-dual-item:hover {
       transform: translateY(-6px);
       box-shadow: var(--shadow-md);
     }
+
     .poster-dual-item img {
       width: 100%;
       height: 440px;
@@ -531,15 +597,18 @@
       background: #0f172a;
       display: block;
     }
+
     .poster-dual-info {
       padding: 1.25rem;
       text-align: center;
     }
+
     .poster-dual-info h4 {
       font-size: 1.15rem;
       color: var(--primary);
       margin-bottom: 0.3rem;
     }
+
     .poster-dual-info p {
       font-size: 0.85rem;
       color: var(--text-muted);
@@ -556,6 +625,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .notice-banner-card::before {
       content: "";
       position: absolute;
@@ -565,6 +635,7 @@
       height: 100%;
       background: linear-gradient(180deg, var(--accent-gold), var(--accent-green));
     }
+
     .notice-header-badge {
       display: inline-flex;
       align-items: center;
@@ -579,12 +650,14 @@
       border-radius: var(--radius-full);
       margin-bottom: 0.75rem;
     }
+
     .notice-title {
       font-size: clamp(1.35rem, 2.5vw, 1.85rem);
       color: var(--primary);
       margin-bottom: 0.45rem;
       line-height: 1.25;
     }
+
     .notice-lead {
       color: var(--text-muted);
       font-size: 0.96rem;
@@ -592,17 +665,20 @@
       margin-bottom: 1.8rem;
       max-width: 850px;
     }
+
     .notice-grid {
       display: grid;
       grid-template-columns: minmax(280px, 380px) 1fr;
       gap: 2.25rem;
       align-items: start;
     }
+
     .notice-flyer-col {
       display: flex;
       flex-direction: column;
       gap: 0.85rem;
     }
+
     .notice-flyer-frame {
       border-radius: var(--radius-md);
       overflow: hidden;
@@ -611,21 +687,25 @@
       background: #0f172a;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .notice-flyer-frame:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-lg);
     }
+
     .notice-flyer-frame img {
       width: 100%;
       height: auto;
       display: block;
       object-fit: cover;
     }
+
     .notice-rules-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 0.9rem;
     }
+
     .notice-rule-item {
       background: #ffffff;
       border: 1px solid var(--border-subtle);
@@ -637,21 +717,25 @@
       gap: 0.35rem;
       transition: transform 0.25s ease, border-color 0.25s ease;
     }
+
     .notice-rule-item:hover {
       transform: translateY(-3px);
       border-color: var(--accent-green);
       box-shadow: var(--shadow-md);
     }
+
     .notice-rule-icon-wrap {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 0.3rem;
     }
+
     .notice-rule-icon {
       font-size: 1.5rem;
       line-height: 1;
     }
+
     .notice-rule-badge {
       font-size: 0.7rem;
       font-weight: 800;
@@ -660,11 +744,32 @@
       border-radius: var(--radius-full);
       letter-spacing: 0.05em;
     }
-    .notice-rule-badge.green { background: #dcfce7; color: #15803d; }
-    .notice-rule-badge.red { background: #fee2e2; color: #b91c1c; }
-    .notice-rule-badge.gold { background: #fef3c7; color: #b45309; }
-    .notice-rule-badge.blue { background: #dbeafe; color: #1d4ed8; }
-    .notice-rule-badge.purple { background: #f3e8ff; color: #7e22ce; }
+
+    .notice-rule-badge.green {
+      background: #dcfce7;
+      color: #15803d;
+    }
+
+    .notice-rule-badge.red {
+      background: #fee2e2;
+      color: #b91c1c;
+    }
+
+    .notice-rule-badge.gold {
+      background: #fef3c7;
+      color: #b45309;
+    }
+
+    .notice-rule-badge.blue {
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+
+    .notice-rule-badge.purple {
+      background: #f3e8ff;
+      color: #7e22ce;
+    }
+
     .notice-rule-item h5 {
       font-size: 0.95rem;
       color: var(--primary);
@@ -672,6 +777,7 @@
       font-weight: 700;
       line-height: 1.3;
     }
+
     .notice-rule-item p {
       font-size: 0.84rem;
       color: var(--text-muted);
@@ -685,14 +791,17 @@
       border: 2px solid #0284c7;
       box-shadow: 0 10px 30px rgba(2, 132, 199, 0.12);
     }
+
     .notice-banner-card.sports::before {
       background: linear-gradient(180deg, #0284c7, #10b981);
     }
+
     .notice-banner-card.solemn {
       background: linear-gradient(135deg, #ffffff 0%, #fff7ed 45%, #fdf2f8 100%);
       border: 2px solid #f59e0b;
       box-shadow: 0 10px 30px rgba(245, 158, 11, 0.12);
     }
+
     .notice-banner-card.solemn::before {
       background: linear-gradient(180deg, #f59e0b, #e11d48);
     }
@@ -704,6 +813,7 @@
       gap: 0.9rem;
       margin-top: 1rem;
     }
+
     .route-step-card {
       background: #ffffff;
       border: 1px solid var(--border-subtle);
@@ -716,10 +826,12 @@
       border-top: 4px solid var(--accent-blue);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
+
     .route-step-card:hover {
       transform: translateY(-3px);
       box-shadow: var(--shadow-md);
     }
+
     .route-step-num {
       width: 28px;
       height: 28px;
@@ -733,12 +845,14 @@
       justify-content: center;
       margin-bottom: 0.3rem;
     }
+
     .route-step-card h5 {
       font-size: 0.95rem;
       color: var(--primary);
       margin: 0;
       font-weight: 700;
     }
+
     .route-step-card p {
       font-size: 0.84rem;
       color: var(--text-muted);
@@ -752,6 +866,7 @@
       border-top: 1px solid var(--border-subtle);
       border-bottom: 1px solid var(--border-subtle);
     }
+
     .schedule-tabs {
       display: flex;
       justify-content: center;
@@ -759,6 +874,7 @@
       gap: 0.6rem;
       margin-bottom: 2.5rem;
     }
+
     .tab-btn {
       background: var(--bg-surface);
       border: 1.5px solid var(--border-subtle);
@@ -771,10 +887,12 @@
       cursor: pointer;
       transition: all 0.25s ease;
     }
+
     .tab-btn:hover {
       border-color: var(--primary);
       color: var(--primary);
     }
+
     .tab-btn.active {
       background: var(--primary);
       border-color: var(--primary);
@@ -786,12 +904,21 @@
       display: none;
       animation: fadeIn 0.4s ease forwards;
     }
+
     .tab-content.active {
       display: block;
     }
+
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .timeline {
@@ -801,6 +928,7 @@
       flex-direction: column;
       gap: 1.25rem;
     }
+
     .timeline-card {
       display: grid;
       grid-template-columns: 140px 1fr;
@@ -812,21 +940,26 @@
       box-shadow: var(--shadow-sm);
       align-items: center;
     }
+
     .timeline-card.special-red {
       border-left-color: var(--accent-red);
     }
+
     .timeline-card.special-gold {
       border-left-color: var(--accent-gold);
     }
+
     .timeline-card.special-blue {
       border-left-color: var(--accent-blue);
     }
+
     .timeline-time {
       font-family: 'Outfit', sans-serif;
       font-weight: 800;
       color: var(--primary);
       font-size: 1.05rem;
     }
+
     .timeline-time small {
       display: block;
       font-size: 0.74rem;
@@ -834,22 +967,26 @@
       font-weight: 600;
       text-transform: uppercase;
     }
+
     .timeline-details h4 {
       font-size: 1.2rem;
       margin-bottom: 0.35rem;
       color: var(--primary);
     }
+
     .timeline-details p {
       font-size: 0.92rem;
       color: var(--text-muted);
       margin-bottom: 0.5rem;
     }
+
     .timeline-badges {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
       align-items: center;
     }
+
     .badge-tag {
       font-size: 0.75rem;
       font-weight: 700;
@@ -858,10 +995,12 @@
       background: #e2e8f0;
       color: var(--text-main);
     }
+
     .badge-tag.green {
       background: #ecfdf5;
       color: var(--accent-green-dark);
     }
+
     .badge-tag.gold {
       background: var(--accent-gold-light);
       color: #b45309;
@@ -872,12 +1011,14 @@
       background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
       border-top: 1px solid var(--border-subtle);
     }
+
     .teaser-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
       margin-top: 2.5rem;
     }
+
     .teaser-card {
       background: #ffffff;
       border-radius: var(--radius-md);
@@ -891,11 +1032,13 @@
       transition: all 0.3s ease;
       box-shadow: var(--shadow-sm);
     }
+
     .teaser-card:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-md);
       border-color: #cbd5e1;
     }
+
     .teaser-header {
       display: flex;
       justify-content: space-between;
@@ -904,6 +1047,7 @@
       gap: 0.6rem;
       margin-bottom: 1rem;
     }
+
     .teaser-badge-live {
       display: inline-flex;
       align-items: center;
@@ -918,6 +1062,7 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
+
     .teaser-badge-soon {
       display: inline-flex;
       align-items: center;
@@ -932,6 +1077,7 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
+
     .pulse-dot {
       width: 7px;
       height: 7px;
@@ -940,22 +1086,37 @@
       display: inline-block;
       animation: pulseAnim 2s infinite;
     }
+
     @keyframes pulseAnim {
-      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-      70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
-      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
     }
+
     .teaser-card h4 {
       font-size: 1.15rem;
       color: var(--primary);
       margin-bottom: 0.4rem;
     }
+
     .teaser-card p {
       font-size: 0.88rem;
       color: var(--text-muted);
       line-height: 1.5;
       margin-bottom: 1.25rem;
     }
+
     .teaser-footer {
       font-size: 0.8rem;
       font-weight: 700;
@@ -964,6 +1125,7 @@
       align-items: center;
       gap: 0.4rem;
     }
+
     .teaser-callout {
       margin-top: 3rem;
       background: linear-gradient(135deg, #1e1b4b 0%, #191253 100%);
@@ -976,11 +1138,13 @@
       flex-wrap: wrap;
       gap: 1.5rem;
     }
+
     .teaser-callout-text h4 {
       color: #ffffff;
       font-size: 1.35rem;
       margin-bottom: 0.35rem;
     }
+
     .teaser-callout-text p {
       color: #cbd5e1;
       font-size: 0.92rem;
@@ -995,6 +1159,7 @@
       align-items: center;
       margin-top: 1.5rem;
     }
+
     .phone-mockup-frame {
       position: relative;
       width: 100%;
@@ -1007,6 +1172,7 @@
       box-shadow: 0 25px 50px -12px rgba(25, 18, 83, 0.4), inset 0 0 0 2px rgba(255, 255, 255, 0.1);
       overflow: hidden;
     }
+
     .phone-mockup-frame::before {
       content: '';
       position: absolute;
@@ -1019,6 +1185,7 @@
       border-radius: 10px;
       z-index: 10;
     }
+
     .phone-mockup-frame iframe {
       position: absolute;
       top: 0;
@@ -1027,11 +1194,13 @@
       height: 100%;
       border: 0;
     }
+
     .video-info-panel {
       display: flex;
       flex-direction: column;
       gap: 1.25rem;
     }
+
     @media (max-width: 768px) {
       .vertical-video-card-grid {
         grid-template-columns: 1fr;
@@ -1047,6 +1216,7 @@
       align-items: center;
       margin-top: 1.5rem;
     }
+
     .showcase-preview-frame {
       position: relative;
       width: 100%;
@@ -1056,6 +1226,7 @@
       box-shadow: var(--shadow-md);
       background: #0f172a;
     }
+
     .showcase-preview-frame img {
       width: 100%;
       height: auto;
@@ -1063,6 +1234,7 @@
       object-fit: cover;
       display: block;
     }
+
     .showcase-actions-wrap {
       display: flex;
       gap: 0.75rem;
@@ -1070,19 +1242,23 @@
       align-items: center;
       margin-top: 0.5rem;
     }
+
     @media (max-width: 900px) {
       .showcase-featured-grid {
         grid-template-columns: 1fr;
         gap: 1.75rem;
       }
+
       .showcase-preview-frame {
         max-width: 440px;
         margin-inline: auto;
       }
+
       .showcase-actions-wrap {
         flex-direction: column;
         align-items: stretch;
       }
+
       .showcase-actions-wrap a {
         width: 100%;
         text-align: center;
@@ -1103,6 +1279,7 @@
       margin-bottom: 2.5rem;
       position: relative;
     }
+
     .media-lab-badge {
       display: inline-flex;
       align-items: center;
@@ -1118,6 +1295,7 @@
       margin-bottom: 0.85rem;
       box-shadow: 0 4px 12px rgba(25, 18, 83, 0.2);
     }
+
     .media-filter-bar {
       display: flex;
       justify-content: space-between;
@@ -1128,11 +1306,13 @@
       border-bottom: 1px solid var(--border-subtle);
       margin-bottom: 2rem;
     }
+
     .media-filter-group {
       display: flex;
       gap: 0.5rem;
       flex-wrap: wrap;
     }
+
     .media-filter-btn {
       border: 1px solid var(--border-subtle);
       background: var(--bg-surface);
@@ -1147,17 +1327,19 @@
       align-items: center;
       gap: 0.4rem;
     }
+
     .media-filter-btn:hover {
       background: #e2e8f0;
       border-color: #cbd5e1;
     }
+
     .media-filter-btn.active {
       background: var(--primary);
       color: #ffffff;
       border-color: var(--primary);
       box-shadow: var(--shadow-sm);
     }
-    
+
     /* A/B Switcher Control */
     .ab-switcher-box {
       background: var(--bg-surface);
@@ -1166,6 +1348,7 @@
       padding: 1.35rem;
       margin-bottom: 2rem;
     }
+
     .ab-switcher-header {
       display: flex;
       justify-content: space-between;
@@ -1174,6 +1357,7 @@
       gap: 1rem;
       margin-bottom: 0.85rem;
     }
+
     .ab-switcher-title {
       font-size: 1.05rem;
       font-weight: 800;
@@ -1182,6 +1366,7 @@
       align-items: center;
       gap: 0.5rem;
     }
+
     .ab-toggle-group {
       display: inline-flex;
       background: #e2e8f0;
@@ -1189,6 +1374,7 @@
       padding: 4px;
       gap: 2px;
     }
+
     .ab-toggle-btn {
       border: none;
       background: transparent;
@@ -1203,6 +1389,7 @@
       align-items: center;
       gap: 0.4rem;
     }
+
     .ab-toggle-btn.active {
       background: #ffffff;
       color: var(--primary);
@@ -1217,11 +1404,13 @@
       gap: 2rem;
       align-items: start;
     }
+
     @media (max-width: 900px) {
       .video-inpage-grid {
         grid-template-columns: 1fr;
       }
     }
+
     .video-player-card {
       background: #ffffff;
       border: 1px solid var(--border-subtle);
@@ -1231,6 +1420,7 @@
       display: flex;
       flex-direction: column;
     }
+
     .video-h-frame {
       position: relative;
       width: 100%;
@@ -1238,6 +1428,7 @@
       background: #0f172a;
       overflow: hidden;
     }
+
     .video-h-frame iframe,
     .video-h-frame video {
       width: 100%;
@@ -1245,6 +1436,7 @@
       border: 0;
       object-fit: cover;
     }
+
     .video-v-frame-wrap {
       width: 100%;
       max-width: 320px;
@@ -1257,19 +1449,23 @@
       position: relative;
       overflow: hidden;
     }
+
     .video-v-frame-wrap iframe {
       width: 100%;
       height: 100%;
       border: 0;
     }
+
     .video-player-body {
       padding: 1.25rem;
     }
+
     .video-player-body h4 {
       font-size: 1.1rem;
       color: var(--primary);
       margin-bottom: 0.4rem;
     }
+
     .video-player-body p {
       font-size: 0.88rem;
       color: var(--text-muted);
@@ -1283,6 +1479,7 @@
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
       gap: 1.5rem;
     }
+
     .launcher-card {
       background: #ffffff;
       border: 1px solid var(--border-subtle);
@@ -1295,32 +1492,39 @@
       position: relative;
       cursor: pointer;
     }
+
     .launcher-card:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-md);
       border-color: var(--accent-gold);
     }
+
     .launcher-thumb-wrap {
       position: relative;
       width: 100%;
       overflow: hidden;
       background: #0f172a;
     }
+
     .launcher-thumb-wrap.ratio-h {
       aspect-ratio: 16 / 9;
     }
+
     .launcher-thumb-wrap.ratio-v {
       aspect-ratio: 9 / 14;
     }
+
     .launcher-thumb-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.4s ease;
     }
+
     .launcher-card:hover .launcher-thumb-wrap img {
       transform: scale(1.05);
     }
+
     .launcher-play-overlay {
       position: absolute;
       inset: 0;
@@ -1330,9 +1534,11 @@
       justify-content: center;
       transition: background 0.25s ease;
     }
+
     .launcher-card:hover .launcher-play-overlay {
       background: rgba(15, 23, 42, 0.2);
     }
+
     .play-circle-btn {
       width: 56px;
       height: 56px;
@@ -1345,11 +1551,13 @@
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
       transition: transform 0.25s ease, background 0.25s ease;
     }
+
     .launcher-card:hover .play-circle-btn {
       transform: scale(1.14);
       background: var(--accent-gold);
       color: #000000;
     }
+
     .badge-duration {
       position: absolute;
       bottom: 10px;
@@ -1362,6 +1570,7 @@
       padding: 0.2rem 0.55rem;
       border-radius: var(--radius-sm);
     }
+
     .badge-format {
       position: absolute;
       top: 10px;
@@ -1376,6 +1585,7 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
+
     .launcher-body {
       padding: 1.25rem;
       display: flex;
@@ -1383,17 +1593,20 @@
       flex-grow: 1;
       justify-content: space-between;
     }
+
     .launcher-body h4 {
       font-size: 1.08rem;
       color: var(--primary);
       margin-bottom: 0.4rem;
     }
+
     .launcher-body p {
       font-size: 0.86rem;
       color: var(--text-muted);
       line-height: 1.45;
       margin-bottom: 1rem;
     }
+
     .btn-launch-google {
       display: inline-flex;
       align-items: center;
@@ -1409,6 +1622,7 @@
       transition: all 0.2s ease;
       text-decoration: none;
     }
+
     .launcher-card:hover .btn-launch-google {
       background: var(--primary);
       color: #ffffff;
@@ -1422,6 +1636,7 @@
       gap: 1.5rem;
       margin-top: 1rem;
     }
+
     .photo-showcase-item {
       background: #ffffff;
       border-radius: var(--radius-md);
@@ -1431,11 +1646,13 @@
       transition: all 0.3s ease;
       cursor: pointer;
     }
+
     .photo-showcase-item:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-md);
       border-color: var(--accent-green);
     }
+
     .photo-thumb-container {
       position: relative;
       width: 100%;
@@ -1443,15 +1660,18 @@
       overflow: hidden;
       background: #f1f5f9;
     }
+
     .photo-thumb-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.4s ease;
     }
+
     .photo-showcase-item:hover .photo-thumb-container img {
       transform: scale(1.06);
     }
+
     .photo-overlay-zoom {
       position: absolute;
       inset: 0;
@@ -1464,17 +1684,21 @@
       font-size: 1.7rem;
       transition: opacity 0.25s ease;
     }
+
     .photo-showcase-item:hover .photo-overlay-zoom {
       opacity: 1;
     }
+
     .photo-caption {
       padding: 0.9rem 1.1rem;
     }
+
     .photo-caption h5 {
       font-size: 0.95rem;
       color: var(--primary);
       margin-bottom: 0.2rem;
     }
+
     .photo-caption span {
       font-size: 0.8rem;
       color: var(--text-muted);
@@ -1495,9 +1719,11 @@
       gap: 1.5rem;
       box-shadow: var(--shadow-lg);
     }
+
     .gphotos-hub-info {
       max-width: 650px;
     }
+
     .gphotos-hub-tag {
       display: inline-flex;
       align-items: center;
@@ -1513,22 +1739,26 @@
       border-radius: var(--radius-full);
       margin-bottom: 0.75rem;
     }
+
     .gphotos-hub-info h3 {
       color: #ffffff;
       font-size: clamp(1.35rem, 2.5vw, 1.85rem);
       margin-bottom: 0.5rem;
     }
+
     .gphotos-hub-info p {
       color: #cbd5e1;
       font-size: 0.95rem;
       line-height: 1.5;
     }
+
     .gphotos-hub-actions {
       display: flex;
       flex-direction: column;
       gap: 0.6rem;
       min-width: 260px;
     }
+
     .btn-gphotos-primary {
       display: inline-flex;
       align-items: center;
@@ -1545,6 +1775,7 @@
       text-decoration: none;
       text-align: center;
     }
+
     .btn-gphotos-primary:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 24px rgba(245, 158, 11, 0.55);
@@ -1563,10 +1794,12 @@
       box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65);
       overflow: hidden;
     }
+
     .lightbox-modal::backdrop {
       background: rgba(15, 23, 42, 0.88);
       backdrop-filter: blur(8px);
     }
+
     .lightbox-inner {
       background: #0f172a;
       border-radius: var(--radius-lg);
@@ -1574,6 +1807,7 @@
       overflow: hidden;
       position: relative;
     }
+
     .lightbox-inner img {
       width: 100%;
       max-height: 72vh;
@@ -1581,6 +1815,7 @@
       display: block;
       background: #000000;
     }
+
     .lightbox-caption-box {
       padding: 1.25rem 1.75rem;
       background: #0f172a;
@@ -1590,6 +1825,7 @@
       align-items: center;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
+
     .lightbox-close-btn {
       position: absolute;
       top: 15px;
@@ -1608,10 +1844,12 @@
       transition: all 0.2s ease;
       z-index: 10;
     }
+
     .lightbox-close-btn:hover {
       background: var(--accent-red);
       border-color: var(--accent-red);
     }
+
     .institutional-box {
       background: linear-gradient(135deg, #191253 0%, #104838 100%);
       color: #ffffff;
@@ -1620,22 +1858,26 @@
       margin-top: 5rem;
       box-shadow: var(--shadow-lg);
     }
+
     .inst-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
       align-items: center;
     }
+
     .inst-info h3 {
       color: #ffffff;
       font-size: 2.1rem;
       margin-bottom: 1rem;
     }
+
     .inst-info p {
       color: #e2e8f0;
       font-size: 1rem;
       margin-bottom: 1.5rem;
     }
+
     .inst-meta-list {
       list-style: none;
       display: flex;
@@ -1644,9 +1886,11 @@
       font-size: 0.92rem;
       color: #cbd5e1;
     }
+
     .inst-meta-list strong {
       color: var(--accent-gold);
     }
+
     .inst-action-box {
       background: rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(10px);
@@ -1655,11 +1899,13 @@
       padding: 2.2rem;
       text-align: center;
     }
+
     .inst-action-box h4 {
       color: #ffffff;
       font-size: 1.4rem;
       margin-bottom: 0.75rem;
     }
+
     .inst-action-box p {
       color: #cbd5e1;
       font-size: 0.9rem;
@@ -1674,6 +1920,7 @@
       border-top: 1px solid #1e293b;
       font-size: 0.88rem;
     }
+
     .footer-content {
       display: flex;
       justify-content: space-between;
@@ -1683,28 +1930,34 @@
       padding-bottom: 2rem;
       border-bottom: 1px solid #1e293b;
     }
+
     .footer-brand {
       display: flex;
       align-items: center;
       gap: 1rem;
     }
+
     .footer-brand img {
       width: 46px;
       height: 46px;
       border-radius: 50%;
     }
+
     .footer-brand strong {
       color: #ffffff;
       font-size: 1.05rem;
       display: block;
     }
+
     .footer-links a {
       color: #cbd5e1;
       margin-left: 1.5rem;
     }
+
     .footer-links a:hover {
       color: var(--accent-gold);
     }
+
     .footer-bottom {
       padding-top: 1.5rem;
       text-align: center;
@@ -1714,18 +1967,27 @@
 
     /* Responsive */
     @media (max-width: 900px) {
-      .hero-grid, .inst-grid, .day-showcase-card, .day-showcase-card.reverse, .posters-dual-grid, .notice-grid {
+
+      .hero-grid,
+      .inst-grid,
+      .day-showcase-card,
+      .day-showcase-card.reverse,
+      .posters-dual-grid,
+      .notice-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
       }
+
       .nav-links {
         display: none;
       }
+
       .mobile-actions {
         display: flex;
         align-items: center;
         gap: 0.5rem;
       }
+
       .btn-instagram-mobile {
         display: inline-flex;
         align-items: center;
@@ -1740,31 +2002,38 @@
         box-shadow: 0 2px 8px rgba(220, 39, 67, 0.35);
         transition: transform 0.2s ease;
       }
+
       .btn-instagram-mobile:hover {
         color: #ffffff;
         transform: translateY(-1px);
       }
+
       .timeline-card {
         grid-template-columns: 1fr;
         gap: 0.6rem;
       }
     }
+
     @media (max-width: 480px) {
       .btn-instagram-mobile span {
         display: none;
       }
+
       .btn-instagram-mobile {
         padding: 0.5rem;
       }
+
       .brand-text p {
         font-size: 0.68rem;
       }
+
       .brand-text h2 {
         font-size: 1.05rem;
       }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Top Ribbon: Subdominio Oficial del Evento -->
@@ -1774,7 +2043,8 @@
         <span>🎉</span> Portal Oficial · Semana Cultural 2026
       </div>
       <div>
-        Enlace directo: <strong>semanacultural.elcarmencienaga.edu.co</strong> (o <strong>cultura.elcarmencienaga.edu.co</strong>) · 
+        Enlace directo: <strong>semanacultural.elcarmencienaga.edu.co</strong> (o
+        <strong>cultura.elcarmencienaga.edu.co</strong>) ·
         <a class="env-link" href="https://elcarmencienaga.edu.co/">Portal Principal ↗</a>
       </div>
     </div>
@@ -1793,8 +2063,15 @@
 
       <!-- Acceso Móvil Rápido a Instagram Oficial -->
       <div class="mobile-actions">
-        <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" class="btn-instagram-mobile" title="Seguir a @ieelcarmen en Instagram" aria-label="Seguir a @ieelcarmen en Instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer"
+          class="btn-instagram-mobile" title="Seguir a @ieelcarmen en Instagram"
+          aria-label="Seguir a @ieelcarmen en Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
           <span>Instagram</span>
         </a>
       </div>
@@ -1808,8 +2085,13 @@
         <li><a href="#institucion">Institución</a></li>
         <li><a class="btn-nav" href="#contacto">Contacto</a></li>
         <li>
-          <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" class="btn-instagram-nav" title="Seguir a @ieelcarmen en Instagram">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer"
+            class="btn-instagram-nav" title="Seguir a @ieelcarmen en Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
             @ieelcarmen
           </a>
         </li>
@@ -1827,7 +2109,8 @@
         </h1>
         <p class="hero-motto">«¡Vivamos juntos nuestra cultura!»</p>
         <p class="hero-lead">
-          Cinco días inolvidables de tradición, ciencia, deporte y celebración comunitaria en la Institución Educativa El Carmen de Ciénaga, Magdalena.
+          Cinco días inolvidables de tradición, ciencia, deporte y celebración comunitaria en la Institución Educativa
+          El Carmen de Ciénaga, Magdalena.
         </p>
 
         <div class="hero-cta">
@@ -1841,7 +2124,8 @@
 
         <!-- Contador Regresivo -->
         <div>
-          <p id="countdown-title" style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.5rem;">
+          <p id="countdown-title"
+            style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.5rem;">
             Tiempo para la inauguración oficial:
           </p>
           <div class="countdown-box">
@@ -1868,7 +2152,8 @@
       <!-- Hero Visual Card: Afiche General Oficial -->
       <div class="hero-poster-card">
         <span class="hero-badge-float">Afiche Oficial 2026</span>
-        <img class="hero-poster-img" src="afiche_general.jpg" alt="Afiche Oficial de la Semana Cultural 2026 IE El Carmen">
+        <img class="hero-poster-img" src="afiche_general.jpg"
+          alt="Afiche Oficial de la Semana Cultural 2026 IE El Carmen">
       </div>
     </div>
   </section>
@@ -1877,7 +2162,9 @@
   <section class="days-glance" id="dias">
     <div class="container">
       <div style="text-align: center; margin-bottom: 1.8rem;">
-        <span style="color: var(--accent-gold); font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.82rem;">Estructura de la semana</span>
+        <span
+          style="color: var(--accent-gold); font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.82rem;">Estructura
+          de la semana</span>
         <h3 style="color: #ffffff; font-size: 1.8rem; margin-top: 0.2rem;">Una temática especial para cada jornada</h3>
       </div>
       <div class="days-grid">
@@ -1920,7 +2207,8 @@
       <div class="section-title-wrap">
         <span class="section-eyebrow">Nuestra Comunidad Carmelita</span>
         <h2 class="section-title">Espacios, Talento y Tradición en Vivo</h2>
-        <p class="section-lead">Cada jornada cobra vida en el patio central techado, las canchas y los pasillos de nuestra sede principal en el Barrio Micael Cotes.</p>
+        <p class="section-lead">Cada jornada cobra vida en el patio central techado, las canchas y los pasillos de
+          nuestra sede principal en el Barrio Micael Cotes.</p>
       </div>
 
       <!-- Lunes 19: Memoria Histórica -->
@@ -1929,13 +2217,15 @@
         <div class="day-showcase-body">
           <span class="day-badge-inline">Lunes 19 de Octubre · 7:30 AM a 11:00 AM</span>
           <h3>Feria de Historia: Memoria de Ciénaga y las Regiones</h3>
-          <p>«Conoce nuestro patrimonio, nuestras raíces y nuestra identidad cultural». Los estudiantes exponen sobre la riqueza arquitectónica, cultural y ecológica de Ciénaga y la Ciénaga Grande de Santa Marta.</p>
+          <p>«Conoce nuestro patrimonio, nuestras raíces y nuestra identidad cultural». Los estudiantes exponen sobre la
+            riqueza arquitectónica, cultural y ecológica de Ciénaga y la Ciénaga Grande de Santa Marta.</p>
           <ul class="event-features-list">
             <li><span>✓</span> Exposiciones temáticas por grados</li>
             <li><span>✓</span> Muestra de maquetas y fotografías históricas</li>
             <li><span>✓</span> Testimonios orales y relatos tradicionales caribeños</li>
           </ul>
-          <a href="#cronograma" class="btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Ver en Cronograma</a>
+          <a href="#cronograma" class="btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">Ver en
+            Cronograma</a>
         </div>
       </div>
 
@@ -1944,14 +2234,17 @@
         <div class="day-showcase-body">
           <span class="day-badge-inline">Martes 20 de Octubre · 8:00 AM a 12:00 M</span>
           <h3>Feria «Jóvenes con Propósito» &amp; Tienda IECAR</h3>
-          <p>«Ideas que inspiran, proyectos que transforman». Los estudiantes presentan iniciativas productivas creativas, acompañados de la tienda escolar benéfica «IECAR (Pulguero): Ven y ponte la tuya» con ropa y calzado de calidad para toda la familia.</p>
+          <p>«Ideas que inspiran, proyectos que transforman». Los estudiantes presentan iniciativas productivas
+            creativas, acompañados de la tienda escolar benéfica «IECAR (Pulguero): Ven y ponte la tuya» con ropa y
+            calzado de calidad para toda la familia.</p>
           <ul class="event-features-list">
             <li><span>✓</span> <strong>Conoce:</strong> Emprendimientos creativos estudiantiles</li>
             <li><span>✓</span> <strong>Apoya:</strong> El talento de los jóvenes emprendedores</li>
             <li><span>✓</span> <strong>Descubre:</strong> Productos hechos con dedicación</li>
             <li><span>✓</span> <strong>Sé parte:</strong> De una comunidad que cree en su juventud</li>
           </ul>
-          <a href="#video-emprendimiento" class="btn-primary" style="margin-top: 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-red); color: #fff; font-weight: 700;">
+          <a href="#video-emprendimiento" class="btn-primary"
+            style="margin-top: 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-red); color: #fff; font-weight: 700;">
             🎬 Ver Video Invitación Oficial
           </a>
         </div>
@@ -1977,25 +2270,37 @@
 
       <!-- Miércoles 21: Desfile Inaugural del Mundialito Carmelita 2026 & Día Deportivo -->
       <div class="day-showcase-card">
-        <img class="day-showcase-img contain-fit" src="afiche_mundialito.jpg" alt="Afiche Oficial del Mundialito Carmelista 2026 - Desfile e Inauguración">
+        <img class="day-showcase-img contain-fit" src="afiche_mundialito.jpg"
+          alt="Afiche Oficial del Mundialito Carmelista 2026 - Desfile e Inauguración">
         <div class="day-showcase-body">
-          <span class="day-badge-inline" style="background: #e0f2fe; color: #0369a1;">Miércoles 21 de Octubre · Concentración 6:15 AM · Salida 6:30 AM</span>
+          <span class="day-badge-inline" style="background: #e0f2fe; color: #0369a1;">Miércoles 21 de Octubre ·
+            Concentración 6:15 AM · Salida 6:30 AM</span>
           <h3>Mundialito Carmelista: Desfile e Inauguración 2026</h3>
-          <p>«Integración · Respeto · Juego Limpio». Las delegaciones estudiantiles lucen los trajes deportivos de sus países asignados, acompañadas de comparsas y la banda de paz. Gran desfile por las calles de Ciénaga rumbo a la <strong>Cancha Brisas del Mar</strong> para los solemnes actos protocolarios y los encuentros inaugurales simultáneos.</p>
+          <p>«Integración · Respeto · Juego Limpio». Las delegaciones estudiantiles lucen los trajes deportivos de sus
+            países asignados, acompañadas de comparsas y la banda de paz. Gran desfile por las calles de Ciénaga rumbo a
+            la <strong>Cancha Brisas del Mar</strong> para los solemnes actos protocolarios y los encuentros inaugurales
+            simultáneos.</p>
           <ul class="event-features-list">
-            <li><span>✓</span> <strong>6:15 AM:</strong> Concentración en Colegio El Carmen · Salida puntual 6:30 AM</li>
-            <li><span>✓</span> <strong>Recorrido Oficial:</strong> Carrera 2 hasta Calle 7, bajando por Calle 7 a Carrera 1 hasta la Cancha Brisas del Mar</li>
-            <li><span>✓</span> <strong>8:00 AM - Actos Inaugurales:</strong> Himnos, oración con el capellán José Julio, palabras del Rector Ricardo Medina y juramento deportivo</li>
-            <li><span>✓</span> <strong>8:30 AM - Partidos Simultáneos:</strong> Fútbol de Salón (Docentes vs. Estudiantes) &amp; Voleibol Femenino</li>
+            <li><span>✓</span> <strong>6:15 AM:</strong> Concentración en Colegio El Carmen · Salida puntual 6:30 AM
+            </li>
+            <li><span>✓</span> <strong>Recorrido Oficial:</strong> Carrera 2 hasta Calle 7, bajando por Calle 7 a
+              Carrera 1 hasta la Cancha Brisas del Mar</li>
+            <li><span>✓</span> <strong>8:00 AM - Actos Inaugurales:</strong> Himnos, oración con el capellán José Julio,
+              palabras del Rector Ricardo Medina y juramento deportivo</li>
+            <li><span>✓</span> <strong>8:30 AM - Partidos Simultáneos:</strong> Fútbol de Salón (Docentes vs.
+              Estudiantes) &amp; Voleibol Femenino</li>
           </ul>
           <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-            <a href="dia3.html" class="btn-primary" style="padding: 0.65rem 1.3rem; font-size: 0.88rem; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #0f172a; font-weight: 800;">
+            <a href="dia3.html" class="btn-primary"
+              style="padding: 0.65rem 1.3rem; font-size: 0.88rem; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #0f172a; font-weight: 800;">
               📸 Ver Galería Oficial (17 Fotos) ↗
             </a>
-            <a href="#comunicado-mundialito-dia3" class="btn-secondary" style="padding: 0.65rem 1.3rem; font-size: 0.88rem;">
+            <a href="#comunicado-mundialito-dia3" class="btn-secondary"
+              style="padding: 0.65rem 1.3rem; font-size: 0.88rem;">
               🗺️ Ver Ruta y Afiche Oficial
             </a>
-            <a href="#cronograma" class="btn-secondary" style="padding: 0.65rem 1.3rem; font-size: 0.88rem;" onclick="switchDay('dia3', document.querySelectorAll('.tab-btn')[2])">
+            <a href="#cronograma" class="btn-secondary" style="padding: 0.65rem 1.3rem; font-size: 0.88rem;"
+              onclick="switchDay('dia3', document.querySelectorAll('.tab-btn')[2])">
               Ver en Cronograma ↓
             </a>
           </div>
@@ -2004,21 +2309,30 @@
 
       <!-- Jueves 22: Foro Educativo Institucional «Salvemos la Ciénaga» -->
       <div class="day-showcase-card">
-        <img class="day-showcase-img contain-fit" src="afiche_foro.jpg" alt="Cartel Oficial Foro Salvemos la Ciénaga 2026 IE El Carmen" style="background: #ffffff; padding: 0.5rem;">
+        <img class="day-showcase-img contain-fit" src="afiche_foro.jpg"
+          alt="Cartel Oficial Foro Salvemos la Ciénaga 2026 IE El Carmen" style="background: #ffffff; padding: 0.5rem;">
         <div class="day-showcase-body">
-          <span class="day-badge-inline" style="background: #d1fae5; color: #065f46;">Jueves 22 de Octubre · 8:00 AM</span>
+          <span class="day-badge-inline" style="background: #d1fae5; color: #065f46;">Jueves 22 de Octubre · 8:00
+            AM</span>
           <h3>Foro Institucional: «Salvemos la Ciénaga»</h3>
-          <p>«Nuestra Ciénaga también tiene futuro». Un espacio pedagógico y de liderazgo comunitario convocado por la IE El Carmen para reflexionar, dialogar y proponer acciones urgentes por la protección y rescate de nuestro entorno ambiental y la Ciénaga Grande de Santa Marta.</p>
+          <p>«Nuestra Ciénaga también tiene futuro». Un espacio pedagógico y de liderazgo comunitario convocado por la
+            IE El Carmen para reflexionar, dialogar y proponer acciones urgentes por la protección y rescate de nuestro
+            entorno ambiental y la Ciénaga Grande de Santa Marta.</p>
           <ul class="event-features-list">
-            <li><span>✓</span> <strong>Ponencias Estudiantiles:</strong> Investigaciones y visiones de la juventud sobre el presente y futuro de nuestra Ciénaga</li>
-            <li><span>✓</span> <strong>Exposición de Especies de Manglares:</strong> Muestra botánica y ecológica sobre la riqueza de nuestro ecosistema</li>
-            <li><span>✓</span> <strong>Mesas de Diálogo:</strong> Espacios de reflexión y concertación entre estudiantes, docentes y comunidad</li>
+            <li><span>✓</span> <strong>Ponencias Estudiantiles:</strong> Investigaciones y visiones de la juventud sobre
+              el presente y futuro de nuestra Ciénaga</li>
+            <li><span>✓</span> <strong>Exposición de Especies de Manglares:</strong> Muestra botánica y ecológica sobre
+              la riqueza de nuestro ecosistema</li>
+            <li><span>✓</span> <strong>Mesas de Diálogo:</strong> Espacios de reflexión y concertación entre
+              estudiantes, docentes y comunidad</li>
           </ul>
           <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-            <a href="#foro-salvemos-la-cienaga" class="btn-primary" style="padding: 0.65rem 1.3rem; font-size: 0.88rem; background: #059669; box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);">
+            <a href="#foro-salvemos-la-cienaga" class="btn-primary"
+              style="padding: 0.65rem 1.3rem; font-size: 0.88rem; background: #059669; box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);">
               🌿 Ver Cartel Oficial y Tarjetas
             </a>
-            <a href="#cronograma" class="btn-secondary" style="padding: 0.65rem 1.3rem; font-size: 0.88rem;" onclick="switchDay('dia4', document.querySelectorAll('.tab-btn')[3])">
+            <a href="#cronograma" class="btn-secondary" style="padding: 0.65rem 1.3rem; font-size: 0.88rem;"
+              onclick="switchDay('dia4', document.querySelectorAll('.tab-btn')[3])">
               Ver en Cronograma ↓
             </a>
           </div>
@@ -2028,24 +2342,36 @@
       <!-- Viernes 23: 53 Aniversario & Santa Misa Conmemorativa -->
       <div class="day-showcase-card reverse">
         <div class="day-showcase-body">
-          <span class="day-badge-inline" style="background: #fef3c7; color: #b45309;">Viernes 23 de Octubre · Gala 7:30 AM &amp; Santa Misa 3:00 PM</span>
+          <span class="day-badge-inline" style="background: #fef3c7; color: #b45309;">Viernes 23 de Octubre · Gala 7:30
+            AM &amp; Santa Misa 3:00 PM</span>
           <h3>53 Años de Historia Carmelita &amp; Solemne Santa Misa</h3>
-          <p>Fundada en 1973, la Institución Educativa El Carmen conmemora 53 años formando generaciones en Ciénaga. Por la mañana, gala solemne con izada de bandera y distinciones en el patio techado; por la tarde, <strong>Solemne Santa Misa</strong> en la sede principal agradeciendo las bendiciones y honrando con profundo afecto la memoria de nuestro querido compañero <strong>Arlin Jiménez</strong> en el primer año de su partida.</p>
+          <p>Fundada en 1973, la Institución Educativa El Carmen conmemora 53 años formando generaciones en Ciénaga. Por
+            la mañana, gala solemne con izada de bandera y distinciones en el patio techado; por la tarde,
+            <strong>Solemne Santa Misa</strong> en la sede principal agradeciendo las bendiciones y honrando con
+            profundo afecto la memoria de nuestro querido compañero <strong>Arlin Jiménez</strong> en el primer año de
+            su partida.</p>
           <ul class="event-features-list">
-            <li><span>✓</span> <strong>07:30 AM - Gala Institucional:</strong> Izada de bandera, distinciones y serenata de los 53 años en la Cancha Techada</li>
-            <li><span>✓</span> <strong>03:00 PM - Santa Misa Conmemorativa:</strong> Eucaristía solemne en la Sede Principal (Cl 12 # 1C - 57)</li>
-            <li><span>✓</span> <strong>Comunidad en Oración:</strong> Homenaje de gratitud y recuerdo imborrable a Arlin Jiménez</li>
+            <li><span>✓</span> <strong>07:30 AM - Gala Institucional:</strong> Izada de bandera, distinciones y serenata
+              de los 53 años en la Cancha Techada</li>
+            <li><span>✓</span> <strong>03:00 PM - Santa Misa Conmemorativa:</strong> Eucaristía solemne en la Sede
+              Principal (Cl 12 # 1C - 57)</li>
+            <li><span>✓</span> <strong>Comunidad en Oración:</strong> Homenaje de gratitud y recuerdo imborrable a Arlin
+              Jiménez</li>
           </ul>
           <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-            <a href="#invitacion-misa-dia5" class="btn-primary" style="padding: 0.65rem 1.3rem; font-size: 0.88rem; background: var(--accent-gold); color: #000; font-weight: 800;">
+            <a href="#invitacion-misa-dia5" class="btn-primary"
+              style="padding: 0.65rem 1.3rem; font-size: 0.88rem; background: var(--accent-gold); color: #000; font-weight: 800;">
               🕊️ Ver Tarjeta de Invitación a la Misa
             </a>
-            <a href="#cronograma" class="btn-secondary" style="padding: 0.65rem 1.3rem; font-size: 0.88rem;" onclick="switchDay('dia5', document.querySelectorAll('.tab-btn')[4])">
+            <a href="#cronograma" class="btn-secondary" style="padding: 0.65rem 1.3rem; font-size: 0.88rem;"
+              onclick="switchDay('dia5', document.querySelectorAll('.tab-btn')[4])">
               Ver en Cronograma ↓
             </a>
           </div>
         </div>
-        <img class="day-showcase-img contain-fit" src="afiche_misa.png" alt="Invitación oficial a la Santa Misa y 53 Aniversario de la IE El Carmen" style="background: #ffffff; padding: 1rem;">
+        <img class="day-showcase-img contain-fit" src="afiche_misa.png"
+          alt="Invitación oficial a la Santa Misa y 53 Aniversario de la IE El Carmen"
+          style="background: #ffffff; padding: 1rem;">
       </div>
     </div>
   </section>
@@ -2056,7 +2382,8 @@
       <div class="section-title-wrap">
         <span class="section-eyebrow">Programación Completa</span>
         <h2 class="section-title">Cronograma Oficial por Días</h2>
-        <p class="section-lead">Consulta los horarios exactos, actividades y ubicaciones de cada jornada de nuestra Semana Cultural.</p>
+        <p class="section-lead">Consulta los horarios exactos, actividades y ubicaciones de cada jornada de nuestra
+          Semana Cultural.</p>
       </div>
 
       <!-- Botones de Pestañas -->
@@ -2078,7 +2405,8 @@
             </div>
             <div class="timeline-details">
               <h4>Memoria Histórica de Ciénaga y las Regiones</h4>
-              <p>Conoce nuestro patrimonio, nuestras raíces y nuestra identidad cultural con exposiciones temáticas y testimonios orales.</p>
+              <p>Conoce nuestro patrimonio, nuestras raíces y nuestra identidad cultural con exposiciones temáticas y
+                testimonios orales.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Sede Principal</span>
                 <span class="badge-tag gold">⏰ 7:30 a. m. a 11:00 a. m.</span>
@@ -2094,7 +2422,8 @@
             </div>
             <div class="timeline-details">
               <h4>Recorrido Patrimonial por Stands Escolares</h4>
-              <p>Presentación de artesanías, maquetas históricas y muestras fotográficas preparadas por estudiantes de básica y media.</p>
+              <p>Presentación de artesanías, maquetas históricas y muestras fotográficas preparadas por estudiantes de
+                básica y media.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Patio Central y Pasillos</span>
                 <span class="badge-tag">Entrada Libre</span>
@@ -2114,7 +2443,8 @@
             </div>
             <div class="timeline-details">
               <h4>Montaje de Stands de Emprendimiento (Expositores)</h4>
-              <p>Ingreso y preparación de puestos de exhibición para los estudiantes y equipos con proyectos de emprendimiento inscritos.</p>
+              <p>Ingreso y preparación de puestos de exhibición para los estudiantes y equipos con proyectos de
+                emprendimiento inscritos.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Patio Central y Pasillos</span>
                 <span class="badge-tag gold">⏰ Desde las 6:30 AM</span>
@@ -2129,7 +2459,8 @@
             </div>
             <div class="timeline-details">
               <h4>Llegada General de Estudiantes (Uniforme y Sin Libros)</h4>
-              <p><strong>Inicio de Actividades Protocolarias:</strong> Hora oficial de llegada para toda la comunidad estudiantil. <strong>Requisito institucional:</strong> asistir con uniforme y sin libros.</p>
+              <p><strong>Inicio de Actividades Protocolarias:</strong> Hora oficial de llegada para toda la comunidad
+                estudiantil. <strong>Requisito institucional:</strong> asistir con uniforme y sin libros.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Portería Principal</span>
                 <span class="badge-tag">👔 Uniforme Institucional</span>
@@ -2145,14 +2476,16 @@
             </div>
             <div class="timeline-details">
               <h4>Feria de Emprendimiento «Jóvenes con Propósito»</h4>
-              <p>«Ideas que inspiran, proyectos que transforman». Apertura oficial de la muestra comercial y creativa de los estudiantes carmelitas.</p>
+              <p>«Ideas que inspiran, proyectos que transforman». Apertura oficial de la muestra comercial y creativa de
+                los estudiantes carmelitas.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Patio de Emprendimiento</span>
                 <span class="badge-tag gold">⏰ 8:00 a. m. a 12:00 m.</span>
                 <span class="badge-tag purple">📣 Entrada abierta a familias</span>
               </div>
               <div style="margin-top: 0.6rem;">
-                <a href="dia2.html" style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 700; color: #0369a1; background: #e0f2fe; padding: 0.3rem 0.75rem; border-radius: var(--radius-full); text-decoration: none;">
+                <a href="dia2.html"
+                  style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 700; color: #0369a1; background: #e0f2fe; padding: 0.3rem 0.75rem; border-radius: var(--radius-full); text-decoration: none;">
                   📸 Ver Galería Oficial &amp; En Vivo del Día 2 ↗
                 </a>
               </div>
@@ -2166,7 +2499,8 @@
             </div>
             <div class="timeline-details">
               <h4>Tienda Escolar «IECAR (Pulguero): Ven y ponte la tuya»</h4>
-              <p>Venta benéfica de ropa de excelente calidad y calzado para toda la familia a precios muy cómodos. ¡Apoyemos a nuestra institución!</p>
+              <p>Venta benéfica de ropa de excelente calidad y calzado para toda la familia a precios muy cómodos.
+                ¡Apoyemos a nuestra institución!</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Sede Principal</span>
                 <span class="badge-tag gold">Ropa niños, jóvenes y adultos</span>
@@ -2181,7 +2515,8 @@
             </div>
             <div class="timeline-details">
               <h4>Finalización de la Feria, Limpieza y Entrega de Stands</h4>
-              <p>Cierre de la jornada. Compromiso ambiental y cívico: cada stand asignado debe entregarse completamente aseado y ordenado.</p>
+              <p>Cierre de la jornada. Compromiso ambiental y cívico: cada stand asignado debe entregarse completamente
+                aseado y ordenado.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">🧹 Patio Limpio y Ordenado</span>
               </div>
@@ -2200,14 +2535,16 @@
             </div>
             <div class="timeline-details">
               <h4>Concentración de Delegaciones Estudiantiles</h4>
-              <p>Encuentro de estudiantes, docentes y directores de grupo en las instalaciones del Colegio El Carmen para organizar las delegaciones, comparsas y bandas de paz por países asignados.</p>
+              <p>Encuentro de estudiantes, docentes y directores de grupo en las instalaciones del Colegio El Carmen
+                para organizar las delegaciones, comparsas y bandas de paz por países asignados.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Salida: Colegio El Carmen</span>
                 <span class="badge-tag gold">⏰ 6:15 AM Puntual</span>
                 <span class="badge-tag">Ropa Deportiva / Traje Asignado</span>
               </div>
               <div style="margin-top: 0.6rem;">
-                <a href="dia3.html" style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 700; color: #92400e; background: #fef3c7; padding: 0.3rem 0.75rem; border-radius: var(--radius-full); text-decoration: none;">
+                <a href="dia3.html"
+                  style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 700; color: #92400e; background: #fef3c7; padding: 0.3rem 0.75rem; border-radius: var(--radius-full); text-decoration: none;">
                   📸 Ver Galería Oficial del Día 3 (17 Fotos) ↗
                 </a>
               </div>
@@ -2221,7 +2558,8 @@
             </div>
             <div class="timeline-details">
               <h4>Salida del Gran Desfile Carmelista 2026</h4>
-              <p>Inicio puntual del desfile hacia la Cancha Brisas del Mar para evitar la exposición prolongada al sol. Recorrido con banda de paz, comparsas y acompañamiento de entidades viales.</p>
+              <p>Inicio puntual del desfile hacia la Cancha Brisas del Mar para evitar la exposición prolongada al sol.
+                Recorrido con banda de paz, comparsas y acompañamiento de entidades viales.</p>
               <div class="timeline-badges">
                 <span class="badge-tag red">🚶‍♂️ Recorrido por Calles</span>
                 <span class="badge-tag blue">Cra 2 ➔ Cll 7 ➔ Cra 1</span>
@@ -2237,7 +2575,8 @@
             </div>
             <div class="timeline-details">
               <h4>Arribo a la Cancha Brisas del Mar</h4>
-              <p>Llegada e ingreso de las delegaciones al espacio de abanicos en la Cancha Brisas del Mar, dejando libre el área central para las muestras folclóricas y actos protocolares.</p>
+              <p>Llegada e ingreso de las delegaciones al espacio de abanicos en la Cancha Brisas del Mar, dejando libre
+                el área central para las muestras folclóricas y actos protocolares.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Cancha Brisas del Mar</span>
                 <span class="badge-tag">Organización en Abanicos</span>
@@ -2253,9 +2592,11 @@
             <div class="timeline-details">
               <h4>Actos Protocolarios Inaugurales</h4>
               <p>
-                <strong>Himnos Oficiales:</strong> Himno Nacional de Colombia, Himno de Ciénaga e Himno de la IE El Carmen.<br>
+                <strong>Himnos Oficiales:</strong> Himno Nacional de Colombia, Himno de Ciénaga e Himno de la IE El
+                Carmen.<br>
                 <strong>Oración:</strong> A cargo del docente José Julio (Capellán institucional).<br>
-                <strong>Apertura Oficial:</strong> Palabras del Rector Ricardo Medina, coordinador Daniel Cera y docente Samir Sandoval.<br>
+                <strong>Apertura Oficial:</strong> Palabras del Rector Ricardo Medina, coordinador Daniel Cera y docente
+                Samir Sandoval.<br>
                 <strong>Juramento Deportivo:</strong> A cargo de estudiante destacado en el ámbito deportivo.<br>
                 <strong>Muestras Culturales:</strong> Presentaciones folclóricas de danza y canto.
               </p>
@@ -2293,7 +2634,8 @@
             </div>
             <div class="timeline-details">
               <h4>Finalización de la Jornada Inaugural y Despedida</h4>
-              <p>Culminación de los actos inaugurales y partidos de exhibición. Despedida ordenada de los estudiantes hacia sus hogares.</p>
+              <p>Culminación de los actos inaugurales y partidos de exhibición. Despedida ordenada de los estudiantes
+                hacia sus hogares.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">🏁 Despedida</span>
                 <span class="badge-tag">Descanso e Hidratación</span>
@@ -2308,13 +2650,18 @@
             </div>
             <div class="timeline-details">
               <h4>Torneo Regular del Mundialito Carmelista</h4>
-              <p>A partir del jueves 22 de octubre se disputan los partidos oficiales por categorías en la Cancha del Colegio El Carmen: <strong>Tetero</strong> (2A vs 2B), <strong>Preinfantil</strong> (3A vs 3B), <strong>Infantil</strong> (Grupo único: 4A, 4B, 4C, 5A, 5B), <strong>Prejuvenil</strong> (8 equipos en Grupos A y B) y <strong>Juvenil</strong> (7 equipos en Grupos A y B). Jornada de grandes finales: <strong>6 de noviembre</strong>.</p>
+              <p>A partir del jueves 22 de octubre se disputan los partidos oficiales por categorías en la Cancha del
+                Colegio El Carmen: <strong>Tetero</strong> (2A vs 2B), <strong>Preinfantil</strong> (3A vs 3B),
+                <strong>Infantil</strong> (Grupo único: 4A, 4B, 4C, 5A, 5B), <strong>Prejuvenil</strong> (8 equipos en
+                Grupos A y B) y <strong>Juvenil</strong> (7 equipos en Grupos A y B). Jornada de grandes finales:
+                <strong>6 de noviembre</strong>.</p>
               <div class="timeline-badges">
                 <span class="badge-tag green">📍 Cancha Colegio El Carmen</span>
                 <span class="badge-tag gold">24 Equipos · 44 Partidos</span>
               </div>
               <div style="margin-top: 0.75rem;">
-                <a href="cronograma_mundialito.pdf" target="_blank" class="btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                <a href="cronograma_mundialito.pdf" target="_blank" class="btn-primary"
+                  style="font-size: 0.85rem; padding: 0.5rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
                   📄 Descargar Cronograma y Fixture Completo (PDF) ↗
                 </a>
               </div>
@@ -2326,18 +2673,26 @@
       <!-- Día 4 -->
       <div id="dia4" class="tab-content">
         <div class="timeline">
-          <div class="timeline-card special-green" style="background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 60%, #e0f2fe 100%); border-left: 6px solid #059669;">
+          <div class="timeline-card special-green"
+            style="background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 60%, #e0f2fe 100%); border-left: 6px solid #059669;">
             <div class="timeline-time" style="color: #065f46;">
               08:00 AM
               <small>Ambiental</small>
             </div>
             <div class="timeline-details">
               <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.4rem;">
-                <span style="font-size: 0.78rem; font-weight: 800; color: #065f46; background: #d1fae5; padding: 0.2rem 0.65rem; border-radius: var(--radius-full);">🌱 JORNADA CENTRAL DE REFLEXIÓN &amp; ACCIÓN</span>
-                <span style="font-size: 0.78rem; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 0.2rem 0.65rem; border-radius: var(--radius-full);">🌊 «Nuestra Ciénaga también tiene futuro»</span>
+                <span
+                  style="font-size: 0.78rem; font-weight: 800; color: #065f46; background: #d1fae5; padding: 0.2rem 0.65rem; border-radius: var(--radius-full);">🌱
+                  JORNADA CENTRAL DE REFLEXIÓN &amp; ACCIÓN</span>
+                <span
+                  style="font-size: 0.78rem; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 0.2rem 0.65rem; border-radius: var(--radius-full);">🌊
+                  «Nuestra Ciénaga también tiene futuro»</span>
               </div>
-              <h4 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 0.4rem;">Foro Educativo Institucional: «Salvemos la Ciénaga»</h4>
-              <p>Espacio de diálogo, ponencias estudiantiles, debate pedagógico y compromiso comunitario convocado por la IE El Carmen para impulsar la defensa, conservación y restauración de nuestro ecosistema de manglares y la Ciénaga Grande de Santa Marta.</p>
+              <h4 style="font-size: 1.25rem; color: var(--primary); margin-bottom: 0.4rem;">Foro Educativo
+                Institucional: «Salvemos la Ciénaga»</h4>
+              <p>Espacio de diálogo, ponencias estudiantiles, debate pedagógico y compromiso comunitario convocado por
+                la IE El Carmen para impulsar la defensa, conservación y restauración de nuestro ecosistema de manglares
+                y la Ciénaga Grande de Santa Marta.</p>
               <div class="timeline-badges" style="margin-top: 0.75rem;">
                 <span class="badge-tag green">📍 Instalaciones de la I.E. El Carmen</span>
                 <span class="badge-tag gold">⏰ 08:00 A.M.</span>
@@ -2346,10 +2701,12 @@
                 <span class="badge-tag purple">🤝 Mesas de Diálogo</span>
               </div>
               <div style="margin-top: 1rem; display: flex; gap: 0.6rem; flex-wrap: wrap;">
-                <a href="#foro-salvemos-la-cienaga" class="btn-primary" style="font-size: 0.85rem; padding: 0.55rem 1.1rem; display: inline-flex; align-items: center; gap: 0.4rem; background: #059669; box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);">
+                <a href="#foro-salvemos-la-cienaga" class="btn-primary"
+                  style="font-size: 0.85rem; padding: 0.55rem 1.1rem; display: inline-flex; align-items: center; gap: 0.4rem; background: #059669; box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);">
                   🖼️ Ver Cartel Oficial y Tarjetas del Foro ↓
                 </a>
-                <a href="afiche_foro.jpg" target="_blank" class="btn-secondary" style="font-size: 0.85rem; padding: 0.55rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                <a href="afiche_foro.jpg" target="_blank" class="btn-secondary"
+                  style="font-size: 0.85rem; padding: 0.55rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
                   🔍 Ampliar Cartel ↗
                 </a>
               </div>
@@ -2368,7 +2725,9 @@
             </div>
             <div class="timeline-details">
               <h4>Gala Conmemorativa del 53° Aniversario Institucional</h4>
-              <p>Celebración solemne de los 53 años de fundación institucional (1973 - 2026). Izada de bandera especial, serenata conmemorativa, distinciones al mérito docente y entrega de reconocimientos al talento y disciplina de nuestros estudiantes.</p>
+              <p>Celebración solemne de los 53 años de fundación institucional (1973 - 2026). Izada de bandera especial,
+                serenata conmemorativa, distinciones al mérito docente y entrega de reconocimientos al talento y
+                disciplina de nuestros estudiantes.</p>
               <div class="timeline-badges">
                 <span class="badge-tag gold">🎂 53 Años de Historia</span>
                 <span class="badge-tag green">📍 Cancha Techada Sede Principal</span>
@@ -2377,14 +2736,18 @@
             </div>
           </div>
 
-          <div class="timeline-card special-red" style="background: linear-gradient(135deg, #ffffff 0%, #fff7ed 60%, #fdf2f8 100%); border-left: 6px solid #e11d48;">
+          <div class="timeline-card special-red"
+            style="background: linear-gradient(135deg, #ffffff 0%, #fff7ed 60%, #fdf2f8 100%); border-left: 6px solid #e11d48;">
             <div class="timeline-time">
               03:00 PM
               <small>Eucaristía</small>
             </div>
             <div class="timeline-details">
               <h4>Solemne Santa Misa: 53 Años &amp; Memoria de Arlin Jiménez</h4>
-              <p>Eucaristía de acción de gracias por un año más de vida institucional y en conmemoración del primer aniversario de la partida de nuestro querido compañero y educador <strong>Arlin Jiménez</strong>. Unámonos en oración comunitaria para honrar su recuerdo y dar gracias por su legado en la familia Carmelista.</p>
+              <p>Eucaristía de acción de gracias por un año más de vida institucional y en conmemoración del primer
+                aniversario de la partida de nuestro querido compañero y educador <strong>Arlin Jiménez</strong>.
+                Unámonos en oración comunitaria para honrar su recuerdo y dar gracias por su legado en la familia
+                Carmelista.</p>
               <div class="timeline-badges">
                 <span class="badge-tag red">🕊️ Santa Misa Solemne</span>
                 <span class="badge-tag green">📍 Calle 12 # 1C - 57 (Sede Principal)</span>
@@ -2392,7 +2755,8 @@
                 <span class="badge-tag purple">Toda la Comunidad Educativa</span>
               </div>
               <div style="margin-top: 0.75rem;">
-                <a href="#invitacion-misa-dia5" class="btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem; background: #e11d48;">
+                <a href="#invitacion-misa-dia5" class="btn-primary"
+                  style="font-size: 0.85rem; padding: 0.5rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem; background: #e11d48;">
                   💌 Ver Tarjeta y Descargar Invitación
                 </a>
               </div>
@@ -2410,34 +2774,48 @@
         <span class="section-eyebrow">Cobertura en Tiempo Real</span>
         <h2 class="section-title">Galería Multimedia 2026</h2>
         <p class="section-lead">
-          Este espacio se actualizará día a día durante la Semana Cultural con fotografías de alta calidad, videos de las comparsas, finales deportivas y transmisiones en vivo.
+          Este espacio se actualizará día a día durante la Semana Cultural con fotografías de alta calidad, videos de
+          las comparsas, finales deportivas y transmisiones en vivo.
         </p>
       </div>
 
       <div class="teaser-grid">
         <!-- Día 1: Cobertura Completa Destacada (Full Width Showcase) -->
-        <div class="teaser-card" id="showcase-dia1" style="grid-column: 1 / -1; background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%); border: 2px solid var(--accent-green); padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: var(--shadow-md);">
+        <div class="teaser-card" id="showcase-dia1"
+          style="grid-column: 1 / -1; background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%); border: 2px solid var(--accent-green); padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: var(--shadow-md);">
           <div class="teaser-header">
             <span class="teaser-badge-live" style="background: #dcfce7; color: #166534; border-color: #86efac;">
-              <span class="pulse-dot" style="background: #16a34a;"></span> 📸 ¡MEMORIAS &amp; GALERÍA OFICIAL DISPONIBLES!
+              <span class="pulse-dot" style="background: #16a34a;"></span> 📸 ¡MEMORIAS &amp; GALERÍA OFICIAL
+              DISPONIBLES!
             </span>
-            <span style="font-size: 0.82rem; font-weight: 800; color: #166534; background: rgba(34, 197, 94, 0.15); padding: 0.3rem 0.8rem; border-radius: var(--radius-full);">Lunes 19 Octubre · Registro Oficial</span>
+            <span
+              style="font-size: 0.82rem; font-weight: 800; color: #166534; background: rgba(34, 197, 94, 0.15); padding: 0.3rem 0.8rem; border-radius: var(--radius-full);">Lunes
+              19 Octubre · Registro Oficial</span>
           </div>
 
           <div class="showcase-featured-grid">
             <!-- Columna Izquierda: Vista Previa Visual Atractiva de la Jornada -->
             <div class="showcase-preview-frame">
-              <a href="dia1.html" title="Clic para entrar a la galería completa del Día 1" style="display: block; position: relative;">
+              <a href="dia1.html" title="Clic para entrar a la galería completa del Día 1"
+                style="display: block; position: relative;">
                 <img src="afiche_historia.jpg" alt="Feria de Historia y Memoria de Ciénaga" loading="lazy">
-                <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(15,23,42,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem; color: #ffffff;">
-                  <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: var(--accent-green-dark); color: #ffffff; font-size: 0.74rem; font-weight: 800; padding: 0.25rem 0.6rem; border-radius: var(--radius-full); width: fit-content; text-transform: uppercase; margin-bottom: 0.4rem;">
+                <div
+                  style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(15,23,42,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem; color: #ffffff;">
+                  <span
+                    style="display: inline-flex; align-items: center; gap: 0.4rem; background: var(--accent-green-dark); color: #ffffff; font-size: 0.74rem; font-weight: 800; padding: 0.25rem 0.6rem; border-radius: var(--radius-full); width: fit-content; text-transform: uppercase; margin-bottom: 0.4rem;">
                     ▶ Videos &amp; +120 Fotos
                   </span>
-                  <strong style="font-size: 1.05rem; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">Exposiciones y Muestra Cultural</strong>
-                  <span style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.2rem;">Toca para abrir la página interactiva</span>
+                  <strong
+                    style="font-size: 1.05rem; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">Exposiciones y
+                    Muestra Cultural</strong>
+                  <span style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.2rem;">Toca para abrir la página
+                    interactiva</span>
                 </div>
-                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 56px; height: 56px; border-radius: 50%; background: rgba(255,255,255,0.92); color: var(--primary); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(0,0,0,0.4); transition: transform 0.2s ease;">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <div
+                  style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 56px; height: 56px; border-radius: 50%; background: rgba(255,255,255,0.92); color: var(--primary); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(0,0,0,0.4); transition: transform 0.2s ease;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
                 </div>
               </a>
             </div>
@@ -2445,67 +2823,93 @@
             <!-- Columna Derecha: Información y Acciones -->
             <div class="video-info-panel">
               <div>
-                <span style="font-size: 0.85rem; font-weight: 800; color: var(--accent-green-dark); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.35rem;">
+                <span
+                  style="font-size: 0.85rem; font-weight: 800; color: var(--accent-green-dark); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.35rem;">
                   Jornada Inaugural · Cátedra Carmelita
                 </span>
-                <h3 style="font-size: clamp(1.4rem, 2.5vw, 1.95rem); color: var(--primary); margin-bottom: 0.8rem; line-height: 1.3;">
+                <h3
+                  style="font-size: clamp(1.4rem, 2.5vw, 1.95rem); color: var(--primary); margin-bottom: 0.8rem; line-height: 1.3;">
                   Feria de Historia: Memoria de Ciénaga &amp; Raíces Carmelitas
                 </h3>
                 <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 1.2rem;">
-                  Nuestros estudiantes y docentes rindieron homenaje a la riqueza patrimonial, arquitectónica y cultural de Ciénaga y el Magdalena. Disfruta de la cobertura completa con videos de las ponencias, muestra de maquetas y registro fotográfico.
+                  Nuestros estudiantes y docentes rindieron homenaje a la riqueza patrimonial, arquitectónica y cultural
+                  de Ciénaga y el Magdalena. Disfruta de la cobertura completa con videos de las ponencias, muestra de
+                  maquetas y registro fotográfico.
                 </p>
               </div>
 
-              <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
-                <h5 style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
+              <div
+                style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+                <h5
+                  style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
                   📌 Contenido Disponible en la Galería Exclusiva:
                 </h5>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; color: var(--text-main);">
-                  <li>🎬 <strong>Videos en Streaming:</strong> Acto protocolario en formato panorámico (16:9) y recorrido por los stands (Shorts).</li>
-                  <li>📸 <strong>Muestra Fotográfica:</strong> Visor ampliado interactivo de las maquetas y exposiciones por cursos.</li>
-                  <li>☁️ <strong>Álbum en la Nube:</strong> Enlace oficial a Google Fotos con más de 120 archivos en resolución original para descargar.</li>
+                <ul
+                  style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; color: var(--text-main);">
+                  <li>🎬 <strong>Videos en Streaming:</strong> Acto protocolario en formato panorámico (16:9) y
+                    recorrido por los stands (Shorts).</li>
+                  <li>📸 <strong>Muestra Fotográfica:</strong> Visor ampliado interactivo de las maquetas y exposiciones
+                    por cursos.</li>
+                  <li>☁️ <strong>Álbum en la Nube:</strong> Enlace oficial a Google Fotos con más de 120 archivos en
+                    resolución original para descargar.</li>
                 </ul>
               </div>
 
               <div class="showcase-actions-wrap">
-                <a href="dia1.html" class="btn-primary" style="padding: 0.85rem 1.6rem; font-size: 0.95rem; background: var(--accent-green-dark); box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);">
+                <a href="dia1.html" class="btn-primary"
+                  style="padding: 0.85rem 1.6rem; font-size: 0.95rem; background: var(--accent-green-dark); box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);">
                   📸 Entrar a la Galería y Videos del Día 1 ↗
                 </a>
-                <a href="https://photos.app.goo.gl/124snuRiv8Rm1pJ28" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.8rem 1.4rem; font-size: 0.92rem; border-color: var(--accent-gold); color: #b45309;">
+                <a href="https://photos.app.goo.gl/124snuRiv8Rm1pJ28" target="_blank" rel="noopener noreferrer"
+                  class="btn-secondary"
+                  style="padding: 0.8rem 1.4rem; font-size: 0.92rem; border-color: var(--accent-gold); color: #b45309;">
                   ☁️ Abrir Álbum en Google Fotos (+120 Fotos) ↗
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="teaser-footer" style="margin-top: 1.5rem; border-top: 1px solid rgba(16, 185, 129, 0.25); padding-top: 1rem;">
+          <div class="teaser-footer"
+            style="margin-top: 1.5rem; border-top: 1px solid rgba(16, 185, 129, 0.25); padding-top: 1rem;">
             <span>✨ Cobertura oficial completa alojada en página dedicada sin saturar la portada principal</span>
           </div>
         </div>
 
         <!-- Día 2: Cobertura Oficial Completa (Día 2 Dedicado) -->
-        <div class="teaser-card" id="video-emprendimiento" style="grid-column: 1 / -1; background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%); border: 2px solid #86efac; padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: 0 10px 30px rgba(16, 185, 129, 0.12);">
+        <div class="teaser-card" id="video-emprendimiento"
+          style="grid-column: 1 / -1; background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%); border: 2px solid #86efac; padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: 0 10px 30px rgba(16, 185, 129, 0.12);">
           <div class="teaser-header">
             <span class="teaser-badge-live" style="background: #dcfce7; color: #166534; border-color: #86efac;">
-              <span class="pulse-dot" style="background: #16a34a;"></span> 📸 ¡MEMORIAS &amp; GALERÍA OFICIAL DISPONIBLES!
+              <span class="pulse-dot" style="background: #16a34a;"></span> 📸 ¡MEMORIAS &amp; GALERÍA OFICIAL
+              DISPONIBLES!
             </span>
-            <span style="font-size: 0.82rem; font-weight: 800; color: #166534; background: rgba(34, 197, 94, 0.15); padding: 0.3rem 0.8rem; border-radius: var(--radius-full);">Martes 20 Octubre · Registro Oficial</span>
+            <span
+              style="font-size: 0.82rem; font-weight: 800; color: #166534; background: rgba(34, 197, 94, 0.15); padding: 0.3rem 0.8rem; border-radius: var(--radius-full);">Martes
+              20 Octubre · Registro Oficial</span>
           </div>
 
           <div class="showcase-featured-grid">
             <!-- Columna Izquierda: Vista Previa Visual Atractiva de la Jornada -->
             <div class="showcase-preview-frame">
-              <a href="dia2.html" title="Clic para entrar a la galería completa del Día 2" style="display: block; position: relative;">
+              <a href="dia2.html" title="Clic para entrar a la galería completa del Día 2"
+                style="display: block; position: relative;">
                 <img src="afiche_emprendimiento.jpg" alt="Feria de Emprendimiento Jóvenes con Propósito" loading="lazy">
-                <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(15,23,42,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem; color: #ffffff;">
-                  <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: #0284c7; color: #ffffff; font-size: 0.74rem; font-weight: 800; padding: 0.25rem 0.6rem; border-radius: var(--radius-full); width: fit-content; text-transform: uppercase; margin-bottom: 0.4rem;">
+                <div
+                  style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(15,23,42,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem; color: #ffffff;">
+                  <span
+                    style="display: inline-flex; align-items: center; gap: 0.4rem; background: #0284c7; color: #ffffff; font-size: 0.74rem; font-weight: 800; padding: 0.25rem 0.6rem; border-radius: var(--radius-full); width: fit-content; text-transform: uppercase; margin-bottom: 0.4rem;">
                     ▶ En Vivo &amp; +100 Fotos
                   </span>
-                  <strong style="font-size: 1.05rem; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">Stands Comerciales &amp; Tienda IECAR</strong>
-                  <span style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.2rem;">Toca para abrir la página interactiva</span>
+                  <strong style="font-size: 1.05rem; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">Stands
+                    Comerciales &amp; Tienda IECAR</strong>
+                  <span style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.2rem;">Toca para abrir la página
+                    interactiva</span>
                 </div>
-                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 56px; height: 56px; border-radius: 50%; background: rgba(255,255,255,0.92); color: var(--primary); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(0,0,0,0.4); transition: transform 0.2s ease;">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <div
+                  style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 56px; height: 56px; border-radius: 50%; background: rgba(255,255,255,0.92); color: var(--primary); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(0,0,0,0.4); transition: transform 0.2s ease;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
                 </div>
               </a>
             </div>
@@ -2513,43 +2917,57 @@
             <!-- Columna Derecha: Información y Acciones -->
             <div class="video-info-panel">
               <div>
-                <span style="font-size: 0.85rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.35rem;">
+                <span
+                  style="font-size: 0.85rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.35rem;">
                   Segunda Jornada · Innovación &amp; Liderazgo
                 </span>
-                <h3 style="font-size: clamp(1.4rem, 2.5vw, 1.95rem); color: var(--primary); margin-bottom: 0.8rem; line-height: 1.3;">
+                <h3
+                  style="font-size: clamp(1.4rem, 2.5vw, 1.95rem); color: var(--primary); margin-bottom: 0.8rem; line-height: 1.3;">
                   Feria «Jóvenes con Propósito» &amp; Tienda Escolar IECAR
                 </h3>
                 <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 1.2rem;">
-                  Nuestros estudiantes de bachillerato demostraron su espíritu emprendedor con propuestas comerciales, gastronomía típica, productos artesanales y la venta solidaria del pulguero institucional.
+                  Nuestros estudiantes de bachillerato demostraron su espíritu emprendedor con propuestas comerciales,
+                  gastronomía típica, productos artesanales y la venta solidaria del pulguero institucional.
                 </p>
               </div>
 
-              <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
-                <h5 style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
+              <div
+                style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+                <h5
+                  style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
                   📌 Contenido Disponible en la Galería Exclusiva del Día 2:
                 </h5>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; color: var(--text-main);">
-                  <li>🎬 <strong>Videos Oficiales (3):</strong> Transmisión en vivo completa, Reconocimiento a Emprendedores y Short de invitación.</li>
-                  <li>📸 <strong>Muestra Fotográfica Destacada (34 Fotos):</strong> Visor interactivo en pantalla completa.</li>
-                  <li>☁️ <strong>Álbum Oficial en la Nube:</strong> Enlace a Google Fotos con más de 100 imágenes en alta resolución.</li>
+                <ul
+                  style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; color: var(--text-main);">
+                  <li>🎬 <strong>Videos Oficiales (3):</strong> Transmisión en vivo completa, Reconocimiento a
+                    Emprendedores y Short de invitación.</li>
+                  <li>📸 <strong>Muestra Fotográfica Destacada (34 Fotos):</strong> Visor interactivo en pantalla
+                    completa.</li>
+                  <li>☁️ <strong>Álbum Oficial en la Nube:</strong> Enlace a Google Fotos con más de 100 imágenes en
+                    alta resolución.</li>
                 </ul>
               </div>
 
               <div class="showcase-actions-wrap">
-                <a href="dia2.html" class="btn-primary" style="padding: 0.85rem 1.6rem; font-size: 0.95rem; background: #0284c7; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);">
+                <a href="dia2.html" class="btn-primary"
+                  style="padding: 0.85rem 1.6rem; font-size: 0.95rem; background: #0284c7; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);">
                   📸 Entrar a la Galería y Videos del Día 2 ↗
                 </a>
-                <a href="https://photos.app.goo.gl/Q6bQMeVm7yUZ4NSKA" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.8rem 1.4rem; font-size: 0.92rem; border-color: var(--accent-gold); color: #b45309;">
+                <a href="https://photos.app.goo.gl/Q6bQMeVm7yUZ4NSKA" target="_blank" rel="noopener noreferrer"
+                  class="btn-secondary"
+                  style="padding: 0.8rem 1.4rem; font-size: 0.92rem; border-color: var(--accent-gold); color: #b45309;">
                   ☁️ Abrir Álbum en Google Fotos (+100 Fotos) ↗
                 </a>
-                <a href="https://youtu.be/FHwwIFF-vHg" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.8rem 1.2rem; font-size: 0.88rem; border-color: #ef4444; color: #dc2626;">
+                <a href="https://youtu.be/FHwwIFF-vHg" target="_blank" rel="noopener noreferrer" class="btn-secondary"
+                  style="padding: 0.8rem 1.2rem; font-size: 0.88rem; border-color: #ef4444; color: #dc2626;">
                   🎬 Transmisión en YouTube ↗
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="teaser-footer" style="margin-top: 1.5rem; border-top: 1px solid rgba(16, 185, 129, 0.25); padding-top: 1rem;">
+          <div class="teaser-footer"
+            style="margin-top: 1.5rem; border-top: 1px solid rgba(16, 185, 129, 0.25); padding-top: 1rem;">
             <span>✨ Cobertura oficial completa alojada en página dedicada sin saturar la portada principal</span>
           </div>
         </div>
@@ -2561,7 +2979,8 @@
           </span>
           <h3 class="notice-title">Pautas de Asistencia: Feria de Emprendimiento «Jóvenes con Propósito»</h3>
           <p class="notice-lead">
-            Información esencial dirigida a <strong>estudiantes, padres de familia, docentes y comunidad educativa en general</strong> para el óptimo desarrollo de nuestra jornada de emprendimiento y tienda escolar.
+            Información esencial dirigida a <strong>estudiantes, padres de familia, docentes y comunidad educativa en
+              general</strong> para el óptimo desarrollo de nuestra jornada de emprendimiento y tienda escolar.
           </p>
 
           <div class="notice-grid">
@@ -2569,14 +2988,17 @@
             <div class="notice-flyer-col">
               <div class="notice-flyer-frame">
                 <a href="aviso_emprendimiento.jpg" target="_blank" title="Clic para ver afiche en tamaño completo">
-                  <img src="aviso_emprendimiento.jpg" alt="Aviso Oficial: Pautas para la Feria de Emprendimiento IE El Carmen" loading="lazy">
+                  <img src="aviso_emprendimiento.jpg"
+                    alt="Aviso Oficial: Pautas para la Feria de Emprendimiento IE El Carmen" loading="lazy">
                 </a>
               </div>
               <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-                <a href="aviso_emprendimiento.jpg" target="_blank" class="btn-primary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
+                <a href="aviso_emprendimiento.jpg" target="_blank" class="btn-primary"
+                  style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
                   🔍 Ver Afiche Grande
                 </a>
-                <a href="aviso_emprendimiento.jpg" download="Aviso_Feria_Emprendimiento_IEEC.jpg" class="btn-secondary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
+                <a href="aviso_emprendimiento.jpg" download="Aviso_Feria_Emprendimiento_IEEC.jpg" class="btn-secondary"
+                  style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
                   📥 Descargar Afiche
                 </a>
               </div>
@@ -2593,7 +3015,8 @@
                   <span class="notice-rule-badge green">Obligatorio</span>
                 </div>
                 <h5>Uniforme Institucional</h5>
-                <p>Todos los estudiantes deben asistir portando correctamente su <strong>uniforme institucional</strong> completo.</p>
+                <p>Todos los estudiantes deben asistir portando correctamente su <strong>uniforme institucional</strong>
+                  completo.</p>
               </div>
 
               <div class="notice-rule-item">
@@ -2611,7 +3034,8 @@
                   <span class="notice-rule-badge gold">Expositores · 6:30 AM</span>
                 </div>
                 <h5>Montaje de Stands</h5>
-                <p>Quienes van a presentar proyectos de emprendimiento pueden iniciar el montaje de su stand desde las <strong>6:30 A.M.</strong></p>
+                <p>Quienes van a presentar proyectos de emprendimiento pueden iniciar el montaje de su stand desde las
+                  <strong>6:30 A.M.</strong></p>
               </div>
 
               <div class="notice-rule-item">
@@ -2620,7 +3044,8 @@
                   <span class="notice-rule-badge blue">Ingreso · 7:30 AM</span>
                 </div>
                 <h5>Hora de Llegada</h5>
-                <p>La hora oficial de llegada de todos los estudiantes a la institución es a las <strong>7:30 A.M.</strong></p>
+                <p>La hora oficial de llegada de todos los estudiantes a la institución es a las <strong>7:30
+                    A.M.</strong></p>
               </div>
 
               <div class="notice-rule-item">
@@ -2629,7 +3054,8 @@
                   <span class="notice-rule-badge green">Compromiso</span>
                 </div>
                 <h5>Limpieza y Orden</h5>
-                <p>El lugar asignado para cada proyecto de emprendimiento debe quedar <strong>limpio y ordenado</strong> al finalizar la feria.</p>
+                <p>El lugar asignado para cada proyecto de emprendimiento debe quedar <strong>limpio y ordenado</strong>
+                  al finalizar la feria.</p>
               </div>
 
               <div class="notice-rule-item">
@@ -2638,35 +3064,48 @@
                   <span class="notice-rule-badge purple">Comunidad</span>
                 </div>
                 <h5>¡Invita a Familiares y Amigos!</h5>
-                <p>¡No olviden invitar a familiares y amigos para que apoyen y conozcan el talento y los emprendimientos!</p>
+                <p>¡No olviden invitar a familiares y amigos para que apoyen y conozcan el talento y los
+                  emprendimientos!</p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Día 3: Cobertura Oficial Completa (Mundialito & Desfile Dedicado) -->
-        <div class="teaser-card" id="galeria-mundialito-dia3" style="grid-column: 1 / -1; background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%); border: 2px solid #fde68a; padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: 0 10px 30px rgba(245, 158, 11, 0.12); margin-top: 1.5rem;">
+        <div class="teaser-card" id="galeria-mundialito-dia3"
+          style="grid-column: 1 / -1; background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%); border: 2px solid #fde68a; padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: 0 10px 30px rgba(245, 158, 11, 0.12); margin-top: 1.5rem;">
           <div class="teaser-header">
             <span class="teaser-badge-live" style="background: #fef3c7; color: #92400e; border-color: #fde68a;">
-              <span class="pulse-dot" style="background: #f59e0b;"></span> 📸 ¡MEMORIAS &amp; GALERÍA OFICIAL DISPONIBLES!
+              <span class="pulse-dot" style="background: #f59e0b;"></span> 📸 ¡MEMORIAS &amp; GALERÍA OFICIAL
+              DISPONIBLES!
             </span>
-            <span style="font-size: 0.82rem; font-weight: 800; color: #92400e; background: rgba(245, 158, 11, 0.15); padding: 0.3rem 0.8rem; border-radius: var(--radius-full);">Miércoles 21 Octubre · Registro Oficial</span>
+            <span
+              style="font-size: 0.82rem; font-weight: 800; color: #92400e; background: rgba(245, 158, 11, 0.15); padding: 0.3rem 0.8rem; border-radius: var(--radius-full);">Miércoles
+              21 Octubre · Registro Oficial</span>
           </div>
 
           <div class="showcase-featured-grid">
             <!-- Columna Izquierda: Vista Previa Visual Atractiva de la Jornada -->
             <div class="showcase-preview-frame">
-              <a href="dia3.html" title="Clic para entrar a la galería completa del Día 3" style="display: block; position: relative;">
+              <a href="dia3.html" title="Clic para entrar a la galería completa del Día 3"
+                style="display: block; position: relative;">
                 <img src="dia3/Dia3 (1).jpg" alt="Gran Desfile e Inauguración Mundialito Carmelista" loading="lazy">
-                <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(15,23,42,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem; color: #ffffff;">
-                  <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: #d97706; color: #ffffff; font-size: 0.74rem; font-weight: 800; padding: 0.25rem 0.6rem; border-radius: var(--radius-full); width: fit-content; text-transform: uppercase; margin-bottom: 0.4rem;">
-                    ▶ 17 Fotos &amp; Álbum Nube
+                <div
+                  style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(15,23,42,0.85) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem; color: #ffffff;">
+                  <span
+                    style="display: inline-flex; align-items: center; gap: 0.4rem; background: #d97706; color: #ffffff; font-size: 0.74rem; font-weight: 800; padding: 0.25rem 0.6rem; border-radius: var(--radius-full); width: fit-content; text-transform: uppercase; margin-bottom: 0.4rem;">
+                    ▶ 5 Videos &amp; 17 Fotos
                   </span>
-                  <strong style="font-size: 1.05rem; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">Desfile Folclórico &amp; Mundialito 2026</strong>
-                  <span style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.2rem;">Toca para abrir la página interactiva</span>
+                  <strong style="font-size: 1.05rem; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">Desfile
+                    Folclórico &amp; Mundialito 2026</strong>
+                  <span style="font-size: 0.8rem; color: #cbd5e1; margin-top: 0.2rem;">Toca para abrir la página
+                    interactiva</span>
                 </div>
-                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 56px; height: 56px; border-radius: 50%; background: rgba(255,255,255,0.92); color: var(--primary); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(0,0,0,0.4); transition: transform 0.2s ease;">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <div
+                  style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 56px; height: 56px; border-radius: 50%; background: rgba(255,255,255,0.92); color: var(--primary); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(0,0,0,0.4); transition: transform 0.2s ease;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
                 </div>
               </a>
             </div>
@@ -2674,52 +3113,69 @@
             <!-- Columna Derecha: Información y Acciones -->
             <div class="video-info-panel">
               <div>
-                <span style="font-size: 0.85rem; font-weight: 800; color: #d97706; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.35rem;">
+                <span
+                  style="font-size: 0.85rem; font-weight: 800; color: #d97706; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.35rem;">
                   Tercera Jornada · Deporte, Folclor &amp; Convivencia
                 </span>
-                <h3 style="font-size: clamp(1.4rem, 2.5vw, 1.95rem); color: var(--primary); margin-bottom: 0.8rem; line-height: 1.3;">
+                <h3
+                  style="font-size: clamp(1.4rem, 2.5vw, 1.95rem); color: var(--primary); margin-bottom: 0.8rem; line-height: 1.3;">
                   Gran Desfile Folclórico e Inauguración Mundialito Carmelista 2026
                 </h3>
                 <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 1.2rem;">
-                  Revive la emoción del recorrido con las comparsas, la energía de las porristas infantiles, las delegaciones deportivas por países y los actos protocolarios en la Cancha Brisas del Mar.
+                  Revive la emoción del recorrido con las comparsas, la energía de las porristas infantiles, las
+                  delegaciones deportivas por países y los actos protocolarios en la Cancha Brisas del Mar.
                 </p>
               </div>
 
-              <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
-                <h5 style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
+              <div
+                style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+                <h5
+                  style="color: var(--primary); font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
                   📌 Contenido Disponible en la Galería Exclusiva del Día 3:
                 </h5>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; color: var(--text-main);">
-                  <li>📸 <strong>Muestra Fotográfica Destacada (17 Fotos):</strong> Visor interactivo en pantalla completa con delegaciones de cada grado escolar.</li>
-                  <li>☁️ <strong>Álbum Oficial en la Nube:</strong> Enlace a Google Fotos con toda la galería en resolución original.</li>
-                  <li>🎬 <strong>Transmisiones &amp; Clips de Video:</strong> Módulos preparados para enlazar las transmisiones oficiales de YouTube.</li>
+                <ul
+                  style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.88rem; color: var(--text-main);">
+                  <li>📸 <strong>Muestra Fotográfica Destacada (17 Fotos):</strong> Visor interactivo en pantalla
+                    completa con delegaciones de cada grado escolar.</li>
+                  <li>☁️ <strong>Álbum Oficial en la Nube:</strong> Enlace a Google Fotos con toda la galería en
+                    resolución original.</li>
+                  <li>🎬 <strong>Transmisiones &amp; Clips de Video:</strong> Módulos preparados para enlazar las
+                    transmisiones oficiales de YouTube.</li>
                 </ul>
               </div>
 
               <div class="showcase-actions-wrap">
-                <a href="dia3.html" class="btn-primary" style="padding: 0.85rem 1.6rem; font-size: 0.95rem; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #0f172a; font-weight: 900; box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);">
+                <a href="dia3.html" class="btn-primary"
+                  style="padding: 0.85rem 1.6rem; font-size: 0.95rem; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #0f172a; font-weight: 900; box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);">
                   📸 Entrar a la Galería Oficial del Día 3 ↗
                 </a>
-                <a href="https://photos.app.goo.gl/94siA2b1hiG5bx2S9" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.8rem 1.4rem; font-size: 0.92rem; border-color: var(--accent-gold); color: #b45309;">
+                <a href="https://photos.app.goo.gl/94siA2b1hiG5bx2S9" target="_blank" rel="noopener noreferrer"
+                  class="btn-secondary"
+                  style="padding: 0.8rem 1.4rem; font-size: 0.92rem; border-color: var(--accent-gold); color: #b45309;">
                   ☁️ Abrir Álbum en Google Fotos ↗
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="teaser-footer" style="margin-top: 1.5rem; border-top: 1px solid rgba(245, 158, 11, 0.25); padding-top: 1rem;">
+          <div class="teaser-footer"
+            style="margin-top: 1.5rem; border-top: 1px solid rgba(245, 158, 11, 0.25); padding-top: 1rem;">
             <span>✨ Cobertura oficial completa alojada en página dedicada sin saturar la portada principal</span>
           </div>
         </div>
 
         <!-- Comunicado Oficial y Guía del Desfile: Mundialito Carmelista (Miércoles 21) -->
-        <div class="notice-banner-card sports" id="comunicado-mundialito-dia3" style="grid-column: 1 / -1; margin-top: 1.5rem;">
+        <div class="notice-banner-card sports" id="comunicado-mundialito-dia3"
+          style="grid-column: 1 / -1; margin-top: 1.5rem;">
           <span class="notice-header-badge" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">
-            <span class="pulse-dot" style="background: #0284c7;"></span> ⚽ GUÍA Y COMUNICADO OFICIAL · MIÉRCOLES 21 DE OCTUBRE
+            <span class="pulse-dot" style="background: #0284c7;"></span> ⚽ GUÍA Y COMUNICADO OFICIAL · MIÉRCOLES 21 DE
+            OCTUBRE
           </span>
           <h3 class="notice-title">Mundialito Carmelista: Desfile e Inauguración Oficial 2026</h3>
           <p class="notice-lead">
-            Información esencial, recorrido vial y pautas de participación para <strong>estudiantes, familias, docentes y delegaciones deportivas</strong>. ¡Vivamos la fiesta del deporte bajo los valores carmelitas de <strong>Integración, Respeto y Juego Limpio</strong>!
+            Información esencial, recorrido vial y pautas de participación para <strong>estudiantes, familias, docentes
+              y delegaciones deportivas</strong>. ¡Vivamos la fiesta del deporte bajo los valores carmelitas de
+            <strong>Integración, Respeto y Juego Limpio</strong>!
           </p>
 
           <div class="notice-grid">
@@ -2731,25 +3187,31 @@
                 </a>
               </div>
               <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-                <a href="afiche_mundialito.jpg" target="_blank" class="btn-primary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem; background: var(--accent-blue);">
+                <a href="afiche_mundialito.jpg" target="_blank" class="btn-primary"
+                  style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem; background: var(--accent-blue);">
                   🔍 Ver Afiche
                 </a>
-                <a href="afiche_mundialito.jpg" download="Afiche_Mundialito_Carmelista_2026.jpg" class="btn-secondary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
+                <a href="afiche_mundialito.jpg" download="Afiche_Mundialito_Carmelista_2026.jpg" class="btn-secondary"
+                  style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
                   📥 Descargar Afiche
                 </a>
               </div>
 
               <!-- Miniatura Mapa Recorrido -->
               <div class="notice-flyer-frame" style="margin-top: 0.5rem; background: #0f172a;">
-                <a href="recorrido_desfile.jpg" target="_blank" title="Clic para ver el mapa del recorrido en tamaño completo">
-                  <img src="recorrido_desfile.jpg" alt="Mapa del Recorrido Desfile Juegos Intercursos Mundialito Carmelito" loading="lazy">
+                <a href="recorrido_desfile.jpg" target="_blank"
+                  title="Clic para ver el mapa del recorrido en tamaño completo">
+                  <img src="recorrido_desfile.jpg"
+                    alt="Mapa del Recorrido Desfile Juegos Intercursos Mundialito Carmelito" loading="lazy">
                 </a>
               </div>
               <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-                <a href="recorrido_desfile.jpg" target="_blank" class="btn-primary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem; background: #059669;">
+                <a href="recorrido_desfile.jpg" target="_blank" class="btn-primary"
+                  style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem; background: #059669;">
                   🗺️ Ver Mapa
                 </a>
-                <a href="cronograma_mundialito.pdf" target="_blank" class="btn-secondary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem; border-color: var(--accent-blue); color: #0284c7;">
+                <a href="cronograma_mundialito.pdf" target="_blank" class="btn-secondary"
+                  style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem; border-color: var(--accent-blue); color: #0284c7;">
                   📄 PDF Fixture (14 págs)
                 </a>
               </div>
@@ -2814,8 +3276,10 @@
               </div>
 
               <!-- Trazado Oficial del Desfile -->
-              <div style="margin-top: 1.5rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
-                <h4 style="font-size: 1.05rem; color: var(--primary); margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
+              <div
+                style="margin-top: 1.5rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+                <h4
+                  style="font-size: 1.05rem; color: var(--primary); margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem;">
                   📍 Recorrido Oficial Paso a Paso (Plan Vial Coordinado)
                 </h4>
                 <div class="route-steps-grid">
@@ -2846,39 +3310,55 @@
         </div>
 
         <!-- Invitación Oficial: Gran Foro «Salvemos la Ciénaga» (Jueves 22 de Octubre) -->
-        <div class="notice-banner-card" id="foro-salvemos-la-cienaga" style="grid-column: 1 / -1; margin-top: 1.5rem; background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 40%, #ecfeff 100%); border: 2px solid #10b981; border-radius: var(--radius-lg); padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: var(--shadow-md);">
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.75rem;">
-            <span class="notice-header-badge" style="background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; font-weight: 800; font-size: 0.82rem; padding: 0.35rem 0.85rem; border-radius: var(--radius-full); display: inline-flex; align-items: center; gap: 0.5rem;">
-              <span class="pulse-dot" style="background: #10b981;"></span> 🌿 FORO INSTITUCIONAL · JUEVES 22 DE OCTUBRE · 08:00 A.M.
+        <div class="notice-banner-card" id="foro-salvemos-la-cienaga"
+          style="grid-column: 1 / -1; margin-top: 1.5rem; background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 40%, #ecfeff 100%); border: 2px solid #10b981; border-radius: var(--radius-lg); padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: var(--shadow-md);">
+          <div
+            style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.75rem;">
+            <span class="notice-header-badge"
+              style="background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; font-weight: 800; font-size: 0.82rem; padding: 0.35rem 0.85rem; border-radius: var(--radius-full); display: inline-flex; align-items: center; gap: 0.5rem;">
+              <span class="pulse-dot" style="background: #10b981;"></span> 🌿 FORO INSTITUCIONAL · JUEVES 22 DE OCTUBRE
+              · 08:00 A.M.
             </span>
-            <span style="font-size: 0.82rem; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 0.3rem 0.75rem; border-radius: var(--radius-full);">
+            <span
+              style="font-size: 0.82rem; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 0.3rem 0.75rem; border-radius: var(--radius-full);">
               📍 Instalaciones I.E. El Carmen
             </span>
           </div>
 
-          <h3 class="notice-title" style="font-size: clamp(1.4rem, 2.8vw, 2rem); color: var(--primary); margin: 0.5rem 0 0.4rem; font-family: var(--font-heading); font-weight: 800; line-height: 1.2;">
+          <h3 class="notice-title"
+            style="font-size: clamp(1.4rem, 2.8vw, 2rem); color: var(--primary); margin: 0.5rem 0 0.4rem; font-family: var(--font-heading); font-weight: 800; line-height: 1.2;">
             Foro Educativo Institucional: «Salvemos la Ciénaga»
           </h3>
           <p class="notice-lead" style="color: #047857; font-size: 1.05rem; font-weight: 700; margin-bottom: 1.5rem;">
-            «Nuestra Ciénaga también tiene futuro» · Un espacio de reflexión, diálogo y acción por la protección de nuestro entorno ambiental y patrimonio carmelita.
+            «Nuestra Ciénaga también tiene futuro» · Un espacio de reflexión, diálogo y acción por la protección de
+            nuestro entorno ambiental y patrimonio carmelita.
           </p>
 
-          <div class="notice-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: start;">
+          <div class="notice-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: start;">
             <!-- Columna Izquierda: Cartel Oficial Cuadrado (Versión Redes / WhatsApp) -->
             <div class="notice-flyer-col">
-              <div class="notice-flyer-frame" style="background: #ffffff; padding: 0.6rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid #cbd5e1; text-align: center; position: relative;">
-                <a href="afiche_foro_cuadrado.jpg" target="_blank" title="Clic para ver la imagen cuadrada en tamaño original">
-                  <img src="afiche_foro_cuadrado.jpg" alt="Cartel Oficial - Foro Salvemos la Ciénaga 2026 IE El Carmen" loading="lazy" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 6px; transition: transform 0.3s ease;">
+              <div class="notice-flyer-frame"
+                style="background: #ffffff; padding: 0.6rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid #cbd5e1; text-align: center; position: relative;">
+                <a href="afiche_foro_cuadrado.jpg" target="_blank"
+                  title="Clic para ver la imagen cuadrada en tamaño original">
+                  <img src="afiche_foro_cuadrado.jpg" alt="Cartel Oficial - Foro Salvemos la Ciénaga 2026 IE El Carmen"
+                    loading="lazy"
+                    style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 6px; transition: transform 0.3s ease;">
                 </a>
               </div>
               <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.85rem;">
-                <a href="afiche_foro_cuadrado.jpg" target="_blank" class="btn-primary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.65rem 1rem; text-align: center; justify-content: center; gap: 0.4rem; background: #059669; box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);">
+                <a href="afiche_foro_cuadrado.jpg" target="_blank" class="btn-primary"
+                  style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.65rem 1rem; text-align: center; justify-content: center; gap: 0.4rem; background: #059669; box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);">
                   🔍 Ver Imagen Cuadrada
                 </a>
-                <a href="afiche_foro_cuadrado.jpg" download="Cartel_Cuadrado_Foro_Salvemos_la_Cienaga.jpg" class="btn-secondary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.65rem 1rem; text-align: center; justify-content: center; gap: 0.4rem; border-color: #059669; color: #065f46;">
+                <a href="afiche_foro_cuadrado.jpg" download="Cartel_Cuadrado_Foro_Salvemos_la_Cienaga.jpg"
+                  class="btn-secondary"
+                  style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.65rem 1rem; text-align: center; justify-content: center; gap: 0.4rem; border-color: #059669; color: #065f46;">
                   📥 Descargar para Redes
                 </a>
-                <a href="afiche_foro.jpg" target="_blank" class="btn-secondary" style="width: 100%; font-size: 0.82rem; padding: 0.55rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem; border-color: #0284c7; color: #0369a1;">
+                <a href="afiche_foro.jpg" target="_blank" class="btn-secondary"
+                  style="width: 100%; font-size: 0.82rem; padding: 0.55rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem; border-color: #0284c7; color: #0369a1;">
                   📄 Ver Cartel Vertical Oficial ↗
                 </a>
               </div>
@@ -2889,11 +3369,14 @@
 
             <!-- Columna Derecha: Ficha Técnica y Actividades Centrales -->
             <div>
-              <div style="background: #ffffff; border-radius: var(--radius-md); border: 1px solid #a7f3d0; padding: 1.5rem; margin-bottom: 1.25rem; box-shadow: var(--shadow-sm);">
-                <h4 style="color: #065f46; font-size: 1.05rem; margin-bottom: 0.85rem; display: flex; align-items: center; gap: 0.4rem;">
+              <div
+                style="background: #ffffff; border-radius: var(--radius-md); border: 1px solid #a7f3d0; padding: 1.5rem; margin-bottom: 1.25rem; box-shadow: var(--shadow-sm);">
+                <h4
+                  style="color: #065f46; font-size: 1.05rem; margin-bottom: 0.85rem; display: flex; align-items: center; gap: 0.4rem;">
                   📋 Ficha del Evento Institucional
                 </h4>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.9rem; color: var(--text-main); padding: 0; margin: 0;">
+                <ul
+                  style="list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.9rem; color: var(--text-main); padding: 0; margin: 0;">
                   <li style="display: flex; gap: 0.5rem; align-items: flex-start;">
                     <span style="font-size: 1.1rem;">🗓️</span>
                     <div><strong>Fecha:</strong> Jueves 22 de octubre de 2026</div>
@@ -2904,47 +3387,65 @@
                   </li>
                   <li style="display: flex; gap: 0.5rem; align-items: flex-start;">
                     <span style="font-size: 1.1rem;">📍</span>
-                    <div><strong>Lugar:</strong> Instalaciones de la Institución Educativa El Carmen (Barrio Micael Cotes, Ciénaga)</div>
+                    <div><strong>Lugar:</strong> Instalaciones de la Institución Educativa El Carmen (Barrio Micael
+                      Cotes, Ciénaga)</div>
                   </li>
                   <li style="display: flex; gap: 0.5rem; align-items: flex-start;">
                     <span style="font-size: 1.1rem;">👥</span>
-                    <div><strong>Convocados:</strong> Estudiantes, Docentes, Directivos, Padres de Familia y Comunidad en general</div>
+                    <div><strong>Convocados:</strong> Estudiantes, Docentes, Directivos, Padres de Familia y Comunidad
+                      en general</div>
                   </li>
                 </ul>
               </div>
 
               <!-- Tres Actividades Centrales del Foro -->
-              <div style="background: #ffffff; border-radius: var(--radius-md); border: 1px solid #bae6fd; padding: 1.5rem; box-shadow: var(--shadow-sm);">
-                <h4 style="color: #0369a1; font-size: 1.05rem; margin-bottom: 0.85rem; display: flex; align-items: center; gap: 0.4rem;">
+              <div
+                style="background: #ffffff; border-radius: var(--radius-md); border: 1px solid #bae6fd; padding: 1.5rem; box-shadow: var(--shadow-sm);">
+                <h4
+                  style="color: #0369a1; font-size: 1.05rem; margin-bottom: 0.85rem; display: flex; align-items: center; gap: 0.4rem;">
                   🌊 Actividades Centrales del Foro
                 </h4>
                 <div style="display: flex; flex-direction: column; gap: 0.85rem;">
                   <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
-                    <span style="background: #d1fae5; color: #065f46; font-weight: 800; font-size: 0.85rem; border-radius: var(--radius-full); width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">🌱</span>
+                    <span
+                      style="background: #d1fae5; color: #065f46; font-weight: 800; font-size: 0.85rem; border-radius: var(--radius-full); width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">🌱</span>
                     <div>
-                      <strong style="color: var(--primary); font-size: 0.92rem;">Ponencias Estudiantiles sobre la Ciénaga:</strong>
-                      <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.15rem 0 0;">Socialización de investigaciones de aula sobre problemáticas ambientales, fuentes hídricas y propuestas juveniles para la conservación.</p>
+                      <strong style="color: var(--primary); font-size: 0.92rem;">Ponencias Estudiantiles sobre la
+                        Ciénaga:</strong>
+                      <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.15rem 0 0;">Socialización de
+                        investigaciones de aula sobre problemáticas ambientales, fuentes hídricas y propuestas juveniles
+                        para la conservación.</p>
                     </div>
                   </div>
                   <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
-                    <span style="background: #fef3c7; color: #92400e; font-weight: 800; font-size: 0.85rem; border-radius: var(--radius-full); width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">🌿</span>
+                    <span
+                      style="background: #fef3c7; color: #92400e; font-weight: 800; font-size: 0.85rem; border-radius: var(--radius-full); width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">🌿</span>
                     <div>
-                      <strong style="color: var(--primary); font-size: 0.92rem;">Exposición de Especies de Manglares:</strong>
-                      <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.15rem 0 0;">Muestra pedagógica y botánica sobre las variedades de mangle (rojo, negro, blanco) y su función vital como cuna de vida y barrera natural.</p>
+                      <strong style="color: var(--primary); font-size: 0.92rem;">Exposición de Especies de
+                        Manglares:</strong>
+                      <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.15rem 0 0;">Muestra pedagógica y
+                        botánica sobre las variedades de mangle (rojo, negro, blanco) y su función vital como cuna de
+                        vida y barrera natural.</p>
                     </div>
                   </div>
                   <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
-                    <span style="background: #e0f2fe; color: #0369a1; font-weight: 800; font-size: 0.85rem; border-radius: var(--radius-full); width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">🤝</span>
+                    <span
+                      style="background: #e0f2fe; color: #0369a1; font-weight: 800; font-size: 0.85rem; border-radius: var(--radius-full); width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">🤝</span>
                     <div>
                       <strong style="color: var(--primary); font-size: 0.92rem;">Mesas de Diálogo Comunitario:</strong>
-                      <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.15rem 0 0;">Encuentro constructivo entre estudiantes, docentes, directivos y padres para pactar compromisos ecológicos institucionales y ciudadanos.</p>
+                      <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.15rem 0 0;">Encuentro
+                        constructivo entre estudiantes, docentes, directivos y padres para pactar compromisos ecológicos
+                        institucionales y ciudadanos.</p>
                     </div>
                   </div>
                 </div>
 
-                <div style="margin-top: 1.25rem; padding: 0.85rem; background: linear-gradient(135deg, #ecfdf5 0%, #e0f2fe 100%); border-radius: var(--radius-sm); border: 1px dashed #059669; text-align: center;">
-                  <strong style="color: #065f46; font-size: 0.95rem;">¡Unidos por el presente y futuro de nuestra Ciénaga!</strong>
-                  <div style="font-size: 0.82rem; color: #0369a1; margin-top: 0.2rem;">¡Te esperamos mañana jueves desde las 8:00 AM!</div>
+                <div
+                  style="margin-top: 1.25rem; padding: 0.85rem; background: linear-gradient(135deg, #ecfdf5 0%, #e0f2fe 100%); border-radius: var(--radius-sm); border: 1px dashed #059669; text-align: center;">
+                  <strong style="color: #065f46; font-size: 0.95rem;">¡Unidos por el presente y futuro de nuestra
+                    Ciénaga!</strong>
+                  <div style="font-size: 0.82rem; color: #0369a1; margin-top: 0.2rem;">¡Te esperamos mañana jueves desde
+                    las 8:00 AM!</div>
                 </div>
               </div>
             </div>
@@ -2952,28 +3453,36 @@
         </div>
 
         <!-- Invitación Oficial y Comunitaria: Solemne Santa Misa y 53 Aniversario (Viernes 23) -->
-        <div class="notice-banner-card solemn" id="invitacion-misa-dia5" style="grid-column: 1 / -1; margin-top: 1.5rem;">
+        <div class="notice-banner-card solemn" id="invitacion-misa-dia5"
+          style="grid-column: 1 / -1; margin-top: 1.5rem;">
           <span class="notice-header-badge" style="background: rgba(245, 158, 11, 0.15); color: #b45309;">
-            <span class="pulse-dot" style="background: #e11d48;"></span> 🕊️ SOLEMNE SANTA MISA · VIERNES 23 DE OCTUBRE · 03:00 P.M.
+            <span class="pulse-dot" style="background: #e11d48;"></span> 🕊️ SOLEMNE SANTA MISA · VIERNES 23 DE OCTUBRE
+            · 03:00 P.M.
           </span>
           <h3 class="notice-title">Santa Misa: 53° Aniversario Institucional &amp; Memoria de Arlin Jiménez</h3>
           <p class="notice-lead">
-            Invitamos con afecto y respeto a toda la comunidad educativa a conmemorar un año más de nuestra querida institución y honrar el legado imborrable de quien en vida fue nuestro compañero y maestro.
+            Invitamos con afecto y respeto a toda la comunidad educativa a conmemorar un año más de nuestra querida
+            institución y honrar el legado imborrable de quien en vida fue nuestro compañero y maestro.
           </p>
 
           <div class="notice-grid">
             <!-- Columna Izquierda: Tarjeta Solemne de la Santa Misa -->
             <div class="notice-flyer-col">
               <div class="notice-flyer-frame" style="background: #ffffff; padding: 0.5rem; text-align: center;">
-                <a href="afiche_misa.png" target="_blank" title="Clic para ver la tarjeta de la Santa Misa en tamaño completo">
-                  <img src="afiche_misa.png" alt="Invitación Oficial a la Santa Misa - 53 Años IE El Carmen y en memoria de Arlin Jiménez" loading="lazy" style="max-height: 480px; object-fit: contain; margin: 0 auto;">
+                <a href="afiche_misa.png" target="_blank"
+                  title="Clic para ver la tarjeta de la Santa Misa en tamaño completo">
+                  <img src="afiche_misa.png"
+                    alt="Invitación Oficial a la Santa Misa - 53 Años IE El Carmen y en memoria de Arlin Jiménez"
+                    loading="lazy" style="max-height: 480px; object-fit: contain; margin: 0 auto;">
                 </a>
               </div>
               <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-                <a href="afiche_misa.png" target="_blank" class="btn-primary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem; background: var(--accent-gold); color: #000; font-weight: 800;">
+                <a href="afiche_misa.png" target="_blank" class="btn-primary"
+                  style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem; background: var(--accent-gold); color: #000; font-weight: 800;">
                   🔍 Ver Tarjeta
                 </a>
-                <a href="afiche_misa.png" download="Invitacion_Santa_Misa_IE_El_Carmen.png" class="btn-secondary" style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
+                <a href="afiche_misa.png" download="Invitacion_Santa_Misa_IE_El_Carmen.png" class="btn-secondary"
+                  style="flex: 1; min-width: 140px; font-size: 0.85rem; padding: 0.6rem 0.9rem; text-align: center; justify-content: center; gap: 0.4rem;">
                   📥 Descargar Imagen
                 </a>
               </div>
@@ -2984,12 +3493,18 @@
 
             <!-- Columna Derecha: Mensaje Conmemorativo y Datos Clave -->
             <div>
-              <div style="background: #ffffff; border-radius: var(--radius-md); border: 1px solid rgba(245, 158, 11, 0.3); padding: 1.5rem; margin-bottom: 1.25rem; box-shadow: var(--shadow-sm); position: relative;">
+              <div
+                style="background: #ffffff; border-radius: var(--radius-md); border: 1px solid rgba(245, 158, 11, 0.3); padding: 1.5rem; margin-bottom: 1.25rem; box-shadow: var(--shadow-sm); position: relative;">
                 <span style="font-size: 2rem; position: absolute; top: 0.8rem; right: 1.2rem; opacity: 0.25;">✝️</span>
-                <p style="font-size: 1.05rem; font-style: italic; color: var(--primary); line-height: 1.7; margin-bottom: 0.5rem;">
-                  «Invitamos a toda la comunidad educativa a celebrar la Santa Misa en conmemoración de un aniversario más de la I.E. El Carmen y del primer año de la partida de nuestro querido compañero <strong>Arlin Jiménez</strong>.<br><br>
-                  Unámonos en oración para agradecer las bendiciones recibidas y honrar su memoria, confiando en que su recuerdo vivirá por siempre en nuestros corazones.<br><br>
-                  <strong>Celebramos nuestra historia y recordamos con amor a quien dejó huellas imborrables en nuestra familia Carmelista.</strong>»
+                <p
+                  style="font-size: 1.05rem; font-style: italic; color: var(--primary); line-height: 1.7; margin-bottom: 0.5rem;">
+                  «Invitamos a toda la comunidad educativa a celebrar la Santa Misa en conmemoración de un aniversario
+                  más de la I.E. El Carmen y del primer año de la partida de nuestro querido compañero <strong>Arlin
+                    Jiménez</strong>.<br><br>
+                  Unámonos en oración para agradecer las bendiciones recibidas y honrar su memoria, confiando en que su
+                  recuerdo vivirá por siempre en nuestros corazones.<br><br>
+                  <strong>Celebramos nuestra historia y recordamos con amor a quien dejó huellas imborrables en nuestra
+                    familia Carmelista.</strong>»
                 </p>
               </div>
 
@@ -3040,10 +3555,12 @@
         <div class="teaser-callout-text">
           <h4>¿Tienes fotos o videos del evento?</h4>
           <p>
-            El comité de comunicaciones de la IE El Carmen estará compilando el material de docentes y estudiantes en el Drive institucional para publicarlo directamente en este portal.
+            El comité de comunicaciones de la IE El Carmen estará compilando el material de docentes y estudiantes en el
+            Drive institucional para publicarlo directamente en este portal.
           </p>
         </div>
-        <a href="#contacto" class="btn-primary" style="background: var(--accent-gold); color: #000; font-weight: 800; white-space: nowrap;">
+        <a href="#contacto" class="btn-primary"
+          style="background: var(--accent-gold); color: #000; font-weight: 800; white-space: nowrap;">
           Contactar Comité ✉
         </a>
       </div>
@@ -3057,7 +3574,8 @@
         <div class="inst-info">
           <h3>Institución Educativa El Carmen</h3>
           <p>
-            Establecimiento educativo oficial de Ciénaga, Magdalena, fundado en 1973. Formando a niños, niñas y jóvenes con sentido de comunidad y espíritu emprendedor.
+            Establecimiento educativo oficial de Ciénaga, Magdalena, fundado en 1973. Formando a niños, niñas y jóvenes
+            con sentido de comunidad y espíritu emprendedor.
           </p>
           <ul class="inst-meta-list">
             <li><strong>Código DANE:</strong> 147189001160</li>
@@ -3070,7 +3588,8 @@
         <div class="inst-action-box" id="contacto">
           <h4>Atención Institucional</h4>
           <p>¿Deseas participar como patrocinador, egresado o padre de familia en la Semana Cultural?</p>
-          <a class="btn-primary" href="mailto:ieelcarmen@semcienaga.gov.co" style="background: var(--accent-gold); color: #000; font-weight: 800;">
+          <a class="btn-primary" href="mailto:ieelcarmen@semcienaga.gov.co"
+            style="background: var(--accent-gold); color: #000; font-weight: 800;">
             Escribir a: ieelcarmen@semcienaga.gov.co ✉
           </a>
         </div>
@@ -3092,8 +3611,13 @@
       <div class="footer-links">
         <a href="#inicio">Inicio</a>
         <a href="#cronograma">Cronograma</a>
-        <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.4rem; color: #ffffff; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); padding: 0.4rem 0.9rem; border-radius: var(--radius-full); font-weight: 700; text-decoration: none; font-size: 0.85rem;">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer"
+          style="display: inline-flex; align-items: center; gap: 0.4rem; color: #ffffff; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); padding: 0.4rem 0.9rem; border-radius: var(--radius-full); font-weight: 700; text-decoration: none; font-size: 0.85rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
           Instagram: @ieelcarmen ↗
         </a>
         <a href="https://elcarmencienaga.edu.co/">Portal Principal</a>
@@ -3105,7 +3629,8 @@
     </div>
 
     <div class="container footer-bottom">
-      <p>© 2026 Institución Educativa El Carmen. Entorno de Laboratorio y Pruebas Web (lab.elcarmencienaga.edu.co). Todos los derechos reservados.</p>
+      <p>© 2026 Institución Educativa El Carmen. Entorno de Laboratorio y Pruebas Web (lab.elcarmencienaga.edu.co).
+        Todos los derechos reservados.</p>
     </div>
   </footer>
 
@@ -3115,7 +3640,7 @@
     function switchDay(dayId, btn) {
       document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
       document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-      
+
       const target = document.getElementById(dayId);
       if (target) {
         target.classList.add('active');
@@ -3279,11 +3804,13 @@
           <h4 id="lightbox-title" style="color: #ffffff; font-size: 1.05rem; margin-bottom: 0.2rem;"></h4>
           <p id="lightbox-caption" style="color: #94a3b8; font-size: 0.85rem; margin: 0;"></p>
         </div>
-        <span style="font-size: 0.75rem; color: #64748b; background: rgba(255,255,255,0.08); padding: 0.3rem 0.6rem; border-radius: 4px;">
+        <span
+          style="font-size: 0.75rem; color: #64748b; background: rgba(255,255,255,0.08); padding: 0.3rem 0.6rem; border-radius: 4px;">
           ESC para salir
         </span>
       </div>
     </div>
   </dialog>
 </body>
+
 </html>
