@@ -2,7 +2,7 @@
 
 **Actualizado el 21 de octubre de 2026, 12:20 (Colombia).**
 - **Semana Cultural 2026 - Día 1:** Actualizada la galería `dia1.html` a 20 fotos destacadas y 8 videos oficiales (2 panorámicos 16:9 + 6 shorts verticales 9:16 incluyendo las 2 partes de Región Amazónica).
-- **Semana Cultural 2026 - Día 2:** En **laboratorio** (`laboratorio/`, desplegado en `https://lab.elcarmencienaga.edu.co/dia2.html`) la galería fue ampliada a **34 fotos** (con las 5 fotos destacadas de la profesora Miladys: Tienda IECAR, equipo docente y stand «Gelaparty») y verificada en vivo con HTTP 200. **Producción** (`semanacultural.elcarmencienaga.edu.co`) se mantiene intacta con las 29 fotos aprobadas previamente, a la espera del visto bueno final de Leo.
+- **Semana Cultural 2026 - Día 2:** Promovido y verificado al 100% en producción (`semanacultural/`, `https://semanacultural.elcarmencienaga.edu.co/dia2.html`). Galería ampliada a **34 fotos** (con las 5 fotos destacadas compartidas por la profesora Miladys: Tienda IECAR «Ven y ponte la tuya», equipo docente y stand «Gelaparty»), lightbox interactivo nativo comprobado, 3 videos oficiales y tarjeta destacada en `index.html`.
 - **Regla de oro de flujo:** Mantener el flujo staging-first: toda novedad se construye, despliega con `hosting_deploy` y valida en `lab.elcarmencienaga.edu.co` antes de promover a `semanacultural.elcarmencienaga.edu.co`.
 - **Google Workspace:** Pendiente confirmar la aprobación definitiva de Education Fundamentals gratuito (12 días de trial restantes).
 
