@@ -1,0 +1,1311 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Galería y registro audiovisual oficial del Día 3: Gran Desfile Folclórico e Inauguración del Mundialito Carmelista 2026. Semana Cultural de la IE El Carmen en Ciénaga, Magdalena.">
+  <meta name="theme-color" content="#191253">
+  <title>Día 3: Gran Desfile e Inauguración Mundialito Carmelista 2026 · Galería | IE El Carmen</title>
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #191253;
+      --primary-dark: #0d0933;
+      --primary-light: #2c2282;
+      --accent-green: #10b981;
+      --accent-green-dark: #059669;
+      --accent-gold: #f59e0b;
+      --accent-gold-dark: #d97706;
+      --accent-gold-light: #fef3c7;
+      --accent-red: #e11d48;
+      --accent-blue: #0284c7;
+      --accent-blue-dark: #0369a1;
+      --bg-surface: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-subtle: #e2e8f0;
+      --shadow-sm: 0 2px 4px rgba(25, 18, 83, 0.04);
+      --shadow-md: 0 8px 24px rgba(25, 18, 83, 0.08);
+      --shadow-lg: 0 20px 35px -8px rgba(25, 18, 83, 0.16);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, .font-heading {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--primary);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .container {
+      width: min(1200px, 100% - 2.5rem);
+      margin-inline: auto;
+    }
+
+    /* Top Ribbon */
+    .top-ribbon {
+      background: linear-gradient(90deg, #191253 0%, #1e1b4b 50%, #92400e 100%);
+      color: #e2e8f0;
+      font-size: 0.82rem;
+      padding: 0.5rem 0;
+      border-bottom: 2px solid var(--accent-gold);
+    }
+    .top-ribbon .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* Header Navegación */
+    header {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block: 0.85rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent-gold);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .brand-text h2 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--primary);
+    }
+    .brand-text p {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .btn-back-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #eff6ff;
+      color: var(--primary);
+      border: 1px solid #bfdbfe;
+      padding: 0.55rem 1.15rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+    .btn-back-nav:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+    .btn-instagram {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 1.15rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: #ffffff;
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+
+    /* Hero de la Galería Dedicada */
+    .day-hero {
+      background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%);
+      padding-block: 3.5rem 3rem;
+      border-bottom: 1px solid #fef3c7;
+    }
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .breadcrumb-nav a {
+      color: var(--accent-gold-dark);
+      text-decoration: underline;
+    }
+    .day-date-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 0.3rem 0.85rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #fde68a;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+    }
+    .day-hero-title {
+      font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+      font-weight: 900;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+      line-height: 1.12;
+      margin-bottom: 1rem;
+    }
+    .day-hero-title span {
+      background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #e11d48 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .day-hero-lead {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      max-width: 860px;
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+    .hero-quick-ctas {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .btn-cta-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);
+    }
+    .btn-cta-primary:hover {
+      background: #b45309;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+    .btn-cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #ffffff;
+      color: var(--primary);
+      border: 1.5px solid var(--border-subtle);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: var(--radius-full);
+    }
+    .btn-cta-secondary:hover {
+      border-color: var(--primary);
+      background: #f8fafc;
+    }
+
+    /* Secciones */
+    .section-padding {
+      padding-block: 4.5rem;
+    }
+    .section-title-wrap {
+      text-align: center;
+      max-width: 800px;
+      margin-inline: auto;
+      margin-bottom: 2.75rem;
+    }
+    .section-eyebrow {
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 800;
+      color: var(--accent-gold-dark);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .section-title {
+      font-size: clamp(2rem, 3.5vw, 2.7rem);
+      margin-bottom: 0.8rem;
+    }
+    .section-lead {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Sub-encabezado de categoría de video */
+    .video-group-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border-subtle);
+    }
+    .video-group-header h3 {
+      font-size: 1.35rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .video-group-header .badge-count {
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    /* Banner "Terreno Listo" para Videos de YouTube */
+    .video-placeholder-box {
+      background: linear-gradient(135deg, #1e1b4b 0%, #191253 60%, #0f172a 100%);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      color: #ffffff;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 3.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .video-placeholder-box::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.25) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .video-placeholder-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .video-pulse-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(239, 68, 68, 0.2);
+      border: 1px solid #ef4444;
+      color: #fca5a5;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .video-pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #ef4444;
+      border-radius: 50%;
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .video-placeholder-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.75rem;
+    }
+    .video-slot-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1.5px dashed rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: all 0.3s ease;
+    }
+    .video-slot-card:hover {
+      border-color: var(--accent-gold);
+      background: rgba(255, 255, 255, 0.09);
+    }
+    .video-slot-icon {
+      font-size: 2rem;
+    }
+
+    /* Grilla de Fotos (17 Fotos del Día 3) */
+    .photos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.75rem;
+    }
+    @media (max-width: 640px) {
+      .photos-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .photo-card {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+    .photo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-gold);
+    }
+    .photo-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 11;
+      overflow: hidden;
+      background: #f1f5f9;
+    }
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      display: block;
+    }
+    .photo-card:hover .photo-frame img {
+      transform: scale(1.05);
+    }
+    .photo-badge-idx {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(15, 23, 42, 0.82);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .photo-badge-team {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(245, 158, 11, 0.92);
+      color: #0f172a;
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .photo-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .photo-body h3 {
+      font-size: 1.05rem;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+      line-height: 1.3;
+    }
+    .photo-body p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 0.85rem;
+    }
+    .photo-zoom-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent-gold-dark);
+    }
+
+    /* Banner Google Fotos Oficial */
+    .gphotos-banner {
+      background: linear-gradient(135deg, #191253 0%, #1e1b4b 60%, #312e81 100%);
+      color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      margin-top: 4.5rem;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .gphotos-banner::after {
+      content: '📸';
+      position: absolute;
+      right: -20px;
+      bottom: -40px;
+      font-size: 12rem;
+      opacity: 0.06;
+      pointer-events: none;
+    }
+    .gphotos-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+    .gphotos-info {
+      max-width: 680px;
+    }
+    .gphotos-info .tag {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.25);
+      border: 1px solid var(--accent-gold);
+      color: #fef3c7;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+    }
+    .gphotos-info h3 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+    .gphotos-info p {
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .gphotos-action {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      min-width: 280px;
+    }
+    .btn-gphotos-big {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #0f172a;
+      font-weight: 900;
+      font-size: 1.05rem;
+      padding: 1rem 1.8rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+    .btn-gphotos-big:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.6);
+      color: #000000;
+    }
+
+    /* Barra Inferior de Navegación entre Días */
+    .day-nav-bar {
+      background: #ffffff;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding-block: 1.5rem;
+      margin-top: 4.5rem;
+    }
+    .day-nav-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* Lightbox Modal Nativo con Navegación */
+    .lightbox-modal {
+      border: none;
+      border-radius: var(--radius-lg);
+      padding: 0;
+      background: transparent;
+      max-width: min(960px, 94vw);
+      max-height: 92vh;
+      margin: auto;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
+      overflow: hidden;
+    }
+    .lightbox-modal::backdrop {
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(10px);
+    }
+    .lightbox-inner {
+      background: #0f172a;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .lightbox-img-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000000;
+      min-height: 240px;
+    }
+    .lightbox-inner img {
+      max-width: 100%;
+      max-height: 72vh;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    .lightbox-caption-box {
+      padding: 1.25rem 1.75rem;
+      background: #0f172a;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .lightbox-close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      font-size: 1.4rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      z-index: 10;
+    }
+    .lightbox-close-btn:hover {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+      transform: scale(1.08);
+    }
+    .lightbox-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(15, 23, 42, 0.75);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      font-size: 1.8rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      z-index: 10;
+    }
+    .lightbox-nav-btn:hover {
+      background: var(--primary);
+      border-color: var(--accent-gold);
+      transform: translateY(-50%) scale(1.1);
+    }
+    .lb-prev { left: 15px; }
+    .lb-next { right: 15px; }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      padding-block: 3.5rem 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .footer-bottom {
+      padding-top: 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Ribbon Oficial -->
+  <div class="top-ribbon">
+    <div class="container">
+      <div>
+        <strong>IE El Carmen · Ciénaga, Magdalena</strong> | Semana Cultural 2026: <em>«Huellas de Tradición, Rutas de Innovación»</em>
+      </div>
+      <div>
+        <span>🏅 Jornada Deportiva y Folclórica Institucional</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header de Navegación -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <img class="brand-logo" src="escudo.jpg" alt="Escudo IE El Carmen">
+        <div class="brand-text">
+          <h2>IE El Carmen</h2>
+          <p>Ciénaga · Magdalena · Colombia</p>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <a href="dia2.html" class="btn-back-nav" style="background: #fef3c7; color: #92400e; border-color: #fde68a;" title="Ver Galería del Día 2">
+          <span>← Día 2: Emprendimiento</span>
+        </a>
+        <a href="index.html#galeria-multimedia" class="btn-back-nav">
+          <span>← Volver al Portal</span>
+        </a>
+        <a href="https://www.instagram.com/ieelcarmen/" target="_blank" rel="noopener noreferrer" class="btn-instagram" title="Seguir a @ieelcarmen en Instagram">
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section del Día 3 -->
+  <section class="day-hero">
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a>
+        <span>›</span>
+        <a href="index.html#galeria-multimedia">Semana Cultural 2026</a>
+        <span>›</span>
+        <span>Miércoles 21 de Octubre (Día 3)</span>
+      </nav>
+
+      <span class="day-date-tag">
+        📅 Miércoles 21 de Octubre · Registro Oficial
+      </span>
+
+      <h1 class="day-hero-title">
+        Gran Desfile Folclórico e Inauguración del <span>Mundialito Carmelista 2026</span>
+      </h1>
+
+      <p class="day-hero-lead">
+        «Alegría, deporte, paz y tradición carmelita». Revive las comparsas estudiantiles, la energía de las porristas infantiles, las delegaciones deportivas de cada grado escolar y el acto protocolario de apertura en la Cancha Brisas del Mar.
+      </p>
+
+      <div class="hero-quick-ctas">
+        <a href="#fotos" class="btn-cta-primary">
+          <span>📸 Ver Galería Destacada (17 Fotos) ↓</span>
+        </a>
+        <a href="#videos" class="btn-cta-secondary" style="border-color: #f59e0b; color: #92400e;">
+          <span>🎬 Sala de Videos Oficiales (En Preparación)</span>
+        </a>
+        <a href="https://photos.app.goo.gl/94siA2b1hiG5bx2S9" target="_blank" rel="noopener noreferrer" class="btn-cta-secondary" style="border-color: #3b82f6; color: #1d4ed8;">
+          <span>☁️ Abrir Álbum en Google Fotos (+ Fotos) ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Videos en Streaming (Terreno Listo) -->
+  <section class="section-padding" id="videos" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Cobertura Audiovisual en Directo</span>
+        <h2 class="section-title">Registro en Video y Transmisiones</h2>
+        <p class="section-lead">
+          Próximamente se integrarán las cápsulas oficiales, momentos cumbres del desfile y la ceremonia del juramento deportivo en la Cancha Brisas del Mar.
+        </p>
+      </div>
+
+      <!-- Caja "Terreno Listo" para los enlaces de YouTube -->
+      <div class="video-placeholder-box">
+        <div class="video-placeholder-header">
+          <div class="video-pulse-badge">
+            <span class="video-pulse-dot"></span>
+            <span>Espacio de Transmisión Oficial Listo</span>
+          </div>
+          <span style="font-size: 0.88rem; color: #cbd5e1;">Módulos preparados para videos panorámicos 16:9 y Shorts 9:16</span>
+        </div>
+
+        <h3 style="color: #ffffff; font-size: 1.4rem; margin-bottom: 0.5rem;">
+          🎥 Videos Oficiales del Mundialito Carmelista y Desfile
+        </h3>
+        <p style="color: #94a3b8; font-size: 0.95rem; max-width: 780px; line-height: 1.55;">
+          El equipo de comunicaciones de la IE El Carmen está recopilando las mejores tomas y transmisiones de la jornada. En cuanto se publiquen los enlaces de YouTube, se visualizarán directamente en estos contenedores sin salir de la plataforma.
+        </p>
+
+        <div class="video-placeholder-grid">
+          <div class="video-slot-card">
+            <div class="video-slot-icon">📺</div>
+            <h4 style="color: #fef3c7; font-size: 1.05rem;">Transmisión del Recorrido &amp; Desfile</h4>
+            <p style="color: #94a3b8; font-size: 0.85rem;">Cobertura completa de las comparsas estudiantiles y la fiesta comunitaria por las calles de Ciénaga.</p>
+            <span style="font-size: 0.78rem; font-weight: 700; color: #f59e0b; margin-top: auto;">Enlace YouTube: Próximamente</span>
+          </div>
+
+          <div class="video-slot-card">
+            <div class="video-slot-icon">🏅</div>
+            <h4 style="color: #fef3c7; font-size: 1.05rem;">Inauguración Cancha Brisas del Mar</h4>
+            <p style="color: #94a3b8; font-size: 0.85rem;">Ceremonia protocolaria de himnos, desfile de delegaciones, juramento y saque de honor.</p>
+            <span style="font-size: 0.78rem; font-weight: 700; color: #f59e0b; margin-top: auto;">Enlace YouTube: Próximamente</span>
+          </div>
+
+          <div class="video-slot-card">
+            <div class="video-slot-icon">📱</div>
+            <h4 style="color: #fef3c7; font-size: 1.05rem;">Cápsulas &amp; Shorts Destacados</h4>
+            <p style="color: #94a3b8; font-size: 0.85rem;">Momentos virales: coreografías de porristas, creatividad de los uniformes y barras escolares.</p>
+            <span style="font-size: 0.78rem; font-weight: 700; color: #f59e0b; margin-top: auto;">Enlace YouTube: Próximamente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Galería Fotográfica Destacada (17 Fotos) -->
+  <section class="section-padding" id="fotos" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Momentos Inolvidables</span>
+        <h2 class="section-title">Fotografías Destacadas del Día 3</h2>
+        <p class="section-lead">
+          Una selección de 17 postales del gran desfile, las delegaciones por grado, las comparsas folclóricas y la concentración comunitaria. Haz clic sobre cualquier imagen para verla en pantalla completa.
+        </p>
+      </div>
+
+      <div class="photos-grid">
+        <!-- Foto 1 -->
+        <article class="photo-card" onclick="openLightbox(0)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (1).jpg" alt="Apertura del Gran Desfile Folclórico e Inauguración del Mundialito Carmelista" loading="lazy">
+            <span class="photo-badge-idx">1 / 17</span>
+            <span class="photo-badge-team">Desfile General</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Apertura del Gran Desfile Folclórico e Inauguración</h3>
+              <p>Estudiantes, comparsas y docentes iniciando el recorrido con entusiasmo y alegría por las calles ciengueras.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 2 -->
+        <article class="photo-card" onclick="openLightbox(1)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (2).jpg" alt="Comparsas Tradicionales y Expresión Cultural Carmelita" loading="lazy">
+            <span class="photo-badge-idx">2 / 17</span>
+            <span class="photo-badge-team">Cultura &amp; Danza</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Comparsas Tradicionales y Expresión Cultural</h3>
+              <p>Bailarines luciendo trajes típicos azul rey y dorado, enriqueciendo la tradición folclórica del Caribe magdalenense.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 3 -->
+        <article class="photo-card" onclick="openLightbox(2)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (3).jpg" alt="Valores Carmelitas: Pancarta de la Cooperación y el Respeto" loading="lazy">
+            <span class="photo-badge-idx">3 / 17</span>
+            <span class="photo-badge-team">Valores IEEC</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Valores Carmelitas: «Cooperación y Respeto»</h3>
+              <p>Estudiantes portando mensajes alusivos al juego limpio, la fraternidad y el trabajo en equipo en el deporte escolar.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 4 -->
+        <article class="photo-card" onclick="openLightbox(3)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (4).jpg" alt="Color, Danza y Alegría en el Recorrido Comunitario" loading="lazy">
+            <span class="photo-badge-idx">4 / 17</span>
+            <span class="photo-badge-team">Comunidad</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Color, Danza y Alegría en el Recorrido</h3>
+              <p>La comunidad de vecinos, acudientes y familias acompañando el paso festivo de los grupos estudiantiles.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 5 -->
+        <article class="photo-card" onclick="openLightbox(4)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (5).jpg" alt="Llegada y Concentración en la Cancha Brisas del Mar" loading="lazy">
+            <span class="photo-badge-idx">5 / 17</span>
+            <span class="photo-badge-team">Brisas del Mar</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Llegada y Concentración en Cancha Brisas del Mar</h3>
+              <p>El estudiantado formándose para los actos protocolarios y la gran fiesta de apertura deportiva.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 6 -->
+        <article class="photo-card" onclick="openLightbox(5)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (6).jpg" alt="Actos Protocolarios y Homenaje a los Símbolos Patrios" loading="lazy">
+            <span class="photo-badge-idx">6 / 17</span>
+            <span class="photo-badge-team">Protocolo</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Actos Protocolarios y Símbolos Patrios</h3>
+              <p>Directivos docentes, jurados y estudiantes entonando los himnos con respeto, orgullo y solemnidad institucional.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 7 -->
+        <article class="photo-card" onclick="openLightbox(6)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (7).jpg" alt="Mesa Principal y Autoridades de la IE El Carmen" loading="lazy">
+            <span class="photo-badge-idx">7 / 17</span>
+            <span class="photo-badge-team">Directivos</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Mesa Principal y Docentes Carmelitas</h3>
+              <p>El cuerpo directivo y docente liderando con compromiso la jornada deportiva e integradora institucional.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 8 -->
+        <article class="photo-card" onclick="openLightbox(7)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (8).jpg" alt="Presentación Oficial de las Delegaciones Deportivas" loading="lazy">
+            <span class="photo-badge-idx">8 / 17</span>
+            <span class="photo-badge-team">Delegaciones</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Presentación Oficial de las Delegaciones</h3>
+              <p>Equipos de fútbol y grupos de porristas formados con los estandartes representativos de cada grado escolar.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 9 -->
+        <article class="photo-card" onclick="openLightbox(8)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (9).jpg" alt="Juramento Deportivo y Compromiso de Juego Limpio" loading="lazy">
+            <span class="photo-badge-idx">9 / 17</span>
+            <span class="photo-badge-team">Juego Limpio</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Juramento Deportivo y Compromiso Carmelita</h3>
+              <p>Promesa solemne de competir con honor, disciplina, respeto a los rivales y sana convivencia.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 10 -->
+        <article class="photo-card" onclick="openLightbox(9)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (10).jpg" alt="Porristas Carmelitas y Animación Infantil" loading="lazy">
+            <span class="photo-badge-idx">10 / 17</span>
+            <span class="photo-badge-team">Porristas</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Porristas Carmelitas y Animación Infantil</h3>
+              <p>Pequeñas animadoras llenando de energía, ritmo, sonrisas y color los actos inaugurales del torneo.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 11 -->
+        <article class="photo-card" onclick="openLightbox(10)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (11).jpg" alt="Delegación Grado 4°: Los Delfines F.C." loading="lazy">
+            <span class="photo-badge-idx">11 / 17</span>
+            <span class="photo-badge-team">Grado 4°</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Delegación Grado 4°: «Los Delfines F.C.»</h3>
+              <p>Niños y niñas luciendo sus uniformes amarillos y azules con banderines en alto y gran espíritu deportivo.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 12 -->
+        <article class="photo-card" onclick="openLightbox(11)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (12).jpg" alt="Delegación Grado 5°: Jaguares del Amazonas F.C." loading="lazy">
+            <span class="photo-badge-idx">12 / 17</span>
+            <span class="photo-badge-team">Grado 5°</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Delegación Grado 5°: «Jaguares del Amazonas F.C.»</h3>
+              <p>Estudiantes portando el escudo emblemático del jaguar y ondeando banderas de paz y esperanza.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 13 -->
+        <article class="photo-card" onclick="openLightbox(12)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (13).jpg" alt="Delegación Grado 6°A: Equipo Fénix y Mensaje de Paz" loading="lazy">
+            <span class="photo-badge-idx">13 / 17</span>
+            <span class="photo-badge-team">Grado 6°A</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Delegación Grado 6°A: Equipo «Fénix»</h3>
+              <p>Grupo estudiantil junto a su docente portando la pancarta con estrellas y banderas blancas por la convivencia escolar.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 14 -->
+        <article class="photo-card" onclick="openLightbox(13)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (14).jpg" alt="Desfile de la Delegación Jaguares del Amazonas F.C." loading="lazy">
+            <span class="photo-badge-idx">14 / 17</span>
+            <span class="photo-badge-team">Grado 5°</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Desfile de la Delegación «Jaguares del Amazonas F.C.»</h3>
+              <p>Alumnos del grado 5° marchando orgullosos con camisetas tricolor y banderines azules y blancos en la jornada deportiva.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 15 -->
+        <article class="photo-card" onclick="openLightbox(14)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (15).jpg" alt="Desfile Oficial: Los Delfines F.C. Grado 4°" loading="lazy">
+            <span class="photo-badge-idx">15 / 17</span>
+            <span class="photo-badge-team">Grado 4°</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Desfile Oficial: «Los Delfines F.C.» Grado 4°</h3>
+              <p>El equipo y sus porristas desfilando con alegría y coordinación en la jornada deportiva carmelita.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 16 -->
+        <article class="photo-card" onclick="openLightbox(15)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (16).jpg" alt="Delegación Grado 3°: Llaneros F.C." loading="lazy">
+            <span class="photo-badge-idx">16 / 17</span>
+            <span class="photo-badge-team">Grado 3°</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Delegación Grado 3°: «Llaneros F.C.»</h3>
+              <p>Trajes folclóricos azul y amarillo, estandarte del corcel llanero y banderines al viento abriendo camino.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+
+        <!-- Foto 17 -->
+        <article class="photo-card" onclick="openLightbox(16)">
+          <div class="photo-frame">
+            <img src="dia3/Dia3 (17).jpg" alt="Semillero de Talentos: Grado 2° Construyendo Sueños" loading="lazy">
+            <span class="photo-badge-idx">17 / 17</span>
+            <span class="photo-badge-team">Grado 2°</span>
+          </div>
+          <div class="photo-body">
+            <div>
+              <h3>Semillero Carmelita: Grado 2° «Construyendo Sueños»</h3>
+              <p>Las pequeñas porristas de segundo grado con sus faldas rojas y pompones metálicos llenando de ternura y ovaciones el desfile.</p>
+            </div>
+            <span class="photo-zoom-hint">🔍 Ampliar fotografía</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Banner Conector a Google Fotos -->
+      <div class="gphotos-banner">
+        <div class="gphotos-content">
+          <div class="gphotos-info">
+            <span class="tag">Álbum Digital Oficial en la Nube</span>
+            <h3>¿Quieres ver el álbum completo del Día 3?</h3>
+            <p>
+              Accede a la galería completa en alta definición en Google Fotos. Explora todas las tomas de los partidos, comparsas, pancartas y desfiles sin límites de espacio.
+            </p>
+          </div>
+          <div class="gphotos-action">
+            <a href="https://photos.app.goo.gl/94siA2b1hiG5bx2S9" target="_blank" rel="noopener noreferrer" class="btn-gphotos-big">
+              <span>📸 Ver Álbum en Google Fotos ↗</span>
+            </a>
+            <span style="font-size: 0.8rem; color: #cbd5e1; text-align: center;">
+              Abre directamente en la app de fotos de tu celular o navegador
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Barra de Navegación entre Días -->
+  <div class="day-nav-bar">
+    <div class="container">
+      <a href="dia2.html" class="btn-back-nav" style="background: #fef3c7; color: #92400e; border-color: #fde68a;">
+        <span>← Ver Galería Día 2: Emprendimiento</span>
+      </a>
+
+      <div style="font-size: 0.92rem; font-weight: 700; color: var(--primary);">
+        <span>Siguiente Jornada: </span>
+        <a href="index.html#foro-salvemos-la-cienaga" style="color: var(--accent-gold-dark); text-decoration: underline;">
+          Jueves 22 · Gran Foro «Salvemos la Ciénaga» →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="brand">
+          <img class="brand-logo" src="escudo.jpg" alt="Escudo IE El Carmen">
+          <div>
+            <h3 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 0.2rem;">Institución Educativa El Carmen</h3>
+            <p style="font-size: 0.82rem; color: #94a3b8;">Ciénaga, Magdalena · Barrio Micael Cotes · Calle 18B # 38-34</p>
+          </div>
+        </div>
+        <div>
+          <a href="index.html" style="color: var(--accent-gold); font-weight: 700;">Semana Cultural 2026</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Institución Educativa El Carmen. Entorno de Laboratorio (lab.elcarmencienaga.edu.co). Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Nativo con Navegación -->
+  <dialog id="photo-lightbox" class="lightbox-modal">
+    <div class="lightbox-inner">
+      <button type="button" class="lightbox-close-btn" onclick="closeLightbox()" aria-label="Cerrar visor">✕</button>
+      <button type="button" class="lightbox-nav-btn lb-prev" onclick="changeLightbox(-1)" aria-label="Foto anterior">‹</button>
+      <button type="button" class="lightbox-nav-btn lb-next" onclick="changeLightbox(1)" aria-label="Siguiente foto">›</button>
+
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="Fotografía ampliada">
+      </div>
+
+      <div class="lightbox-caption-box">
+        <div>
+          <h4 id="lightbox-title" style="color: #ffffff; font-size: 1.1rem; margin-bottom: 0.2rem;"></h4>
+          <p id="lightbox-caption" style="color: #94a3b8; font-size: 0.88rem; margin: 0;"></p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <span id="lightbox-counter" style="font-size: 0.78rem; font-weight: 700; color: #cbd5e1; background: rgba(255,255,255,0.12); padding: 0.3rem 0.65rem; border-radius: 4px;">
+            Foto 1 de 17
+          </span>
+          <span style="font-size: 0.75rem; color: #64748b; background: rgba(255,255,255,0.06); padding: 0.3rem 0.5rem; border-radius: 4px;">
+            Teclas ← / → / ESC
+          </span>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const galleryItems = [
+      {"file": "dia3/Dia3 (1).jpg", "title": "Apertura del Gran Desfile Folclórico e Inauguración", "desc": "Estudiantes, comparsas y docentes iniciando el recorrido con entusiasmo y alegría por las calles ciengueras."},
+      {"file": "dia3/Dia3 (2).jpg", "title": "Comparsas Tradicionales y Expresión Cultural", "desc": "Bailarines luciendo trajes típicos azul rey y dorado, enriqueciendo la tradición folclórica del Caribe magdalenense."},
+      {"file": "dia3/Dia3 (3).jpg", "title": "Valores Carmelitas: «Cooperación y Respeto»", "desc": "Estudiantes portando mensajes alusivos al juego limpio, la fraternidad y el trabajo en equipo en el deporte escolar."},
+      {"file": "dia3/Dia3 (4).jpg", "title": "Color, Danza y Alegría en el Recorrido", "desc": "La comunidad de vecinos, acudientes y familias acompañando el paso festivo de los grupos estudiantiles."},
+      {"file": "dia3/Dia3 (5).jpg", "title": "Llegada y Concentración en Cancha Brisas del Mar", "desc": "El estudiantado formándose para los actos protocolarios y la gran fiesta de apertura deportiva."},
+      {"file": "dia3/Dia3 (6).jpg", "title": "Actos Protocolarios y Símbolos Patrios", "desc": "Directivos docentes, jurados y estudiantes entonando los himnos con respeto, orgullo y solemnidad institucional."},
+      {"file": "dia3/Dia3 (7).jpg", "title": "Mesa Principal y Docentes Carmelitas", "desc": "El cuerpo directivo y docente liderando con compromiso la jornada deportiva e integradora institucional."},
+      {"file": "dia3/Dia3 (8).jpg", "title": "Presentación Oficial de las Delegaciones", "desc": "Equipos de fútbol y grupos de porristas formados con los estandartes representativos de cada grado escolar."},
+      {"file": "dia3/Dia3 (9).jpg", "title": "Juramento Deportivo y Compromiso Carmelita", "desc": "Promesa solemne de competir con honor, disciplina, respeto a los rivales y sana convivencia."},
+      {"file": "dia3/Dia3 (10).jpg", "title": "Porristas Carmelitas y Animación Infantil", "desc": "Pequeñas animadoras llenando de energía, ritmo, sonrisas y color los actos inaugurales del torneo."},
+      {"file": "dia3/Dia3 (11).jpg", "title": "Delegación Grado 4°: «Los Delfines F.C.»", "desc": "Niños y niñas luciendo sus uniformes amarillos y azules con banderines en alto y gran espíritu deportivo."},
+      {"file": "dia3/Dia3 (12).jpg", "title": "Delegación Grado 5°: «Jaguares del Amazonas F.C.»", "desc": "Estudiantes portando el escudo emblemático del jaguar y ondeando banderas de paz y esperanza."},
+      {"file": "dia3/Dia3 (13).jpg", "title": "Delegación Grado 6°A: Equipo «Fénix»", "desc": "Grupo estudiantil junto a su docente portando la pancarta con estrellas y banderas blancas por la convivencia escolar."},
+      {"file": "dia3/Dia3 (14).jpg", "title": "Desfile de la Delegación «Jaguares del Amazonas F.C.»", "desc": "Alumnos del grado 5° marchando orgullosos con camisetas tricolor y banderines azules y blancos en la jornada deportiva."},
+      {"file": "dia3/Dia3 (15).jpg", "title": "Desfile Oficial: «Los Delfines F.C.» Grado 4°", "desc": "El equipo y sus porristas desfilando con alegría y coordinación en la jornada deportiva carmelita."},
+      {"file": "dia3/Dia3 (16).jpg", "title": "Delegación Grado 3°: «Llaneros F.C.»", "desc": "Trajes folclóricos azul y amarillo, estandarte del corcel llanero y banderines al viento abriendo camino."},
+      {"file": "dia3/Dia3 (17).jpg", "title": "Semillero Carmelita: Grado 2° «Construyendo Sueños»", "desc": "Las pequeñas porristas de segundo grado con sus faldas rojas y pompones metálicos llenando de ternura y ovaciones el desfile."}
+    ];
+    let currentPhotoIdx = 0;
+
+    function openLightbox(idx) {
+      if (idx < 0 || idx >= galleryItems.length) return;
+      currentPhotoIdx = idx;
+      updateLightboxContent();
+
+      const dialog = document.getElementById('photo-lightbox');
+      if (dialog && !dialog.open) {
+        dialog.showModal();
+      }
+    }
+
+    function updateLightboxContent() {
+      const item = galleryItems[currentPhotoIdx];
+      const img = document.getElementById('lightbox-img');
+      const titleEl = document.getElementById('lightbox-title');
+      const captionEl = document.getElementById('lightbox-caption');
+      const counterEl = document.getElementById('lightbox-counter');
+
+      if (img && item) {
+        img.src = item.file;
+        img.alt = item.title || 'Fotografía ampliada';
+        if (titleEl) titleEl.textContent = item.title || '';
+        if (captionEl) captionEl.textContent = item.desc || '';
+        if (counterEl) counterEl.textContent = `Foto ${currentPhotoIdx + 1} de ${galleryItems.length}`;
+      }
+    }
+
+    function changeLightbox(step) {
+      currentPhotoIdx = (currentPhotoIdx + step + galleryItems.length) % galleryItems.length;
+      updateLightboxContent();
+    }
+
+    function closeLightbox() {
+      const dialog = document.getElementById('photo-lightbox');
+      if (dialog && dialog.open) {
+        dialog.close();
+      }
+    }
+
+    // Cerrar al hacer clic fuera del modal
+    const lbDialog = document.getElementById('photo-lightbox');
+    if (lbDialog) {
+      lbDialog.addEventListener('click', (e) => {
+        const rect = lbDialog.getBoundingClientRect();
+        const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+          rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+        if (!isInDialog) {
+          closeLightbox();
+        }
+      });
+    }
+
+    // Navegación con flechas del teclado
+    document.addEventListener('keydown', (e) => {
+      const dialog = document.getElementById('photo-lightbox');
+      if (dialog && dialog.open) {
+        if (e.key === 'ArrowLeft') {
+          changeLightbox(-1);
+        } else if (e.key === 'ArrowRight') {
+          changeLightbox(1);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
