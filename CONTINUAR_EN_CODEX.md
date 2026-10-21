@@ -1,10 +1,9 @@
 # Continuar el proyecto IE El Carmen
 
-**Actualizado el 20 de octubre de 2026, 18:15 (Colombia).**
+**Actualizado el 21 de octubre de 2026, 12:20 (Colombia).**
 - **Semana Cultural 2026 - Día 1:** Actualizada la galería `dia1.html` a 20 fotos destacadas y 8 videos oficiales (2 panorámicos 16:9 + 6 shorts verticales 9:16 incluyendo las 2 partes de Región Amazónica).
-- **Semana Cultural 2026 - Día 2:** El Día 2 («Feria de Emprendimiento «Jóvenes con Propósito» & Tienda IECAR») está 100% implementado y promovido a producción (`semanacultural/`, `https://semanacultural.elcarmencienaga.edu.co/`).
-- **Novedades Día 2 en producción:** Galería dedicada `dia2.html` con 3 videos oficiales (Transmisión en directo `FHwwIFF-vHg`, Reconocimiento a Emprendedores `C3kEE_dxvuw` e invitación short `xzmnFdJ2Fi0`), 29 fotos optimizadas con lightbox interactivo nativo, enlace al álbum de Google Fotos (`https://photos.app.goo.gl/Q6bQMeVm7yUZ4NSKA`) y tarjeta destacada en `index.html`.
-- **Regla de oro de flujo:** Mantener el flujo staging-first: toda novedad se construye y valida en `laboratorio/` antes de promover a `semanacultural/`.
+- **Semana Cultural 2026 - Día 2:** En **laboratorio** (`laboratorio/`, desplegado en `https://lab.elcarmencienaga.edu.co/dia2.html`) la galería fue ampliada a **34 fotos** (con las 5 fotos destacadas de la profesora Miladys: Tienda IECAR, equipo docente y stand «Gelaparty») y verificada en vivo con HTTP 200. **Producción** (`semanacultural.elcarmencienaga.edu.co`) se mantiene intacta con las 29 fotos aprobadas previamente, a la espera del visto bueno final de Leo.
+- **Regla de oro de flujo:** Mantener el flujo staging-first: toda novedad se construye, despliega con `hosting_deploy` y valida en `lab.elcarmencienaga.edu.co` antes de promover a `semanacultural.elcarmencienaga.edu.co`.
 - **Google Workspace:** Pendiente confirmar la aprobación definitiva de Education Fundamentals gratuito (12 días de trial restantes).
 
 ## Inicio seguro
