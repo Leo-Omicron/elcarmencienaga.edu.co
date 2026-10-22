@@ -1,8 +1,9 @@
 # Continuar el proyecto IE El Carmen
 
-**Actualizado el 21 de octubre de 2026, 16:55 (Colombia).**
-- **Semana Cultural 2026 - Día 3 (Mundialito & Desfile):** 100% **promovido y verificado en producción** (`https://semanacultural.elcarmencienaga.edu.co/dia3.html`) con 21 fotos y 12 videos. Incorporada y verificada en producción (`https://semanacultural.elcarmencienaga.edu.co/#aviso-partidos-mundialito-2026`) la **tarjeta oficial de programación de partidos del Mundialito** (Jueves 22 y Viernes 23 de octubre) con afiche oficial de alta resolución, descarga directa, desglose de encuentros por categorías (Tetero, Preinfantil, Infantil, Juvenil) y alerta destacada de la **directriz obligatoria de acceso restringido a la cancha (exclusivo para deportistas)**. Enlazado también desde `dia3.html`.
-- **Semana Cultural 2026 - Día 4 (Foro Ambiental):** 100% **promovido y verificado en producción** (`https://semanacultural.elcarmencienaga.edu.co/`) tras aprobación de Leo. Incorpora afiche vertical y versión cuadrada para WhatsApp/redes, botón de descarga directa y desglose de los 3 ejes temáticos (Ponencias estudiantiles, Exposición de especies de manglares y Mesas de Diálogo).
+**Actualizado el 21 de octubre de 2026, 21:20 (Colombia).**
+- **ÚLTIMA HORA (Mundialito Carmelista 2026):** Partidos de jueves 22 y viernes 23 de octubre **aplazados hasta nueva orden**. Actualizado en staging (`lab.elcarmencienaga.edu.co`) el afiche oficial con el sello de aplazamiento (`aviso_partidos_mundialito.jpg`), la tarjeta `#aviso-partidos-mundialito-2026` en `index.html` y el banner de alerta en `dia3.html`. Verificado con HTTP 200 en laboratorio. Pendiente visto bueno de Leo para paso a producción.
+- **Semana Cultural 2026 - Día 3 (Mundialito & Desfile):** 100% **promovido y verificado en producción** (`https://semanacultural.elcarmencienaga.edu.co/dia3.html`) con 21 fotos y 12 videos.
+- **Semana Cultural 2026 - Día 4 (Foro Ambiental):** 100% **promovido y verificado en producción** (`https://semanacultural.elcarmencienaga.edu.co/`) tras aprobación de Leo.
 - **Semana Cultural 2026 - Día 2:** 100% promovido y verificado en producción con 34 fotos y enlaces al Día 3.
 - **Regla de oro de flujo:** Mantener el flujo staging-first: toda novedad se construye, despliega con `hosting_deploy` y valida en `lab.elcarmencienaga.edu.co` antes de promover a `semanacultural.elcarmencienaga.edu.co`.
 - **Google Workspace:** Pendiente confirmar la aprobación definitiva de Education Fundamentals gratuito (12 días de trial restantes).
