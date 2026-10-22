@@ -114,11 +114,13 @@ html_template = '''<!doctype html>
       justify-content: space-between;
       align-items: center;
       padding-block: 0.85rem;
+      gap: 1rem;
     }
     .brand {
       display: flex;
       align-items: center;
       gap: 0.85rem;
+      flex-shrink: 0;
     }
     .brand-logo {
       width: 44px;
@@ -142,24 +144,28 @@ html_template = '''<!doctype html>
     .nav-actions {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
     .btn-back-nav {
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
+      gap: 0.4rem;
       background: #ecfdf5;
       color: var(--accent-green-dark);
       border: 1px solid #a7f3d0;
-      padding: 0.55rem 1.15rem;
+      padding: 0.45rem 0.95rem;
       border-radius: var(--radius-full);
       font-weight: 700;
-      font-size: 0.88rem;
+      font-size: 0.84rem;
+      white-space: nowrap;
     }
     .btn-back-nav:hover {
       background: var(--accent-green-dark);
       color: #ffffff;
       border-color: var(--accent-green-dark);
+      transform: translateY(-1px);
     }
 
     /* Hero de la Galería Dedicada */
@@ -214,7 +220,7 @@ html_template = '''<!doctype html>
     .day-hero-lead {
       font-size: 1.12rem;
       color: var(--text-muted);
-      max-width: 880px;
+      max-width: 900px;
       line-height: 1.65;
       margin-bottom: 2rem;
     }
@@ -265,7 +271,7 @@ html_template = '''<!doctype html>
       gap: 1.25rem;
       margin-top: 2.5rem;
       padding: 1.25rem 1.5rem;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(8px);
       border: 1px solid #a7f3d0;
       border-radius: var(--radius-md);
@@ -451,21 +457,33 @@ html_template = '''<!doctype html>
       border-color: #dc2626;
     }
 
-    /* Video Vertical Mockup (YouTube Short) */
-    .short-container-wrap {
-      max-width: 440px;
-      margin-inline: auto;
-      margin-bottom: 3rem;
+    /* Grilla de YouTube Shorts (4 Videos Verticales 9:16) */
+    .shorts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3.5rem;
+    }
+    .short-card-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .video-v-mockup {
       position: relative;
       width: 100%;
+      max-width: 310px;
       padding-top: 177.77%; /* 9:16 */
       background: #000000;
       border-radius: 28px;
       overflow: hidden;
-      border: 6px solid #1e293b;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+      border: 5px solid #1e293b;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .video-v-mockup:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3);
     }
     .video-v-mockup iframe {
       position: absolute;
@@ -473,6 +491,24 @@ html_template = '''<!doctype html>
       width: 100%;
       height: 100%;
       border: 0;
+    }
+    .short-info {
+      text-align: center;
+      margin-top: 1.15rem;
+      width: 100%;
+      max-width: 310px;
+    }
+    .short-info h4 {
+      font-size: 1.05rem;
+      color: var(--primary);
+      margin-block: 0.35rem 0.25rem;
+      line-height: 1.3;
+    }
+    .short-info p {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      line-height: 1.45;
     }
 
     /* Grilla de Fotos */
@@ -771,13 +807,24 @@ html_template = '''<!doctype html>
   <header>
     <div class="container nav-container">
       <div class="brand">
-        <img class="brand-logo" src="escudo.jpg" alt="Escudo IE El Carmen">
-        <div class="brand-text">
-          <h2>IE El Carmen</h2>
-          <p>Semana Cultural 2026 · Registro Oficial</p>
-        </div>
+        <a href="index.html" style="display: flex; align-items: center; gap: 0.85rem;">
+          <img class="brand-logo" src="escudo.jpg" alt="Escudo IE El Carmen">
+          <div class="brand-text">
+            <h2>IE El Carmen</h2>
+            <p>Semana Cultural 2026 · Registro Oficial</p>
+          </div>
+        </a>
       </div>
       <div class="nav-actions">
+        <a href="dia1.html" class="btn-back-nav" style="background: #eff6ff; color: #1e40af; border-color: #bfdbfe;" title="Ver Galería del Día 1">
+          <span>← Día 1: Historia</span>
+        </a>
+        <a href="dia2.html" class="btn-back-nav" style="background: #ecfdf5; color: #065f46; border-color: #a7f3d0;" title="Ver Galería del Día 2">
+          <span>← Día 2: Emprendimiento</span>
+        </a>
+        <a href="dia3.html" class="btn-back-nav" style="background: #fef3c7; color: #92400e; border-color: #fde68a;" title="Ver Galería del Día 3">
+          <span>← Día 3: Mundialito</span>
+        </a>
         <a href="index.html#foro-salvemos-la-cienaga" class="btn-back-nav">
           <span>← Portal Semana Cultural</span>
         </a>
@@ -806,18 +853,18 @@ html_template = '''<!doctype html>
       </h1>
 
       <p class="day-hero-lead">
-        «Nuestra Ciénaga también tiene futuro» · Registro audiovisual completo y muestra fotográfica oficial del gran encuentro ecológico carmelita: ponencias científicas con respaldo de GEF-7 e INVEMAR, mesas de bioeconomía con Unicaribe, semilleros de pintura ambiental infantil y círculos de diálogo comunitario por la conservación de nuestro patrimonio natural.
+        «Nuestra Ciénaga también tiene futuro» · Registro audiovisual completo (14 Videos Oficiales) y muestra fotográfica oficial del gran encuentro ecológico carmelita: ponencias científicas con respaldo de GEF-7 e INVEMAR, mesas de bioeconomía con Unicaribe, semilleros de pintura ambiental infantil y círculos de diálogo comunitario por la conservación de nuestro patrimonio natural.
       </p>
 
       <div class="hero-quick-ctas">
         <a href="#videos" class="btn-cta-primary">
-          <span>🎬 Ver Videos Oficiales (5)</span>
+          <span>🎬 Ver 14 Videos Oficiales ↓</span>
         </a>
         <a href="#fotos" class="btn-cta-secondary">
-          <span>📸 Ver Galería Destacada (46 Fotos)</span>
+          <span>📸 Ver Galería Destacada (46 Fotos) ↓</span>
         </a>
-        <a href="index.html#foro-salvemos-la-cienaga" class="btn-cta-secondary" style="border-color: #a7f3d0; color: #065f46;">
-          <span>📋 Ficha y Afiches del Foro ↗</span>
+        <a href="https://photos.app.goo.gl/22MaxHLLRht7NrDy6" target="_blank" rel="noopener noreferrer" class="btn-cta-secondary" style="border-color: #a7f3d0; color: #065f46;">
+          <span>☁️ Álbum Completo en Google Fotos ↗</span>
         </a>
       </div>
 
@@ -833,8 +880,8 @@ html_template = '''<!doctype html>
         <div class="stat-item">
           <div class="stat-icon">🎥</div>
           <div class="stat-text">
-            <strong>5 Videos</strong>
-            <span>4 Panorámicos + 1 Short 9:16</span>
+            <strong>14 Videos</strong>
+            <span>10 Panorámicos + 4 Shorts 9:16</span>
           </div>
         </div>
         <div class="stat-item">
@@ -855,21 +902,21 @@ html_template = '''<!doctype html>
     </div>
   </section>
 
-  <!-- Sección: Videos Oficiales de YouTube (5 Videos) -->
+  <!-- Sección: Videos Oficiales de YouTube (14 Videos: 10 Horizontales + 4 Shorts) -->
   <section class="section-padding" id="videos" style="background: #ffffff;">
     <div class="container">
       <div class="section-title-wrap">
         <span class="section-eyebrow">Memoria Audiovisual en Directo</span>
-        <h2 class="section-title">Registro en Video y Transmisiones Oficiales</h2>
+        <h2 class="section-title">Registro en Video y Transmisiones Oficiales (14 Videos)</h2>
         <p class="section-lead">
-          Revive los momentos más emotivos del Foro Institucional «Salvemos la Ciénaga»: las palabras de apertura, la foto institucional por grupos, las ponencias de biodiversidad y la participación de toda la comunidad educativa.
+          Revive los momentos más emotivos del Foro Institucional «Salvemos la Ciénaga»: palabras de apertura, actos protocolarios, ponencias científicas sobre biodiversidad, mesas de bioeconomía con Unicaribe, el semillero infantil de arte y las cápsulas verticales en Shorts.
         </p>
       </div>
 
-      <!-- Grupo 1: Videos Panorámicos 16:9 -->
+      <!-- Grupo 1: Videos Panorámicos 16:9 (10 Videos) -->
       <div class="video-group-header">
         <h3>📺 Cobertura Especial en Formato Panorámico (16:9)</h3>
-        <span class="badge-count" style="background: #d1fae5; color: #065f46;">4 Videos Oficiales</span>
+        <span class="badge-count" style="background: #d1fae5; color: #065f46;">10 Videos Oficiales</span>
       </div>
 
       <div class="videos-h-grid">
@@ -881,13 +928,13 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FOTO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 01">
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 01">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Cobertura Oficial</span>
-              <h3>Foto Institucional Salvemos la Ciénaga 2026 · Entrega 01</h3>
+              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 01</span>
+              <h3>Foro Salvemos la Ciénaga · Entrega 01</h3>
               <p>Apertura oficial, ambientación temática y primeros momentos del gran encuentro ambiental carmelita en el patio central.</p>
             </div>
             <a href="https://youtu.be/ZnR7RV0GbfI" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
@@ -904,13 +951,13 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FOTO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 02">
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 02">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Cobertura Oficial</span>
-              <h3>Foto Institucional Salvemos la Ciénaga 2026 · Entrega 02</h3>
+              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 02</span>
+              <h3>Foro Salvemos la Ciénaga · Entrega 02</h3>
               <p>Intervenciones protocolarias, símbolos patrios y palabras orientadoras de los docentes líderes del PRAE.</p>
             </div>
             <a href="https://youtu.be/eXrOS5yoYqE" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
@@ -927,13 +974,13 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FOTO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 03">
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 03">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Cobertura Oficial</span>
-              <h3>Foto Institucional Salvemos la Ciénaga 2026 · Entrega 03</h3>
+              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 03</span>
+              <h3>Foro Salvemos la Ciénaga · Entrega 03</h3>
               <p>Ponencias magistrales sobre biodiversidad, especies focales y participación activa del auditorio estudiantil.</p>
             </div>
             <a href="https://youtu.be/iey9SQMnxGg" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
@@ -950,13 +997,13 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FOTO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 04">
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 04">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Cobertura Oficial</span>
-              <h3>Foto Institucional Salvemos la Ciénaga 2026 · Entrega 04</h3>
+              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 04</span>
+              <h3>Foro Salvemos la Ciénaga · Entrega 04</h3>
               <p>Semilleros de pintura ambiental infantil, mesas de bioeconomía con Unicaribe y diálogo con las familias.</p>
             </div>
             <a href="https://youtu.be/c9gfMOhYCzQ" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
@@ -964,35 +1011,235 @@ html_template = '''<!doctype html>
             </a>
           </div>
         </div>
-      </div>
 
-      <!-- Grupo 2: YouTube Short 9:16 -->
-      <div class="video-group-header">
-        <h3>📱 YouTube Short Oficial en Formato Vertical (9:16)</h3>
-        <span class="badge-count" style="background: #fef3c7; color: #92400e;">Cápsula Ágil Móvil</span>
-      </div>
-
-      <div class="short-container-wrap">
-        <div class="video-v-mockup">
-          <iframe 
-            src="https://www.youtube-nocookie.com/embed/F1w1-B27Mjw?rel=0&playsinline=1&modestbranding=1" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen 
-            loading="lazy"
-            title="FOTO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 05 · YouTube Short">
-          </iframe>
+        <!-- Video 6 -->
+        <div class="video-h-card">
+          <div class="video-h-frame">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/qpdILYVPmT0?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 06">
+            </iframe>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 06</span>
+              <h3>Foro Salvemos la Ciénaga · Entrega 06</h3>
+              <p>Muestras didácticas sobre las variedades de mangle, protección contra la erosión costera y conciencia ambiental.</p>
+            </div>
+            <a href="https://youtu.be/qpdILYVPmT0" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en YouTube ↗</span>
+            </a>
+          </div>
         </div>
-        <div style="text-align: center; margin-top: 1.25rem;">
-          <span class="video-badge-pill gold">Short Vertical 9:16 · Cápsula 05</span>
-          <h4 style="font-size: 1.15rem; color: var(--primary); margin-block: 0.35rem 0.25rem;">
-            Foto Institucional Salvemos la Ciénaga · Entrega 05
-          </h4>
-          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.85rem;">
-            Resumen dinámico y energía de la comunidad educativa en formato vertical optimizado para celular.
-          </p>
-          <a href="https://youtube.com/shorts/F1w1-B27Mjw?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link" style="display: inline-flex;">
-            <span>▶ Abrir Short en la App de YouTube ↗</span>
-          </a>
+
+        <!-- Video 7 -->
+        <div class="video-h-card">
+          <div class="video-h-frame">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/pk7hPoGp_BE?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 07">
+            </iframe>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 07</span>
+              <h3>Foro Salvemos la Ciénaga · Entrega 07</h3>
+              <p>Reflexión estudiantil y aportes juveniles en torno a los retos de la contaminación y el cambio climático en el Magdalena.</p>
+            </div>
+            <a href="https://youtu.be/pk7hPoGp_BE" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Video 8 -->
+        <div class="video-h-card">
+          <div class="video-h-frame">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/QCr-nwUvpdI?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 08">
+            </iframe>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 08</span>
+              <h3>Foro Salvemos la Ciénaga · Entrega 08</h3>
+              <p>Intervención de rectoría y directivas: el compromiso carmelita de convertir la conservación ambiental en una práctica formativa diaria.</p>
+            </div>
+            <a href="https://youtu.be/QCr-nwUvpdI" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Video 10 -->
+        <div class="video-h-card">
+          <div class="video-h-frame">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/1R-jjpE6Wlc?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 10">
+            </iframe>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 10</span>
+              <h3>Foro Salvemos la Ciénaga · Entrega 10</h3>
+              <p>Mesa de Bioeconomía con facilitadores de Unicaribe: formulación de proyectos productivos sostenibles y turismo ecológico regional.</p>
+            </div>
+            <a href="https://youtu.be/1R-jjpE6Wlc" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Video 11 -->
+        <div class="video-h-card">
+          <div class="video-h-frame">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/ytRX6XvNS90?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 11">
+            </iframe>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 11</span>
+              <h3>Foro Salvemos la Ciénaga · Entrega 11</h3>
+              <p>Muestra cultural, expresión artística y talentos estudiantiles rindiendo homenaje al folclor y la identidad cieguera.</p>
+            </div>
+            <a href="https://youtu.be/ytRX6XvNS90" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Video 12 -->
+        <div class="video-h-card">
+          <div class="video-h-frame">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/YL5MWYGKJVg?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 12">
+            </iframe>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 12</span>
+              <h3>Foro Salvemos la Ciénaga · Entrega 12</h3>
+              <p>Conclusiones finales, lectura de acuerdos por la Ciénaga Grande y clausura triunfal del Foro Ambiental Carmelista 2026.</p>
+            </div>
+            <a href="https://youtu.be/YL5MWYGKJVg" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grupo 2: YouTube Shorts 9:16 (4 Videos Verticales) -->
+      <div class="video-group-header">
+        <h3>📱 YouTube Shorts Oficiales en Formato Vertical (9:16)</h3>
+        <span class="badge-count" style="background: #fef3c7; color: #92400e;">4 Cápsulas Ágiles Móviles</span>
+      </div>
+
+      <div class="shorts-grid">
+        <!-- Short 1 (Entrega 05) -->
+        <div class="short-card-item">
+          <div class="video-v-mockup">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/F1w1-B27Mjw?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 05 · Short">
+            </iframe>
+          </div>
+          <div class="short-info">
+            <span class="video-badge-pill gold">Short 9:16 · Cápsula 05</span>
+            <h4>Foto Institucional Salvemos la Ciénaga</h4>
+            <p>Resumen dinámico de la foto grupal y entusiasmo de los estudiantes.</p>
+            <a href="https://youtube.com/shorts/F1w1-B27Mjw?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Abrir Short ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Short 2 (Entrega 09) -->
+        <div class="short-card-item">
+          <div class="video-v-mockup">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/YamZxvLIKao?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 09 · Short">
+            </iframe>
+          </div>
+          <div class="short-info">
+            <span class="video-badge-pill gold">Short 9:16 · Cápsula 09</span>
+            <h4>Semillero Infantil de Pintura</h4>
+            <p>El color y la creatividad de las niñas carmelitas retratando la Ciénaga.</p>
+            <a href="https://youtube.com/shorts/YamZxvLIKao?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Abrir Short ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Short 3 (Entrega 13) -->
+        <div class="short-card-item">
+          <div class="video-v-mockup">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/93jZABfSG2k?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 13 · Short">
+            </iframe>
+          </div>
+          <div class="short-info">
+            <span class="video-badge-pill gold">Short 9:16 · Cápsula 13</span>
+            <h4>Mesas de Diálogo y Trabajo en Equipo</h4>
+            <p>Comunidad, acudientes y docentes concertando compromisos verdes.</p>
+            <a href="https://youtube.com/shorts/93jZABfSG2k?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Abrir Short ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Short 4 (Entrega 14) -->
+        <div class="short-card-item">
+          <div class="video-v-mockup">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/AaQtANVpASg?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 14 · Short">
+            </iframe>
+          </div>
+          <div class="short-info">
+            <span class="video-badge-pill gold">Short 9:16 · Cápsula 14</span>
+            <h4>Compromiso Carmelita: «Salvemos la Ciénaga»</h4>
+            <p>Cápsula de cierre y mensaje institucional de orgullo por nuestra tierra.</p>
+            <a href="https://youtube.com/shorts/AaQtANVpASg?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Abrir Short ↗</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -1004,7 +1251,7 @@ html_template = '''<!doctype html>
     <div class="container">
       <div class="section-title-wrap">
         <span class="section-eyebrow">Registro Fotográfico Oficial</span>
-        <h2 class="section-title">Fotografías Destacadas del Día 4</h2>
+        <h2 class="section-title">Fotografías Destacadas del Día 4 (46 Fotos)</h2>
         <p class="section-lead">
           Una selección de 46 postales exclusivas del Foro «Salvemos la Ciénaga»: ambientación, diálogo comunitario, arte infantil, ponencias científicas y mesas de bioeconomía. Haz clic sobre cualquier fotografía para abrir el visor en pantalla completa con navegación por teclado.
         </p>
@@ -1086,7 +1333,7 @@ html_template += '\n\n'.join(cards_html)
 html_template += '''
       </div>
 
-      <!-- Banner Álbum en la Nube -->
+      <!-- Banner Álbum Oficial en Google Fotos -->
       <div class="gphotos-banner">
         <div class="gphotos-content">
           <div style="max-width: 650px;">
@@ -1101,7 +1348,7 @@ html_template += '''
             </p>
           </div>
           <div style="display: flex; flex-direction: column; gap: 0.5rem; align-items: center;">
-            <a href="https://photos.app.goo.gl/94siA2b1hiG5bx2S9" target="_blank" rel="noopener noreferrer" class="btn-gphotos-big">
+            <a href="https://photos.app.goo.gl/22MaxHLLRht7NrDy6" target="_blank" rel="noopener noreferrer" class="btn-gphotos-big">
               <span>📸 Ver Álbum en Google Fotos ↗</span>
             </a>
             <span style="font-size: 0.8rem; color: #94a3b8; text-align: center;">
@@ -1123,8 +1370,8 @@ html_template += '''
 
       <div style="font-size: 0.92rem; font-weight: 700; color: var(--primary);">
         <span>Siguiente Jornada: </span>
-        <a href="index.html#aniversario-53-anos" style="color: var(--accent-green-dark); text-decoration: underline;">
-          Viernes 23 · Gran Cierre y Aniversario 53 Años →
+        <a href="index.html#invitacion-misa-dia5" style="color: var(--accent-green-dark); text-decoration: underline;">
+          Viernes 23 · Gran Cierre, Santa Misa &amp; Aniversario 53 Años →
         </a>
       </div>
     </div>
