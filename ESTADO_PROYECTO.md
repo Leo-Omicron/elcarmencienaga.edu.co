@@ -1,13 +1,13 @@
 # Continuidad del proyecto — IE El Carmen
 
-## Estado vigente — 21 de octubre de 2026, 21:55 (Colombia)
+## Estado vigente — 22 de octubre de 2026, 15:30 (Colombia)
 
 **Semana Cultural Carmelista 2026 (100% activa en Producción y Staging):**
 - **Día 2 (Feria de la Ciencia y Creatividad):** 100% verificado en producción con galería de 34 fotos optimizadas y enlaces al Día 3.
 - **Día 3 (Gran Desfile e Inauguración del Mundialito 2026):** Galería completa con 21 fotos destacadas (conversión HEIC a JPEG progresivo) y 12 videos de YouTube (8 panorámicos 16:9 y 4 Shorts 9:16) en producción (`https://semanacultural.elcarmencienaga.edu.co/dia3.html`).
 - **Mundialito Carmelista 2026 (Aplazamiento Oficial):** Partidos de jueves 22 y viernes 23 de octubre **aplazados hasta nueva orden**. Actualizado en producción y staging el afiche oficial con la franja transversal («Aplazados hasta nueva orden.»), tarjeta extraordinaria de alerta roja `#aviso-partidos-mundialito-2026` y banner de alerta en `dia3.html`.
-- **Día 4 (Gran Foro Salvemos la Ciénaga):** Portada y sección oficial con afiche vertical y versión cuadrada para redes/WhatsApp, botón de descarga directa y desglose de ponencias/exposiciones.
-- **Flujo de trabajo:** Staging-first riguroso (`lab.elcarmencienaga.edu.co` antes de `semanacultural.elcarmencienaga.edu.co`) verificado con HTTP 200 en cada ciclo.
+- **Día 4 (Gran Foro Salvemos la Ciénaga):** Página dedicada `dia4.html` desplegada y verificada en `lab.elcarmencienaga.edu.co` con 46 fotografías destacadas optimizadas (conversión HEIC a JPEG progresivo) y 5 videos oficiales de YouTube (4 panorámicos 16:9 y 1 Short 9:16 en mockup móvil). Integrado el visor lightbox con navegación por teclado y atajos desde la portada institucional y `dia3.html`. Pendiente revisión y aprobación del usuario para promoción a `semanacultural`.
+- **Flujo de trabajo:** Staging-first riguroso (`lab.elcarmencienaga.edu.co` antes de `semanacultural.elcarmencienaga.edu.co`) verificado con HTTP 200 y validación visual por navegador en cada ciclo.
 
 **Google Workspace for Education:** Prioridad de fondo: obtener la aprobación definitiva de Education Fundamentals gratuito (12 días de trial restantes). La web y Gmail ya funcionan.
 
