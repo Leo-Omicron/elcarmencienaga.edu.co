@@ -901,7 +901,7 @@ html_template = '''<!doctype html>
       </h1>
 
       <p class="day-hero-lead">
-        «Nuestra Ciénaga también tiene futuro» · Cobertura audiovisual integral (18 Videos Oficiales: 11 Horizontales + 7 Shorts) y muestra fotográfica institucional (49 Fotografías en Alta Definición): ponencias científicas del Foro con respaldo de GEF-7 e INVEMAR, mesas de bioeconomía con Unicaribe, semillero infantil de arte ecológico y la jornada científica paralela en la <strong>Sede Guillermo F. Morán</strong>.
+        «Nuestra Ciénaga también tiene futuro» · Cobertura audiovisual integral (19 Videos Oficiales: 11 Horizontales + 8 Shorts) y muestra fotográfica institucional (49 Fotografías en Alta Definición): ponencias científicas del Foro con respaldo de GEF-7 e INVEMAR, mesas de bioeconomía con Unicaribe, semillero infantil de arte ecológico y la jornada científica paralela en la <strong>Sede Guillermo F. Morán</strong>.
       </p>
 
       <div class="hero-quick-ctas">
@@ -909,7 +909,7 @@ html_template = '''<!doctype html>
           <span>🎬 Ver 15 Videos Foro Salvemos la Ciénaga ↓</span>
         </a>
         <a href="#dia-ciencia-gfm" class="btn-cta-primary" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); box-shadow: 0 4px 15px rgba(2, 132, 199, 0.35);">
-          <span>🧪 Especial Día de la Ciencia Sede GFM (3 Shorts + 3 Fotos) ↓</span>
+          <span>🧪 Especial Día de la Ciencia Sede GFM (4 Shorts + 3 Fotos) ↓</span>
         </a>
         <a href="#fotos" class="btn-cta-secondary">
           <span>📸 Galería Foro (46 Fotos) ↓</span>
@@ -931,8 +931,8 @@ html_template = '''<!doctype html>
         <div class="stat-item">
           <div class="stat-icon">🎥</div>
           <div class="stat-text">
-            <strong>18 Videos</strong>
-            <span>11 Panorámicos + 7 Shorts</span>
+            <strong>19 Videos</strong>
+            <span>11 Panorámicos + 8 Shorts</span>
           </div>
         </div>
         <div class="stat-item">
@@ -1417,7 +1417,7 @@ html_template = '''<!doctype html>
         <!-- Muestra Audiovisual Especial GFM (3 YouTube Shorts 9:16) -->
         <div style="margin-top: 3rem;">
           <div class="video-group-header" style="margin-bottom: 1.5rem;">
-            <h3>📱 Cobertura Audiovisual Móvil (3 Shorts Oficiales 9:16)</h3>
+            <h3>📱 Cobertura Audiovisual Móvil (4 Shorts Oficiales 9:16)</h3>
             <span class="badge-count" style="background: #e0f2fe; color: #0369a1;">Sede Guillermo F. Morán</span>
           </div>
 
@@ -1480,6 +1480,27 @@ html_template = '''<!doctype html>
                 <h4>Alegría y Talento Carmelista</h4>
                 <p>Registro del ambiente festivo del semillero infantil carmelita en su gran jornada científica paralela.</p>
                 <a href="https://youtube.com/shorts/jiE3UmmCY60?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+                  <span>▶ Abrir Short en YouTube ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Short GFM 4 (q6T-ODdipsE) -->
+            <div class="short-card-item">
+              <div class="video-v-mockup" style="border-color: #7c3aed;">
+                <iframe 
+                  src="https://www.youtube-nocookie.com/embed/q6T-ODdipsE?rel=0&playsinline=1&modestbranding=1" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen 
+                  loading="lazy"
+                  title="Día de la Ciencia Sede Guillermo F. Morán · Experimentos en Vivo 04">
+                </iframe>
+              </div>
+              <div class="short-info">
+                <span class="video-badge-pill purple" style="background: #ede9fe; color: #6d28d9;">Short 9:16 · GFM Ciencia 04</span>
+                <h4>Descubrimiento y Experimentos en Vivo</h4>
+                <p>Prácticas de laboratorio y entusiasmo de los estudiantes de la Sede Guillermo F. Morán en su fiesta del saber.</p>
+                <a href="https://youtube.com/shorts/q6T-ODdipsE?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
                   <span>▶ Abrir Short en YouTube ↗</span>
                 </a>
               </div>
