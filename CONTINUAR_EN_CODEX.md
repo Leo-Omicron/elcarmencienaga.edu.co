@@ -1,7 +1,7 @@
 # Continuar el proyecto IE El Carmen
 
-**Actualizado el 21 de octubre de 2026, 21:20 (Colombia).**
-- **ÚLTIMA HORA (Mundialito Carmelista 2026):** Partidos de jueves 22 y viernes 23 de octubre **aplazados hasta nueva orden**. Actualizado en staging (`lab.elcarmencienaga.edu.co`) el afiche oficial con el sello de aplazamiento (`aviso_partidos_mundialito.jpg`), la tarjeta `#aviso-partidos-mundialito-2026` en `index.html` y el banner de alerta en `dia3.html`. Verificado con HTTP 200 en laboratorio. Pendiente visto bueno de Leo para paso a producción.
+**Actualizado el 21 de octubre de 2026, 21:38 (Colombia).**
+- **Semana Cultural 2026 - Mundialito Carmelista (Aplazamiento Oficial):** 100% **promovido y verificado en producción** (`https://semanacultural.elcarmencienaga.edu.co/#aviso-partidos-mundialito-2026` y `https://semanacultural.elcarmencienaga.edu.co/dia3.html`) tras aprobación de Leo. Partidos de jueves 22 y viernes 23 de octubre **aplazados hasta nueva orden** con afiche oficial de alta resolución actualizado, tarjeta de alerta extraordinaria y banner informativo en Día 3.
 - **Semana Cultural 2026 - Día 3 (Mundialito & Desfile):** 100% **promovido y verificado en producción** (`https://semanacultural.elcarmencienaga.edu.co/dia3.html`) con 21 fotos y 12 videos.
 - **Semana Cultural 2026 - Día 4 (Foro Ambiental):** 100% **promovido y verificado en producción** (`https://semanacultural.elcarmencienaga.edu.co/`) tras aprobación de Leo.
 - **Semana Cultural 2026 - Día 2:** 100% promovido y verificado en producción con 34 fotos y enlaces al Día 3.
