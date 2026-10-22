@@ -853,12 +853,12 @@ html_template = '''<!doctype html>
       </h1>
 
       <p class="day-hero-lead">
-        «Nuestra Ciénaga también tiene futuro» · Registro audiovisual completo (14 Videos Oficiales) y muestra fotográfica oficial del gran encuentro ecológico carmelita: ponencias científicas con respaldo de GEF-7 e INVEMAR, mesas de bioeconomía con Unicaribe, semilleros de pintura ambiental infantil y círculos de diálogo comunitario por la conservación de nuestro patrimonio natural.
+        «Nuestra Ciénaga también tiene futuro» · Registro audiovisual completo (15 Videos Oficiales) y muestra fotográfica oficial del gran encuentro ecológico carmelita: ponencias científicas con respaldo de GEF-7 e INVEMAR, mesas de bioeconomía con Unicaribe, semilleros de pintura ambiental infantil y círculos de diálogo comunitario por la conservación de nuestro patrimonio natural.
       </p>
 
       <div class="hero-quick-ctas">
         <a href="#videos" class="btn-cta-primary">
-          <span>🎬 Ver 14 Videos Oficiales ↓</span>
+          <span>🎬 Ver 15 Videos Oficiales ↓</span>
         </a>
         <a href="#fotos" class="btn-cta-secondary">
           <span>📸 Ver Galería Destacada (46 Fotos) ↓</span>
@@ -880,8 +880,8 @@ html_template = '''<!doctype html>
         <div class="stat-item">
           <div class="stat-icon">🎥</div>
           <div class="stat-text">
-            <strong>14 Videos</strong>
-            <span>10 Panorámicos + 4 Shorts 9:16</span>
+            <strong>15 Videos</strong>
+            <span>11 Panorámicos + 4 Shorts 9:16</span>
           </div>
         </div>
         <div class="stat-item">
@@ -902,21 +902,21 @@ html_template = '''<!doctype html>
     </div>
   </section>
 
-  <!-- Sección: Videos Oficiales de YouTube (14 Videos: 10 Horizontales + 4 Shorts) -->
+  <!-- Sección: Videos Oficiales de YouTube (15 Videos: 11 Horizontales + 4 Shorts) -->
   <section class="section-padding" id="videos" style="background: #ffffff;">
     <div class="container">
       <div class="section-title-wrap">
         <span class="section-eyebrow">Memoria Audiovisual en Directo</span>
-        <h2 class="section-title">Registro en Video y Transmisiones Oficiales (14 Videos)</h2>
+        <h2 class="section-title">Registro en Video y Transmisiones Oficiales (15 Videos)</h2>
         <p class="section-lead">
           Revive los momentos más emotivos del Foro Institucional «Salvemos la Ciénaga»: palabras de apertura, actos protocolarios, ponencias científicas sobre biodiversidad, mesas de bioeconomía con Unicaribe, el semillero infantil de arte y las cápsulas verticales en Shorts.
         </p>
       </div>
 
-      <!-- Grupo 1: Videos Panorámicos 16:9 (10 Videos) -->
+      <!-- Grupo 1: Videos Panorámicos 16:9 (11 Videos) -->
       <div class="video-group-header">
         <h3>📺 Cobertura Especial en Formato Panorámico (16:9)</h3>
-        <span class="badge-count" style="background: #d1fae5; color: #065f46;">10 Videos Oficiales</span>
+        <span class="badge-count" style="background: #d1fae5; color: #065f46;">11 Videos Oficiales</span>
       </div>
 
       <div class="videos-h-grid">
@@ -928,14 +928,14 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 01">
+              title="Ponencia Estudiantil en Atril: Introducción y Contexto">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 01</span>
-              <h3>Foro Salvemos la Ciénaga · Entrega 01</h3>
-              <p>Apertura oficial, ambientación temática y primeros momentos del gran encuentro ambiental carmelita en el patio central.</p>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 01</span>
+              <h3>Ponencia en Atril: Introducción y Contexto del Foro</h3>
+              <p>Estudiante carmelita inaugurando la jornada académica con micrófono en atril y presentación en pantalla digital junto a las banderas institucionales.</p>
             </div>
             <a href="https://youtu.be/ZnR7RV0GbfI" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Ver en YouTube ↗</span>
@@ -951,14 +951,14 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 02">
+              title="Ponencia en Atril: Especies Focales y Peces de la Ciénaga">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 02</span>
-              <h3>Foro Salvemos la Ciénaga · Entrega 02</h3>
-              <p>Intervenciones protocolarias, símbolos patrios y palabras orientadoras de los docentes líderes del PRAE.</p>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 02</span>
+              <h3>Ponencia en Atril: Especies Focales y Peces Nativos</h3>
+              <p>Sustentación académica con diapositiva ilustrada detallando especies clave de la Ciénaga Grande: lisa, mojarra lora y sábalo.</p>
             </div>
             <a href="https://youtu.be/eXrOS5yoYqE" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Ver en YouTube ↗</span>
@@ -974,14 +974,14 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 03">
+              title="Ponencia en Atril: Problemática Ambiental y Conservación">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 03</span>
-              <h3>Foro Salvemos la Ciénaga · Entrega 03</h3>
-              <p>Ponencias magistrales sobre biodiversidad, especies focales y participación activa del auditorio estudiantil.</p>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 03</span>
+              <h3>Ponencia en Atril: Problemática Ambiental y Conservación</h3>
+              <p>Disertación estudiantil analizando la calidad de las fuentes hídricas tributarias, el flujo ecológico y los desafíos de conservación del humedal.</p>
             </div>
             <a href="https://youtu.be/iey9SQMnxGg" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Ver en YouTube ↗</span>
@@ -997,14 +997,14 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 04">
+              title="Mesa de Trabajo #8: Investigación e Innovación Tecnológica Ambiental">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 04</span>
-              <h3>Foro Salvemos la Ciénaga · Entrega 04</h3>
-              <p>Semilleros de pintura ambiental infantil, mesas de bioeconomía con Unicaribe y diálogo con las familias.</p>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 04</span>
+              <h3>Mesa #8: Investigación Científica e Innovación Tecnológica</h3>
+              <p>Cuatro alumnas de bachillerato sustentando ante la comunidad su cartelera de propuestas para vincular universidades y centros de investigación.</p>
             </div>
             <a href="https://youtu.be/c9gfMOhYCzQ" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Ver en YouTube ↗</span>
@@ -1020,14 +1020,14 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 06">
+              title="Organización y Delegación Escolar en Atril Central">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 06</span>
-              <h3>Foro Salvemos la Ciénaga · Entrega 06</h3>
-              <p>Muestras didácticas sobre las variedades de mangle, protección contra la erosión costera y conciencia ambiental.</p>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 06</span>
+              <h3>Organización y Delegación Escolar en el Atril Central</h3>
+              <p>Docentes y delegación estudiantil coordinando las intervenciones y el desarrollo protocolario institucional frente al patio central.</p>
             </div>
             <a href="https://youtu.be/qpdILYVPmT0" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Ver en YouTube ↗</span>
@@ -1043,14 +1043,14 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 07">
+              title="Mesa de Trabajo: Recursos Pesqueros y Sostenibilidad">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 07</span>
-              <h3>Foro Salvemos la Ciénaga · Entrega 07</h3>
-              <p>Reflexión estudiantil y aportes juveniles en torno a los retos de la contaminación y el cambio climático en el Magdalena.</p>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 07</span>
+              <h3>Mesa de Trabajo: Recursos Pesqueros y Sostenibilidad</h3>
+              <p>Exposición grupal de estudiantes de secundaria sustentando estrategias para evitar la sobreexplotación y promover la pesca responsable.</p>
             </div>
             <a href="https://youtu.be/pk7hPoGp_BE" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Ver en YouTube ↗</span>
@@ -1066,14 +1066,14 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 08">
+              title="Mesa de Trabajo: Gobernanza Ambiental y Liderazgo Juvenil">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 08</span>
-              <h3>Foro Salvemos la Ciénaga · Entrega 08</h3>
-              <p>Intervención de rectoría y directivas: el compromiso carmelita de convertir la conservación ambiental en una práctica formativa diaria.</p>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 08</span>
+              <h3>Mesa de Trabajo: Gobernanza Ambiental y Liderazgo Juvenil</h3>
+              <p>Estudiantes carmelitas sustentando en equipo conclusiones y compromisos ciudadanos para el cuidado y restauración de los manglares.</p>
             </div>
             <a href="https://youtu.be/QCr-nwUvpdI" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Ver en YouTube ↗</span>
@@ -1089,14 +1089,14 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 10">
+              title="Cartografía Ambiental Escolar: Mapa Ilustrado de la Ciénaga">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 10</span>
-              <h3>Foro Salvemos la Ciénaga · Entrega 10</h3>
-              <p>Mesa de Bioeconomía con facilitadores de Unicaribe: formulación de proyectos productivos sostenibles y turismo ecológico regional.</p>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 10</span>
+              <h3>Cartografía Escolar: Mapa Ilustrado del Ecosistema</h3>
+              <p>Sustentación comunitaria con mapa ecológico ilustrado: llamado a no quemar mangle, no arrojar plásticos y proteger la fauna silvestre.</p>
             </div>
             <a href="https://youtu.be/1R-jjpE6Wlc" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Ver en YouTube ↗</span>
@@ -1112,14 +1112,14 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 11">
+              title="Mesa #2: Gestión del Agua, Contaminación y Saneamiento">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 11</span>
-              <h3>Foro Salvemos la Ciénaga · Entrega 11</h3>
-              <p>Muestra cultural, expresión artística y talentos estudiantiles rindiendo homenaje al folclor y la identidad cieguera.</p>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 11</span>
+              <h3>Mesa #2: Gestión del Agua, Contaminación y Saneamiento</h3>
+              <p>Docente y estudiantes exponiendo pliego de estrategias sobre comités de veeduría, estudios científicos del agua y reciclaje integral.</p>
             </div>
             <a href="https://youtu.be/ytRX6XvNS90" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Ver en YouTube ↗</span>
@@ -1135,16 +1135,39 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 12">
+              title="Mesa de Trabajo: Propuestas y Compromisos Juveniles">
             </iframe>
           </div>
           <div class="video-card-body">
             <div>
-              <span class="video-badge-pill green">Panorámico 16:9 · Entrega 12</span>
-              <h3>Foro Salvemos la Ciénaga · Entrega 12</h3>
-              <p>Conclusiones finales, lectura de acuerdos por la Ciénaga Grande y clausura triunfal del Foro Ambiental Carmelista 2026.</p>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 12</span>
+              <h3>Mesa de Trabajo: Propuestas y Compromisos Juveniles</h3>
+              <p>Lectura de acuerdos ambientales y reflexiones en atril por estudiantes de grado superior para la preservación de nuestro patrimonio hídrico.</p>
             </div>
             <a href="https://youtu.be/YL5MWYGKJVg" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
+              <span>▶ Ver en YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Video 15 -->
+        <div class="video-h-card">
+          <div class="video-h-frame">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/AJ6VZwFiOuI?rel=0&playsinline=1&modestbranding=1" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy"
+              title="Mesa de Trabajo: Educación y Sensibilización Ambiental">
+            </iframe>
+          </div>
+          <div class="video-card-body">
+            <div>
+              <span class="video-badge-pill green">Panorámico 16:9 · Video 15</span>
+              <h3>Mesa de Trabajo: Educación y Sensibilización Ambiental</h3>
+              <p>Exposición grupal de cartel ilustrado y lectura de compromisos asumidos por los estudiantes para fomentar la educación ecológica comunitaria.</p>
+            </div>
+            <a href="https://youtu.be/AJ6VZwFiOuI" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Ver en YouTube ↗</span>
             </a>
           </div>
@@ -1158,7 +1181,7 @@ html_template = '''<!doctype html>
       </div>
 
       <div class="shorts-grid">
-        <!-- Short 1 (Entrega 05) -->
+        <!-- Short 1 (F1w1-B27Mjw) -->
         <div class="short-card-item">
           <div class="video-v-mockup">
             <iframe 
@@ -1166,20 +1189,20 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 05 · Short">
+              title="Concentración y Participación en el Patio Central · Short">
             </iframe>
           </div>
           <div class="short-info">
-            <span class="video-badge-pill gold">Short 9:16 · Cápsula 05</span>
-            <h4>Foto Institucional Salvemos la Ciénaga</h4>
-            <p>Resumen dinámico de la foto grupal y entusiasmo de los estudiantes.</p>
+            <span class="video-badge-pill gold">Short 9:16 · Cápsula 01</span>
+            <h4>Concentración y Participación en el Patio</h4>
+            <p>Cápsula ágil del auditorio estudiantil reunido y atento al desarrollo de las ponencias del Foro Salvemos la Ciénaga.</p>
             <a href="https://youtube.com/shorts/F1w1-B27Mjw?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Abrir Short ↗</span>
             </a>
           </div>
         </div>
 
-        <!-- Short 2 (Entrega 09) -->
+        <!-- Short 2 (YamZxvLIKao) -->
         <div class="short-card-item">
           <div class="video-v-mockup">
             <iframe 
@@ -1187,20 +1210,20 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 09 · Short">
+              title="Ponencia en Atril: Indicadores y Diagnóstico Ambiental · Short">
             </iframe>
           </div>
           <div class="short-info">
-            <span class="video-badge-pill gold">Short 9:16 · Cápsula 09</span>
-            <h4>Semillero Infantil de Pintura</h4>
-            <p>El color y la creatividad de las niñas carmelitas retratando la Ciénaga.</p>
+            <span class="video-badge-pill gold">Short 9:16 · Cápsula 02</span>
+            <h4>Ponencia en Atril: Indicadores y Diagnóstico</h4>
+            <p>Intervención de estudiante carmelita analizando gráficos, datos y estadísticas sobre el impacto ambiental en la Ciénaga.</p>
             <a href="https://youtube.com/shorts/YamZxvLIKao?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Abrir Short ↗</span>
             </a>
           </div>
         </div>
 
-        <!-- Short 3 (Entrega 13) -->
+        <!-- Short 3 (93jZABfSG2k) -->
         <div class="short-card-item">
           <div class="video-v-mockup">
             <iframe 
@@ -1208,20 +1231,20 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 13 · Short">
+              title="Intervención en Atril: Reflexión y Compromiso Carmelita · Short">
             </iframe>
           </div>
           <div class="short-info">
-            <span class="video-badge-pill gold">Short 9:16 · Cápsula 13</span>
-            <h4>Mesas de Diálogo y Trabajo en Equipo</h4>
-            <p>Comunidad, acudientes y docentes concertando compromisos verdes.</p>
+            <span class="video-badge-pill gold">Short 9:16 · Cápsula 03</span>
+            <h4>Intervención en Atril: Reflexión y Compromiso</h4>
+            <p>Mensaje de sensibilización expresado con convicción desde el atril por una estudiante líder en defensa de los recursos naturales.</p>
             <a href="https://youtube.com/shorts/93jZABfSG2k?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Abrir Short ↗</span>
             </a>
           </div>
         </div>
 
-        <!-- Short 4 (Entrega 14) -->
+        <!-- Short 4 (AaQtANVpASg) -->
         <div class="short-card-item">
           <div class="video-v-mockup">
             <iframe 
@@ -1229,13 +1252,13 @@ html_template = '''<!doctype html>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowfullscreen 
               loading="lazy"
-              title="FORO INSTITUCIONAL SALVEMOS LA CIENAGA 2026 - 14 · Short">
+              title="Auditorio Institucional: Apertura y Sentido de Pertenencia · Short">
             </iframe>
           </div>
           <div class="short-info">
-            <span class="video-badge-pill gold">Short 9:16 · Cápsula 14</span>
-            <h4>Compromiso Carmelita: «Salvemos la Ciénaga»</h4>
-            <p>Cápsula de cierre y mensaje institucional de orgullo por nuestra tierra.</p>
+            <span class="video-badge-pill gold">Short 9:16 · Cápsula 04</span>
+            <h4>Auditorio Institucional: Actos y Pertenencia</h4>
+            <p>Vista panorámica vertical del patio cubierto durante los actos protocolarios y bienvenida general al Gran Foro 2026.</p>
             <a href="https://youtube.com/shorts/AaQtANVpASg?feature=share" target="_blank" rel="noopener noreferrer" class="btn-yt-link">
               <span>▶ Abrir Short ↗</span>
             </a>
@@ -1261,52 +1284,52 @@ html_template = '''<!doctype html>
 '''
 
 gallery_data = [
-    ('dia4/Dia4 (1).jpg', 'Escenografía Central: «Salvemos la Ciénaga - Pequeñas Acciones»', 'Mesa principal del evento con centro floral y el mural institucional alusivo a la protección de los recursos naturales y el reciclaje.', 'Ambientación & Protocolo'),
-    ('dia4/Dia4 (2).jpg', 'Mural Escolar: «Juntos Podemos Hacer la Diferencia»', 'Carteleras elaboradas por estudiantes con mensajes de sensibilización para salvar los mangles y actuar con compromiso.', 'Sensibilización'),
-    ('dia4/Dia4 (3).jpg', 'Equipo Estudiantil en la Mesa de Coordinación', 'Estudiantes de grados superiores apoyando el registro y desarrollo de las actividades del Foro Ambiental.', 'Liderazgo Juvenil'),
-    ('dia4/Dia4 (4).jpg', 'Pancartas de Conciencia Ecológica: «Protejamos los Recursos»', 'Espacio decorado con lemas ecológicos y llamados urgentes al reciclaje y la conservación del agua.', 'Conciencia Ambiental'),
-    ('dia4/Dia4 (5).jpg', 'Detalles Artísticos: Fauna y Ecosistema de la Ciénaga', 'Representación gráfica de peces, aves y especies nativas que habitan el complejo lagunar de la Ciénaga Grande.', 'Biodiversidad'),
-    ('dia4/Dia4 (6).jpg', 'Disposición del Auditorio en el Patio Central Techado', 'Preparativos y bienvenida a los asistentes en las instalaciones de la Institución Educativa El Carmen.', 'Comunidad Educativa'),
-    ('dia4/Dia4 (7).jpg', 'Mesa de Diálogo Docente-Estudiantil sobre el Agua', 'Espacio de intercambio de saberes guiado por docentes sobre la problemática del agua y el cuidado de los caños.', 'Diálogo Comunitario'),
-    ('dia4/Dia4 (8).jpg', 'Participación de Acudientes y Familias Carmelitas', 'Madres y padres de familia del barrio Micael Cotes integrados en las mesas redondas de concertación ecológica.', 'Participación Familiar'),
-    ('dia4/Dia4 (9).jpg', 'Reflexión Juvenil sobre los Retos Ambientales', 'Estudiantes compartiendo sus puntos de vista sobre la contaminación y proponiendo soluciones desde el hogar.', 'Voz Estudiantil'),
-    ('dia4/Dia4 (10).jpg', 'Encuentro Intergeneracional por la Conservación', 'Docentes, directivos y alumnas dialogando activamente sobre el sentido de pertenencia por nuestro patrimonio natural.', 'Integración Escolar'),
-    ('dia4/Dia4 (11).jpg', 'Toma de Notas y Consensos en las Mesas Redondas', 'Registro escrito de los compromisos ciudadanos adquiridos por cada grupo de trabajo durante la jornada.', 'Compromisos'),
-    ('dia4/Dia4 (12).jpg', 'Círculo de Concertación: Cuidemos la Ciénaga Grande', 'Estudiantes de bachillerato analizando los impactos del cambio climático en el departamento del Magdalena.', 'Acción Colectiva'),
-    ('dia4/Dia4 (13).jpg', 'Semillero Infantil: Colores por la Naturaleza', 'Estudiantes de primaria expresando su creatividad con témperas y pinceles inspirados en la riqueza de la Ciénaga.', 'Arte & Infancia'),
-    ('dia4/Dia4 (14).jpg', 'Pintando la Vida y los Manglares', 'Pequeñas artistas plasmando soles radiantes, agua limpia y paisajes de manglar en sus lienzos escolares.', 'Expresión Artística'),
-    ('dia4/Dia4 (15).jpg', 'Creatividad Ecológica desde las Aulas de Primaria', 'La educación artística como canal pedagógico para infundir amor y respeto hacia el medio ambiente.', 'Pedagogía Verde'),
-    ('dia4/Dia4 (16).jpg', 'Concentración y Talento de las Niñas Carmelitas', 'Trazos llenos de color y esperanza en la actividad artística guiada por el cuerpo docente.', 'Semillero Carmelita'),
-    ('dia4/Dia4 (17).jpg', 'Paletas de Colores y Obras Infantiles en Progreso', 'Mezclas de témperas y acuarelas para retratar la luz y la biodiversidad del Caribe colombiano.', 'Taller de Pintura'),
-    ('dia4/Dia4 (18).jpg', 'Futuros Guardianes del Humedal', 'Niños y niñas demostrando que desde la infancia se forja el liderazgo ambiental de nuestra comunidad.', 'Guardianes del Agua'),
-    ('dia4/Dia4 (19).jpg', 'Compañerismo y Alegría en la Expresión Pictórica', 'Estudiantes compartiendo pinceles y sonrisas en un ambiente escolar de fraternidad e integración.', 'Convivencia Escolar'),
-    ('dia4/Dia4 (20).jpg', 'El Arte al Servicio de la Conciencia Ambiental', 'Obras infantiles que transmiten el mensaje de que nuestra Ciénaga también tiene futuro.', 'Mensaje Ecológico'),
-    ('dia4/Dia4 (21).jpg', 'Exhibición de Obras del Semillero de Pintura', 'Muestra del talento artístico de los más pequeños en el marco del Foro Salvemos la Ciénaga.', 'Galería Infantil'),
-    ('dia4/Dia4 (22).jpg', 'Apertura Oficial en Atril: Las 3R Ecológicas', 'Docente líder destacando la importancia de Reducir, Reciclar y Reutilizar junto a las banderas de Colombia y Ciénaga.', 'Apertura Oficial'),
-    ('dia4/Dia4 (23).jpg', 'Solemnidad e Himnos Institucionales', 'Actos protocolarios con respeto a los símbolos patrios y el himno de la Institución Educativa El Carmen.', 'Actos Protocolarios'),
-    ('dia4/Dia4 (24).jpg', 'Moderación del Foro «Salvemos la Ciénaga» 2026', 'Presentación de los objetivos estratégicos de la jornada y motivación al diálogo propositivo.', 'Moderación'),
-    ('dia4/Dia4 (25).jpg', 'Presentación de la Agenda y Ejes de Trabajo', 'Socialización de las ponencias académicas, actividades artísticas y mesas de concertación.', 'Agenda Institucional'),
-    ('dia4/Dia4 (26).jpg', 'Voz Estudiantil en el Atril Central', 'Intervención de representantes estudiantiles asumiendo el compromiso generacional con la naturaleza.', 'Liderazgo Juvenil'),
-    ('dia4/Dia4 (27).jpg', 'Docentes Líderes del Proyecto Ambiental Escolar (PRAE)', 'El equipo pedagógico institucional orientando la visión científica y formativa del foro.', 'Liderazgo Docente'),
-    ('dia4/Dia4 (28).jpg', 'Acompañamiento Directivo a las Ponencias Escolares', 'Respaldo del cuerpo docente y coordinadores a los jóvenes expositores durante sus disertaciones.', 'Acompañamiento'),
-    ('dia4/Dia4 (29).jpg', 'El Compromiso Carmelita: «Educando para Preservar»', 'Mensaje institucional reafirmando el lema del escudo y la vocación ecológica del plantel.', 'Identidad Carmelita'),
-    ('dia4/Dia4 (30).jpg', 'Gran Panorámica: Comunidad Carmelita Reunida', 'Vista general del patio central techado con toda la comunidad educativa frente a la pantalla oficial del Foro 2026.', 'Panorámica Oficial'),
-    ('dia4/Dia4 (31).jpg', 'Ponencia Magistral: Alineación Estratégica GEF-7 e INVEMAR', 'Exposición científica sobre la estrategia de sensibilización y comunicación para la Ciénaga Grande de Santa Marta.', 'Ciencia & Conservación'),
-    ('dia4/Dia4 (32).jpg', 'Proyección Científica y Validación con el INVEMAR', 'Presentación del respaldo científico institucional y la participación en foros internacionales como IODE-2025.', 'Respaldo Científico'),
-    ('dia4/Dia4 (33).jpg', 'Guía Ilustrada de Especies Focales de la Ciénaga', 'Socialización de la meta pedagógica de escalar de 8 a 40 especies focales para democratizar el conocimiento biológico.', 'Especies Focales'),
-    ('dia4/Dia4 (34).jpg', 'La Conservación Nace del Autoreconocimiento Comunitario', 'Reflexión clave del foro: «La conservación comienza cuando la comunidad se reconoce en su propia biodiversidad».', 'Filosofía Ecológica'),
-    ('dia4/Dia4 (35).jpg', 'Atención Plena del Auditorio a las Exposiciones', 'Estudiantes de décimo y undécimo grado siguiendo con interés el desglose técnico y ambiental.', 'Auditorio Atento'),
-    ('dia4/Dia4 (36).jpg', 'Muestra Didáctica sobre Flora y Manglares Nativos', 'Explicación de las variedades de mangle y su papel protector frente a la erosión costera y el cambio climático.', 'Ecosistema de Mangle'),
-    ('dia4/Dia4 (37).jpg', 'Sesión de Preguntas e Intercambio de Conocimientos', 'Espacio participativo donde los jóvenes formularon preguntas a los ponentes e invitados especiales.', 'Preguntas & Debate'),
-    ('dia4/Dia4 (38).jpg', 'Intervención del Señor Rector de la IE El Carmen', 'El rector dirigiéndose a la comunidad educativa con un mensaje de esperanza, disciplina y liderazgo ambiental.', 'Mensaje de Rectoría'),
-    ('dia4/Dia4 (39).jpg', 'El Liderazgo Directivo Respaldando la Educación Verde', 'Palabras motivadoras sobre la importancia de convertir la preservación ambiental en un hábito diario.', 'Dirección Institucional'),
-    ('dia4/Dia4 (40).jpg', 'Arraigo Cultural y Pertenencia por Nuestra Tierra', 'Reflexión sobre el orgullo de ser ciengueros y carmelitas, guardianes de uno de los humedales más importantes del mundo.', 'Orgullo Cienguero'),
-    ('dia4/Dia4 (41).jpg', 'Reconocimiento y Gratitud a la Comunidad Escolar', 'Agradecimiento a docentes, estudiantes, acudientes y entidades aliadas por el éxito del Foro 2026.', 'Agradecimiento'),
-    ('dia4/Dia4 (42).jpg', 'Mesa de Bioeconomía y Economía Sostenible con Unicaribe', 'Estudiantes, docentes y facilitadores universitarios diseñando modelos productivos verdes para la región.', 'Bioeconomía Unicaribe'),
-    ('dia4/Dia4 (43).jpg', 'Construcción Colectiva de Propuestas Productivas', 'Debate grupal sobre oportunidades de empleo e ingresos basadas en el turismo ecológico y el aprovechamiento responsable.', 'Desarrollo Sostenible'),
-    ('dia4/Dia4 (44).jpg', 'Jóvenes Carmelitas Planteando Soluciones Reales', 'Trabajo en equipo sobre papel craft definiendo compromisos y estrategias viables para la conservación.', 'Propuestas Juveniles'),
-    ('dia4/Dia4 (45).jpg', 'Acompañamiento Metodológico Universitario', 'Facilitadores de Unicaribe guiando la formulación de proyectos ambientales con rigor técnico y pertinencia social.', 'Asesoría Universitaria'),
-    ('dia4/Dia4 (46).jpg', 'Consolidación del Pliego de Propuestas para la Ciénaga', 'Conclusión exitosa de la Mesa 2 con el documento final de propuestas para el futuro ambiental de Ciénaga.', 'Conclusiones del Foro')
+    ('dia4/Dia4 (1).jpg', 'Mesa de Recepción y Coordinación del Foro', 'Estudiantes en la mesa de bienvenida junto al mural institucional: «Salvemos la Ciénaga con Pequeñas Acciones - Reciclemos».', 'Organización & Protocolo'),
+    ('dia4/Dia4 (2).jpg', 'Docente Líder en la Apertura Oficial', 'Intervención protocolaria con micrófono desde el atril de madera tallada, junto a las banderas de Colombia y Ciénaga.', 'Apertura Oficial'),
+    ('dia4/Dia4 (3).jpg', 'Escenario Principal y Pantalla Digital', 'Vista desde el auditorio hacia el atril, las banderas y la pantalla de transmisión con el afiche oficial del Foro.', 'Escenario Central'),
+    ('dia4/Dia4 (4).jpg', 'Cuerpo Directivo, Docente e Invitados Especiales', 'Directivas de la institución, docentes y facilitadores invitados reunidos en el patio escolar durante la jornada académica.', 'Comunidad Docente'),
+    ('dia4/Dia4 (5).jpg', 'Mesa #8: Redacción de Conclusiones sobre Tecnología', 'Estudiantes de bachillerato redactando en papelógrafo las propuestas de innovación tecnológica y educación ambiental.', 'Mesas de Trabajo'),
+    ('dia4/Dia4 (6).jpg', 'Mesa #5: Diálogo Docente y Estudiantes Promo 2026', 'Docente y estudiantes de último grado concertando estrategias ecológicas y compromisos ciudadanos en mesa redonda.', 'Promo 2026 & Docentes'),
+    ('dia4/Dia4 (7).jpg', 'Orientación Pedagógica en las Mesas de Discusión', 'Docente orientador guiando la reflexión de estudiantes de secundaria sobre los retos ambientales de la región.', 'Acompañamiento Docente'),
+    ('dia4/Dia4 (8).jpg', 'Semillero Infantil: Expectativa vs. Realidad de la Ciénaga', 'Niña y niño de primaria exhibiendo sus obras en díptico comparando la Ciénaga que sueñan frente al estado actual.', 'Semillero Infantil'),
+    ('dia4/Dia4 (9).jpg', 'Expresión Artística Infantil con Témperas', 'Estudiante de primaria concentrado pintando los manglares y el agua de la Ciénaga con pincel en su pupitre.', 'Taller de Pintura'),
+    ('dia4/Dia4 (10).jpg', 'Docentes Acompañando el Taller de Arte Infantil', 'Docentes sonrientes supervisando las actividades pedagógicas y artísticas de los niños en el aula de clases.', 'Docentes de Primaria'),
+    ('dia4/Dia4 (11).jpg', 'Creatividad y Color por el Medio Ambiente', 'Niñas de primaria combinando colores en paletas plásticas para dar vida a sus dibujos sobre la naturaleza carmelita.', 'Arte & Expresión'),
+    ('dia4/Dia4 (12).jpg', 'Obra Escolar: «La Ciénaga que Sueño»', 'Alumna de primaria mostrando su dibujo desplegable con sol radiante, aves y cerros verdes sobre aguas limpias.', 'Sueños por la Ciénaga'),
+    ('dia4/Dia4 (13).jpg', 'Concentración y Trabajo Pictórico en el Aula', 'Estudiantes de primaria aplicando témpera con dedicación sobre cartulinas en la jornada artística ambiental.', 'Taller de Arte'),
+    ('dia4/Dia4 (14).jpg', 'El Mangle como Eje de Vida y Esperanza', 'Niño de primaria sosteniendo con orgullo su pintura de un árbol de mangle con raíces firmes bajo el sol.', 'Guardianes del Mangle'),
+    ('dia4/Dia4 (15).jpg', 'Panorámica del Aula de Primaria en Jornada Artística', 'Vista general del salón con los niños trabajando activamente en sus pupitres azules durante el taller de pintura.', 'Aulas en Acción'),
+    ('dia4/Dia4 (16).jpg', 'Detalle y Enfoque en la Expresión Infantil', 'Primer plano de una estudiante dando los toques finales a su creación artística en favor de los ecosistemas locales.', 'Talento Carmelita'),
+    ('dia4/Dia4 (17).jpg', 'Trazando la Diferencia: Expectativa y Realidad', 'Estudiante de primaria dividiendo su hoja para plasmar el contraste entre un humedal limpio y uno afectado por residuos.', 'Conciencia Infantil'),
+    ('dia4/Dia4 (18).jpg', 'Docentes Facilitando Materiales y Pinturas', 'Docentes organizando témperas, pinceles y paletas de mezcla para apoyar la creatividad de los pequeños.', 'Pedagogía & Cuidado'),
+    ('dia4/Dia4 (19).jpg', 'Círculo Pedagógico de Diálogo en Primaria', 'Estudiantes sentados en círculo en el aula mientras la docente orienta la reflexión sobre la protección del entorno.', 'Diálogo en Aula'),
+    ('dia4/Dia4 (20).jpg', 'Díptico Ambiental: Contaminación vs. Conservación', 'Estudiante de primaria exhibiendo su cartel comparativo entre un ecosistema floreciente y la realidad amenazada por basuras.', 'Mensaje Ecológico'),
+    ('dia4/Dia4 (21).jpg', 'Sustentación Infantil ante el Mural del Foro', 'Dos estudiantes de primaria exponiendo sus dibujos con micrófono frente al telón «Salvemos la Ciénaga con Pequeñas Acciones».', 'Voz de la Infancia'),
+    ('dia4/Dia4 (22).jpg', 'Intervención Docente: Reducir, Reciclar y Reutilizar', 'Docente con micrófono motivando a los jóvenes junto al atril y el mural con los principios ecológicos de las 3R.', 'Pedagogía Ambiental'),
+    ('dia4/Dia4 (23).jpg', 'Cartografía Escolar: Mapa de Protección de la Ciénaga', 'Estudiantes sustentando cartel ilustrado con compromisos: reducir la quema de mangle, reutilizar plásticos y cuidar la fauna.', 'Cartografía Social'),
+    ('dia4/Dia4 (24).jpg', 'Mesa #4: Estrategias de Conservación y Manglares', 'Grupo de bachillerato exponiendo propuestas para sembrar manglares, no arrojar químicos al agua y educar a la comunidad.', 'Mesas de Trabajo'),
+    ('dia4/Dia4 (25).jpg', 'Mesa #3: Biodiversidad y Recursos Pesqueros', 'Sustentación con micrófono sobre la pesca sostenible, tallas mínimas y protección de hábitats acuáticos en la región.', 'Pesca Sostenible'),
+    ('dia4/Dia4 (26).jpg', 'Mesa #7: Economía Sostenible y Bioeconomía', 'Estudiantes y docente de apoyo socializando alternativas productivas respetuosas con los recursos naturales de la Ciénaga.', 'Bioeconomía'),
+    ('dia4/Dia4 (27).jpg', 'Mesa #8: Ciencia, Tecnología y Transferencia de Conocimiento', 'Alumnas de bachillerato exponiendo cómo las universidades pueden transferir datos verificables para solucionar problemas locales.', 'Ciencia & Educación'),
+    ('dia4/Dia4 (28).jpg', 'Lectura de Acuerdos de la Mesa de Innovación #8', 'Estudiante leyendo el pliego de acuerdos y propuestas articuladas entre instituciones educativas y comunidades.', 'Concertación Juvenil'),
+    ('dia4/Dia4 (29).jpg', 'Mesa #2: Gestión del Agua, Contaminación y Saneamiento', 'Sustentación con micrófono de propuestas sobre comités de veedores, monitoreo científico del agua y reciclaje integral.', 'Gestión Hídrica'),
+    ('dia4/Dia4 (30).jpg', 'Panorámica Oficial del Auditorio Carmelita', 'Vista general del patio central cubierto colmado de estudiantes, directivos y docentes participando en el Foro 2026.', 'Panorámica General'),
+    ('dia4/Dia4 (31).jpg', 'Ponencia Magistral: Alineación Estratégica GEF-7 e INVEMAR', 'Expositor en atril presentando en pantalla digital el impacto institucional y la validación científica internacional.', 'Ciencia & Alianzas'),
+    ('dia4/Dia4 (32).jpg', 'Ponencia Estudiantil: Anamnesis y Valor del Ecosistema', 'Estudiante en atril exponiendo datos sobre la Reserva de la Biosfera, el sustento pesquero y el equilibrio climático.', 'Ponencias Juveniles'),
+    ('dia4/Dia4 (33).jpg', 'Ponencia Estudiantil: Sumidero de Carbono vs. Presión Humana', 'Exposición sobre las 528.600 hectáreas del complejo lagunar como captador de CO2 frente a la expansión agrícola e infraestructura.', 'Investigación Juvenil'),
+    ('dia4/Dia4 (34).jpg', 'Ponencia Estudiantil: Microplásticos y Comunidades Palafíticas', 'Alumna explicando el estudio biológico en peces (lisa, mojarra) y talleres participativos en Buenavista, Nueva Venecia y Tasajera.', 'Biología & Comunidad'),
+    ('dia4/Dia4 (35).jpg', 'Ponencia Estudiantil: El Motor del Carbono Azul', 'Disertación en atril explicando la tasa anual de secuestro de carbono de los bosques de manglar y su valor de mitigación climática.', 'Carbono Azul'),
+    ('dia4/Dia4 (36).jpg', 'Ponencia Estudiantil: Modelación Hidrodinámica HEC-RAS 1-D', 'Alumna exponiendo el modelo computacional 3D de flujo y comportamiento hídrico de los caños hacia la Ciénaga Grande.', 'Modelación Científica'),
+    ('dia4/Dia4 (37).jpg', 'Mesa de Honor de Ponentes Estudiantiles', 'Jóvenes expositores reunidos en la mesa principal con arreglo floral bajo los lemas: «¡Salvemos los Mangles!» y «Actúa con Compromiso».', 'Liderazgo Carmelita'),
+    ('dia4/Dia4 (38).jpg', 'Mensaje Directivo en el Atril Central', 'Docente directivo dirigiéndose a la comunidad educativa para destacar el sentido de pertenencia por el territorio caribeño.', 'Voz Directiva'),
+    ('dia4/Dia4 (39).jpg', 'Mesa Redonda: Articulación con Madres y Familias', 'Docente facilitadora y madres de familia debatiendo con estudiantes propuestas ambientales para aplicar desde el hogar.', 'Comunidad & Familia'),
+    ('dia4/Dia4 (40).jpg', 'Trabajo Colaborativo en Equipos de Bachillerato', 'Estudiantes organizados en mesas de trabajo revisando las preguntas orientadoras y construyendo consensos.', 'Trabajo en Equipo'),
+    ('dia4/Dia4 (41).jpg', 'Dinamización Pedagógica: «Somos Comunidad»', 'Docentes acompañando mesa de diálogo juvenil frente al mural escolar, fomentando la argumentación y la participación.', 'Formación Ciudadana'),
+    ('dia4/Dia4 (42).jpg', 'Mesa de Trabajo: Oportunidades y Empleo Sostenible', 'Estudiantes, acudiente y facilitador universitario debatiendo cómo generar ingresos sin degradar los recursos naturales.', 'Bioeconomía Práctica'),
+    ('dia4/Dia4 (43).jpg', 'Acompañamiento en la Redacción del Pliego Ambiental', 'Docente supervisando la redacción de propuestas de los estudiantes en papel kraft sobre el cuidado del medio ambiente.', 'Tutoría Docente'),
+    ('dia4/Dia4 (44).jpg', 'Panorámica de las Mesas de Trabajo en el Patio', 'Múltiples mesas redondas funcionando en simultáneo en el patio central con estudiantes de la Promo 2026 y bachillerato.', 'Mesas Simultáneas'),
+    ('dia4/Dia4 (45).jpg', 'Diálogo Intergeneracional y Asesoría Técnica', 'Docentes orientadores guiando a estudiantes en la estructura lógica de sus proyectos de conservación escolar.', 'Asesoría Pedagógica'),
+    ('dia4/Dia4 (46).jpg', 'Consolidación Colectiva del Pliego de Acuerdos', 'Docente y estudiantes dando cierre a la mesa redonda con la firma y redacción final de compromisos por la Ciénaga.', 'Consolidación Final')
 ]
 
 cards_html = []
