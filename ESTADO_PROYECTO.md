@@ -1,9 +1,15 @@
 # Continuidad del proyecto — IE El Carmen
 
-## Estado vigente — 18 de octubre de 2026, 09:41 (Colombia)
+## Estado vigente — 21 de octubre de 2026, 21:55 (Colombia)
 
-**Prioridad: obtener la aprobación definitiva de Google Workspace for Education Fundamentals gratuito. La web y Gmail ya funcionan.**
-Esta sección prevalece sobre los antecedentes siguientes. No repetir el registro, reparar DNS sin evidencia ni contratar una edición pagada.
+**Semana Cultural Carmelista 2026 (100% activa en Producción y Staging):**
+- **Día 2 (Feria de la Ciencia y Creatividad):** 100% verificado en producción con galería de 34 fotos optimizadas y enlaces al Día 3.
+- **Día 3 (Gran Desfile e Inauguración del Mundialito 2026):** Galería completa con 21 fotos destacadas (conversión HEIC a JPEG progresivo) y 12 videos de YouTube (8 panorámicos 16:9 y 4 Shorts 9:16) en producción (`https://semanacultural.elcarmencienaga.edu.co/dia3.html`).
+- **Mundialito Carmelista 2026 (Aplazamiento Oficial):** Partidos de jueves 22 y viernes 23 de octubre **aplazados hasta nueva orden**. Actualizado en producción y staging el afiche oficial con la franja transversal («Aplazados hasta nueva orden.»), tarjeta extraordinaria de alerta roja `#aviso-partidos-mundialito-2026` y banner de alerta en `dia3.html`.
+- **Día 4 (Gran Foro Salvemos la Ciénaga):** Portada y sección oficial con afiche vertical y versión cuadrada para redes/WhatsApp, botón de descarga directa y desglose de ponencias/exposiciones.
+- **Flujo de trabajo:** Staging-first riguroso (`lab.elcarmencienaga.edu.co` antes de `semanacultural.elcarmencienaga.edu.co`) verificado con HTTP 200 en cada ciclo.
+
+**Google Workspace for Education:** Prioridad de fondo: obtener la aprobación definitiva de Education Fundamentals gratuito (12 días de trial restantes). La web y Gmail ya funcionan.
 
 ### Resultado de la comprobación actual
 
