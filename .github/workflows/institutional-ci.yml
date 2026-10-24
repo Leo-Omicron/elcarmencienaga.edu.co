@@ -1,0 +1,20 @@
+name: Validate institutional release
+on:
+  pull_request:
+    paths: ['laboratorio/**', 'deploy/**', 'scripts/institutional_release.py', 'tests/test_institutional_release.py', '.github/workflows/institutional-*.yml']
+  push:
+    branches: [main]
+    paths: ['deploy/**', 'scripts/institutional_release.py', 'tests/test_institutional_release.py', '.github/workflows/institutional-*.yml']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p test_institutional_release.py -v
+      - name: Validate explicit release package without publishing
+        run: python scripts/institutional_release.py package --commit "$GITHUB_SHA" --bundle candidate
