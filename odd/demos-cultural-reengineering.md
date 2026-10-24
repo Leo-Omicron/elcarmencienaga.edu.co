@@ -43,3 +43,15 @@ DEMOS; registrar aprobación de Leo para preparar después la promoción a Labor
 Mantener la misma versión candidata en cada etapa, registrar SHA y evidencias, y
 promover a Producción únicamente tras nueva aprobación. Reversión: revertir este commit
 y comprobar el contenido que efectivamente publicó Actions. No copiar toda la raíz web.
+
+## Evidencia de publicación inicial
+
+Commit `22ba9410012ea45fa06f7ee4cb37ba7990c0ed65`, PR #4.
+Actions run `40135682772`: completed/success. Las siete páginas públicas respondieron
+HTTP 200 y coincidieron byte por byte con los HTML preparados. El afiche público se
+visualizó correctamente, pero sus bytes difieren del original; no se atribuye una causa.
+En navegador de escritorio se verificaron portada, cierre, apertura del visor del Día 5,
+zoom y flecha derecha (Foto 1 → Foto 2). Ajuste posterior: proporción de imagen del cierre,
+contraste del botón, título de admisiones, eliminación de franja DEMOS duplicada y
+validación automática en Actions. Revisión específica en viewport móvil pendiente;
+la reproducción de todos los videos no se certifica. No se promovió a otros entornos.
