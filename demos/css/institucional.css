@@ -1,0 +1,419 @@
+/**
+ * Sistema de Diseño Institucional — I.E. El Carmen (Ciénaga, Magdalena)
+ * DANE: 147189001160 · Lema: "Educando para Preservar y Emprender"
+ *
+ * Utilizado en semanacultural, laboratorio y demos para garantizar coherencia visual,
+ * contraste WCAG AA, tipografía oficial y componentes modulares.
+ */
+
+:root {
+  /* Paleta Oficial */
+  --primary: #191253;
+  --primary-dark: #0d0933;
+  --primary-light: #2c2282;
+  --accent-green: #10b981;
+  --accent-green-dark: #059669;
+  --accent-gold: #f59e0b;
+  --accent-gold-light: #fef3c7;
+  --accent-wine: #7f1d1d;
+  --accent-red: #e11d48;
+  --accent-blue: #0284c7;
+
+  /* Superficies y Neutros */
+  --bg-surface: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-subtle: #e2e8f0;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(25, 18, 83, 0.04);
+  --shadow-md: 0 8px 24px rgba(25, 18, 83, 0.08);
+  --shadow-lg: 0 20px 35px -8px rgba(25, 18, 83, 0.16);
+
+  /* Radios de borde */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Tipografías */
+  --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.container {
+  width: min(1200px, 100% - 2.5rem);
+  margin-inline: auto;
+}
+
+/* ==========================================================================
+   Top Ribbon / Avisos Superiores
+   ========================================================================== */
+.top-ribbon {
+  background: linear-gradient(90deg, #191253 0%, #1e1b4b 50%, #064e3b 100%);
+  color: #e2e8f0;
+  font-size: 0.82rem;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--accent-gold);
+}
+
+.top-ribbon .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ==========================================================================
+   Header & Navegación Institucional
+   ========================================================================== */
+.header-institucional {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0.85rem;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  box-shadow: 0 0 0 2px var(--accent-green);
+}
+
+.brand-text h2 {
+  font-size: 1.15rem;
+  color: var(--primary);
+  letter-spacing: -0.01em;
+}
+
+.brand-text p {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a:hover {
+  color: var(--accent-green-dark);
+}
+
+/* ==========================================================================
+   Botones y Badges
+   ========================================================================== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: #ffffff;
+}
+
+.btn-green {
+  background: var(--accent-green-dark);
+}
+
+.btn-green:hover {
+  background: #047857;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-gold {
+  background: var(--accent-gold-light);
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.badge-green {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.badge-blue {
+  background: #e0e7ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+}
+
+/* ==========================================================================
+   Hero Section Institucional
+   ========================================================================== */
+.hero-institucional {
+  padding-block: 4rem 3rem;
+  background: linear-gradient(180deg, rgba(25, 18, 83, 0.03) 0%, transparent 100%);
+  text-align: center;
+}
+
+.hero-institucional h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.hero-institucional p {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+/* ==========================================================================
+   Rejillas y Tarjetas
+   ========================================================================== */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-block: 2.5rem;
+}
+
+.card-institucional {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-institucional:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-gold);
+}
+
+.card-institucional h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: var(--primary);
+}
+
+.card-institucional p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ==========================================================================
+   Contenedores de Video Responsivos
+   ========================================================================== */
+.video-responsive-16-9 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: #000000;
+  margin-bottom: 1rem;
+}
+
+.video-responsive-16-9 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-responsive-9-16 {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  padding-bottom: 177.77%; /* 9:16 Shorts */
+  height: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: #000000;
+  margin-inline: auto;
+}
+
+.video-responsive-9-16 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ==========================================================================
+   Alertas Institucionales
+   ========================================================================== */
+.alerta-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-block: 1.5rem;
+}
+
+.alerta-verde {
+  background: linear-gradient(135deg, #ecfdf5 0%, #dbeafe 100%);
+  border: 1.5px solid var(--accent-green);
+  color: #065f46;
+}
+
+.alerta-roja {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  border: 1.5px solid #f87171;
+  color: #991b1b;
+}
+
+/* ==========================================================================
+   Galería de Imágenes con Efecto Zoom
+   ========================================================================== */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-block: 2rem;
+}
+
+.galeria-item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.galeria-item:hover img {
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   Footer Institucional
+   ========================================================================== */
+.footer-institucional {
+  background: var(--primary-dark);
+  color: #94a3b8;
+  padding-block: 3.5rem 2rem;
+  border-top: 4px solid var(--accent-gold);
+  margin-top: 5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-institucional h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+}
