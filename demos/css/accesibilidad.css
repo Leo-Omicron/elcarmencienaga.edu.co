@@ -29,3 +29,5 @@ section[id]{scroll-margin-top:110px}
 .is-zoomed .lightbox-img-wrap{overflow:auto;max-height:75vh}
 .is-zoomed #lightbox-img{max-width:none;max-height:none;width:150%;height:auto;cursor:zoom-out}
 .day-hero .hero-card{max-width:850px;margin:auto}
+
+.closure-section h2{font-size:clamp(2rem,3.2vw,3rem);line-height:1.1;margin:1rem 0}.closure-photo{height:auto;aspect-ratio:4/3}.closure-section .btn-primary{background:var(--accent-gold);color:var(--primary-dark)}
