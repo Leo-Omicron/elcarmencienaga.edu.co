@@ -1,0 +1,144 @@
+name: Protected institutional production
+run-name: Producción · ${{ inputs.operation }} · Laboratorio ${{ inputs.lab_run_id }}
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Operación solicitada
+        type: choice
+        options: [promote, rollback]
+        required: true
+      lab_run_id:
+        description: ID de la ejecución exitosa de Laboratorio (para promover)
+        type: string
+        required: false
+      rollback_target:
+        description: Destino de la reversión
+        type: choice
+        options: [portal-cultural, portal-principal]
+        required: true
+      rollback_release:
+        description: ID del despliegue productivo que se desea revertir
+        type: string
+        required: false
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: institutional-sites
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/main' && vars.INSTITUTIONAL_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      target: ${{ steps.selection.outputs.target }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify the production approval gate exists
+        run: python scripts/institutional_release.py check-protection
+      - name: Retrieve only a successful Laboratorio candidate
+        if: inputs.operation == 'promote'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LAB_RUN_ID: ${{ inputs.lab_run_id }}
+        run: |
+          python -c "import os; assert os.environ['LAB_RUN_ID'].isdigit(), 'Invalid run ID'"
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$LAB_RUN_ID" > run.json
+          python - <<'PY'
+          import json
+          r=json.load(open('run.json'))
+          assert r['conclusion']=='success' and r['head_branch']=='main'
+          assert r['event'] in ('push','workflow_dispatch')
+          assert r['path']=='.github/workflows/institutional-laboratorio.yml'
+          PY
+          gh run download "$LAB_RUN_ID" --repo "$GITHUB_REPOSITORY" --name institutional-candidate --dir candidate
+          python - <<'PY'
+          import json,sys
+          sys.path.insert(0,'scripts')
+          from institutional_release import load_bundle,digest
+          m,_=load_bundle('candidate')
+          r=json.load(open('run.json')); receipt=json.load(open('candidate/receipt.json'))
+          assert m['commit']==r['head_sha']==receipt['commit']
+          assert receipt['target']=='laboratorio'
+          assert receipt['manifest_sha256']==digest(open('candidate/manifest.json','rb').read())
+          PY
+      - id: selection
+        name: Show the exact destination and version before approval
+        env:
+          OPERATION: ${{ inputs.operation }}
+          ROLLBACK_TARGET: ${{ inputs.rollback_target }}
+          ROLLBACK_RELEASE: ${{ inputs.rollback_release }}
+        run: |
+          python - <<'PY'
+          import json,os,re
+          op=os.environ['OPERATION']
+          if op=='promote':
+              m=json.load(open('candidate/manifest.json')); target=m['target']
+              summary=f"Promover {m['commit']} a {target}. Archivos: {len(m['files'])}."
+          else:
+              target=os.environ['ROLLBACK_TARGET']
+              assert target in ('portal-cultural','portal-principal')
+              assert re.fullmatch('[A-Za-z0-9_-]{1,100}',os.environ['ROLLBACK_RELEASE'])
+              summary=f"Revertir {os.environ['ROLLBACK_RELEASE']} en {target}."
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write('target='+target+'\n')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f: f.write('## Solicitud de Producción\n'+summary+'\nRequiere aprobación en el entorno produccion.\n')
+          PY
+      - if: inputs.operation == 'promote'
+        uses: actions/upload-artifact@v4
+        with:
+          name: selected-production-candidate
+          path: candidate/
+          retention-days: 30
+  publish:
+    needs: prepare
+    environment:
+      name: produccion
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - if: inputs.operation == 'promote'
+        uses: actions/download-artifact@v4
+        with:
+          name: selected-production-candidate
+          path: candidate/
+      - name: Recheck production protection before using credentials
+        run: python scripts/institutional_release.py check-protection
+      - run: python -m pip install 'paramiko==4.0.0'
+      - name: Prepare protected SSH material
+        env:
+          SSH_KEY: ${{ secrets.IEEC_SFTP_KEY }}
+          KNOWN_HOSTS: ${{ secrets.IEEC_KNOWN_HOSTS }}
+        run: |
+          umask 077
+          test -n "$SSH_KEY" && test -n "$KNOWN_HOSTS"
+          printf '%s\n' "$SSH_KEY" > "$RUNNER_TEMP/ieec-key"
+          printf '%s\n' "$KNOWN_HOSTS" > "$RUNNER_TEMP/ieec-known-hosts"
+      - name: Execute the approved operation
+        env:
+          IEEC_SFTP_HOST: ${{ secrets.IEEC_SFTP_HOST }}
+          IEEC_SFTP_PORT: ${{ secrets.IEEC_SFTP_PORT }}
+          IEEC_SFTP_USER: ${{ secrets.IEEC_SFTP_USER }}
+          IEEC_SFTP_KEY_FILE: ${{ runner.temp }}/ieec-key
+          IEEC_KNOWN_HOSTS_FILE: ${{ runner.temp }}/ieec-known-hosts
+          OPERATION: ${{ inputs.operation }}
+          TARGET: ${{ needs.prepare.outputs.target }}
+          ROLLBACK_RELEASE: ${{ inputs.rollback_release }}
+          RELEASE_ID: ${{ github.run_id }}-${{ github.run_attempt }}-${{ github.sha }}
+        run: |
+          if [ "$OPERATION" = promote ]; then
+            python scripts/institutional_release.py deploy --bundle candidate --target "$TARGET" --release "$RELEASE_ID"
+            echo "Despliegue productivo: $RELEASE_ID · Destino: $TARGET" >> "$GITHUB_STEP_SUMMARY"
+          else
+            python scripts/institutional_release.py rollback --target "$TARGET" --release "$ROLLBACK_RELEASE"
+            echo "Reversión completada: $ROLLBACK_RELEASE · Destino: $TARGET" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - if: always()
+        run: rm -f "$RUNNER_TEMP/ieec-key" "$RUNNER_TEMP/ieec-known-hosts"

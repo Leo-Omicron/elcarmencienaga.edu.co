@@ -1,0 +1,61 @@
+name: Publish institutional Laboratorio
+on:
+  push:
+    branches: [main]
+    paths: ['laboratorio/**', 'deploy/release.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: institutional-sites
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main' && vars.INSTITUTIONAL_DEPLOY_ENABLED == 'true'
+    environment:
+      name: laboratorio
+      url: https://lab.elcarmencienaga.edu.co/
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p test_institutional_release.py -v
+      - run: python scripts/institutional_release.py package --commit "$GITHUB_SHA" --bundle candidate
+      - name: Confirm a publication was explicitly selected
+        run: python -c "import json; assert json.load(open('candidate/manifest.json'))['files'], 'No institutional publication selected'"
+      - run: python -m pip install 'paramiko==4.0.0'
+      - name: Prepare SSH material privately
+        env:
+          SSH_KEY: ${{ secrets.IEEC_SFTP_KEY }}
+          KNOWN_HOSTS: ${{ secrets.IEEC_KNOWN_HOSTS }}
+        run: |
+          umask 077
+          test -n "$SSH_KEY" && test -n "$KNOWN_HOSTS"
+          printf '%s\n' "$SSH_KEY" > "$RUNNER_TEMP/ieec-key"
+          printf '%s\n' "$KNOWN_HOSTS" > "$RUNNER_TEMP/ieec-known-hosts"
+      - name: Backup, publish only selected files and verify Laboratorio
+        env:
+          IEEC_SFTP_HOST: ${{ secrets.IEEC_SFTP_HOST }}
+          IEEC_SFTP_PORT: ${{ secrets.IEEC_SFTP_PORT }}
+          IEEC_SFTP_USER: ${{ secrets.IEEC_SFTP_USER }}
+          IEEC_SFTP_KEY_FILE: ${{ runner.temp }}/ieec-key
+          IEEC_KNOWN_HOSTS_FILE: ${{ runner.temp }}/ieec-known-hosts
+          RELEASE_ID: ${{ github.run_id }}-${{ github.run_attempt }}-${{ github.sha }}
+        run: python scripts/institutional_release.py deploy --bundle candidate --target laboratorio --release "$RELEASE_ID"
+      - name: Preserve the exact verified candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: institutional-candidate
+          path: candidate/
+          retention-days: 30
+          if-no-files-found: error
+      - name: Publication summary
+        run: |
+          echo '## Laboratorio verificado' >> "$GITHUB_STEP_SUMMARY"
+          echo "Versión: $GITHUB_SHA · Ejecución: $GITHUB_RUN_ID" >> "$GITHUB_STEP_SUMMARY"
+          echo 'Revisar https://lab.elcarmencienaga.edu.co/ antes de solicitar promoción.' >> "$GITHUB_STEP_SUMMARY"
+      - if: always()
+        run: rm -f "$RUNNER_TEMP/ieec-key" "$RUNNER_TEMP/ieec-known-hosts"

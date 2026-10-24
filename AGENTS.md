@@ -7,3 +7,5 @@
 5. **Regla de Diseño e Interfaz (UI):** Consultar `DESIGN_SYSTEM.md` antes de crear o modificar páginas o componentes en `demos/`, `laboratorio/` o producción. NUNCA inventar paletas moradas genéricas ni estilos en línea arbitrarios; enlazar la hoja de estilos institucional `css/institucional.css` y reutilizar las clases y tokens oficiales (`--primary: #191253`, `--accent-green: #10b981`, `--accent-gold: #f59e0b`).
 
 No versionar recuerdos crudos, bases, respaldos, logs ni secretos. No prometer continuidad sin pérdidas ni dar por desplegada una configuración sin verificarla.
+
+6. **Separación de entornos:** DEMOS es experimental e independiente. Nunca promover DEMOS a Laboratorio/Producción. Encargos institucionales: PR → merge en main → Laboratorio; promoción de la versión exacta solo tras aprobación de Leo y aprobación protegida de GitHub. Consultar `deploy/README.md`. No activar ni publicar como prueba de configuración sin un encargo explícito.

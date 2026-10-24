@@ -62,7 +62,7 @@ Revisar si la otra máquina hizo cambios recientes antes de empezar a escribir c
 
 ### REGLA INQUEBRANTABLE: Staging Obligatorio (`lab`) antes de Producción
 Todo cambio o nueva funcionalidad sigue rigurosamente el ciclo de staging a producción:
-1. **Fase Laboratorio:** Cualquier ajuste de código, copy, diseño o multimedia se implementa primero en `laboratorio/` y se despliega en `lab.elcarmencienaga.edu.co` (o en `demos/` → `demos.elcarmencienaga.edu.co` para experimentos rápidos desde la nube).
+1. **Fase Laboratorio:** Los encargos institucionales se implementan en `laboratorio/` y se publican en `lab.elcarmencienaga.edu.co` tras revisar y fusionar el PR. **DEMOS es independiente**: sus experimentos no se promueven ni participan en este flujo. Implementación y activación controlada: `deploy/README.md`.
 2. **Revisión y Aprobación de Leo:** El agente NO promueve cambios a entornos activos sin que Leo los revise visualmente y otorgue su aprobación explícita.
 3. **Promoción a Portal Activo:** Únicamente tras la aprobación se sincroniza hacia `semanacultural/` o producción y se despliega.
 4. **Cero cambios en caliente:** Nunca editar directamente el sitio público sin validación previa en laboratorio.
