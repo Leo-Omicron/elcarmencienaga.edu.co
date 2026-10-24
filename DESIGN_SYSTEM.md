@@ -1,195 +1,87 @@
-# Sistema de Diseño y Guía de Estilos — I.E. El Carmen
+# Sistema de diseño institucional — referencia Semana Cultural 2026
 
-Este documento define la **identidad visual, tokens CSS y componentes estándar** de la Institución Educativa El Carmen (Ciénaga, Magdalena, Colombia). 
+## Alcance y autoridad
 
-> **DIRECTRIZ PARA AGENTES DE IA (Google Jules, Codex, Antigravity):**
-> Al crear páginas, secciones o componentes en `demos/`, `laboratorio/` o producción, **NO inventes estilos CSS en línea ni paletas moradas genéricas**. Enlaza siempre `css/institucional.css` y reutiliza las clases y componentes documentados en esta guía.
+La reingeniería del 24 de octubre de 2026 toma como referencia explícita la portada de
+https://semanacultural.elcarmencienaga.edu.co/ y `dia1.html` a `dia5.html`.
+Esta edición se aplica **solo a `demos/`**. Los estilos de Laboratorio, Semana Cultural
+y la raíz de producción conservan su comportamiento hasta una promoción aprobada.
+La petición actual autoriza reemplazar las reglas anteriores de DEMOS por estos patrones.
 
----
+## Fuente de verdad
 
-## 1. Identidad Institucional y Tokens
+`demos/css/institucional.css` contiene los tokens y la composición original de la portada.
+`demos/css/dia1.css` … `dia5.css` conservan las variantes de cada jornada, después de
+la hoja base. `demos/css/accesibilidad.css` se carga al final para navegación, foco,
+movimiento reducido y los módulos de cierre/noticias/admisiones.
+No usar estilos decorativos inline. Las clases `index-detail-*` y `diaN-detail-*`
+son declaraciones de la referencia extraídas sin cambiar sus valores; no son una
+API para nuevos componentes. Nuevos componentes deben usar nombres semánticos.
 
-- **Institución:** Institución Educativa El Carmen (Ciénaga, Magdalena).
-- **Código DANE:** 147189001160 (Resolución 931 de 2023).
-- **Lema Institucional:** «Educando para Preservar y Emprender».
-- **Tipografías Oficiales:**
-  - Títulos y encabezados: `Outfit` (pesos 600, 700, 800).
-  - Textos y cuerpo: `Plus Jakarta Sans` (pesos 400, 500, 600, 700).
+## Tokens observados
 
-### Paleta de Colores Oficiales
-
-| Variable CSS | Hexadecimal | Nombre / Uso |
+| Token | Valor | Uso |
 |---|---|---|
-| `--primary` | `#191253` | Azul profundo carmelita (Color principal de marca y encabezados) |
-| `--primary-dark` | `#0d0933` | Azul noche profundo (Footers y ribbons) |
-| `--accent-green` | `#10b981` | Verde esperanza (Bordes activos, badges de éxito, botones) |
-| `--accent-green-dark` | `#059669` | Verde esmeralda institucional (Hover de botones y enlaces) |
-| `--accent-gold` | `#f59e0b` | Oro / Mostaza (Detalles destacados, franjas, líneas de acento) |
-| `--accent-gold-light` | `#fef3c7` | Fondo suave de alertas y badges dorados |
-| `--accent-wine` | `#7f1d1d` | Vinotinto oficial (Color del pantalón del uniforme masculino) |
-| `--bg-surface` | `#f8fafc` | Fondo neutro de la página (Gris ultra claro) |
-| `--bg-card` | `#ffffff` | Blanco puro para tarjetas elevadas |
+| `--primary` | `#191253` | Azul profundo, títulos y botones principales |
+| `--primary-dark` | `#0d0933` | Profundidad y superficies oscuras |
+| `--primary-light` | `#2c2282` | Variante de marca presente en la referencia |
+| `--accent-green` | `#10b981` | Comunidad, contacto, emprendimiento |
+| `--accent-green-dark` | `#059669` | Estados y enlaces |
+| `--accent-gold` | `#f59e0b` | Aniversario, énfasis, contornos |
+| `--accent-gold-light` | `#fef3c7` | Badges y superficies suaves |
+| `--accent-red` | `#e11d48` | Celebración, badges y variante del Día 5 |
+| `--accent-blue` | `#0284c7` | Cobertura audiovisual y deporte |
+| `--bg-surface` | `#f8fafc` | Fondo general |
+| `--bg-card` | `#ffffff` | Tarjetas y encabezado |
+| `--text-main` | `#0f172a` | Texto principal |
+| `--text-muted` | `#64748b` | Texto secundario |
+| `--border-subtle` | `#e2e8f0` | Separadores |
 
----
+Las variantes de jornada conservan sus tokens adicionales y sombras originales.
+No sustituir el azul por un morado genérico. Los acentos de colores encontrados en
+la referencia sí forman parte del diseño autorizado, incluido el botón de Instagram.
 
-## 2. Cómo Enlazar la Hoja de Estilos
+## Tipografía, espacio y geometría
 
-En el `<head>` de cualquier documento HTML nuevo:
+- **Outfit** para títulos; **Plus Jakarta Sans** para cuerpo y navegación, con fallback sans-serif.
+- Contenedor: `min(1200px, 100% - 2.5rem)` en portada; respetar variantes de galería.
+- Radios: 8, 16, 24 píxeles y 9999 píxeles para píldoras.
+- Sombras suaves de marca, elevación al hover, transiciones de 0.25 segundos.
+- Cabecera blanca fija, escudo circular real, marca y navegación; franja superior degradada.
+- Hero de dos columnas, título grande azul/dorado, fondo de halos suaves y afiche íntegro.
+- Móvil: columnas apiladas, navegación de jornadas visible, botones envolventes.
 
-```html
-<!-- Google Fonts Oficiales -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+## Componentes
 
-<!-- Estilos Institucionales Compartidos -->
-<link rel="stylesheet" href="css/institucional.css">
-```
+| Clases | Contrato |
+|---|---|
+| `.official-header.header-institucional`, `.nav-wrapper`, `.brand-group`, `.brand-logo` | Encabezado blanco de la referencia, nunca asumir fondo azul por una guía antigua |
+| `.env-banner`, `.env-link` | Identificar DEMOS y enlazar al portal publicado |
+| `.hero`, `.hero-grid`, `.hero-title`, `.hero-poster-card` | Composición original de portada |
+| `.day-hero`, `.badge-pill`, `.breadcrumb-nav` | Hero y ruta de cada galería |
+| `.btn-primary`, `.btn-secondary`, `.btn-nav` | Botones de la referencia, foco visible, texto descriptivo |
+| `.day-pill-card`, `.days-grid` | Accesos nativos a las cinco galerías |
+| `.day-showcase-card`, `.day-showcase-body` | Evento en dos columnas con inversión alternada |
+| `.news-card`, `.news-card-img`, `.news-card-content`, `.news-grid` | Noticias con fotografía y acceso a memoria |
+| `.photo-card`, `.photos-grid`, `.photo-frame` | Muestra fotográfica, acceso por ratón, Enter y Espacio |
+| `.lightbox-*`, `.is-zoomed` | Diálogo nativo, flechas, Escape, zoom y retorno al activador |
+| `.closure-section`, `.closure-grid`, `.closure-stats` | Cierre con Santa Misa del 23/10/2026, imagen real y agradecimiento |
+| `.admissions-question` | Preguntas desplegables; orientación sin recopilar datos |
+| `.official-footer.footer-institucional` | Pie heredado del portal, identificado como DEMOS |
 
----
+## Contenido y accesibilidad
 
-## 3. Catálogo de Componentes Estándar
+Preservar los afiches y las fotografías reales, sus proporciones y los enlaces a álbumes
+y YouTube. La fuente tiene 12 fotos destacadas en el Día 5 (no confundir con el total del álbum).
+El cierre es una memoria, no una convocatoria futura. No mantener un contador a cero.
+No inventar cupos, fechas de matrícula ni requisitos. Mantener `noindex,nofollow` en DEMOS.
+Usar salto al contenido, landmarks, foco visible, texto alternativo y movimiento reducido.
+Los iframes se cargan de forma diferida; su disponibilidad depende de YouTube.
 
-### A. Encabezado Institucional (Header)
-```html
-<header class="header-institucional">
-  <div class="container nav-wrapper">
-    <div class="brand-group">
-      <img src="assets/escudo.png" alt="Escudo IE El Carmen" class="brand-logo">
-      <div class="brand-text">
-        <h2>I.E. El Carmen</h2>
-        <p>Ciénaga, Magdalena · DANE 147189001160</p>
-      </div>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#noticias">Noticias</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto" class="btn-primary">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-```
+## Promoción
 
-### B. Sección Hero
-```html
-<section class="hero-institucional">
-  <div class="container">
-    <span class="badge badge-gold">Portal Oficial de Demostración</span>
-    <h1>Educando para Preservar y Emprender</h1>
-    <p>Formación integral con rigor académico, compromiso ambiental y liderazgo comunitario en Ciénaga.</p>
-  </div>
-</section>
-```
-
-### C. Tarjeta de Noticias o Eventos (Cards Grid)
-```html
-<div class="grid-cards">
-  <article class="card-institucional">
-    <div>
-      <span class="badge badge-green">Evento Académico</span>
-      <h3>Gran Foro Salvemos la Ciénaga</h3>
-      <p>Espacio de debate ambiental y científico liderado por docentes y estudiantes de la institución.</p>
-    </div>
-    <a href="#" class="btn-primary btn-green">Leer Más →</a>
-  </article>
-</div>
-```
-
-### D. Reproductor de Video de YouTube (16:9 Panorámico y 9:16 Shorts)
-```html
-<!-- Video Panorámico 16:9 -->
-<div class="video-responsive-16-9">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video Institucional" allowfullscreen></iframe>
-</div>
-
-<!-- Video Vertical Shorts 9:16 -->
-<div class="video-responsive-9-16">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Short Institucional" allowfullscreen></iframe>
-</div>
-```
-
-### E. Cajas de Alerta
-```html
-<!-- Alerta Verde / Éxito o Noticia Positiva -->
-<div class="alerta-box alerta-verde">
-  <div>
-    <strong>⚽ Vuelve el Mundialito Carmelista</strong>
-    <p>Programación oficial de partidos intercursos disponible para la comunidad.</p>
-  </div>
-  <a href="#" class="btn-primary btn-green">Ver Fixture ↓</a>
-</div>
-
-<!-- Alerta Roja / Aviso Urgente o Aplazamiento -->
-<div class="alerta-box alerta-roja">
-  <div>
-    <strong>🚨 Comunicado de Última Hora</strong>
-    <p>Jornada suspendida temporalmente por disposición institucional.</p>
-  </div>
-</div>
-```
-
-### F. Pie de Página Institucional (Footer)
-```html
-<footer class="footer-institucional">
-  <div class="container footer-grid">
-    <div>
-      <h4>Institución Educativa El Carmen</h4>
-      <p>Ciénaga, Magdalena · Colombia</p>
-      <p>Código DANE: 147189001160</p>
-      <p style="margin-top: 0.5rem; color: #f59e0b; font-weight: 600;">«Educando para Preservar y Emprender»</p>
-    </div>
-    <div>
-      <h4>Sedes Institucionales</h4>
-      <p>• Sede Principal</p>
-      <p>• Sede Guillermo F. Morán</p>
-    </div>
-    <div>
-      <h4>Contacto</h4>
-      <p>contacto@elcarmencienaga.edu.co</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 Institución Educativa El Carmen. Todos los derechos reservados.</p>
-  </div>
-</footer>
-```
-# Compatibilidad de clases oficiales
-
-# Design System - Institución Educativa El Carmen de Ciénaga
-
-This document defines the official UI components and styles for the web properties of the institution.
-
-## 1. Colors
-*   **Deep Blue (Primary):** `#191253`
-*   **Green (Secondary):** `#10b981` (Accent: `#43a447`)
-*   **Gold (Highlight):** `#f59e0b` (Accent: `#ffe500`)
-*   **Text (Dark):** `#333333`
-*   **Background (Light):** `#f9fafb`
-*   **White:** `#ffffff`
-
-**Rule:** Do not use inline purple styles under any circumstances.
-
-## 2. Components
-
-### 2.1 Official Header (`.official-header`)
-*   **Background:** Deep Blue (`#191253`)
-*   **Content:** Must include the institution's shield on the left and the name "I.E. El Carmen de Ciénaga" on the right (or next to it).
-*   **Navigation:** Links should be white and hover to Gold (`#ffe500`).
-
-### 2.2 News Section (`.news-section`)
-*   **Background:** Light gray/white.
-*   **Title:** Deep Blue, centered.
-*   **Cards (`.news-card`):** White background, subtle shadow, rounded corners. Include an image, title, excerpt, and a "Read More" button in Green.
-
-### 2.3 YouTube Video Player (`.video-container`)
-*   **Responsive Wrapper:** A wrapper to make the `iframe` responsive (16:9 aspect ratio).
-*   **Container:** Should have a subtle border or shadow reflecting institutional colors.
-
-## Extensiones DEMOS
-
-Las clases `.official-header` y `.header-institucional`, y `.news-card` y `.card-institucional`, son variantes compatibles de la hoja institucional. DEMOS mantiene esa hoja como única fuente de CSS, sin estilos inline.
-
-El visor utiliza `.gallery-dialog`, `.gallery-toolbar`, `.gallery-image` y `.gallery-link`, con tokens oficiales, diálogo nativo, navegación por flechas y retorno de foco. `.section-intro`, `.skip-link` y `.admissions-question` completan la composición y accesibilidad. Los textos de botones verdes usan `--primary-dark` para contraste; los badges usan `--primary`. Las animaciones respetan `prefers-reduced-motion`.
+Trabajar mediante PR hacia `main`. Una rama `demos/**` activa el despliegue **solo de DEMOS**
+según el workflow existente. La revisión visual de Leo precede a cualquier promoción a
+Laboratorio; una aprobación posterior precede a Producción. No sincronizar directorios
+completos ni cambiar DNS para promover esta propuesta. Revertir el commit permite recuperar
+la versión anterior de DEMOS; verificar el contenido después del despliegue.
