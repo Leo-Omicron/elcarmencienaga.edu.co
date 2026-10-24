@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Sistema de Diseño y Guía de Estilos — I.E. El Carmen
 
 Este documento define la **identidad visual, tokens CSS y componentes estándar** de la Institución Educativa El Carmen (Ciénaga, Magdalena, Colombia). 
@@ -157,7 +156,8 @@ En el `<head>` de cualquier documento HTML nuevo:
   </div>
 </footer>
 ```
-=======
+# Compatibilidad de clases oficiales
+
 # Design System - Institución Educativa El Carmen de Ciénaga
 
 This document defines the official UI components and styles for the web properties of the institution.
@@ -187,4 +187,9 @@ This document defines the official UI components and styles for the web properti
 ### 2.3 YouTube Video Player (`.video-container`)
 *   **Responsive Wrapper:** A wrapper to make the `iframe` responsive (16:9 aspect ratio).
 *   **Container:** Should have a subtle border or shadow reflecting institutional colors.
->>>>>>> origin/feat/website-laboratory-5574583775295612613
+
+## Extensiones DEMOS
+
+Las clases `.official-header` y `.header-institucional`, y `.news-card` y `.card-institucional`, son variantes compatibles de la hoja institucional. DEMOS mantiene esa hoja como única fuente de CSS, sin estilos inline.
+
+El visor utiliza `.gallery-dialog`, `.gallery-toolbar`, `.gallery-image` y `.gallery-link`, con tokens oficiales, diálogo nativo, navegación por flechas y retorno de foco. `.section-intro`, `.skip-link` y `.admissions-question` completan la composición y accesibilidad. Los textos de botones verdes usan `--primary-dark` para contraste; los badges usan `--primary`. Las animaciones respetan `prefers-reduced-motion`.
