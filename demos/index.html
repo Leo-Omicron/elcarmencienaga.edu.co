@@ -9,26 +9,39 @@
 </head>
 <body>
 
+    <!-- Top Ribbon Superior -->
+    <div class="top-ribbon">
+        <span class="lema">«Educando para Preservar y Emprender»</span>
+        <span>Ciénaga, Magdalena · DANE: 147189001160</span>
+    </div>
+
     <!-- Official Header Component -->
-    <header class="official-header">
-        <div class="header-brand">
-            <img src="assets/escudo.png" alt="Escudo I.E. El Carmen">
-            <h1>I.E. El Carmen de Ciénaga</h1>
+    <header class="header-institucional">
+        <div class="brand-group">
+            <img src="assets/escudo.png" alt="Escudo I.E. El Carmen" class="brand-logo" style="border: 2px solid var(--accent-green);">
+            <div class="brand-text">
+                <h2>Institución Educativa El Carmen</h2>
+                <p class="brand-text-subtitle">Resolución 931 de 2023 · Sede Principal y Sede GFM</p>
+            </div>
         </div>
-        <nav class="header-nav">
-            <ul>
+        <nav>
+            <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#noticias">Noticias</a></li>
                 <li><a href="#video">Multimedia</a></li>
+                <li><a href="#estudiantes" class="btn-primary header-btn">Portal Estudiantes</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section (Optional but good for a demo) -->
-        <section id="inicio" style="padding: 4rem 5%; text-align: center; background-color: var(--primary-blue); color: white;">
-            <h2>Bienvenidos a Nuestra Institución</h2>
-            <p style="font-size: 1.2rem; max-width: 600px; margin: 1rem auto;">Educando para preservar y emprender. Formamos líderes para el futuro de Colombia con excelencia académica y valores institucionales.</p>
+        <!-- Hero Section Institucional -->
+        <section id="inicio" class="hero-institucional">
+            <div class="hero-card">
+                <span class="badge badge-gold">Admisiones 2026 · Convocatoria Abierta</span>
+                <h1>Liderazgo, Ciencia y Convivencia en el Caribe Colombiano</h1>
+                <p>Formación integral con rigor académico, compromiso ambiental y liderazgo comunitario en Ciénaga.</p>
+            </div>
         </section>
 
         <!-- News Section Component -->
