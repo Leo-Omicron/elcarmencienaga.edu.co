@@ -10,7 +10,10 @@ document.querySelectorAll('[onclick^="openLightbox("]').forEach(card => {
   });
 });
 const zoomButton = document.querySelector('.lightbox-zoom-btn');
-zoomButton?.addEventListener('click', () => {
+zoomButton?.addEventListener('click', event => {
+  // El zoom cambia el rectángulo del diálogo antes de que el clic burbujee.
+  // Evitar que el detector de clic exterior cierre el visor por ese cambio.
+  event.stopPropagation();
   const zoomed = photoDialog.classList.toggle('is-zoomed');
   zoomButton.setAttribute('aria-pressed', String(zoomed));
   zoomButton.textContent = zoomed ? 'Reducir imagen −' : 'Ampliar imagen +';
