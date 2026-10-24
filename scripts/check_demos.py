@@ -34,7 +34,7 @@ for path,page in pages.items():
             dest=pages.get(target) or Page(target.read_text())
             assert unquote(u.fragment) in dest.ids, (path,ref)
     for script in page.scripts:
-        subprocess.run(['node','--check',str(path.parent/script)],check=True,capture_output=True)
+        subprocess.run(['node','--check',str(path.parent/urlsplit(script).path)],check=True,capture_output=True)
     if path.stem.startswith('dia'):
         script=path.parent/'js'/f'{path.stem}.js'
         harness='''const fs=require('node:fs'), vm=require('node:vm'), assert=require('node:assert/strict');
