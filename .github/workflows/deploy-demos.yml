@@ -1,0 +1,39 @@
+name: Deploy Demos Sandbox to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+      - feat/website-laboratory
+      - "demos/**"
+    paths:
+      - "demos/**"
+      - ".github/workflows/deploy-demos.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy-demos:
+    name: Publish demos/ to demos.elcarmencienaga.edu.co
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Deploy demos folder to Hostinger and purge cache
+        env:
+          HOSTINGER_API_TOKEN: ${{ secrets.HOSTINGER_API_TOKEN }}
+        run: |
+          if [ -z "$HOSTINGER_API_TOKEN" ]; then
+            echo "::warning::HOSTINGER_API_TOKEN secret is not configured yet in Settings -> Secrets and variables -> Actions. Skipping automatic deploy until the secret is added."
+            exit 0
+          fi
+          node scripts/deploy_demos.mjs
+
+      - name: Verify HTTP 200 on demos.elcarmencienaga.edu.co
+        run: |
+          curl -f -sI https://demos.elcarmencienaga.edu.co/ | head -n 5

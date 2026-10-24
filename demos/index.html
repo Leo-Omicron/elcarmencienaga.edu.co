@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Entorno de Demos en la Nube — I.E. El Carmen</title>
+  <style>
+    :root {
+      --bg-primary: #0f0b33;
+      --brand-blue: #191253;
+      --brand-green: #10b981;
+      --brand-gold: #f59e0b;
+      --brand-wine: #7f1d1d;
+      --surface: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--bg-primary) 0%, var(--brand-blue) 100%);
+      color: var(--surface);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(16, 185, 129, 0.18);
+      border: 1px solid var(--brand-green);
+      color: #a7f3d0;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--brand-green);
+      box-shadow: 0 0 8px var(--brand-green);
+    }
+
+    main {
+      max-width: 1100px;
+      width: 100%;
+      margin: 2.5rem auto;
+      padding: 0 2rem;
+      flex: 1;
+    }
+
+    .hero {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 1.25rem;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      margin-bottom: 0.75rem;
+      color: #ffffff;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      max-width: 720px;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--surface);
+      color: var(--text-main);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      border-top: 4px solid var(--brand-gold);
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      color: var(--brand-blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    code {
+      background: #f1f5f9;
+      color: var(--brand-blue);
+      padding: 0.15rem 0.4rem;
+      border-radius: 0.3rem;
+      font-size: 0.88rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 2rem;
+      font-size: 0.85rem;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <strong>Institución Educativa El Carmen</strong>
+      <span style="color: #94a3b8; font-size: 0.9rem; display: block;">Ciénaga, Magdalena · DANE 147189001160</span>
+    </div>
+    <span class="badge">
+      <span class="status-dot"></span>
+      Sandbox Cloud Activo · demos.elcarmencienaga.edu.co
+    </span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Entorno de Demos y Prototipos en la Nube</h1>
+      <p>
+        Espacio aislado para experimentar con prototipos web, componentes interactivos y despliegues continuos desde la nube sin afectar los entornos de <strong>Staging (lab)</strong> ni <strong>Producción</strong>.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>1. Aislamiento Garantizado</h2>
+        <p>
+          Este subdominio opera en su propio directorio <code>subdomains/demos/</code> y está excluido de los motores de búsqueda mediante <code>noindex</code>.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>2. Flujo GitHub → Hostinger</h2>
+        <p>
+          Preparado para recibir actualizaciones desde agentes en la nube (Google Jules, Firebase Studio o Codex Cloud) dentro de la carpeta <code>demos/</code>.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>3. Promoción Segura</h2>
+        <p>
+          Ningún cambio publicado aquí altera <code>elcarmencienaga.edu.co</code>, <code>semanacultural</code> ni <code>lab</code> hasta ser revisado y promovido explícitamente.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Institución Educativa El Carmen · «Educando para Preservar y Emprender» · Entorno técnico de demostración
+  </footer>
+</body>
+</html>

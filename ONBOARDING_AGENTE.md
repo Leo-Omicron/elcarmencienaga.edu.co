@@ -1,6 +1,6 @@
 # Guía de Incorporación y Protocolo Multi-Máquina (Antigravity IDE)
 
-Este documento define el rol, contexto institucional, arquitectura técnica y protocolo de sincronización para cualquier instancia de **Antigravity IDE** que trabaje en este repositorio (`Leo-Omicron/elcarmencienaga.edu.co`).
+Este documento define el rol, contexto institucional, arquitectura técnica y protocolo de sincronización para cualquier instancia de **Antigravity IDE** o agente en la nube que trabaje en este repositorio (`Leo-Omicron/elcarmencienaga.edu.co`).
 
 ---
 
@@ -38,6 +38,10 @@ Subdominios activos al día de hoy:
 3. **`cultura.elcarmencienaga.edu.co`**
    - *Ruta:* `subdomains/cultura/`
    - *Propósito:* Alias corto para WhatsApp/impresos que redirige mediante Apache 301 a `semanacultural`.
+4. **`demos.elcarmencienaga.edu.co`**
+   - *Ruta:* `subdomains/demos/`
+   - *Carpeta en el repositorio:* `demos/`
+   - *Propósito:* Sandbox aislado para prototipos y despliegues continuos desde la nube (Google Jules, Firebase Studio, Codex Cloud) mediante GitHub Actions (`.github/workflows/deploy-demos.yml`). Nunca afecta `lab`, `semanacultural` ni producción.
 
 ---
 
@@ -53,19 +57,19 @@ git pull origin <rama-activa>
 Revisar si la otra máquina hizo cambios recientes antes de empezar a escribir código o desplegar en Hostinger.
 
 ### Paso 2: Desarrollo y Pruebas Locales
-- Mantener las carpetas locales bien organizadas (`laboratorio/`, `semanacultural/`, etc.).
+- Mantener las carpetas locales bien organizadas (`laboratorio/`, `semanacultural/`, `demos/`, etc.).
 - Las credenciales y bases de datos privadas permanecen fuera del repositorio (ver `.gitignore`).
 
 ### REGLA INQUEBRANTABLE: Staging Obligatorio (`lab`) antes de Producción
 Todo cambio o nueva funcionalidad sigue rigurosamente el ciclo de staging a producción:
-1. **Fase Laboratorio:** Cualquier ajuste de código, copy, diseño o multimedia se implementa primero en `laboratorio/` y se despliega en `lab.elcarmencienaga.edu.co`.
+1. **Fase Laboratorio:** Cualquier ajuste de código, copy, diseño o multimedia se implementa primero en `laboratorio/` y se despliega en `lab.elcarmencienaga.edu.co` (o en `demos/` → `demos.elcarmencienaga.edu.co` para experimentos rápidos desde la nube).
 2. **Revisión y Aprobación de Leo:** El agente NO promueve cambios a entornos activos sin que Leo los revise visualmente y otorgue su aprobación explícita.
 3. **Promoción a Portal Activo:** Únicamente tras la aprobación se sincroniza hacia `semanacultural/` o producción y se despliega.
 4. **Cero cambios en caliente:** Nunca editar directamente el sitio público sin validación previa en laboratorio.
 
 ### Paso 3: Despliegue en Hostinger
 Para subir y actualizar sitios en Hostinger:
-1. Utilizar la herramienta MCP `hosting_deploy` con el dominio correspondiente y ruta local (o subida TUS según aplique).
+1. Utilizar la herramienta MCP `hosting_deploy` con el dominio correspondiente y ruta local (o subida TUS según aplique). En la nube, los pushes a `demos/` activan `.github/workflows/deploy-demos.yml` usando `scripts/deploy_demos.mjs` y el secreto `HOSTINGER_API_TOKEN`.
 2. Purgar caché con `hosting_cache_clear-website`.
 3. Verificar con `curl.exe -sI <URL>` que la respuesta sea HTTP 200 (o 301 si es redirección).
 
