@@ -342,3 +342,114 @@ a {
     justify-content: center;
   }
 }
+
+/* ==========================================================================
+   Nuevos estilos solicitados: Ribbon, Badges y Hero Flotante
+   ========================================================================== */
+
+/* Top Ribbon Superior */
+.top-ribbon {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  font-size: 0.85rem;
+  padding: 0.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-body);
+}
+
+.top-ribbon .lema {
+  font-style: italic;
+  color: var(--accent-gold-light);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.badge-gold {
+  background-color: var(--accent-gold-light);
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+}
+
+.badge-green {
+  background-color: #d1fae5; /* Tailwind green-100 */
+  color: var(--accent-green-dark);
+  border: 1px solid var(--accent-green);
+}
+
+/* Hero Section Institucional y Tarjeta Flotante */
+.hero-institucional {
+  background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-light) 100%);
+  padding: 6rem 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.hero-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 4rem 3rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  max-width: 800px;
+  width: 100%;
+  border-top: 4px solid var(--accent-gold);
+  position: relative;
+  z-index: 10;
+}
+
+.hero-card h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  line-height: 1.1;
+}
+
+.hero-card p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+/* Correcciones del Review: Estilos extra para quitar los inline styles y agregar animación */
+
+/* Brand group y subtítulo (para eliminar inline styles) */
+.brand-text-subtitle {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #cbd5e1;
+}
+
+/* Nav links hover en dorado */
+.nav-links a:hover {
+  color: var(--accent-gold);
+}
+
+/* Botón del header */
+.header-btn {
+  background-color: var(--accent-gold) !important;
+  color: var(--primary-dark) !important;
+}
+
+.header-btn:hover {
+  background-color: var(--highlight-gold) !important;
+  color: var(--primary-dark) !important;
+  transform: translateY(-2px);
+}
+.header-institucional {
+  border-bottom: 2px solid var(--accent-gold);
+}
