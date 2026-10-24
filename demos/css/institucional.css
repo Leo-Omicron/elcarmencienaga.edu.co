@@ -453,3 +453,63 @@ a {
 .header-institucional {
   border-bottom: 2px solid var(--accent-gold);
 }
+
+/* Componentes DEMOS: usan exclusivamente los tokens institucionales. */
+.skip-link {
+  position: fixed;
+  top: -10rem;
+  left: 1rem;
+  z-index: 2000;
+  padding: 1rem;
+  background: var(--bg-card);
+  color: var(--primary);
+}
+.skip-link:focus { top: 1rem; }
+:focus-visible { outline: 3px solid var(--primary); outline-offset: 4px; }
+.official-header :focus-visible,
+.official-footer :focus-visible { outline-color: var(--accent-gold); }
+section[id], main[id] { scroll-margin-top: 8rem; }
+.section-intro { max-width: 700px; margin: 0 auto 2rem; text-align: center; }
+.news-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.news-card-img { display: block; }
+.gallery-link { display: block; cursor: zoom-in; }
+.gallery-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(960px, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  overflow: auto;
+  padding: 1.5rem;
+  border: 1px solid var(--border-subtle);
+  border-top: 4px solid var(--accent-gold);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  color: var(--text-main);
+  box-shadow: var(--shadow-lg);
+}
+.gallery-dialog::backdrop { background: var(--primary-dark); opacity: 0.9; }
+.gallery-toolbar { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }
+.gallery-image { display: block; width: 100%; height: auto; max-height: 65dvh; object-fit: contain; margin-block: 1rem; }
+.admissions-question { padding: 1.25rem; border-bottom: 1px solid var(--border-subtle); }
+.admissions-question summary { font-weight: 700; color: var(--primary); cursor: pointer; }
+.admissions-question p { margin-top: 1rem; }
+/* Texto oscuro sobre los acentos claros para mantener contraste legible. */
+.btn-primary, .news-card-btn { color: var(--primary-dark); }
+.btn-primary:hover, .news-card-btn:hover { color: var(--primary-dark); }
+.badge-gold { color: var(--primary); }
+.badge-green { color: var(--primary); }
+@media (max-width: 768px) {
+  .official-header { position: relative; }
+  .top-ribbon { flex-direction: column; gap: 0.25rem; text-align: center; }
+  .brand-group { min-width: 0; }
+  .brand-text h2 { font-size: 1.05rem; }
+  .hero-institucional { padding: 3rem 5%; min-height: auto; }
+  .hero-card { padding: 2rem 1.25rem; }
+  .official-header .header-nav ul { gap: 0.75rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+  .news-card:hover, .btn-primary:hover { transform: none; }
+}
