@@ -1,5 +1,8 @@
 {
   "target": "portal-cultural",
-  "description": "Sin publicación institucional solicitada todavía",
-  "files": []
+  "description": "Prueba controlada IEEC-FLUJO-20261024-V1. Solo dos archivos independientes; promoción y reversión requieren aprobación posterior.",
+  "files": [
+    "prueba-flujo-20261024/index.html",
+    "prueba-flujo-20261024/css/institucional.css"
+  ]
 }

@@ -1,0 +1,10 @@
+:root { --primary: #191253; --accent-green: #10b981; --accent-gold: #f59e0b; --bg-surface: #f8fafc; --text-main: #0f172a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg-surface); color: var(--text-main); font-family: system-ui, sans-serif; line-height: 1.65; }
+header, main, footer { padding: 1.5rem; max-width: 760px; margin: auto; }
+header { color: var(--primary); border-bottom: 3px solid var(--accent-gold); }
+main { margin: 2rem auto; }
+h1 { color: var(--primary); line-height: 1.2; font-size: clamp(2rem, 6vw, 3rem); }
+.badge { display: inline-block; border-left: 4px solid var(--accent-green); padding-left: 1rem; font-weight: 700; }
+strong { overflow-wrap: anywhere; }
+footer { border-top: 1px solid #e2e8f0; font-size: .9rem; }
