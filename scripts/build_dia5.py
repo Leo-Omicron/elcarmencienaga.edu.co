@@ -924,16 +924,22 @@ def generate_dia5_html():
         </a>
       </div>
       <div class="nav-actions">
+        <a href="dia1.html" class="btn-back-nav" style="background: #eff6ff; color: #1e40af; border-color: #bfdbfe;" title="Ver Galería del Día 1">
+          <span>← Día 1</span>
+        </a>
+        <a href="dia2.html" class="btn-back-nav" style="background: #ecfdf5; color: #065f46; border-color: #a7f3d0;" title="Ver Galería del Día 2">
+          <span>← Día 2</span>
+        </a>
+        <a href="dia3.html" class="btn-back-nav" style="background: #fef3c7; color: #92400e; border-color: #fde68a;" title="Ver Galería del Día 3">
+          <span>← Día 3</span>
+        </a>
+        <a href="dia4.html" class="btn-back-nav" style="background: #d1fae5; color: #065f46; border-color: #a7f3d0;" title="Ver Galería del Día 4">
+          <span>← Día 4: Foro</span>
+        </a>
         <a href="index.html" class="btn-back-nav" style="background: #f1f5f9; color: var(--primary); border-color: #cbd5e1;">
-          <span>← Cronograma General</span>
+          <span>← Portal Semana Cultural</span>
         </a>
-        <a href="#videos" class="btn-back-nav" style="background: #ffe4e6; color: #9f1239; border-color: #fecdd3;">
-          <span>📺 Ver Videos (2)</span>
-        </a>
-        <a href="#fotos" class="btn-back-nav" style="background: #fef3c7; color: #92400e; border-color: #fde68a;">
-          <span>📸 Ver Fotos (12)</span>
-        </a>
-        <a href="{GOOGLE_PHOTOS_URL}" target="_blank" rel="noopener noreferrer" class="btn-back-nav" style="background: #eff6ff; color: #1e40af; border-color: #bfdbfe;">
+        <a href="{GOOGLE_PHOTOS_URL}" target="_blank" rel="noopener noreferrer" class="btn-back-nav" style="background: #eff6ff; color: #1e40af; border-color: #bfdbfe; font-weight: 700;">
           <span>☁️ Álbum Google Fotos ↗</span>
         </a>
       </div>

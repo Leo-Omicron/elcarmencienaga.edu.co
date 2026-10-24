@@ -2381,9 +2381,12 @@
             </a>
           </div>
         </div>
-        <img class="day-showcase-img contain-fit" src="afiche_misa.png"
-          alt="Invitación oficial a la Santa Misa y 53 Aniversario de la IE El Carmen"
-          style="background: #ffffff; padding: 1rem;">
+        <a href="dia5.html" title="Clic para entrar a la galería oficial del Día 5" style="display: block;">
+          <img class="day-showcase-img contain-fit" src="afiche_misa.png"
+            alt="Invitación oficial a la Santa Misa y 53 Aniversario de la IE El Carmen"
+            style="background: #ffffff; padding: 1rem; cursor: pointer; transition: transform 0.2s;"
+            onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
       </div>
     </div>
   </section>
@@ -2748,6 +2751,12 @@
                 <span class="badge-tag gold">🎂 53 Años de Historia</span>
                 <span class="badge-tag green">📍 Cancha Techada Sede Principal</span>
                 <span class="badge-tag">🎖️ Distinciones y Serenata</span>
+              </div>
+              <div style="margin-top: 0.75rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <a href="dia5.html" class="btn-primary"
+                  style="font-size: 0.85rem; padding: 0.5rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #ffffff; font-weight: 800;">
+                  📸 Ver Galería Oficial &amp; Videos (Día 5) ↗
+                </a>
               </div>
             </div>
           </div>
@@ -3618,11 +3627,12 @@
             <!-- Columna Izquierda: Tarjeta Solemne de la Santa Misa -->
             <div class="notice-flyer-col">
               <div class="notice-flyer-frame" style="background: #ffffff; padding: 0.5rem; text-align: center;">
-                <a href="afiche_misa.png" target="_blank"
-                  title="Clic para ver la tarjeta de la Santa Misa en tamaño completo">
+                <a href="dia5.html"
+                  title="Clic para ver la galería completa y videos del Día 5">
                   <img src="afiche_misa.png"
                     alt="Invitación Oficial a la Santa Misa - 53 Años IE El Carmen y en memoria de Arlin Jiménez"
-                    loading="lazy" style="max-height: 480px; object-fit: contain; margin: 0 auto;">
+                    loading="lazy" style="max-height: 480px; object-fit: contain; margin: 0 auto; cursor: pointer; transition: transform 0.2s;"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
                 </a>
               </div>
               <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
