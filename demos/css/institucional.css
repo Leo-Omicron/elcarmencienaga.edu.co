@@ -2217,29 +2217,3 @@
 .index-detail-201{color: #ffffff; font-size: 1.05rem; margin-bottom: 0.2rem;}
 .index-detail-202{color: #94a3b8; font-size: 0.85rem; margin: 0;}
 .index-detail-203{font-size: 0.75rem; color: #64748b; background: rgba(255,255,255,0.08); padding: 0.3rem 0.6rem; border-radius: 4px;}
-
-/* Mejoras DEMOS: accesibilidad y navegación conservando la referencia. */
-.skip-link{position:fixed;left:1rem;top:-8rem;z-index:9999;background:var(--primary);color:white;padding:1rem;border-radius:8px}
-.skip-link:focus{top:1rem}
-:focus-visible{outline:3px solid var(--accent-gold);outline-offset:4px}
-section[id]{scroll-margin-top:110px}
-.demo-mobile-nav{display:flex;flex-wrap:wrap;gap:.65rem;justify-content:center;padding:.7rem 1rem;background:white;border-bottom:1px solid var(--border-subtle)}
-.demo-mobile-nav a{font-size:.8rem;font-weight:700;color:var(--primary)}
-.closure-section{background:linear-gradient(135deg,var(--primary-dark),var(--primary),#064e3b);color:white}
-.closure-section h2,.closure-section h3{color:white}
-.closure-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:3rem;align-items:center}
-.closure-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);border:3px solid rgba(255,255,255,.3);box-shadow:var(--shadow-lg)}
-.closure-section .hero-lead{color:#e2e8f0}
-.closure-eyebrow{color:var(--accent-gold);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem}
-.closure-stats{display:flex;gap:2rem;margin:1.5rem 0}.closure-stats strong{display:block;font-family:Outfit,sans-serif;font-size:2rem;color:var(--accent-gold)}
-.memory-status{display:inline-block;background:var(--accent-gold-light);color:var(--primary);padding:.7rem 1.1rem;border-radius:var(--radius-md);font-weight:700;margin-top:1.5rem}
-.admissions-grid,.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
-.news-card{background:white;border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);transition:transform .25s,box-shadow .25s}
-.news-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
-.news-card-img{width:100%;aspect-ratio:4/3;object-fit:cover}.news-card-content{padding:1.5rem;display:grid;gap:1rem}
-.section-intro{max-width:720px;margin:1rem auto 2rem;color:var(--text-muted)}
-.admissions-question{padding:1.2rem;background:white;border:1px solid var(--border-subtle);border-radius:var(--radius-md);margin-bottom:1rem}.admissions-question summary{cursor:pointer;font-weight:700;color:var(--primary)}
-.admissions-question p{margin-top:1rem}
-@media(min-width:1100px){.demo-mobile-nav{display:none}}
-@media(max-width:800px){.closure-grid{grid-template-columns:1fr}.admissions-grid,.news-grid{grid-template-columns:1fr}.closure-stats{gap:1rem}.closure-section{padding-block:3rem}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
