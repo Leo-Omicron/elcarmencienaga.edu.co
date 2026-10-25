@@ -1,6 +1,15 @@
-# Publicación provisional en Hostinger
+# Publicación provisional en Hostinger — antecedente histórico
 
-## Objetivo y alcance
+## Procedimiento vigente desde el 24/10/2026
+
+Para publicaciones institucionales estáticas usar `deploy/README.md`: PR, Actions Lab,
+revisión de Leo, promoción del paquete exacto y aprobación protegida. No ejecutar la
+subida manual histórica de este documento por el mero hecho de retomar. Sus detalles
+sobre .htaccess/WordPress/DNS describen tareas excepcionales fuera del publicador estático
+actual y requieren alcance, respaldo y aprobación propios. El rollback de Actions no
+restaura bases de datos ni reglas de WordPress.
+
+## Objetivo y alcance histórico
 
 Servir la portada estática del repositorio `Leo-Omicron/elcarmencienaga.edu.co` en `https://elcarmencienaga.edu.co/`, conservando la instalación WordPress y sus datos. No instalar temas ni plugins para esta fase. No comprar productos, eliminar instalaciones ni modificar correo.
 

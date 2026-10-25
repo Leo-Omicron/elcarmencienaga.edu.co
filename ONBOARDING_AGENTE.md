@@ -50,28 +50,33 @@ Subdominios activos al día de hoy:
 Al trabajar desde dos o más equipos físicos con Antigravity IDE, se debe seguir estrictamente este flujo para evitar conflictos y sobreescrituras:
 
 ### Paso 1: Al iniciar sesión en cualquier máquina
-```bash
-git status
-git pull origin <rama-activa>
-```
-Revisar si la otra máquina hizo cambios recientes antes de empezar a escribir código o desplegar en Hostinger.
+Leer `AGENTS.md`, `deploy/README.md` y `deploy/HANDOFF_CODEX_LOCAL.md`.
+Revisar `git status`, rama/remoto y `git fetch origin`; comparar con origin/main antes
+ de incorporar cambios. Preservar ediciones humanas; no ejecutar pull/reset/clean a ciegas.
+Usar worktree aislado si el checkout contiene cambios de otro trabajo.
 
 ### Paso 2: Desarrollo y Pruebas Locales
 - Mantener las carpetas locales bien organizadas (`laboratorio/`, `semanacultural/`, `demos/`, etc.).
 - Las credenciales y bases de datos privadas permanecen fuera del repositorio (ver `.gitignore`).
 
 ### REGLA INQUEBRANTABLE: Staging Obligatorio (`lab`) antes de Producción
-Todo cambio o nueva funcionalidad sigue rigurosamente el ciclo de staging a producción:
+Todo encargo institucional sigue el ciclo de Laboratorio a Producción; DEMOS queda fuera:
 1. **Fase Laboratorio:** Los encargos institucionales se implementan en `laboratorio/` y se publican en `lab.elcarmencienaga.edu.co` tras revisar y fusionar el PR. **DEMOS es independiente**: sus experimentos no se promueven ni participan en este flujo. Implementación y activación controlada: `deploy/README.md`.
 2. **Revisión y Aprobación de Leo:** El agente NO promueve cambios a entornos activos sin que Leo los revise visualmente y otorgue su aprobación explícita.
-3. **Promoción a Portal Activo:** Únicamente tras la aprobación se sincroniza hacia `semanacultural/` o producción y se despliega.
+3. **Promoción a Portal Activo:** Tras la aprobación de la versión, Actions promueve el artefacto exacto de Lab al target de su manifiesto. No copiar directorios ni reconstruir desde main; exige el clic protegido de Leo en produccion.
 4. **Cero cambios en caliente:** Nunca editar directamente el sitio público sin validación previa en laboratorio.
 
-### Paso 3: Despliegue en Hostinger
-Para subir y actualizar sitios en Hostinger:
-1. Utilizar la herramienta MCP `hosting_deploy` con el dominio correspondiente y ruta local (o subida TUS según aplique). En la nube, los pushes a `demos/` activan `.github/workflows/deploy-demos.yml` usando `scripts/deploy_demos.mjs` y el secreto `HOSTINGER_API_TOKEN`.
-2. Purgar caché con `hosting_cache_clear-website`.
-3. Verificar con `curl.exe -sI <URL>` que la respuesta sea HTTP 200 (o 301 si es redirección).
+### Paso 3: Publicación mediante GitHub Actions
+1. Rama y PR institucional con implementación en `laboratorio/` y archivos explícitos en
+   `deploy/release.json`. Leo revisa/fusiona; Publish institutional Laboratorio publica la selección.
+2. Entregar URLs completas y run ID; Leo revisa la web y aprueba ESA versión.
+3. Protected institutional production con promote y run ID; prepare valida el paquete y
+   publish espera aprobación protegida de Leo. Registrar release ID y verificar la web.
+4. Rollback usa el mismo workflow, destino y release ID completo, y otra aprobación.
+5. MCP de Hostinger no es vía habitual alternativa. Consultas e infraestructura conservan
+   su alcance propio; recuperación excepcional solo autorizada y documentada.
+6. DEMOS conserva su workflow independiente `.github/workflows/deploy-demos.yml`.
+   Revisar sus filtros vigentes; nunca promoverlo al circuito institucional.
 
 ### Paso 4: Cierre y Sincronización hacia la otra máquina
 1. Documentar los cambios en Git con commits convencionales (`feat:`, `fix:`, `chore:`).
