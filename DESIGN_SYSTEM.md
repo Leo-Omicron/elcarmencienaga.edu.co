@@ -78,10 +78,12 @@ No inventar cupos, fechas de matrícula ni requisitos. Mantener `noindex,nofollo
 Usar salto al contenido, landmarks, foco visible, texto alternativo y movimiento reducido.
 Los iframes se cargan de forma diferida; su disponibilidad depende de YouTube.
 
-## Promoción
+## Separación y publicación
 
-Trabajar mediante PR hacia `main`. Una rama `demos/**` activa el despliegue **solo de DEMOS**
-según el workflow existente. La revisión visual de Leo precede a cualquier promoción a
-Laboratorio; una aprobación posterior precede a Producción. No sincronizar directorios
-completos ni cambiar DNS para promover esta propuesta. Revertir el commit permite recuperar
-la versión anterior de DEMOS; verificar el contenido después del despliegue.
+DEMOS es experimental e independiente: no se promueve a Laboratorio ni Producción.
+Sus ramas y workflow se revisan de forma separada. Revertir un commit solo cambia Git;
+comprobar qué workflow se ejecuta y verificar la web antes de afirmar restauración.
+Los encargos institucionales se implementan en `laboratorio/` mediante PR y siguen
+`deploy/README.md`: merge de Leo, Actions Lab, revisión de la versión, promoción del
+artefacto exacto y aprobación protegida. Compartir referencias de diseño no autoriza
+copiar o sincronizar DEMOS hacia entornos institucionales. No cambiar DNS para publicar.

@@ -1,5 +1,20 @@
 # Continuidad del proyecto — IE El Carmen
 
+## Flujo institucional vigente — 24/10/2026 Colombia (25/10 UTC)
+
+PR #6 integrado; PR #8 integrado. La política vigente es `deploy/README.md` y sustituye
+la publicación institucional habitual por MCP de Hostinger. DEMOS es independiente.
+Lab run 40144556888, promoción protegida 40145795225 y rollback protegido 40146188051:
+API de jobs completed/success, con aprobaciones de Leo capturadas. Leo confirmó la prueba
+retirada de Producción, conservada en Lab y portada cultural cargando tras la reversión.
+Se probaron dos archivos nuevos, no restauración real de bytes anteriores ni portal-principal.
+Variable INSTITUTIONAL_DEPLOY_ENABLED=true al cierre; manifiesto todavía selecciona la
+prueba. No republicar/revertir por rutina. Detalle: `deploy/PRUEBAS_FLUJO_2026-10-24.md`.
+Encargo explícito a Codex local: actualizar y releer Engram existente y dejar relevo a
+Antigravity, siguiendo `deploy/HANDOFF_CODEX_LOCAL.md`. Desde la nube no se escribió Engram
+ni se comprobó lectura por otras instancias. Historial inferior preservado como antecedente.
+
+
 ## Estado vigente — 24 de octubre de 2026, 10:05 (Colombia)
 
 **Semana Cultural Carmelista 2026 (100% activa en Producción y Staging):**

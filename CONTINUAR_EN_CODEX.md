@@ -1,11 +1,21 @@
 # Continuar el proyecto IE El Carmen
 
+## Relevo prioritario — 24/10/2026 Colombia
+
+Leer `deploy/README.md`, `deploy/PRUEBAS_FLUJO_2026-10-24.md` y `deploy/HANDOFF_CODEX_LOCAL.md`.
+Leo encarga a Codex local actualizar Engram y preparar relevo a Antigravity. Ciclo de dos
+archivos nuevos publicado en Lab, promovido y revertido en portal-cultural; web final
+confirmada por Leo. Queda pendiente restauración real de bytes de archivo existente.
+El historial siguiente se conserva; sus instrucciones operativas antiguas y cifras
+fechadas no sustituyen este relevo ni una consulta actual de los servicios.
+
+
 **Actualizado el 22 de octubre de 2026, 17:45 (Colombia).**
 - **Semana Cultural 2026 - Día 4 (Foro Ambiental & Día de la Ciencia Sede GFM):** 100% **promovido y verificado en producción** (`https://semanacultural.elcarmencienaga.edu.co/dia4.html` e `index.html`) tras aprobación de Leo, con 49 fotos de alta calidad, 19 videos oficiales (11 horizontales y 8 shorts, incluyendo 4 Shorts del Día de la Ciencia en Sede GFM) y tarjeta especial interactiva de la Sede Guillermo F. Morán.
 - **Semana Cultural 2026 - Día 3 (Mundialito & Desfile):** 100% **promovido y verificado en producción** (`https://semanacultural.elcarmencienaga.edu.co/dia3.html`) con 21 fotos y 13 videos (incluido himnos 1°A Sede GFM).
 - **Semana Cultural 2026 - Mundialito Carmelista (Aplazamiento Oficial):** 100% **promovido y verificado en producción** (`https://semanacultural.elcarmencienaga.edu.co/#aviso-partidos-mundialito-2026` y `https://semanacultural.elcarmencienaga.edu.co/dia3.html`) tras aprobación de Leo. Partidos de jueves 22 y viernes 23 de octubre **aplazados hasta nueva orden** con afiche oficial de alta resolución actualizado, tarjeta de alerta extraordinaria y banner informativo en Día 3.
 - **Semana Cultural 2026 - Día 2:** 100% promovido y verificado en producción con 34 fotos y enlaces al Día 3.
-- **Regla de oro de flujo:** Mantener el flujo staging-first: toda novedad se construye, despliega con `hosting_deploy` y valida en `lab.elcarmencienaga.edu.co` antes de promover a `semanacultural.elcarmencienaga.edu.co`.
+- **Regla vigente:** PR → merge de Leo → GitHub Actions Laboratorio → revisión/aprobación de versión → promoción del artefacto exacto y aprobación protegida en GitHub. No publicar por MCP de Hostinger como vía habitual; DEMOS es independiente. Ver `deploy/README.md`.
 - **Google Workspace:** Pendiente confirmar la aprobación definitiva de Education Fundamentals gratuito (12 días de trial restantes).
 
 ## Inicio seguro
