@@ -9,11 +9,27 @@
   "alert": {
     "active": true,
     "badge": "Aviso Oficial",
-    "text": "Mundialito Carmelista 2026: jornadas intercursos activas del lunes 26 de octubre al lunes 2 de noviembre.",
-    "linkText": "Consultar fixture y programación",
-    "linkUrl": "https://semanacultural.elcarmencienaga.edu.co/#programacion-mundialito-2026"
+    "text": "Proyecto Transversal de Tiempo Libre y Mundialito Carmelista 2026 activos en la sede principal.",
+    "linkText": "Ver jornada de tiempo libre",
+    "linkUrl": "#actualidad"
   },
   "items": [
+    {
+      "id": "proyecto-transversal-tiempo-libre-2026",
+      "category": "deportes",
+      "categoryLabel": "Deportes y Convivencia",
+      "date": "26 de octubre de 2026",
+      "author": "Educación Física · Docente Samir Sandoval",
+      "title": "Proyecto Transversal de Tiempo Libre: Jornada Lúdico-Deportiva en el Patio Techado",
+      "summary": "Estudiantes carmelistas vivieron una jornada de integración, motricidad y recreación formativa liderada por el docente Samir Sandoval, fortaleciendo la sana convivencia y el uso constructivo del tiempo libre escolar.",
+      "image": "tiempo_libre_samir.jpg",
+      "imageAlt": "Jornada del Proyecto Pedagógico Transversal de Aprovechamiento del Tiempo Libre liderada por el profesor Samir Sandoval en el patio techado",
+      "linkText": "Ver video en YouTube (Short 1)",
+      "linkUrl": "https://youtube.com/shorts/xzVQN2DXp9Y",
+      "secondaryLinkText": "Ver video 2 en YouTube",
+      "secondaryLinkUrl": "https://youtube.com/shorts/pD_Zl-pcpXo",
+      "pinned": true
+    },
     {
       "id": "mundialito-reactivacion-2026",
       "category": "deportes",
