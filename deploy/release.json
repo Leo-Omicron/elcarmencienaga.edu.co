@@ -1,8 +1,18 @@
 {
-  "target": "portal-cultural",
-  "description": "Prueba controlada IEEC-FLUJO-20261024-V1. Solo dos archivos independientes; promoción y reversión requieren aprobación posterior.",
+  "target": "portal-principal",
+  "description": "Portal Institucional Oficial IE El Carmen (IEEC-PORTAL-OFICIAL-2026-V1): arquitectura completa con cartelera híbrida de actualidad con filtrado animado, página personalizada de módulos en construcción, horizonte institucional, sedes, oferta educativa, transparencia (Ley 1712 de 2014), admisiones/PQRSDF y ecosistema digital.",
   "files": [
-    "prueba-flujo-20261024/index.html",
-    "prueba-flujo-20261024/css/institucional.css"
+    "index.html",
+    "en-construccion.html",
+    "css/institucional.css",
+    "css/portal.css",
+    "js/portal.js",
+    "data/noticias.json",
+    "escudo.jpg",
+    "desfile_deporte.jpg",
+    "afiche_misa.png",
+    "aniversario_foro.jpg",
+    "afiche_emprendimiento.jpg",
+    "banner.jpg"
   ]
 }

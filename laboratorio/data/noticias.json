@@ -1,0 +1,102 @@
+{
+  "version": "2026.10.27",
+  "wordpress": {
+    "enabled": false,
+    "endpoint": "https://comunidad.elcarmencienaga.edu.co/wp-json/wp/v2/posts?_embed&per_page=6",
+    "siteUrl": "https://comunidad.elcarmencienaga.edu.co/",
+    "timeoutMs": 4500
+  },
+  "alert": {
+    "active": true,
+    "badge": "Aviso Oficial",
+    "text": "Mundialito Carmelista 2026: jornadas intercursos activas del lunes 26 de octubre al lunes 2 de noviembre.",
+    "linkText": "Consultar fixture y programación",
+    "linkUrl": "https://semanacultural.elcarmencienaga.edu.co/#programacion-mundialito-2026"
+  },
+  "items": [
+    {
+      "id": "mundialito-reactivacion-2026",
+      "category": "deportes",
+      "categoryLabel": "Deportes y Convivencia",
+      "date": "26 de octubre de 2026",
+      "author": "Comité Deportivo Institucional",
+      "title": "Programación oficial del Mundialito Carmelista 2026: 6 jornadas y 30 encuentros",
+      "summary": "Se desarrolla el calendario oficial de partidos intercursos entre el lunes 26 de octubre y el lunes 2 de noviembre con participación de las categorías estudiantiles en la cancha institucional.",
+      "image": "desfile_deporte.jpg",
+      "imageAlt": "Desfile inaugural y delegación deportiva del Mundialito Carmelista 2026",
+      "linkText": "Ver fixture de las 6 jornadas",
+      "linkUrl": "https://semanacultural.elcarmencienaga.edu.co/dia3.html#programacion",
+      "pinned": true
+    },
+    {
+      "id": "cierre-semana-cultural-53-aniversario",
+      "category": "comunidad",
+      "categoryLabel": "Comunidad",
+      "date": "24 de octubre de 2026",
+      "author": "Rectoría y Comité Cultural",
+      "title": "Memoria viva del 53.° Aniversario y Semana Cultural Carmelista 2026",
+      "summary": "Revive las cinco jornadas históricas: Santa Misa de Acción de Gracias, Foro Ambiental, Desfile Folclórico, Feria de Emprendimiento y muestras pedagógicas en nuestro portal patrimonial.",
+      "image": "afiche_misa.png",
+      "imageAlt": "Celebración del 53 aniversario y cierre de la Semana Cultural 2026",
+      "linkText": "Explorar archivo fotográfico y audiovisual",
+      "linkUrl": "https://semanacultural.elcarmencienaga.edu.co/dia5.html",
+      "pinned": true
+    },
+    {
+      "id": "foro-ambiental-dia-ciencia-gfm",
+      "category": "academico",
+      "categoryLabel": "Académico y Ciencia",
+      "date": "22 de octubre de 2026",
+      "author": "Área de Ciencias Naturales y PRAE",
+      "title": "Gran Foro Salvemos la Ciénaga y Día de la Ciencia en la Sede Guillermo F. Morán",
+      "summary": "Estudiantes de preescolar, básica y media expusieron proyectos de investigación ambiental, preservación de ecosistemas cenagosos y experimentos científicos escolares.",
+      "image": "aniversario_foro.jpg",
+      "imageAlt": "Estudiantes participando en el Gran Foro Salvemos la Ciénaga y Día de la Ciencia",
+      "linkText": "Ver cobertura académica y galería",
+      "linkUrl": "https://semanacultural.elcarmencienaga.edu.co/dia4.html",
+      "pinned": false
+    },
+    {
+      "id": "feria-emprendimiento-creatividad-2026",
+      "category": "comunidad",
+      "categoryLabel": "Comunidad",
+      "date": "20 de octubre de 2026",
+      "author": "Proyecto de Emprendimiento",
+      "title": "Feria de Emprendimiento, Gastronomía e Innovación Estudiantil",
+      "summary": "Fieles a nuestro lema «Educando para preservar y emprender», las familias y grados presentaron iniciativas productivas, culturales y gastronómicas de la región.",
+      "image": "afiche_emprendimiento.jpg",
+      "imageAlt": "Muestra estudiantil en la Feria de Emprendimiento y Creatividad",
+      "linkText": "Recorrer galería del Día 2",
+      "linkUrl": "https://semanacultural.elcarmencienaga.edu.co/dia2.html",
+      "pinned": false
+    },
+    {
+      "id": "orientacion-admisiones-atencion-familias",
+      "category": "rectoria",
+      "categoryLabel": "Rectoría",
+      "date": "Octubre de 2026",
+      "author": "Secretaría Académica",
+      "title": "Orientación oficial sobre matrículas, certificados y atención a las familias",
+      "summary": "Conoce los canales oficiales de atención en la Sede Principal (Barrio Micael Cotes) y las pautas institucionales para consultas de admisiones en preescolar, básica y media.",
+      "image": "banner.jpg",
+      "imageAlt": "Comunidad educativa de la Institución Educativa El Carmen de Ciénaga",
+      "linkText": "Ir a la sección de Admisiones y PQRSDF",
+      "linkUrl": "#admisiones",
+      "pinned": false
+    },
+    {
+      "id": "transparencia-resoluciones-institucionales",
+      "category": "rectoria",
+      "categoryLabel": "Rectoría",
+      "date": "Octubre de 2026",
+      "author": "Gestión Directiva",
+      "title": "Transparencia institucional y datos oficiales del establecimiento educativo",
+      "summary": "Consulta la información pública de carácter oficial: Código DANE 147189001160, NIT 819002071-3, Resolución 2293 de 2022, Resolución 931 de 2023 y estructura del Gobierno Escolar.",
+      "image": "escudo.jpg",
+      "imageAlt": "Escudo oficial de la Institución Educativa El Carmen",
+      "linkText": "Consultar sección de Transparencia",
+      "linkUrl": "#transparencia",
+      "pinned": false
+    }
+  ]
+}
