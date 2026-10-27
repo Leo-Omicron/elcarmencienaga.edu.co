@@ -146,6 +146,9 @@
     p.className = 'news-card-summary';
     p.textContent = item.summary || '';
 
+    const actionsDiv = document.createElement('div');
+    actionsDiv.className = 'news-card-actions';
+
     const link = document.createElement('a');
     link.className = 'news-card-link';
     link.href = item.linkUrl || '#actualidad';
@@ -154,11 +157,24 @@
       link.rel = 'noopener noreferrer';
     }
     link.textContent = (item.linkText || 'Conocer más') + ' →';
+    actionsDiv.appendChild(link);
+
+    if (item.secondaryLinkUrl) {
+      const secLink = document.createElement('a');
+      secLink.className = 'news-card-link news-card-link-sec';
+      secLink.href = item.secondaryLinkUrl;
+      if (/^https?:\/\//i.test(secLink.href)) {
+        secLink.target = '_blank';
+        secLink.rel = 'noopener noreferrer';
+      }
+      secLink.textContent = (item.secondaryLinkText || 'Ver más') + ' →';
+      actionsDiv.appendChild(secLink);
+    }
 
     contentDiv.appendChild(metaDiv);
     contentDiv.appendChild(h3);
     contentDiv.appendChild(p);
-    contentDiv.appendChild(link);
+    contentDiv.appendChild(actionsDiv);
 
     article.appendChild(mediaDiv);
     article.appendChild(contentDiv);
