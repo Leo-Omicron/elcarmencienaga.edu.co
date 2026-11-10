@@ -1,6 +1,24 @@
 # Continuidad del proyecto — IE El Carmen
 
-## Flujo institucional vigente — 24/10/2026 Colombia (25/10 UTC)
+## Estado vigente — 10 de noviembre de 2026 (Colombia)
+
+**Publicación del Gran Open House de Preescolar 2026 (100% activa en Producción y Staging):**
+- **Evento oficial:** Convocatoria comunitaria para el Open House de Preescolar en la Sede Guillermo F. Morán (Calle 7 con carrera 1.ª frente a cancha Brisas del Mar), programado para el jueves 12 de noviembre de 2026 a las 8:00 a. m.
+- **Implementación institucional:**
+  - Cinta superior oficial (`portal-top-bar`) actualizada con aviso prioritario en vivo.
+  - Cartelera de novedades (`#actualidad`) con tarjeta fijada (`pinned: true`) en categoría Comunidad / Rectoría.
+  - Integración híbrida: datos en `data/noticias.json` sincronizados con el marcado estático en `index.html`.
+  - Afiche oficial optimizado (`afiche_open_house_preescolar_2026.jpg`) incorporado en el paquete de release.
+- **Flujo institucional por GitHub Actions (100% verificado):**
+  - Commit: `989782c02347d9c87d32f1674592b440609dca92` en `main`.
+  - Laboratorio: Run [42912259464](https://github.com/Leo-Omicron/elcarmencienaga.edu.co/actions/runs/42912259464) (despliegue y pruebas exitosas en `lab.elcarmencienaga.edu.co`).
+  - Producción protegida: Run [42912893412](https://github.com/Leo-Omicron/elcarmencienaga.edu.co/actions/runs/42912893412), con aprobación manual protegida concedida por Leo.
+  - Release ID productivo: `42912893412-1-989782c02347d9c87d32f1674592b440609dca92` (target: `portal-principal`).
+  - Purga de caché CDN de Hostinger ejecutada vía MCP. Verificación HTTP 200 en vivo en `https://elcarmencienaga.edu.co/` y `https://lab.elcarmencienaga.edu.co/`.
+
+---
+
+## Antecedentes — Flujo institucional del 24/10/2026 Colombia (25/10 UTC)
 
 PR #6 integrado; PR #8 integrado. La política vigente es `deploy/README.md` y sustituye
 la publicación institucional habitual por MCP de Hostinger. DEMOS es independiente.
