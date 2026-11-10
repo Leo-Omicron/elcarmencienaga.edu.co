@@ -1,5 +1,5 @@
 {
-  "version": "2026.10.27",
+  "version": "2026.11.10",
   "wordpress": {
     "enabled": false,
     "endpoint": "https://comunidad.elcarmencienaga.edu.co/wp-json/wp/v2/posts?_embed&per_page=6",
@@ -9,11 +9,27 @@
   "alert": {
     "active": true,
     "badge": "Aviso Oficial",
-    "text": "Proyecto Transversal de Tiempo Libre y Mundialito Carmelista 2026 activos en la sede principal.",
-    "linkText": "Ver jornada de tiempo libre",
+    "text": "¡Gran Open House de Preescolar! Jueves 12 de noviembre · 8:00 a. m. en la Sede Guillermo F. Morán.",
+    "linkText": "Conocer detalles del evento",
     "linkUrl": "#actualidad"
   },
   "items": [
+    {
+      "id": "open-house-preescolar-sede-moran-2026",
+      "category": "comunidad",
+      "categoryLabel": "Comunidad",
+      "date": "10 de noviembre de 2026",
+      "author": "Sede Guillermo F. Morán · Nivel Preescolar",
+      "title": "Gran Open House de Preescolar: Conoce Nuestra Sede Guillermo F. Morán este Jueves 12 de Noviembre",
+      "summary": "Invitamos con mucho cariño a todas las familias y a sus pequeñines de 3, 4 y 5 años a una mañana de juegos, diversión y alegría. Ven y descubre nuestras instalaciones, el equipo docente y todo lo bonito que tenemos preparado para la formación integral de tus hijos.",
+      "image": "afiche_open_house_preescolar_2026.jpg",
+      "imageAlt": "Afiche oficial del Open House de Preescolar en la Sede Guillermo F. Morán de la I. E. El Carmen",
+      "linkText": "Ver sede y cómo llegar",
+      "linkUrl": "#sedes",
+      "secondaryLinkText": "Pautas de Admisiones",
+      "secondaryLinkUrl": "#admisiones",
+      "pinned": true
+    },
     {
       "id": "proyecto-transversal-tiempo-libre-2026",
       "category": "deportes",
